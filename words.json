@@ -1,0 +1,962 @@
+[
+  {
+    "id": "w001",
+    "word": "achieve",
+    "phonetic": "/əˈtʃiːv/",
+    "translation": "v. 达到；完成；实现",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "achieve success", "translation": "取得成功"},
+      {"phrase": "achieve one's goal", "translation": "实现目标"},
+      {"phrase": "achieve great progress", "translation": "取得很大进步"}
+    ],
+    "examples": [
+      {"sentence": "Hard work achieves success.", "translation": "努力工作就能成功。"},
+      {"sentence": "She achieved her goal of losing weight.", "translation": "她实现了减肥的目标。"}
+    ]
+  },
+  {
+    "id": "w002",
+    "word": "abandon",
+    "phonetic": "/əˈbændən/",
+    "translation": "v. 放弃；抛弃",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "abandon hope", "translation": "放弃希望"},
+      {"phrase": "abandon a plan", "translation": "放弃计划"},
+      {"phrase": "abandon the ship", "translation": "弃船"}
+    ],
+    "examples": [
+      {"sentence": "Never abandon your dreams.", "translation": "永远不要放弃你的梦想。"},
+      {"sentence": "They abandoned the old building.", "translation": "他们废弃了那栋旧楼。"}
+    ]
+  },
+  {
+    "id": "w003",
+    "word": "accept",
+    "phonetic": "/əkˈsept/",
+    "translation": "v. 接受；同意",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "accept an invitation", "translation": "接受邀请"},
+      {"phrase": "accept the truth", "translation": "接受真相"},
+      {"phrase": "accept responsibility", "translation": "承担责任"}
+    ],
+    "examples": [
+      {"sentence": "Please accept my apology.", "translation": "请接受我的道歉。"},
+      {"sentence": "He accepted the job offer.", "translation": "他接受了这份工作。"}
+    ]
+  },
+  {
+    "id": "w004",
+    "word": "admire",
+    "phonetic": "/ədˈmaɪər/",
+    "translation": "v. 钦佩；欣赏；羡慕",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "admire someone's courage", "translation": "钦佩某人的勇气"},
+      {"phrase": "admire the view", "translation": "欣赏风景"},
+      {"phrase": "deeply admire", "translation": "深深敬佩"}
+    ],
+    "examples": [
+      {"sentence": "I admire people who never give up.", "translation": "我钦佩永不放弃的人。"},
+      {"sentence": "We stopped to admire the sunset.", "translation": "我们停下来欣赏日落。"}
+    ]
+  },
+  {
+    "id": "w005",
+    "word": "admit",
+    "phonetic": "/ədˈmɪt/",
+    "translation": "v. 承认；准许进入",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "admit a mistake", "translation": "承认错误"},
+      {"phrase": "admit to doing something", "translation": "承认做了某事"},
+      {"phrase": "be admitted to university", "translation": "被大学录取"}
+    ],
+    "examples": [
+      {"sentence": "I admit I was wrong.", "translation": "我承认我错了。"},
+      {"sentence": "He admitted to breaking the window.", "translation": "他承认打破了窗户。"}
+    ]
+  },
+  {
+    "id": "w006",
+    "word": "ancient",
+    "phonetic": "/ˈeɪnʃənt/",
+    "translation": "adj. 古代的；古老的",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "ancient times", "translation": "古代"},
+      {"phrase": "ancient civilization", "translation": "古代文明"},
+      {"phrase": "ancient history", "translation": "古代史"}
+    ],
+    "examples": [
+      {"sentence": "Beijing is an ancient city.", "translation": "北京是一座古城。"},
+      {"sentence": "The Great Wall is an ancient wonder.", "translation": "长城是古代奇迹。"}
+    ]
+  },
+  {
+    "id": "w007",
+    "word": "appreciate",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "translation": "v. 欣赏；感激；领会",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "appreciate your help", "translation": "感谢你的帮助"},
+      {"phrase": "appreciate art", "translation": "欣赏艺术"},
+      {"phrase": "fully appreciate", "translation": "充分理解"}
+    ],
+    "examples": [
+      {"sentence": "I really appreciate your kindness.", "translation": "我真心感谢你的好意。"},
+      {"sentence": "You don't appreciate how hard it is.", "translation": "你不明白这有多难。"}
+    ]
+  },
+  {
+    "id": "w008",
+    "word": "attention",
+    "phonetic": "/əˈtenʃn/",
+    "translation": "n. 注意；关注；注意力",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "pay attention to", "translation": "注意；关注"},
+      {"phrase": "draw attention", "translation": "引起注意"},
+      {"phrase": "catch someone's attention", "translation": "吸引某人的注意"}
+    ],
+    "examples": [
+      {"sentence": "Please pay attention in class.", "translation": "上课请专心听讲。"},
+      {"sentence": "The story caught my attention.", "translation": "这个故事吸引了我。"}
+    ]
+  },
+  {
+    "id": "w009",
+    "word": "benefit",
+    "phonetic": "/ˈbenɪfɪt/",
+    "translation": "n. 好处；益处 v. 受益",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "health benefits", "translation": "健康益处"},
+      {"phrase": "benefit from", "translation": "从……受益"},
+      {"phrase": "for the benefit of", "translation": "为了……的利益"}
+    ],
+    "examples": [
+      {"sentence": "Exercise has many health benefits.", "translation": "运动对健康有很多好处。"},
+      {"sentence": "Students benefit from reading every day.", "translation": "学生每天阅读会受益。"}
+    ]
+  },
+  {
+    "id": "w010",
+    "word": "brave",
+    "phonetic": "/breɪv/",
+    "translation": "adj. 勇敢的",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "a brave decision", "translation": "勇敢的决定"},
+      {"phrase": "brave enough", "translation": "足够勇敢"},
+      {"phrase": "be brave to do", "translation": "勇敢做某事"}
+    ],
+    "examples": [
+      {"sentence": "You are very brave.", "translation": "你很勇敢。"},
+      {"sentence": "It was a brave thing to do.", "translation": "这么做很勇敢。"}
+    ]
+  },
+  {
+    "id": "w011",
+    "word": "celebrate",
+    "phonetic": "/ˈselɪbreɪt/",
+    "translation": "v. 庆祝；庆贺",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "celebrate a birthday", "translation": "庆祝生日"},
+      {"phrase": "celebrate success", "translation": "庆祝成功"},
+      {"phrase": "celebrate with friends", "translation": "和朋友一起庆祝"}
+    ],
+    "examples": [
+      {"sentence": "How do you celebrate Spring Festival?", "translation": "你们怎么庆祝春节？"},
+      {"sentence": "Let's celebrate your good grades!", "translation": "让我们庆祝你取得好成绩！"}
+    ]
+  },
+  {
+    "id": "w012",
+    "word": "challenge",
+    "phonetic": "/ˈtʃælɪndʒ/",
+    "translation": "n. 挑战 v. 向……挑战",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "face a challenge", "translation": "面对挑战"},
+      {"phrase": "meet the challenge", "translation": "迎接挑战"},
+      {"phrase": "a big challenge", "translation": "一个巨大的挑战"}
+    ],
+    "examples": [
+      {"sentence": "Learning English is a challenge.", "translation": "学习英语是一个挑战。"},
+      {"sentence": "She likes to challenge herself.", "translation": "她喜欢挑战自己。"}
+    ]
+  },
+  {
+    "id": "w013",
+    "word": "communicate",
+    "phonetic": "/kəˈmjuːnɪkeɪt/",
+    "translation": "v. 交流；沟通；传达",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "communicate with", "translation": "与……交流"},
+      {"phrase": "communicate clearly", "translation": "清晰地表达"},
+      {"phrase": "communicate ideas", "translation": "传达想法"}
+    ],
+    "examples": [
+      {"sentence": "We communicate in English.", "translation": "我们用英语交流。"},
+      {"sentence": "Good friends communicate well.", "translation": "好朋友之间沟通很好。"}
+    ]
+  },
+  {
+    "id": "w014",
+    "word": "compare",
+    "phonetic": "/kəmˈpeər/",
+    "translation": "v. 比较；对比",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "compare with", "translation": "与……比较"},
+      {"phrase": "compare to", "translation": "比作；相比"},
+      {"phrase": "compare notes", "translation": "交换意见"}
+    ],
+    "examples": [
+      {"sentence": "Don't compare yourself with others.", "translation": "不要拿自己和别人比较。"},
+      {"sentence": "Compare the two pictures.", "translation": "比较这两张图。"}
+    ]
+  },
+  {
+    "id": "w015",
+    "word": "confident",
+    "phonetic": "/ˈkɒnfɪdənt/",
+    "translation": "adj. 自信的；确信的",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "feel confident", "translation": "感到自信"},
+      {"phrase": "confident about", "translation": "对……有信心"},
+      {"phrase": "become more confident", "translation": "变得更有自信"}
+    ],
+    "examples": [
+      {"sentence": "She is confident about the exam.", "translation": "她对考试很有信心。"},
+      {"sentence": "Practice makes you more confident.", "translation": "练习让你更有信心。"}
+    ]
+  },
+  {
+    "id": "w016",
+    "word": "connect",
+    "phonetic": "/kəˈnekt/",
+    "translation": "v. 连接；联系",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "connect to the Internet", "translation": "连接互联网"},
+      {"phrase": "connect with people", "translation": "与人建立联系"},
+      {"phrase": "connect A to B", "translation": "把A连接到B"}
+    ],
+    "examples": [
+      {"sentence": "The bridge connects the two cities.", "translation": "这座桥连接着两座城市。"},
+      {"sentence": "I want to connect with classmates.", "translation": "我想和同学们建立联系。"}
+    ]
+  },
+  {
+    "id": "w017",
+    "word": "consider",
+    "phonetic": "/kənˈsɪdər/",
+    "translation": "v. 考虑；认为",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "consider carefully", "translation": "仔细考虑"},
+      {"phrase": "consider doing", "translation": "考虑做某事"},
+      {"phrase": "be considered as", "translation": "被认为是"}
+    ],
+    "examples": [
+      {"sentence": "Please consider my suggestion.", "translation": "请考虑我的建议。"},
+      {"sentence": "He is considered a good student.", "translation": "他被认为是个好学生。"}
+    ]
+  },
+  {
+    "id": "w018",
+    "word": "continue",
+    "phonetic": "/kənˈtɪnjuː/",
+    "translation": "v. 继续；持续",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "continue to work", "translation": "继续工作"},
+      {"phrase": "continue doing", "translation": "继续做某事"},
+      {"phrase": "to be continued", "translation": "待续"}
+    ],
+    "examples": [
+      {"sentence": "Let's continue our discussion.", "translation": "我们继续讨论吧。"},
+      {"sentence": "The rain continued all day.", "translation": "雨下了一整天。"}
+    ]
+  },
+  {
+    "id": "w019",
+    "word": "create",
+    "phonetic": "/kriˈeɪt/",
+    "translation": "v. 创造；创建",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "create a plan", "translation": "制定计划"},
+      {"phrase": "create new things", "translation": "创造新事物"},
+      {"phrase": "create opportunities", "translation": "创造机会"}
+    ],
+    "examples": [
+      {"sentence": "Artists create beautiful things.", "translation": "艺术家创造美丽的东西。"},
+      {"sentence": "We need to create a better future.", "translation": "我们需要创造更美好的未来。"}
+    ]
+  },
+  {
+    "id": "w020",
+    "word": "curious",
+    "phonetic": "/ˈkjʊəriəs/",
+    "translation": "adj. 好奇的；求知欲强的",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "curious about", "translation": "对……好奇"},
+      {"phrase": "a curious child", "translation": "好奇的孩子"},
+      {"phrase": "curious to know", "translation": "想知道"}
+    ],
+    "examples": [
+      {"sentence": "Children are curious about everything.", "translation": "孩子们对一切都很好奇。"},
+      {"sentence": "I'm curious to know the answer.", "translation": "我很想知道答案。"}
+    ]
+  },
+  {
+    "id": "w021",
+    "word": "decide",
+    "phonetic": "/dɪˈsaɪd/",
+    "translation": "v. 决定；下决心",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "decide to do", "translation": "决定做某事"},
+      {"phrase": "make a decision", "translation": "做决定"},
+      {"phrase": "decide on", "translation": "选定；决定"}
+    ],
+    "examples": [
+      {"sentence": "I decided to study harder.", "translation": "我决定更努力学习。"},
+      {"sentence": "Have you decided where to go?", "translation": "你决定去哪里了吗？"}
+    ]
+  },
+  {
+    "id": "w022",
+    "word": "describe",
+    "phonetic": "/dɪˈskraɪb/",
+    "translation": "v. 描述；形容",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "describe someone", "translation": "描述某人"},
+      {"phrase": "describe in detail", "translation": "详细描述"},
+      {"phrase": "hard to describe", "translation": "难以形容"}
+    ],
+    "examples": [
+      {"sentence": "Can you describe the picture?", "translation": "你能描述一下这幅画吗？"},
+      {"sentence": "Words cannot describe my happiness.", "translation": "言语无法形容我的快乐。"}
+    ]
+  },
+  {
+    "id": "w023",
+    "word": "develop",
+    "phonetic": "/dɪˈveləp/",
+    "translation": "v. 发展；开发；培养",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "develop skills", "translation": "培养技能"},
+      {"phrase": "develop a habit", "translation": "养成习惯"},
+      {"phrase": "develop quickly", "translation": "快速发展"}
+    ],
+    "examples": [
+      {"sentence": "China is developing very fast.", "translation": "中国发展非常快。"},
+      {"sentence": "Reading helps develop your mind.", "translation": "阅读有助于发展思维。"}
+    ]
+  },
+  {
+    "id": "w024",
+    "word": "discover",
+    "phonetic": "/dɪˈskʌvər/",
+    "translation": "v. 发现；发觉",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "discover the truth", "translation": "发现真相"},
+      {"phrase": "discover new things", "translation": "发现新事物"},
+      {"phrase": "scientist discovered", "translation": "科学家发现"}
+    ],
+    "examples": [
+      {"sentence": "Who discovered America?", "translation": "谁发现了美洲？"},
+      {"sentence": "I discovered I love painting.", "translation": "我发现我喜欢画画。"}
+    ]
+  },
+  {
+    "id": "w025",
+    "word": "encourage",
+    "phonetic": "/ɪnˈkʌrɪdʒ/",
+    "translation": "v. 鼓励；激励",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "encourage someone to do", "translation": "鼓励某人做某事"},
+      {"phrase": "encourage each other", "translation": "互相鼓励"},
+      {"phrase": "strongly encourage", "translation": "强烈鼓励"}
+    ],
+    "examples": [
+      {"sentence": "Teachers encourage students to ask questions.", "translation": "老师鼓励学生提问。"},
+      {"sentence": "My parents always encourage me.", "translation": "父母总是鼓励我。"}
+    ]
+  },
+  {
+    "id": "w026",
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "translation": "n. 环境",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "protect the environment", "translation": "保护环境"},
+      {"phrase": "learning environment", "translation": "学习环境"},
+      {"phrase": "natural environment", "translation": "自然环境"}
+    ],
+    "examples": [
+      {"sentence": "We should protect our environment.", "translation": "我们应该保护环境。"},
+      {"sentence": "A quiet environment helps study.", "translation": "安静的环境有助于学习。"}
+    ]
+  },
+  {
+    "id": "w027",
+    "word": "experience",
+    "phonetic": "/ɪkˈspɪəriəns/",
+    "translation": "n. 经验；经历 v. 经历",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "work experience", "translation": "工作经验"},
+      {"phrase": "a wonderful experience", "translation": "一次美妙的经历"},
+      {"phrase": "learn from experience", "translation": "从经验中学习"}
+    ],
+    "examples": [
+      {"sentence": "Traveling is a great experience.", "translation": "旅行是很棒的经历。"},
+      {"sentence": "He has no experience in teaching.", "translation": "他没有教学经验。"}
+    ]
+  },
+  {
+    "id": "w028",
+    "word": "explain",
+    "phonetic": "/ɪkˈspleɪn/",
+    "translation": "v. 解释；说明",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "explain clearly", "translation": "清楚地解释"},
+      {"phrase": "explain to someone", "translation": "向某人解释"},
+      {"phrase": "explain the reason", "translation": "解释原因"}
+    ],
+    "examples": [
+      {"sentence": "Can you explain this word?", "translation": "你能解释一下这个词吗？"},
+      {"sentence": "Let me explain how it works.", "translation": "让我解释它是如何运作的。"}
+    ]
+  },
+  {
+    "id": "w029",
+    "word": "express",
+    "phonetic": "/ɪkˈspres/",
+    "translation": "v. 表达；表示",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "express feelings", "translation": "表达情感"},
+      {"phrase": "express an opinion", "translation": "表达意见"},
+      {"phrase": "express thanks", "translation": "表示感谢"}
+    ],
+    "examples": [
+      {"sentence": "It's important to express yourself.", "translation": "表达自己很重要。"},
+      {"sentence": "I want to express my thanks.", "translation": "我想表达我的感谢。"}
+    ]
+  },
+  {
+    "id": "w030",
+    "word": "familiar",
+    "phonetic": "/fəˈmɪliər/",
+    "translation": "adj. 熟悉的；常见的",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "familiar with", "translation": "熟悉；了解"},
+      {"phrase": "look familiar", "translation": "看起来眼熟"},
+      {"phrase": "a familiar face", "translation": "熟悉的面孔"}
+    ],
+    "examples": [
+      {"sentence": "Are you familiar with this song?", "translation": "你熟悉这首歌吗？"},
+      {"sentence": "The place looked familiar to me.", "translation": "这个地方看起来很眼熟。"}
+    ]
+  },
+  {
+    "id": "w031",
+    "word": "generous",
+    "phonetic": "/ˈdʒenərəs/",
+    "translation": "adj. 慷慨的；大方的",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "generous with time", "translation": "慷慨付出时间"},
+      {"phrase": "a generous person", "translation": "慷慨的人"},
+      {"phrase": "generous help", "translation": "慷慨的帮助"}
+    ],
+    "examples": [
+      {"sentence": "She is very generous to her friends.", "translation": "她对朋友非常慷慨。"},
+      {"sentence": "Thank you for your generous gift.", "translation": "谢谢你慷慨的礼物。"}
+    ]
+  },
+  {
+    "id": "w032",
+    "word": "graduate",
+    "phonetic": "/ˈɡrædʒueɪt/",
+    "translation": "v. 毕业 n. 毕业生",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "graduate from", "translation": "从……毕业"},
+      {"phrase": "high school graduate", "translation": "高中毕业生"},
+      {"phrase": "graduate school", "translation": "研究生院"}
+    ],
+    "examples": [
+      {"sentence": "When will you graduate?", "translation": "你什么时候毕业？"},
+      {"sentence": "He graduated from Beijing University.", "translation": "他毕业于北京大学。"}
+    ]
+  },
+  {
+    "id": "w033",
+    "word": "honest",
+    "phonetic": "/ˈɒnɪst/",
+    "translation": "adj. 诚实的；正直的",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "an honest answer", "translation": "诚实的回答"},
+      {"phrase": "to be honest", "translation": "说实话；老实说"},
+      {"phrase": "honest and kind", "translation": "诚实善良"}
+    ],
+    "examples": [
+      {"sentence": "To be honest, I don't like it.", "translation": "老实说，我不喜欢。"},
+      {"sentence": "He is an honest boy.", "translation": "他是一个诚实的男孩。"}
+    ]
+  },
+  {
+    "id": "w034",
+    "word": "imagine",
+    "phonetic": "/ɪˈmædʒɪn/",
+    "translation": "v. 想象；设想",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "imagine that", "translation": "想象一下"},
+      {"phrase": "hard to imagine", "translation": "难以想象"},
+      {"phrase": "can you imagine", "translation": "你能想象吗"}
+    ],
+    "examples": [
+      {"sentence": "Can you imagine life without phones?", "translation": "你能想象没有手机的生活吗？"},
+      {"sentence": "I can't imagine how hard it was.", "translation": "我无法想象那有多难。"}
+    ]
+  },
+  {
+    "id": "w035",
+    "word": "improve",
+    "phonetic": "/ɪmˈpruːv/",
+    "translation": "v. 改进；提高",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "improve English", "translation": "提高英语"},
+      {"phrase": "improve yourself", "translation": "提升自己"},
+      {"phrase": "greatly improve", "translation": "大大提高"}
+    ],
+    "examples": [
+      {"sentence": "I want to improve my speaking skills.", "translation": "我想提高口语能力。"},
+      {"sentence": "Her grades have improved a lot.", "translation": "她的成绩提高了很多。"}
+    ]
+  },
+  {
+    "id": "w036",
+    "word": "include",
+    "phonetic": "/ɪnˈkluːd/",
+    "translation": "v. 包括；包含",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "including me", "translation": "包括我"},
+      {"phrase": "the price includes", "translation": "价格包括"},
+      {"phrase": "include in the list", "translation": "包含在列表中"}
+    ],
+    "examples": [
+      {"sentence": "The book includes many pictures.", "translation": "这本书包含很多图片。"},
+      {"sentence": "Everyone was invited, including me.", "translation": "所有人都被邀请了，包括我。"}
+    ]
+  },
+  {
+    "id": "w037",
+    "word": "independent",
+    "phonetic": "/ˌɪndɪˈpendənt/",
+    "translation": "adj. 独立的；自主的",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "independent thinking", "translation": "独立思考"},
+      {"phrase": "become independent", "translation": "变得独立"},
+      {"phrase": "financially independent", "translation": "经济独立"}
+    ],
+    "examples": [
+      {"sentence": "You should learn to be independent.", "translation": "你应该学会独立。"},
+      {"sentence": "She is an independent young woman.", "translation": "她是一个独立的年轻女性。"}
+    ]
+  },
+  {
+    "id": "w038",
+    "word": "influence",
+    "phonetic": "/ˈɪnfluəns/",
+    "translation": "n. 影响 v. 影响",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "have an influence on", "translation": "对……有影响"},
+      {"phrase": "under the influence of", "translation": "在……的影响下"},
+      {"phrase": "a good influence", "translation": "好的影响"}
+    ],
+    "examples": [
+      {"sentence": "Friends can influence your choices.", "translation": "朋友会影响你的选择。"},
+      {"sentence": "Parents have a big influence on children.", "translation": "父母对孩子影响很大。"}
+    ]
+  },
+  {
+    "id": "w039",
+    "word": "introduce",
+    "phonetic": "/ˌɪntrəˈdjuːs/",
+    "translation": "v. 介绍；引入",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "introduce yourself", "translation": "自我介绍"},
+      {"phrase": "introduce someone to", "translation": "把某人介绍给"},
+      {"phrase": "introduce a new idea", "translation": "引入新想法"}
+    ],
+    "examples": [
+      {"sentence": "Let me introduce my friend.", "translation": "让我介绍我的朋友。"},
+      {"sentence": "Please introduce yourself in English.", "translation": "请用英语自我介绍。"}
+    ]
+  },
+  {
+    "id": "w040",
+    "word": "knowledge",
+    "phonetic": "/ˈnɒlɪdʒ/",
+    "translation": "n. 知识；学问",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "general knowledge", "translation": "常识"},
+      {"phrase": "gain knowledge", "translation": "获取知识"},
+      {"phrase": "knowledge is power", "translation": "知识就是力量"}
+    ],
+    "examples": [
+      {"sentence": "Knowledge is power.", "translation": "知识就是力量。"},
+      {"sentence": "Reading increases your knowledge.", "translation": "阅读增长知识。"}
+    ]
+  },
+  {
+    "id": "w041",
+    "word": "manage",
+    "phonetic": "/ˈmænɪdʒ/",
+    "translation": "v. 管理；设法做到",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "manage time", "translation": "管理时间"},
+      {"phrase": "manage to do", "translation": "设法做成"},
+      {"phrase": "manage a company", "translation": "管理公司"}
+    ],
+    "examples": [
+      {"sentence": "How do you manage your time?", "translation": "你怎么管理时间？"},
+      {"sentence": "I managed to finish my homework.", "translation": "我设法完成了作业。"}
+    ]
+  },
+  {
+    "id": "w042",
+    "word": "mention",
+    "phonetic": "/ˈmenʃn/",
+    "translation": "v. 提到；提及",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "mention that", "translation": "提到……"},
+      {"phrase": "don't mention it", "translation": "不用谢；别客气"},
+      {"phrase": "mentioned above", "translation": "如上所述"}
+    ],
+    "examples": [
+      {"sentence": "He mentioned your name.", "translation": "他提到了你的名字。"},
+      {"sentence": "Did I mention the new rule?", "translation": "我提到新规则了吗？"}
+    ]
+  },
+  {
+    "id": "w043",
+    "word": "necessary",
+    "phonetic": "/ˈnesəsəri/",
+    "translation": "adj. 必要的；必需的",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "necessary for", "translation": "对……是必需的"},
+      {"phrase": "if necessary", "translation": "如果有必要"},
+      {"phrase": "absolutely necessary", "translation": "绝对必要的"}
+    ],
+    "examples": [
+      {"sentence": "Sleep is necessary for health.", "translation": "睡眠对健康是必要的。"},
+      {"sentence": "Is it necessary to bring a book?", "translation": "有必要带书吗？"}
+    ]
+  },
+  {
+    "id": "w044",
+    "word": "obvious",
+    "phonetic": "/ˈɒbviəs/",
+    "translation": "adj. 明显的；显然的",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "obvious answer", "translation": "明显的答案"},
+      {"phrase": "it is obvious that", "translation": "显然……"},
+      {"phrase": "the most obvious", "translation": "最明显的"}
+    ],
+    "examples": [
+      {"sentence": "It's obvious that he is lying.", "translation": "很明显他在说谎。"},
+      {"sentence": "The answer is obvious.", "translation": "答案很明显。"}
+    ]
+  },
+  {
+    "id": "w045",
+    "word": "opportunity",
+    "phonetic": "/ˌɒpəˈtjuːnəti/",
+    "translation": "n. 机会；时机",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "seize the opportunity", "translation": "抓住机会"},
+      {"phrase": "a great opportunity", "translation": "一个绝佳机会"},
+      {"phrase": "equal opportunity", "translation": "平等的机会"}
+    ],
+    "examples": [
+      {"sentence": "Don't miss this opportunity.", "translation": "不要错过这个机会。"},
+      {"sentence": "This is a good opportunity to learn.", "translation": "这是一个学习的好机会。"}
+    ]
+  },
+  {
+    "id": "w046",
+    "word": "patient",
+    "phonetic": "/ˈpeɪʃnt/",
+    "translation": "adj. 耐心的 n. 病人",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "be patient with", "translation": "对……有耐心"},
+      {"phrase": "stay patient", "translation": "保持耐心"},
+      {"phrase": "a patient person", "translation": "有耐心的人"}
+    ],
+    "examples": [
+      {"sentence": "A good teacher is always patient.", "translation": "好老师总是很有耐心。"},
+      {"sentence": "Please be patient with me.", "translation": "请对我耐心一点。"}
+    ]
+  },
+  {
+    "id": "w047",
+    "word": "persuade",
+    "phonetic": "/pəˈsweɪd/",
+    "translation": "v. 说服；劝说",
+    "grade": 9,
+    "phrases": [
+      {"phrase": "persuade someone to do", "translation": "说服某人做某事"},
+      {"phrase": "try to persuade", "translation": "试图说服"},
+      {"phrase": "easily persuaded", "translation": "容易被说服的"}
+    ],
+    "examples": [
+      {"sentence": "I persuaded him to join us.", "translation": "我说服他加入了我们。"},
+      {"sentence": "She is not easily persuaded.", "translation": "她不容易被说服。"}
+    ]
+  },
+  {
+    "id": "w048",
+    "word": "prefer",
+    "phonetic": "/prɪˈfɜːr/",
+    "translation": "v. 更喜欢；宁愿",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "prefer A to B", "translation": "比起B更喜欢A"},
+      {"phrase": "prefer doing", "translation": "更喜欢做某事"},
+      {"phrase": "would prefer", "translation": "宁愿"}
+    ],
+    "examples": [
+      {"sentence": "I prefer tea to coffee.", "translation": "比起咖啡我更喜欢茶。"},
+      {"sentence": "She prefers studying alone.", "translation": "她更喜欢独自学习。"}
+    ]
+  },
+  {
+    "id": "w049",
+    "word": "prepare",
+    "phonetic": "/prɪˈpeər/",
+    "translation": "v. 准备；预备",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "prepare for", "translation": "为……做准备"},
+      {"phrase": "prepare a meal", "translation": "准备一顿饭"},
+      {"phrase": "be well prepared", "translation": "充分准备"}
+    ],
+    "examples": [
+      {"sentence": "We are preparing for the exam.", "translation": "我们在为考试做准备。"},
+      {"sentence": "She prepared a nice dinner.", "translation": "她准备了一顿丰盛的晚餐。"}
+    ]
+  },
+  {
+    "id": "w050",
+    "word": "promise",
+    "phonetic": "/ˈprɒmɪs/",
+    "translation": "v. 承诺；答应 n. 承诺",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "make a promise", "translation": "许下承诺"},
+      {"phrase": "keep a promise", "translation": "遵守承诺"},
+      {"phrase": "break a promise", "translation": "违背承诺"}
+    ],
+    "examples": [
+      {"sentence": "I promise to try my best.", "translation": "我保证尽力而为。"},
+      {"sentence": "Never break a promise.", "translation": "永远不要违背承诺。"}
+    ]
+  },
+  {
+    "id": "w051",
+    "word": "protect",
+    "phonetic": "/prəˈtekt/",
+    "translation": "v. 保护；防护",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "protect the environment", "translation": "保护环境"},
+      {"phrase": "protect from", "translation": "保护免受"},
+      {"phrase": "protect yourself", "translation": "保护自己"}
+    ],
+    "examples": [
+      {"sentence": "We must protect our planet.", "translation": "我们必须保护我们的星球。"},
+      {"sentence": "Sunscreen protects your skin.", "translation": "防晒霜保护你的皮肤。"}
+    ]
+  },
+  {
+    "id": "w052",
+    "word": "realize",
+    "phonetic": "/ˈrɪəlaɪz/",
+    "translation": "v. 意识到；实现",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "realize a dream", "translation": "实现梦想"},
+      {"phrase": "suddenly realize", "translation": "突然意识到"},
+      {"phrase": "make someone realize", "translation": "让某人意识到"}
+    ],
+    "examples": [
+      {"sentence": "I realized I was wrong.", "translation": "我意识到我错了。"},
+      {"sentence": "She realized her dream of becoming a doctor.", "translation": "她实现了成为医生的梦想。"}
+    ]
+  },
+  {
+    "id": "w053",
+    "word": "recognize",
+    "phonetic": "/ˈrekəɡnaɪz/",
+    "translation": "v. 认出；承认；认可",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "recognize someone", "translation": "认出某人"},
+      {"phrase": "recognize the importance", "translation": "认识到重要性"},
+      {"phrase": "widely recognized", "translation": "被广泛认可"}
+    ],
+    "examples": [
+      {"sentence": "I didn't recognize you at first.", "translation": "我一开始没认出你。"},
+      {"sentence": "We must recognize our mistakes.", "translation": "我们必须承认错误。"}
+    ]
+  },
+  {
+    "id": "w054",
+    "word": "recommend",
+    "phonetic": "/ˌrekəˈmend/",
+    "translation": "v. 推荐；建议",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "recommend a book", "translation": "推荐一本书"},
+      {"phrase": "highly recommend", "translation": "强烈推荐"},
+      {"phrase": "recommend doing", "translation": "建议做某事"}
+    ],
+    "examples": [
+      {"sentence": "Can you recommend a good movie?", "translation": "你能推荐一部好电影吗？"},
+      {"sentence": "I recommend reading every day.", "translation": "我建议每天阅读。"}
+    ]
+  },
+  {
+    "id": "w055",
+    "word": "remember",
+    "phonetic": "/rɪˈmembər/",
+    "translation": "v. 记住；记得",
+    "grade": 7,
+    "phrases": [
+      {"phrase": "remember to do", "translation": "记得要做某事"},
+      {"phrase": "remember doing", "translation": "记得做过某事"},
+      {"phrase": "remember forever", "translation": "永远铭记"}
+    ],
+    "examples": [
+      {"sentence": "Remember to bring your book.", "translation": "记得带书。"},
+      {"sentence": "I still remember that day.", "translation": "我仍然记得那一天。"}
+    ]
+  },
+  {
+    "id": "w056",
+    "word": "satisfy",
+    "phonetic": "/ˈsætɪsfaɪ/",
+    "translation": "v. 使满意；满足",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "satisfy needs", "translation": "满足需求"},
+      {"phrase": "be satisfied with", "translation": "对……满意"},
+      {"phrase": "hard to satisfy", "translation": "难以满足"}
+    ],
+    "examples": [
+      {"sentence": "Are you satisfied with the result?", "translation": "你对结果满意吗？"},
+      {"sentence": "Nothing can satisfy him.", "translation": "没什么能让他满意。"}
+    ]
+  },
+  {
+    "id": "w057",
+    "word": "suggest",
+    "phonetic": "/səˈdʒest/",
+    "translation": "v. 建议；提议；暗示",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "suggest doing", "translation": "建议做某事"},
+      {"phrase": "suggest an idea", "translation": "提出一个想法"},
+      {"phrase": "what do you suggest", "translation": "你有什么建议"}
+    ],
+    "examples": [
+      {"sentence": "I suggest starting early.", "translation": "我建议早点开始。"},
+      {"sentence": "She suggested a good restaurant.", "translation": "她推荐了一家好餐厅。"}
+    ]
+  },
+  {
+    "id": "w058",
+    "word": "support",
+    "phonetic": "/səˈpɔːt/",
+    "translation": "v. 支持；帮助 n. 支持",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "support a family", "translation": "养家糊口"},
+      {"phrase": "support an idea", "translation": "支持一个想法"},
+      {"phrase": "in support of", "translation": "支持；拥护"}
+    ],
+    "examples": [
+      {"sentence": "My parents support my dream.", "translation": "父母支持我的梦想。"},
+      {"sentence": "Thank you for your support.", "translation": "谢谢你的支持。"}
+    ]
+  },
+  {
+    "id": "w059",
+    "word": "suppose",
+    "phonetic": "/səˈpəʊz/",
+    "translation": "v. 假设；认为；猜想",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "I suppose so", "translation": "我想是的"},
+      {"phrase": "be supposed to", "translation": "应该；被期望"},
+      {"phrase": "suppose that", "translation": "假设……"}
+    ],
+    "examples": [
+      {"sentence": "You are supposed to finish on time.", "translation": "你应该按时完成。"},
+      {"sentence": "I suppose you are right.", "translation": "我想你是对的。"}
+    ]
+  },
+  {
+    "id": "w060",
+    "word": "volunteer",
+    "phonetic": "/ˌvɒlənˈtɪər/",
+    "translation": "n. 志愿者 v. 自愿做",
+    "grade": 8,
+    "phrases": [
+      {"phrase": "volunteer work", "translation": "志愿工作"},
+      {"phrase": "volunteer to help", "translation": "自愿帮忙"},
+      {"phrase": "a volunteer teacher", "translation": "志愿教师"}
+    ],
+    "examples": [
+      {"sentence": "She volunteers at a hospital.", "translation": "她在医院做志愿者。"},
+      {"sentence": "Many students volunteered to help.", "translation": "很多学生自愿帮忙。"}
+    ]
+  }
+]

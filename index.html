@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>词博士 — 中考英语词汇大师</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #FF6B35;
+  --primary-light: #FF8C5A;
+  --secondary: #004E89;
+  --accent: #F7C948;
+  --bg: #FAFAFA;
+  --card-bg: #FFFFFF;
+  --text: #1A1A2E;
+  --text-secondary: #6B7280;
+  --success: #10B981;
+  --error: #EF4444;
+  --radius: 12px;
+  --radius-lg: 24px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+  --safe-bottom: env(safe-area-inset-bottom, 16px);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', 'PingFang SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+/* Tab Bar */
+.tab-bar {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--card-bg);
+  border-top: 1px solid #E5E7EB;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0 calc(8px + var(--safe-bottom));
+  z-index: 100;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.04);
+}
+.tab-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  background: none; border: none; cursor: pointer;
+  padding: 4px 16px; border-radius: 8px;
+  font-family: inherit; font-size: 11px; color: var(--text-secondary);
+  transition: all 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 60px;
+}
+.tab-btn.active { color: var(--primary); font-weight: 600; }
+.tab-btn .tab-icon { font-size: 22px; line-height: 1; }
+.tab-btn:active { transform: scale(0.95); }
+
+/* Screens */
+.screen { display: none; padding: 16px 16px 100px; max-width: 600px; margin: 0 auto; }
+.screen.active { display: block; }
+
+/* Home Screen */
+.home-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 8px 0 16px;
+}
+.home-greeting { font-size: 13px; color: var(--text-secondary); }
+.home-greeting strong { font-size: 20px; color: var(--text); display: block; margin-top: 2px; }
+.streak-badge {
+  display: flex; align-items: center; gap: 4px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white; padding: 8px 14px; border-radius: var(--radius-lg);
+  font-weight: 700; font-size: 15px;
+  box-shadow: 0 4px 12px rgba(255,107,53,0.3);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 4px 12px rgba(255,107,53,0.3); }
+  50% { box-shadow: 0 4px 24px rgba(255,107,53,0.5); }
+}
+.progress-card {
+  background: var(--card-bg); border-radius: var(--radius);
+  padding: 24px; margin: 8px 0 16px;
+  box-shadow: var(--shadow); text-align: center;
+}
+.progress-ring-container { position: relative; width: 160px; height: 160px; margin: 0 auto 16px; }
+.progress-ring { transform: rotate(-90deg); }
+.progress-ring .bg { fill: none; stroke: #E5E7EB; stroke-width: 10; }
+.progress-ring .fill { fill: none; stroke: var(--primary); stroke-width: 10; stroke-linecap: round; transition: stroke-dashoffset 600ms ease-out; }
+.progress-center {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  text-align: center;
+}
+.progress-center .count { font-size: 32px; font-weight: 700; color: var(--primary); }
+.progress-center .label { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.cta-btn {
+  display: block; width: 100%; padding: 16px; border: none;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white; font-size: 18px; font-weight: 700; border-radius: var(--radius);
+  cursor: pointer; font-family: inherit;
+  box-shadow: 0 4px 16px rgba(255,107,53,0.35);
+  transition: all 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.cta-btn:active { transform: scale(0.97); opacity: 0.9; }
+.today-preview { margin-top: 20px; }
+.today-preview h3 { font-size: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.today-preview h3::before { content: '📚'; }
+.word-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.word-chip {
+  background: var(--card-bg); border: 1px solid #E5E7EB;
+  padding: 6px 14px; border-radius: var(--radius-lg);
+  font-size: 14px; font-weight: 500; cursor: pointer;
+  transition: all 150ms ease-out;
+}
+.word-chip:hover { border-color: var(--primary); color: var(--primary); }
+.word-chip.mastered { background: #D1FAE5; border-color: var(--success); color: #065F46; }
+.word-chip.learning { background: #FEF3C7; border-color: var(--accent); color: #92400E; }
+
+/* Learn Screen */
+.learn-screen { text-align: center; padding-top: 8px; }
+.learn-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 16px;
+}
+.learn-header .back-btn {
+  background: var(--card-bg); border: 1px solid #E5E7EB;
+  padding: 8px 16px; border-radius: var(--radius);
+  cursor: pointer; font-family: inherit; font-size: 14px;
+  color: var(--text-secondary);
+  -webkit-tap-highlight-color: transparent;
+}
+.learn-header .queue-info { font-size: 13px; color: var(--text-secondary); }
+.card-area {
+  perspective: 1000px;
+  width: 100%; max-width: 340px;
+  height: 420px; margin: 0 auto 24px;
+  position: relative;
+}
+.flashcard {
+  width: 100%; height: 100%; position: relative;
+  transform-style: preserve-3d;
+  transition: transform 350ms ease-in-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.flashcard.flipped { transform: rotateY(180deg); }
+.flashcard.correct { animation: correct-pulse 400ms ease-out; }
+.flashcard.incorrect { animation: incorrect-shake 400ms ease-out; }
+@keyframes correct-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(16,185,129,0.5); }
+  100% { box-shadow: 0 0 0 16px rgba(16,185,129,0); }
+}
+@keyframes incorrect-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+.card-face {
+  position: absolute; width: 100%; height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  background: var(--card-bg);
+  box-shadow: var(--shadow-lg);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 32px 24px;
+}
+.card-back { transform: rotateY(180deg); }
+.card-word { font-size: 36px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.card-phonetic { font-size: 16px; color: var(--text-secondary); margin-bottom: 20px; }
+.card-translation { font-size: 20px; color: var(--secondary); font-weight: 600; margin-bottom: 16px; }
+.card-phrases { width: 100%; text-align: left; }
+.card-phrase-item {
+  background: #F3F4F6; padding: 10px 14px; border-radius: 8px;
+  margin-bottom: 8px; display: flex; justify-content: space-between;
+  align-items: center; font-size: 14px;
+}
+.card-phrase-item .phrase-en { font-weight: 500; color: var(--text); }
+.card-phrase-item .phrase-zh { color: var(--text-secondary); font-size: 12px; }
+.audio-btn {
+  background: none; border: none; cursor: pointer;
+  font-size: 24px; padding: 8px;
+  border-radius: 50%; transition: all 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.audio-btn:active { transform: scale(1.2); }
+.audio-btn.playing { animation: audio-pulse 0.8s ease-in-out infinite; }
+@keyframes audio-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); background: rgba(255,107,53,0.1); }
+}
+.swipe-hint {
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 0 16px;
+  color: var(--text-secondary); font-size: 13px;
+}
+.swipe-hint .know { color: var(--success); font-weight: 600; }
+.swipe-hint .dunno { color: var(--error); font-weight: 600; }
+.rate-buttons {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 8px; margin-top: 16px;
+}
+.rate-btn {
+  padding: 12px 8px; border: 2px solid #E5E7EB;
+  border-radius: var(--radius); background: var(--card-bg);
+  cursor: pointer; font-family: inherit; font-size: 13px;
+  font-weight: 600; transition: all 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.rate-btn:active { transform: scale(0.95); }
+.rate-btn.again { color: var(--error); }
+.rate-btn.hard { color: var(--accent); }
+.rate-btn.good { color: var(--secondary); }
+.rate-btn.easy { color: var(--success); }
+.rate-btn:active.again { background: #FEE2E2; border-color: var(--error); }
+.rate-btn:active.hard { background: #FEF3C7; border-color: var(--accent); }
+.rate-btn:active.good { background: #DBEAFE; border-color: var(--secondary); }
+.rate-btn:active.easy { background: #D1FAE5; border-color: var(--success); }
+
+/* Learn empty */
+.learn-empty { text-align: center; padding: 40px 20px; }
+.learn-empty .emoji { font-size: 64px; margin-bottom: 16px; }
+.learn-empty h2 { font-size: 20px; color: var(--text); margin-bottom: 8px; }
+.learn-empty p { color: var(--text-secondary); }
+
+/* Word Bank */
+.wb-search {
+  width: 100%; padding: 12px 16px; border: 2px solid #E5E7EB;
+  border-radius: var(--radius); font-size: 16px; font-family: inherit;
+  margin-bottom: 16px; outline: none; transition: border-color 150ms;
+}
+.wb-search:focus { border-color: var(--primary); }
+.wb-filters { display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; }
+.wb-filter {
+  padding: 8px 16px; border: 2px solid #E5E7EB;
+  border-radius: var(--radius-lg); background: var(--card-bg);
+  font-size: 13px; font-weight: 600; cursor: pointer;
+  font-family: inherit; white-space: nowrap;
+  transition: all 150ms ease-out;
+}
+.wb-filter.active { background: var(--primary); color: white; border-color: var(--primary); }
+.wb-word-item {
+  background: var(--card-bg); padding: 14px 16px;
+  border-radius: var(--radius); margin-bottom: 8px;
+  box-shadow: var(--shadow); cursor: pointer;
+  transition: all 150ms ease-out;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.wb-word-item:active { transform: scale(0.98); }
+.wb-word-main { font-size: 17px; font-weight: 600; }
+.wb-word-sub { font-size: 13px; color: var(--text-secondary); }
+.wb-word-grade {
+  font-size: 11px; padding: 2px 8px; border-radius: 12px;
+  font-weight: 600;
+}
+.wb-word-grade.g7 { background: #DBEAFE; color: var(--secondary); }
+.wb-word-grade.g8 { background: #FEF3C7; color: #92400E; }
+.wb-word-grade.g9 { background: #FEE2E2; color: #991B1B; }
+
+/* Word Detail Modal */
+.modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.5); z-index: 200;
+  align-items: center; justify-content: center;
+  padding: 20px;
+}
+.modal-overlay.show { display: flex; }
+.modal-card {
+  background: var(--card-bg); border-radius: var(--radius);
+  padding: 24px; max-width: 400px; width: 100%;
+  max-height: 80vh; overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+.modal-close {
+  float: right; background: none; border: none;
+  font-size: 24px; cursor: pointer; color: var(--text-secondary);
+  padding: 4px 8px; border-radius: 8px;
+}
+.modal-card h3 { font-size: 28px; margin-bottom: 4px; }
+
+/* Stats Screen */
+.stat-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 12px; margin-bottom: 20px;
+}
+.stat-item {
+  background: var(--card-bg); padding: 16px; border-radius: var(--radius);
+  box-shadow: var(--shadow); text-align: center;
+}
+.stat-value { font-size: 28px; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+.weak-words { margin-top: 20px; }
+.weak-words h3 { font-size: 16px; margin-bottom: 12px; }
+.weak-word {
+  background: var(--card-bg); padding: 10px 14px;
+  border-left: 4px solid var(--error); border-radius: 0 8px 8px 0;
+  margin-bottom: 8px; box-shadow: var(--shadow);
+  font-size: 14px;
+}
+
+/* Toast */
+.toast {
+  position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+  background: var(--text); color: white; padding: 12px 24px;
+  border-radius: var(--radius-lg); font-weight: 600;
+  z-index: 300; opacity: 0; transition: opacity 200ms;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; }
+
+/* Swipe indicators */
+.swipe-left, .swipe-right {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  font-size: 36px; opacity: 0; transition: opacity 150ms;
+  pointer-events: none; z-index: 10;
+}
+.swipe-left { left: -50px; color: var(--error); }
+.swipe-right { right: -50px; color: var(--success); }
+.swiping-left .swipe-left { opacity: 0.8; }
+.swiping-right .swipe-right { opacity: 0.8; }
+
+/* Drop Zone */
+.drop-zone {
+  text-align: center; padding: 60px 20px; margin: 40px 0;
+  border: 2px dashed #D1D5DB; border-radius: var(--radius);
+  color: var(--text-secondary); cursor: pointer;
+  transition: all 200ms;
+}
+.drop-zone:hover { border-color: var(--primary); color: var(--primary); background: #FFF7F0; }
+.drop-zone .dz-icon { font-size: 48px; margin-bottom: 12px; }
+.drop-zone .dz-text { font-size: 16px; font-weight: 500; }
+.drop-zone .dz-hint { font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast"></div>
+
+<!-- Home Screen -->
+<div class="screen active" id="home-screen">
+  <div class="home-header">
+    <div>
+      <div class="home-greeting" id="greeting">加载中...</div>
+    </div>
+    <div class="streak-badge" id="streak-badge">🔥 0 天</div>
+  </div>
+  <div class="progress-card">
+    <div class="progress-ring-container">
+      <svg class="progress-ring" width="160" height="160" viewBox="0 0 160 160">
+        <circle class="bg" cx="80" cy="80" r="72"/>
+        <circle class="fill" id="progress-circle" cx="80" cy="80" r="72"
+                stroke-dasharray="452" stroke-dashoffset="452"/>
+      </svg>
+      <div class="progress-center">
+        <div class="count" id="progress-count">0/20</div>
+        <div class="label">今日目标</div>
+      </div>
+    </div>
+    <button class="cta-btn" onclick="startLearning()">🎯 开始学习</button>
+  </div>
+  <div class="today-preview">
+    <h3>今日待复习</h3>
+    <div class="word-chips" id="word-chips"></div>
+  </div>
+</div>
+
+<!-- Learn Screen -->
+<div class="screen" id="learn-screen">
+  <div class="learn-header">
+    <button class="back-btn" onclick="showScreen('home')">← 返回</button>
+    <span class="queue-info" id="queue-info"></span>
+    <div style="width:60px"></div>
+  </div>
+  <div class="learn-empty" id="learn-empty">
+    <div class="emoji">🎉</div>
+    <h2>今日任务已完成！</h2>
+    <p>明天再来吧，坚持就是胜利 💪</p>
+    <button class="cta-btn" style="margin-top:20px; width:200px" onclick="resetDailyQueue()">开始新一批</button>
+  </div>
+  <div id="learn-content">
+    <div class="card-area" id="card-area">
+      <div class="swipe-left">✕</div>
+      <div class="swipe-right">✓</div>
+      <div class="flashcard" id="flashcard" onclick="flipCard()">
+        <div class="card-face card-front" id="card-front">
+          <div class="card-word" id="card-word">word</div>
+          <div class="card-phonetic" id="card-phonetic">/fəˈnetɪk/</div>
+          <button class="audio-btn" id="audio-btn" onclick="event.stopPropagation(); playAudio()">🔊</button>
+          <div style="margin-top:16px; color:var(--text-secondary); font-size:13px">👆 点击翻转查看释义</div>
+        </div>
+        <div class="card-face card-back" id="card-back">
+          <div class="card-translation" id="card-translation">翻译</div>
+          <div class="card-phrases" id="card-phrases"></div>
+        </div>
+      </div>
+    </div>
+    <div class="swipe-hint">
+      <span class="dunno">← 不认识</span>
+      <span class="know">认识 →</span>
+    </div>
+    <div class="rate-buttons" style="display:none" id="rate-buttons">
+      <button class="rate-btn again" onclick="rateWord(0)">😰 重来<br><small>Again</small></button>
+      <button class="rate-btn hard" onclick="rateWord(1)">🤔 困难<br><small>Hard</small></button>
+      <button class="rate-btn good" onclick="rateWord(2)">😊 良好<br><small>Good</small></button>
+      <button class="rate-btn easy" onclick="rateWord(3)">😎 简单<br><small>Easy</small></button>
+    </div>
+  </div>
+</div>
+
+<!-- Word Bank Screen -->
+<div class="screen" id="wordbank-screen">
+  <input class="wb-search" id="wb-search" placeholder="🔍 搜索单词..." oninput="filterWords()">
+  <div class="wb-filters">
+    <button class="wb-filter active" onclick="setFilter('all', this)">全部</button>
+    <button class="wb-filter" onclick="setFilter('7', this)">初一</button>
+    <button class="wb-filter" onclick="setFilter('8', this)">初二</button>
+    <button class="wb-filter" onclick="setFilter('9', this)">初三</button>
+  </div>
+  <div id="wb-word-list"></div>
+</div>
+
+<!-- Stats Screen -->
+<div class="screen" id="stats-screen">
+  <div class="stat-grid">
+    <div class="stat-item">
+      <div class="stat-value" id="stat-learned">0</div>
+      <div class="stat-label">已学单词</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="stat-today">0</div>
+      <div class="stat-label">今日复习</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="stat-accuracy">--%</div>
+      <div class="stat-label">正确率</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-value" id="stat-streak">0 天</div>
+      <div class="stat-label">连续打卡</div>
+    </div>
+  </div>
+  <div class="weak-words">
+    <h3>⚠️ 需要加强的单词</h3>
+    <div id="weak-words-list"></div>
+  </div>
+  <button class="cta-btn" style="margin-top:20px; background:var(--text-secondary)" onclick="resetAllProgress()">
+    🔄 重置学习进度
+  </button>
+</div>
+
+<!-- Word Detail Modal -->
+<div class="modal-overlay" id="word-modal" onclick="closeModal(event)">
+  <div class="modal-card" id="modal-card" onclick="event.stopPropagation()"></div>
+</div>
+
+<!-- Tab Bar -->
+<div class="tab-bar">
+  <button class="tab-btn active" onclick="showScreen('home')">
+    <span class="tab-icon">🏠</span>首页
+  </button>
+  <button class="tab-btn" onclick="startLearning()">
+    <span class="tab-icon">📖</span>学习
+  </button>
+  <button class="tab-btn" onclick="showScreen('wordbank')">
+    <span class="tab-icon">📚</span>词库
+  </button>
+  <button class="tab-btn" onclick="showScreen('stats')">
+    <span class="tab-icon">👤</span>我的
+  </button>
+</div>
+
+<script>
+// ─────────────── DATA & STATE ───────────────
+let words = [];
+let userState = {
+  wordProgress: {},  // wordId -> {ease, interval, reps, nextReview, correct, incorrect}
+  streak: 0,
+  lastStudyDate: '',
+  dailyGoal: 20,
+  todayReviewed: 0,
+  todayCorrect: 0,
+  todayWords: []  // wordIds reviewed today
+};
+
+const DAILY_NEW_LIMIT = 10;
+const DAILY_REVIEW_LIMIT = 20;
+
+// Persistence
+function loadState() {
+  try {
+    const raw = localStorage.getItem('vocab-master-state');
+    if (raw) userState = JSON.parse(raw);
+  } catch(e) { console.warn('state load failed', e); }
+}
+function saveState() {
+  localStorage.setItem('vocab-master-state', JSON.stringify(userState));
+}
+
+// ─────────────── SM-2 Algorithm ───────────────
+function sm2(quality, prevEase, prevInterval, prevReps) {
+  // quality: 0=again, 1=hard, 2=good, 3=Easy
+  let ease = prevEase || 2.5;
+  let interval = prevInterval || 0;
+  let reps = prevReps || 0;
+
+  // Map 0-3 quality to SM-2 0-5 scale
+  const qMap = {0: 2, 1: 3, 2: 4, 3: 5};
+  const q = qMap[quality] || 3;
+
+  if (q < 3) {
+    reps = 0;
+    interval = 1; // 1 day
+  } else {
+    if (reps === 0) interval = 1;
+    else if (reps === 1) interval = 6;
+    else interval = Math.round(interval * ease);
+    reps++;
+  }
+
+  // Update ease factor
+  ease = ease + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+  ease = Math.max(1.3, ease);
+
+  return { ease, interval, reps };
+}
+
+// ─────────────── Daily Queue ───────────────
+function todayStr() { return new Date().toISOString().slice(0, 10); }
+
+function getDueWords() {
+  const today = todayStr();
+  const due = [];
+  const allIds = words.map(w => w.id);
+  const shuffled = [...allIds].sort(() => Math.random() - 0.5);
+
+  for (const id of shuffled) {
+    const p = userState.wordProgress[id];
+    if (!p || !p.nextReview || p.nextReview <= today) {
+      due.push(id);
+    }
+  }
+
+  return due.slice(0, Math.max(DAILY_REVIEW_LIMIT, due.length));
+}
+
+function getTodayWords() {
+  let todayWords = userState.todayWords || [];
+  // If new day, clear
+  if (userState.lastStudyDate !== todayStr()) {
+    todayWords = [];
+  }
+  // If empty, populate
+  if (todayWords.length === 0) {
+    todayWords = getDueWords();
+  }
+  return todayWords;
+}
+
+function startLearning() {
+  userState.todayWords = getTodayWords();
+  userState.lastStudyDate = todayStr();
+  userState.streak = calculateStreak();
+  updateStreakForToday();
+  saveState();
+
+  if (userState.todayWords.length === 0) {
+    // Queue up all words as new
+    userState.todayWords = words.map(w => w.id).sort(() => Math.random() - 0.5);
+    saveState();
+  }
+
+  showScreen('learn');
+  currentWordIdx = 0;
+  renderCurrentCard();
+}
+
+function resetDailyQueue() {
+  userState.todayWords = getDueWords();
+  if (userState.todayWords.length === 0) {
+    userState.todayWords = words.map(w => w.id).sort(() => Math.random() - 0.5);
+  }
+  saveState();
+  currentWordIdx = 0;
+  document.getElementById('learn-empty').style.display = 'none';
+  document.getElementById('learn-content').style.display = '';
+  renderCurrentCard();
+}
+
+// ─────────────── Streak ───────────────
+function calculateStreak() {
+  let streak = userState.streak || 0;
+  const today = new Date();
+  const last = userState.lastStudyDate ? new Date(userState.lastStudyDate) : null;
+
+  if (!last) return 1;
+
+  const diffDays = Math.floor((today - last) / (1000 * 60 * 60 * 24));
+
+  if (diffDays === 0) return streak;
+  if (diffDays === 1) return streak + 1;
+  if (diffDays > 1) return 1; // broken
+
+  return streak;
+}
+
+function updateStreakForToday() {
+  const s = calculateStreak();
+  userState.streak = s;
+  userState.lastStudyDate = todayStr();
+  saveState();
+  updateStreakUI();
+}
+
+function updateStreakUI() {
+  const s = userState.streak || 0;
+  document.getElementById('streak-badge').textContent = `🔥 ${s} 天`;
+  document.getElementById('stat-streak').textContent = `${s} 天`;
+}
+
+// ─────────────── Flashcard ───────────────
+let currentWordIdx = 0;
+let cardFlipped = false;
+let touchStartX = 0;
+let touchStartY = 0;
+let swiping = false;
+
+function getCurrentWordId() {
+  const tw = userState.todayWords || [];
+  if (currentWordIdx < tw.length) return tw[currentWordIdx];
+  return null;
+}
+
+function getWordById(id) {
+  return words.find(w => w.id === id);
+}
+
+function renderCurrentCard() {
+  const wid = getCurrentWordId();
+  if (!wid) {
+    document.getElementById('learn-empty').style.display = '';
+    document.getElementById('learn-content').style.display = 'none';
+    return;
+  }
+
+  document.getElementById('learn-empty').style.display = 'none';
+  document.getElementById('learn-content').style.display = '';
+
+  const w = getWordById(wid);
+  if (!w) {
+    nextCard();
+    return;
+  }
+
+  cardFlipped = false;
+  const card = document.getElementById('flashcard');
+  card.classList.remove('flipped', 'correct', 'incorrect');
+  document.getElementById('rate-buttons').style.display = 'none';
+  document.getElementById('card-word').textContent = w.word;
+  document.getElementById('card-phonetic').textContent = w.phonetic;
+  document.getElementById('card-translation').textContent = w.translation;
+
+  // Render phrases
+  let phrasesHTML = '';
+  w.phrases.forEach((p, i) => {
+    phrasesHTML += `<div class="card-phrase-item">
+      <span><span class="phrase-en">${p.phrase}</span><br><span class="phrase-zh">${p.translation}</span></span>
+      <button class="audio-btn" onclick="event.stopPropagation(); speakPhrase('${p.phrase.replace(/'/g, "\\'")}')">🔊</button>
+    </div>`;
+  });
+  document.getElementById('card-phrases').innerHTML = phrasesHTML;
+
+  updateQueueInfo();
+
+  // Preload audio in case browser needs user gesture
+  document.getElementById('audio-btn').classList.remove('playing');
+}
+
+function updateQueueInfo() {
+  const tw = userState.todayWords || [];
+  const total = tw.length;
+  const remaining = total - currentWordIdx;
+  document.getElementById('queue-info').textContent = `${currentWordIdx + 1} / ${total}`;
+}
+
+function flipCard() {
+  if (swiping) return;
+  cardFlipped = !cardFlipped;
+  const card = document.getElementById('flashcard');
+  if (cardFlipped) {
+    card.classList.add('flipped');
+    document.getElementById('rate-buttons').style.display = 'grid';
+  } else {
+    card.classList.remove('flipped');
+    document.getElementById('rate-buttons').style.display = 'none';
+  }
+}
+
+function rateWord(quality) {
+  const wid = getCurrentWordId();
+  if (!wid) return;
+
+  const prev = userState.wordProgress[wid] || { ease: 2.5, interval: 0, reps: 0, correct: 0, incorrect: 0, nextReview: null };
+  const result = sm2(quality, prev.ease, prev.interval, prev.reps);
+
+  const today = new Date();
+  const nextDate = new Date(today);
+  nextDate.setDate(nextDate.getDate() + result.interval);
+
+  userState.wordProgress[wid] = {
+    ease: result.ease,
+    interval: result.interval,
+    reps: result.reps,
+    correct: prev.correct + (quality >= 2 ? 1 : 0),
+    incorrect: prev.incorrect + (quality < 2 ? 1 : 0),
+    nextReview: nextDate.toISOString().slice(0, 10),
+    lastReviewed: todayStr()
+  };
+
+  // Update today stats
+  userState.todayReviewed = (userState.todayReviewed || 0) + 1;
+  if (quality >= 2) userState.todayCorrect = (userState.todayCorrect || 0) + 1;
+  userState.lastStudyDate = todayStr();
+
+  saveState();
+
+  // Animate feedback
+  const card = document.getElementById('flashcard');
+  card.classList.add(quality >= 2 ? 'correct' : 'incorrect');
+
+  setTimeout(() => {
+    card.classList.remove('correct', 'incorrect', 'flipped');
+    cardFlipped = false;
+    document.getElementById('rate-buttons').style.display = 'none';
+    nextCard();
+  }, 350);
+}
+
+function nextCard() {
+  currentWordIdx++;
+  const tw = userState.todayWords || [];
+  if (currentWordIdx >= tw.length) {
+    // Done!
+    document.getElementById('learn-empty').style.display = '';
+    document.getElementById('learn-content').style.display = 'none';
+    showToast('🎉 今日任务完成！');
+    updateProgressUI();
+    updateHomeScreen();
+  } else {
+    renderCurrentCard();
+  }
+}
+
+// ─────────────── Touch Swipe ───────────────
+const cardArea = document.getElementById('card-area');
+
+cardArea.addEventListener('touchstart', e => {
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+  swiping = false;
+}, {passive: true});
+
+cardArea.addEventListener('touchmove', e => {
+  const dx = e.touches[0].clientX - touchStartX;
+  const dy = e.touches[0].clientY - touchStartY;
+  if (Math.abs(dx) > 30 && Math.abs(dx) > Math.abs(dy) && !cardFlipped) {
+    swiping = true;
+    const area = document.getElementById('card-area');
+    area.classList.remove('swiping-left', 'swiping-right');
+    if (dx < 0) area.classList.add('swiping-left');
+    else area.classList.add('swiping-right');
+  }
+}, {passive: true});
+
+cardArea.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  const area = document.getElementById('card-area');
+  area.classList.remove('swiping-left', 'swiping-right');
+  if (swiping && Math.abs(dx) > 80 && Math.abs(dx) > Math.abs(dy)) {
+    if (dx > 0) rateWord(2); // right = good
+    else rateWord(0); // left = again
+  }
+  swiping = false;
+});
+
+// ─────────────── Audio ───────────────
+function speakText(text, btnEl) {
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = 0.85;
+  utter.pitch = 1;
+
+  if (btnEl) btnEl.classList.add('playing');
+
+  utter.onend = () => {
+    if (btnEl) btnEl.classList.remove('playing');
+  };
+  utter.onerror = () => {
+    if (btnEl) btnEl.classList.remove('playing');
+  };
+
+  window.speechSynthesis.speak(utter);
+}
+
+function playAudio() {
+  const w = getWordById(getCurrentWordId());
+  if (!w) return;
+  speakText(w.word, document.getElementById('audio-btn'));
+}
+
+function speakPhrase(phrase) {
+  speakText(phrase, null);
+}
+
+// ─────────────── Word Bank ───────────────
+let wbFilter = 'all';
+
+function setFilter(grade, el) {
+  wbFilter = grade;
+  document.querySelectorAll('.wb-filter').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  filterWords();
+}
+
+function filterWords() {
+  const query = document.getElementById('wb-search').value.toLowerCase();
+  const list = document.getElementById('wb-word-list');
+  let filtered = words;
+
+  if (wbFilter !== 'all') {
+    filtered = filtered.filter(w => w.grade === parseInt(wbFilter));
+  }
+  if (query) {
+    filtered = filtered.filter(w =>
+      w.word.toLowerCase().includes(query) ||
+      w.translation.includes(query)
+    );
+  }
+
+  list.innerHTML = filtered.slice(0, 50).map(w => {
+    const p = userState.wordProgress[w.id];
+    const gradeClass = 'g' + w.grade;
+    return `<div class="wb-word-item" onclick="showWordDetail('${w.id}')">
+      <div>
+        <div class="wb-word-main">${w.word} <span style="font-size:13px;color:var(--text-secondary)">${w.phonetic}</span></div>
+        <div class="wb-word-sub">${w.translation}</div>
+      </div>
+      <span class="wb-word-grade ${gradeClass}">${w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三'}</span>
+    </div>`;
+  }).join('');
+}
+
+// ─────────────── Word Detail Modal ───────────────
+function showWordDetail(id) {
+  const w = getWordById(id);
+  if (!w) return;
+
+  const p = userState.wordProgress[id];
+  const status = !p || !p.reps ? '未学习' : p.reps > 3 ? '✅ 已掌握' : '📖 学习中';
+  const correctPct = p && (p.correct + p.incorrect) > 0
+    ? Math.round(p.correct / (p.correct + p.incorrect) * 100) + '%'
+    : '--';
+
+  let html = `<button class="modal-close" onclick="document.getElementById('word-modal').classList.remove('show')">✕</button>`;
+  html += `<h3>${w.word}</h3>`;
+  html += `<div style="font-size:15px;color:var(--text-secondary);margin-bottom:8px">${w.phonetic}</div>`;
+  html += `<div style="font-size:18px;color:var(--secondary);font-weight:600;margin-bottom:16px">${w.translation}</div>`;
+  html += `<div style="display:flex;gap:12px;margin-bottom:16px;font-size:13px;color:var(--text-secondary)">
+    <span>${w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三'}</span>
+    <span>${status}</span>
+    <span>正确率: ${correctPct}</span>
+  </div>`;
+  html += `<div style="font-weight:600;margin-bottom:8px">📝 常用短语</div>`;
+  w.phrases.forEach(p => {
+    html += `<div class="card-phrase-item" style="margin-bottom:6px">
+      <span><span class="phrase-en">${p.phrase}</span><br><span class="phrase-zh">${p.translation}</span></span>
+      <button class="audio-btn" onclick="speakPhrase('${p.phrase.replace(/'/g, "\\'")}')">🔊</button>
+    </div>`;
+  });
+  if (w.examples && w.examples.length > 0) {
+    html += `<div style="font-weight:600;margin:12px 0 8px">💬 例句</div>`;
+    w.examples.forEach(e => {
+      html += `<div style="margin-bottom:6px;font-size:14px;color:var(--text)">${e.sentence}</div>`;
+      html += `<div style="margin-bottom:10px;font-size:13px;color:var(--text-secondary)">${e.translation}</div>`;
+    });
+  }
+
+  document.getElementById('modal-card').innerHTML = html;
+  document.getElementById('word-modal').classList.add('show');
+}
+
+function closeModal(e) {
+  if (e.target === e.currentTarget) {
+    document.getElementById('word-modal').classList.remove('show');
+  }
+}
+
+// ─────────────── Progress & Stats ───────────────
+function updateProgressUI() {
+  const total = Object.keys(userState.wordProgress).length;
+  const goal = userState.dailyGoal || 20;
+  const today = userState.todayReviewed || 0;
+
+  document.getElementById('progress-count').textContent = `${today}/${goal}`;
+
+  const circumference = 452;
+  const offset = circumference - (Math.min(today, goal) / goal) * circumference;
+  document.getElementById('progress-circle').style.strokeDashoffset = offset;
+
+  document.getElementById('stat-learned').textContent = total;
+  document.getElementById('stat-today').textContent = today;
+
+  const totalCorrect = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0), 0);
+  const totalAttempts = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0) + (p.incorrect || 0), 0);
+  document.getElementById('stat-accuracy').textContent = totalAttempts > 0
+    ? Math.round(totalCorrect / totalAttempts * 100) + '%'
+    : '--%';
+
+  // Weak words
+  const weak = Object.entries(userState.wordProgress)
+    .filter(([_, p]) => (p.incorrect || 0) >= 3 && (p.correct || 0) < (p.incorrect || 0))
+    .slice(0, 10);
+  document.getElementById('weak-words-list').innerHTML = weak.map(([id]) => {
+    const w = getWordById(id);
+    return w ? `<div class="weak-word">${w.word} — ${w.translation}</div>` : '';
+  }).join('');
+}
+
+function updateHomeScreen() {
+  // Greeting
+  const hour = new Date().getHours();
+  let greet = '早上好';
+  if (hour >= 12 && hour < 18) greet = '下午好';
+  if (hour >= 18) greet = '晚上好';
+  document.getElementById('greeting').innerHTML = `${greet} 👋<strong>开始学习吧</strong>`;
+
+  // Word chips
+  const tw = userState.todayWords || [];
+  const chips = document.getElementById('word-chips');
+  if (tw.length === 0) {
+    chips.innerHTML = '<span style="color:var(--text-secondary)">点击「开始学习」获取今日任务</span>';
+  } else {
+    chips.innerHTML = tw.slice(0, 10).map(id => {
+      const w = getWordById(id);
+      const p = userState.wordProgress[id];
+      let cls = '';
+      if (p && p.reps >= 3) cls = 'mastered';
+      else if (p && p.reps > 0) cls = 'learning';
+      return w ? `<span class="word-chip ${cls}">${w.word}</span>` : '';
+    }).join('');
+    if (tw.length > 10) chips.innerHTML += `<span class="word-chip">+${tw.length - 10} 个</span>`;
+  }
+}
+
+// ─────────────── Screen Nav ───────────────
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+
+  const screenMap = {
+    'home': 'home-screen',
+    'learn': 'learn-screen',
+    'wordbank': 'wordbank-screen',
+    'stats': 'stats-screen'
+  };
+  const screenId = screenMap[name];
+  if (screenId) document.getElementById(screenId).classList.add('active');
+
+  const tabMap = {'home': 0, 'learn': 1, 'wordbank': 2, 'stats': 3};
+  const idx = tabMap[name];
+  if (idx !== undefined) document.querySelectorAll('.tab-btn')[idx].classList.add('active');
+
+  if (name === 'stats') updateProgressUI();
+  if (name === 'wordbank') filterWords();
+  if (name === 'home') updateHomeScreen();
+  updateStreakUI();
+}
+
+// ─────────────── Toast ───────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ─────────────── Reset ───────────────
+function resetAllProgress() {
+  if (confirm('确定要重置所有学习数据吗？此操作不可撤销！')) {
+    userState = {
+      wordProgress: {},
+      streak: 0,
+      lastStudyDate: '',
+      dailyGoal: 20,
+      todayReviewed: 0,
+      todayCorrect: 0,
+      todayWords: []
+    };
+    saveState();
+    updateProgressUI();
+    updateHomeScreen();
+    updateStreakUI();
+    showToast('已重置');
+  }
+}
+
+// ─────────────── INIT ───────────────
+async function init() {
+  // Load words
+  try {
+    const resp = await fetch('words.json');
+    words = await resp.json();
+  } catch(e) {
+    console.error('Failed to load words.json', e);
+    showToast('⚠️ 无法加载词库数据');
+    return;
+  }
+
+  // Load state
+  loadState();
+
+  // New day check
+  if (userState.lastStudyDate !== todayStr()) {
+    // Don't reset todayWords here - startLearning handles it
+    userState.todayReviewed = 0;
+    userState.todayCorrect = 0;
+  }
+
+  // Update streak
+  userState.streak = calculateStreak();
+  saveState();
+
+  updateHomeScreen();
+  updateStreakUI();
+  updateProgressUI();
+}
+
+// Start
+init();
+</script>
+</body>
+</html>
