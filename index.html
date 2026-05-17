@@ -570,7 +570,7 @@ body {
 
 <!-- ═══════════ WORD BANK ═══════════ -->
 <div class="screen" id="wordbank-screen">
-  <input class="wb-search" id="wb-search" placeholder="🔍 搜索单词..." oninput="filterWords()">
+  <input class="wb-search" id="wb-search" placeholder="🔍 搜索词库中的单词..." oninput="filterWords()">
   <div class="wb-filters">
     <button class="wb-filter active" onclick="setFilter('all', this)">全部</button>
     <button class="wb-filter" onclick="setFilter('7', this)">初一</button>
@@ -578,6 +578,18 @@ body {
     <button class="wb-filter" onclick="setFilter('9', this)">初三</button>
   </div>
   <div id="wb-word-list"></div>
+</div>
+
+<!-- ═══════════ DICTIONARY ═══════════ -->
+<div class="screen" id="dictionary-screen">
+  <div style="display:flex;gap:8px;margin-bottom:16px">
+    <input class="wb-search" id="dict-search" placeholder="🔍 输入英文单词查词典..." onkeydown="if(event.key==='Enter')lookupDictionary()" style="flex:1;margin-bottom:0">
+    <button class="cta-btn" style="width:auto;padding:12px 20px;font-size:15px" onclick="lookupDictionary()">查询</button>
+  </div>
+  <div id="dict-result" style="color:var(--text-secondary);text-align:center;padding:40px 0;font-size:15px">
+    📖 输入任意英文单词，查看释义、发音和例句
+  </div>
+  <div id="dict-local-hits" style="margin-top:12px"></div>
 </div>
 
 <!-- ═══════════ STATS ═══════════ -->
@@ -629,6 +641,7 @@ body {
 <div class="tab-bar">
   <button class="tab-btn active" onclick="showScreen('home')"><span class="tab-icon">🏠</span>首页</button>
   <button class="tab-btn" onclick="startLearning()"><span class="tab-icon">📖</span>学习</button>
+  <button class="tab-btn" onclick="showScreen('dictionary')"><span class="tab-icon">🔍</span>词典</button>
   <button class="tab-btn" onclick="showScreen('wordbank')"><span class="tab-icon">📚</span>词库</button>
   <button class="tab-btn" onclick="showScreen('stats')"><span class="tab-icon">👤</span>我的</button>
 </div>
@@ -1305,6 +1318,111 @@ function speakPhrase(phrase) {
   speakText(phrase, null);
 }
 
+// ═══════════════════ DICTIONARY LOOKUP ═══════════════════
+let dictCache = {};
+try { dictCache = JSON.parse(localStorage.getItem('vocab-dict-cache') || '{}'); } catch(e) {}
+
+async function lookupDictionary() {
+  const query = document.getElementById('dict-search').value.trim().toLowerCase();
+  const resultEl = document.getElementById('dict-result');
+  const localHitsEl = document.getElementById('dict-local-hits');
+
+  if (!query) { resultEl.innerHTML = '📖 输入任意英文单词，查看释义、发音和例句'; localHitsEl.innerHTML = ''; return; }
+
+  // 1. Check cache
+  if (dictCache[query]) {
+    renderDictResult(query, dictCache[query]);
+    checkLocalHits(query);
+    return;
+  }
+
+  // 2. Show loading
+  resultEl.innerHTML = '<div style="padding:40px"><span style="font-size:32px">⏳</span><br>查询中...</div>';
+  localHitsEl.innerHTML = '';
+
+  try {
+    const resp = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(query));
+    if (!resp.ok) throw new Error('not found');
+    const data = await resp.json();
+    dictCache[query] = data;
+    localStorage.setItem('vocab-dict-cache', JSON.stringify(dictCache));
+    renderDictResult(query, data);
+  } catch(e) {
+    resultEl.innerHTML = '<div style="padding:40px;color:var(--error)"><span style="font-size:32px">😕</span><br>未找到该单词<br><small>请检查拼写后重试</small></div>';
+  }
+
+  checkLocalHits(query);
+}
+
+function checkLocalHits(query) {
+  const localHitsEl = document.getElementById('dict-local-hits');
+  const matches = words.filter(w => w.word.toLowerCase() === query);
+  if (matches.length > 0) {
+    localHitsEl.innerHTML = '<div style="font-weight:600;color:var(--success);margin-bottom:8px">📚 该单词已在你的词库中！</div>' +
+      matches.map(w => '<div class="wb-word-item" onclick="showWordDetail(\'' + w.id + '\')" style="border-left:3px solid var(--success)">' +
+        '<div><div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + w.phonetic + '</span></div>' +
+        '<div class="wb-word-sub">' + w.translation + '</div></div>' +
+        '<span class="wb-word-grade g' + w.grade + '">' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span></div>').join('');
+  } else {
+    localHitsEl.innerHTML = '';
+  }
+}
+
+function renderDictResult(query, data) {
+  const entry = data[0];
+  const word = entry.word;
+  const phonetic = entry.phonetic || (entry.phonetics && entry.phonetics[0] && entry.phonetics[0].text) || '';
+  const audioUrl = entry.phonetics && entry.phonetics.find(p => p.audio)?.audio || '';
+
+  let html = '<div style="background:var(--card-bg);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)">';
+
+  // Word header
+  html += '<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">';
+  html += '<div style="font-size:32px;font-weight:700;color:var(--text)">' + word + '</div>';
+  if (phonetic) html += '<div style="font-size:17px;color:var(--text-secondary)">' + phonetic + '</div>';
+  if (audioUrl) {
+    html += '<button class="audio-btn" style="font-size:22px" onclick="playDictAudio(\'' + audioUrl + '\', this)">🔊</button>';
+  } else {
+    html += '<button class="audio-btn" style="font-size:22px" onclick="speakText(\'' + word.replace(/'/g, "\\\\'") + '\', this)">🔊</button>';
+  }
+  html += '</div>';
+
+  // Meanings
+  entry.meanings.forEach(m => {
+    html += '<div style="margin-bottom:14px">';
+    html += '<span style="display:inline-block;padding:2px 10px;border-radius:8px;font-size:12px;font-weight:600;background:#DBEAFE;color:#1E40AF;margin-bottom:6px">' + m.partOfSpeech + '</span>';
+    m.definitions.slice(0, 3).forEach((def, i) => {
+      html += '<div style="margin-bottom:4px;padding-left:12px;border-left:2px solid #E5E7EB">';
+      html += '<div style="font-size:14px;color:var(--text)">' + def.definition + '</div>';
+      if (def.example) {
+        html += '<div style="font-size:13px;color:var(--text-secondary);margin-top:2px">💬 ' + def.example + '</div>';
+      }
+      html += '</div>';
+    });
+    // Synonyms
+    if (m.synonyms && m.synonyms.length > 0) {
+      html += '<div style="font-size:12px;color:var(--text-secondary);margin-top:4px">近义词: ' + m.synonyms.slice(0, 5).join(', ') + '</div>';
+    }
+    html += '</div>';
+  });
+
+  // Source
+  if (entry.sourceUrls && entry.sourceUrls[0]) {
+    html += '<div style="font-size:11px;color:var(--text-secondary);margin-top:8px;text-align:right">来源: ' + entry.sourceUrls[0] + '</div>';
+  }
+
+  html += '</div>';
+  document.getElementById('dict-result').innerHTML = html;
+}
+
+function playDictAudio(url, btn) {
+  if (btn) btn.classList.add('playing');
+  const audio = new Audio(url);
+  audio.onended = () => { if (btn) btn.classList.remove('playing'); };
+  audio.onerror = () => { if (btn) btn.classList.remove('playing'); speakText(document.getElementById('dict-search').value.trim(), btn); };
+  audio.play();
+}
+
 // ═══════════════════ WORD BANK ═══════════════════
 let wbFilter = 'all';
 function setFilter(grade, el) {
@@ -1490,10 +1608,10 @@ function updateHomeScreen() {
 function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  const screenMap = { 'home': 'home-screen', 'learn': 'learn-screen', 'wordbank': 'wordbank-screen', 'stats': 'stats-screen' };
+  const screenMap = { 'home': 'home-screen', 'learn': 'learn-screen', 'wordbank': 'wordbank-screen', 'dictionary': 'dictionary-screen', 'stats': 'stats-screen' };
   const screenId = screenMap[name];
   if (screenId) document.getElementById(screenId).classList.add('active');
-  const tabMap = { 'home': 0, 'learn': 1, 'wordbank': 2, 'stats': 3 };
+  const tabMap = { 'home': 0, 'learn': 1, 'dictionary': 2, 'wordbank': 3, 'stats': 4 };
   const idx = tabMap[name];
   if (idx !== undefined) document.querySelectorAll('.tab-btn')[idx].classList.add('active');
   if (name === 'stats') updateProgressUI();
