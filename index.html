@@ -41,8 +41,7 @@ body {
   position: fixed; bottom: 0; left: 0; right: 0;
   background: var(--card-bg);
   border-top: 1px solid #E5E7EB;
-  display: flex;
-  justify-content: space-around;
+  display: flex; justify-content: space-around;
   padding: 8px 0 calc(8px + var(--safe-bottom));
   z-index: 100;
   box-shadow: 0 -2px 12px rgba(0,0,0,0.04);
@@ -53,14 +52,12 @@ body {
   padding: 4px 16px; border-radius: 8px;
   font-family: inherit; font-size: 11px; color: var(--text-secondary);
   transition: all 150ms ease-out;
-  -webkit-tap-highlight-color: transparent;
-  min-width: 60px;
+  -webkit-tap-highlight-color: transparent; min-width: 60px;
 }
 .tab-btn.active { color: var(--primary); font-weight: 600; }
 .tab-btn .tab-icon { font-size: 22px; line-height: 1; }
 .tab-btn:active { transform: scale(0.95); }
 
-/* Screens */
 .screen { display: none; padding: 16px 16px 100px; max-width: 600px; margin: 0 auto; }
 .screen.active { display: block; }
 
@@ -99,8 +96,7 @@ body {
 .progress-ring .bg { fill: none; stroke: #E5E7EB; stroke-width: 10; }
 .progress-ring .fill { fill: none; stroke: var(--primary); stroke-width: 10; stroke-linecap: round; transition: stroke-dashoffset 600ms ease-out; }
 .progress-center {
-  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  text-align: center;
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;
 }
 .progress-center .count { font-size: 32px; font-weight: 700; color: var(--primary); }
 .progress-center .label { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
@@ -124,14 +120,13 @@ body {
   font-size: 14px; font-weight: 500; cursor: pointer;
   transition: all 150ms ease-out;
 }
-.word-chip:hover { border-color: var(--primary); color: var(--primary); }
 .word-chip.mastered { background: #D1FAE5; border-color: var(--success); color: #065F46; }
 .word-chip.learning { background: #FEF3C7; border-color: var(--accent); color: #92400E; }
 
-/* =============== LEARN SCREEN (EXERCISE MODE) =============== */
+/* ═══════════ LEARN SCREEN ═══════════ */
 .learn-header {
   display: flex; justify-content: space-between; align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .learn-header .back-btn {
   background: var(--card-bg); border: 1px solid #E5E7EB;
@@ -142,85 +137,114 @@ body {
 }
 .learn-header .queue-info { font-size: 13px; color: var(--text-secondary); }
 
-/* Top bar: XP + Combo + Progress */
+/* Top bar */
 .ex-topbar {
   display: flex; align-items: center; gap: 10px;
-  margin-bottom: 16px; padding: 10px 14px;
+  margin-bottom: 8px; padding: 8px 14px;
   background: var(--card-bg); border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
-.ex-xp {
-  font-weight: 700; font-size: 15px; color: var(--accent);
-  display: flex; align-items: center; gap: 4px;
-}
+.ex-xp { font-weight: 700; font-size: 15px; color: #92400E; }
 .ex-combo {
   font-weight: 700; font-size: 14px; color: var(--primary);
-  margin-left: auto; display: flex; align-items: center; gap: 4px;
-  transition: all 200ms;
+  margin-left: auto; display: none;
 }
+.ex-combo.show { display: flex; align-items: center; gap: 4px; }
 .ex-combo.fire { animation: combo-pop 300ms ease-out; color: #DC2626; }
 @keyframes combo-pop {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.4); }
-  100% { transform: scale(1); }
+  0% { transform: scale(1); } 50% { transform: scale(1.4); } 100% { transform: scale(1); }
 }
-.ex-progress-dots {
-  display: flex; gap: 6px; align-items: center;
+.ex-hearts { display: flex; gap: 4px; margin-left: auto; }
+.ex-heart { font-size: 18px; transition: all 300ms; }
+.ex-heart.lost { filter: grayscale(1); opacity: 0.3; transform: scale(0.8); }
+.ex-heart.pulse { animation: heart-pulse 200ms ease-out; }
+@keyframes heart-pulse {
+  0% { transform: scale(1.5); } 100% { transform: scale(1); }
 }
-.ex-dot {
-  width: 10px; height: 10px; border-radius: 50%;
-  background: #E5E7EB; transition: all 200ms;
+
+/* ═══════════ MASCOT ═══════════ */
+.mascot-area {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin-bottom: 12px; min-height: 64px;
 }
-.ex-dot.done { background: var(--success); }
-.ex-dot.current { background: var(--primary); transform: scale(1.3); }
-.ex-dot.wrong { background: var(--error); }
+.mascot {
+  flex-shrink: 0; width: 56px; height: 56px;
+  border-radius: 50%; position: relative;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; transition: all 300ms ease-out;
+}
+.mascot.happy { background: linear-gradient(135deg, #FEF3C7, #FDE68A); animation: mascot-bounce 600ms ease-out; }
+.mascot.think { background: linear-gradient(135deg, #DBEAFE, #BFDBFE); }
+.mascot.celebrate { background: linear-gradient(135deg, #D1FAE5, #A7F3D0); animation: mascot-spin 500ms ease-out; }
+.mascot.encourage { background: linear-gradient(135deg, #FEE2E2, #FECACA); animation: mascot-nod 400ms ease-out; }
+.mascot.idle { background: linear-gradient(135deg, #F3F4F6, #E5E7EB); }
+@keyframes mascot-bounce {
+  0% { transform: translateY(0); } 40% { transform: translateY(-12px); } 60% { transform: translateY(-4px); } 100% { transform: translateY(0); }
+}
+@keyframes mascot-spin {
+  0% { transform: rotate(0deg) scale(1); } 50% { transform: rotate(15deg) scale(1.15); } 100% { transform: rotate(0deg) scale(1); }
+}
+@keyframes mascot-nod {
+  0% { transform: rotate(0deg); } 25% { transform: rotate(-8deg); } 75% { transform: rotate(8deg); } 100% { transform: rotate(0deg); }
+}
+.mascot-speech {
+  flex: 1; background: var(--card-bg); border-radius: 16px;
+  padding: 10px 14px; box-shadow: var(--shadow);
+  font-size: 14px; font-weight: 500; line-height: 1.5;
+  position: relative; align-self: center;
+}
+.mascot-speech::before {
+  content: ''; position: absolute; left: -8px; top: 50%; transform: translateY(-50%);
+  border: 8px solid transparent; border-right-color: var(--card-bg);
+}
 
 /* Exercise container */
 .ex-container {
   background: var(--card-bg); border-radius: var(--radius);
-  padding: 24px 20px; box-shadow: var(--shadow);
-  min-height: 320px; display: flex; flex-direction: column;
+  padding: 20px; box-shadow: var(--shadow);
+  min-height: 280px; display: flex; flex-direction: column;
   transition: all 200ms;
 }
 .ex-container.shake { animation: ex-shake 400ms ease-out; }
 .ex-container.pop { animation: ex-pop 300ms ease-out; }
 @keyframes ex-shake {
-  0%, 100% { transform: translateX(0); }
-  20% { transform: translateX(-8px); }
-  40% { transform: translateX(8px); }
-  60% { transform: translateX(-5px); }
-  80% { transform: translateX(5px); }
+  0%, 100% { transform: translateX(0); } 20% { transform: translateX(-8px); } 40% { transform: translateX(8px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(5px); }
 }
 @keyframes ex-pop {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.03); }
-  100% { transform: scale(1); }
+  0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); }
 }
 
-.ex-type-label {
-  font-size: 12px; font-weight: 600; color: var(--text-secondary);
-  text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+.ex-type-badge {
+  display: inline-block; padding: 4px 10px; border-radius: 12px;
+  font-size: 11px; font-weight: 600; margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
+.ex-type-badge.translate { background: #DBEAFE; color: #1E40AF; }
+.ex-type-badge.listening { background: #FEF3C7; color: #92400E; }
+.ex-type-badge.fill { background: #D1FAE5; color: #065F46; }
+.ex-type-badge.match { background: #F3E8FF; color: #6B21A8; }
+
 .ex-prompt {
-  font-size: 28px; font-weight: 700; color: var(--text);
-  text-align: center; margin-bottom: 8px; word-break: break-word;
+  font-size: 26px; font-weight: 700; color: var(--text);
+  text-align: center; margin-bottom: 6px; word-break: break-word;
 }
-.ex-prompt.small { font-size: 22px; }
+.ex-prompt.small { font-size: 20px; }
+.ex-prompt.big { font-size: 34px; }
 .ex-subprompt {
-  font-size: 15px; color: var(--text-secondary);
-  text-align: center; margin-bottom: 20px;
+  font-size: 14px; color: var(--text-secondary);
+  text-align: center; margin-bottom: 16px;
 }
+
 .ex-audio-btn {
-  display: block; margin: 0 auto 16px; width: 56px; height: 56px;
+  display: block; margin: 0 auto 12px; width: 52px; height: 52px;
   border-radius: 50%; border: 3px solid var(--primary);
-  background: var(--card-bg); cursor: pointer; font-size: 28px;
+  background: var(--card-bg); cursor: pointer; font-size: 26px;
   transition: all 150ms; -webkit-tap-highlight-color: transparent;
 }
 .ex-audio-btn:active { transform: scale(1.1); background: #FFF7F0; }
 .ex-audio-btn.playing { animation: audio-pulse 0.8s ease-in-out infinite; background: #FFF7F0; }
 @keyframes audio-pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); box-shadow: 0 0 0 8px rgba(255,107,53,0.15); }
+  0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); box-shadow: 0 0 0 8px rgba(255,107,53,0.15); }
 }
 
 /* Option buttons */
@@ -230,13 +254,13 @@ body {
 }
 .ex-options.single-col { grid-template-columns: 1fr; }
 .ex-option {
-  padding: 16px 12px; border: 2px solid #E5E7EB;
+  padding: 14px 12px; border: 2px solid #E5E7EB;
   border-radius: var(--radius); background: var(--card-bg);
-  cursor: pointer; font-family: inherit; font-size: 16px;
+  cursor: pointer; font-family: inherit; font-size: 15px;
   font-weight: 600; text-align: center;
   transition: all 150ms ease-out;
   -webkit-tap-highlight-color: transparent;
-  word-break: break-word; min-height: 56px;
+  word-break: break-word; min-height: 52px;
   display: flex; align-items: center; justify-content: center;
 }
 .ex-option:active { transform: scale(0.96); }
@@ -252,82 +276,59 @@ body {
   background: #D1FAE5; border-color: var(--success); color: #065F46;
   border-style: dashed;
 }
-.ex-option:disabled { pointer-events: none; opacity: 0.7; }
+.ex-option:disabled { pointer-events: none; }
+.ex-option.wrong-opt { opacity: 0.5; }
 @keyframes option-correct {
-  0% { transform: scale(1); }
-  40% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% { transform: scale(1); } 40% { transform: scale(1.05); } 100% { transform: scale(1); }
 }
 @keyframes option-incorrect {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-6px); }
-  50% { transform: translateX(6px); }
-  75% { transform: translateX(-3px); }
-  100% { transform: translateX(0); }
+  0% { transform: translateX(0); } 25% { transform: translateX(-6px); } 50% { transform: translateX(6px); } 75% { transform: translateX(-3px); } 100% { transform: translateX(0); }
 }
 
-/* Feedback overlay */
+/* Feedback bar */
 .ex-feedback {
-  text-align: center; margin-top: 16px; font-weight: 700; font-size: 18px;
-  min-height: 28px; transition: all 200ms;
+  text-align: center; margin-top: 12px; font-weight: 700; font-size: 16px;
+  min-height: 24px; transition: all 200ms;
 }
-.ex-feedback.correct { color: var(--success); }
-.ex-feedback.incorrect { color: var(--error); }
+.ex-feedback.good { color: var(--success); }
+.ex-feedback.bad { color: var(--error); }
 
-/* Continue button */
-.ex-continue {
-  display: none; width: 100%; margin-top: 12px; padding: 14px;
-  border: none; border-radius: var(--radius);
-  background: var(--primary); color: white;
-  font-size: 16px; font-weight: 700; cursor: pointer;
-  font-family: inherit;
-  -webkit-tap-highlight-color: transparent;
+/* Progress dots */
+.ex-progress-dots { display: flex; gap: 6px; align-items: center; }
+.ex-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #E5E7EB; transition: all 200ms;
 }
-.ex-continue.show { display: block; }
-.ex-continue:active { opacity: 0.9; transform: scale(0.98); }
+.ex-dot.done { background: var(--success); }
+.ex-dot.current { background: var(--primary); transform: scale(1.4); }
+.ex-dot.wrong { background: var(--error); }
 
-/* Word intro card */
-.ex-intro-card {
-  text-align: center;
+/* Intro card */
+.ex-intro-card { text-align: center; }
+.ex-intro-word { font-size: 42px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.ex-intro-phonetic { font-size: 17px; color: var(--text-secondary); margin-bottom: 8px; }
+.ex-intro-trans { font-size: 20px; color: var(--secondary); font-weight: 600; margin-bottom: 4px; }
+.ex-intro-phrase-row {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; margin: 6px 0; font-size: 14px;
+  background: #F3F4F6; padding: 8px 14px; border-radius: 8px;
 }
-.ex-intro-word {
-  font-size: 40px; font-weight: 700; color: var(--text); margin-bottom: 4px;
-}
-.ex-intro-phonetic {
-  font-size: 18px; color: var(--text-secondary); margin-bottom: 12px;
-}
-.ex-intro-trans {
-  font-size: 22px; color: var(--secondary); font-weight: 600; margin-bottom: 20px;
-}
-.ex-intro-phrases {
-  text-align: left; margin-bottom: 20px;
-}
-.ex-intro-phrase-item {
-  background: #F3F4F6; padding: 10px 14px; border-radius: 8px;
-  margin-bottom: 8px; display: flex; justify-content: space-between;
-  align-items: center; font-size: 14px;
-}
-.ex-intro-ready {
-  width: 100%; padding: 14px; border: none;
-  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+.ex-intro-phrase-row .phr-en { font-weight: 500; }
+.ex-intro-phrase-row .phr-zh { color: var(--text-secondary); font-size: 12px; }
+.ex-intro-start {
+  width: 100%; padding: 14px; border: none; margin-top: 16px;
+  background: linear-gradient(135deg, #10B981, #059669);
   color: white; font-size: 17px; font-weight: 700;
   border-radius: var(--radius); cursor: pointer; font-family: inherit;
   -webkit-tap-highlight-color: transparent;
 }
-.ex-intro-ready:active { opacity: 0.9; transform: scale(0.98); }
+.ex-intro-start:active { opacity: 0.9; transform: scale(0.98); }
 
-/* Learn empty */
-.learn-empty { text-align: center; padding: 40px 20px; }
-.learn-empty .emoji { font-size: 64px; margin-bottom: 16px; }
-.learn-empty h2 { font-size: 20px; color: var(--text); margin-bottom: 8px; }
-.learn-empty p { color: var(--text-secondary); margin-bottom: 8px; }
-
-/* Rate buttons (SRS) */
-.rate-buttons {
-  display: none; grid-template-columns: repeat(4, 1fr);
-  gap: 8px; margin-top: 16px;
-}
-.rate-buttons.show { display: grid; }
+/* Rate buttons */
+.rate-section { display: none; margin-top: 12px; }
+.rate-section.show { display: block; }
+.rate-section h4 { text-align: center; font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; }
+.rate-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .rate-btn {
   padding: 12px 8px; border: 2px solid #E5E7EB;
   border-radius: var(--radius); background: var(--card-bg);
@@ -345,18 +346,28 @@ body {
 .rate-btn:active.good { background: #DBEAFE; border-color: var(--secondary); }
 .rate-btn:active.easy { background: #D1FAE5; border-color: var(--success); }
 
-/* Lesson complete */
-.lesson-complete {
-  text-align: center; padding: 20px;
+/* Word summary (post-exercise, pre-rating) */
+.word-summary {
+  text-align: center; padding: 16px 0;
 }
-.lesson-complete .emoji { font-size: 72px; margin-bottom: 12px; animation: bounce-in 500ms ease-out; }
-.lesson-complete h3 { font-size: 22px; margin-bottom: 8px; }
-.lesson-complete .xp-earned { font-size: 28px; font-weight: 700; color: var(--accent); }
+.word-summary .big-word { font-size: 32px; font-weight: 700; }
+.word-summary .big-trans { font-size: 18px; color: var(--secondary); font-weight: 600; margin: 4px 0; }
+.word-summary .result-stats { font-size: 14px; color: var(--text-secondary); margin: 8px 0; }
+.word-summary .perfect-badge {
+  display: inline-block; padding: 6px 16px;
+  background: linear-gradient(135deg, #10B981, #34D399);
+  color: white; border-radius: var(--radius-lg);
+  font-weight: 700; font-size: 15px; animation: bounce-in 500ms ease-out;
+}
 @keyframes bounce-in {
-  0% { transform: scale(0); }
-  60% { transform: scale(1.15); }
-  100% { transform: scale(1); }
+  0% { transform: scale(0); } 60% { transform: scale(1.15); } 100% { transform: scale(1); }
 }
+
+/* Learn empty */
+.learn-empty { text-align: center; padding: 40px 20px; }
+.learn-empty .emoji { font-size: 64px; margin-bottom: 16px; }
+.learn-empty h2 { font-size: 20px; color: var(--text); margin-bottom: 8px; }
+.learn-empty p { color: var(--text-secondary); margin-bottom: 8px; }
 
 /* Word Bank */
 .wb-search {
@@ -385,26 +396,23 @@ body {
 .wb-word-main { font-size: 17px; font-weight: 600; }
 .wb-word-sub { font-size: 13px; color: var(--text-secondary); }
 .wb-word-grade {
-  font-size: 11px; padding: 2px 8px; border-radius: 12px;
-  font-weight: 600;
+  font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 600;
 }
 .wb-word-grade.g7 { background: #DBEAFE; color: var(--secondary); }
 .wb-word-grade.g8 { background: #FEF3C7; color: #92400E; }
 .wb-word-grade.g9 { background: #FEE2E2; color: #991B1B; }
 
-/* Word Detail Modal */
+/* Modal */
 .modal-overlay {
   display: none; position: fixed; inset: 0;
   background: rgba(0,0,0,0.5); z-index: 200;
-  align-items: center; justify-content: center;
-  padding: 20px;
+  align-items: center; justify-content: center; padding: 20px;
 }
 .modal-overlay.show { display: flex; }
 .modal-card {
   background: var(--card-bg); border-radius: var(--radius);
   padding: 24px; max-width: 400px; width: 100%;
-  max-height: 80vh; overflow-y: auto;
-  box-shadow: var(--shadow-lg);
+  max-height: 80vh; overflow-y: auto; box-shadow: var(--shadow-lg);
 }
 .modal-close {
   float: right; background: none; border: none;
@@ -413,11 +421,8 @@ body {
 }
 .modal-card h3 { font-size: 28px; margin-bottom: 4px; }
 
-/* Stats Screen */
-.stat-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr);
-  gap: 12px; margin-bottom: 20px;
-}
+/* Stats */
+.stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
 .stat-item {
   background: var(--card-bg); padding: 16px; border-radius: var(--radius);
   box-shadow: var(--shadow); text-align: center;
@@ -429,8 +434,7 @@ body {
 .weak-word {
   background: var(--card-bg); padding: 10px 14px;
   border-left: 4px solid var(--error); border-radius: 0 8px 8px 0;
-  margin-bottom: 8px; box-shadow: var(--shadow);
-  font-size: 14px;
+  margin-bottom: 8px; box-shadow: var(--shadow); font-size: 14px;
 }
 
 /* Toast */
@@ -438,17 +442,37 @@ body {
   position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
   background: var(--text); color: white; padding: 12px 24px;
   border-radius: var(--radius-lg); font-weight: 600;
-  z-index: 300; opacity: 0; transition: opacity 200ms;
-  pointer-events: none;
+  z-index: 300; opacity: 0; transition: opacity 200ms; pointer-events: none;
 }
 .toast.show { opacity: 1; }
+
+/* XP float animation */
+.xp-float {
+  position: fixed; font-weight: 700; font-size: 18px;
+  pointer-events: none; z-index: 250;
+  animation: xp-rise 1s ease-out forwards;
+}
+@keyframes xp-rise {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-60px) scale(1.3); }
+}
+
+/* Confetti */
+.confetti-piece {
+  position: fixed; pointer-events: none; z-index: 250;
+  font-size: 20px; animation: confetti-fall 1.5s ease-out forwards;
+}
+@keyframes confetti-fall {
+  0% { opacity: 1; transform: translateY(0) rotate(0deg); }
+  100% { opacity: 0; transform: translateY(300px) rotate(720deg); }
+}
 </style>
 </head>
 <body>
 
 <div class="toast" id="toast"></div>
 
-<!-- Home Screen -->
+<!-- ═══════════ HOME SCREEN ═══════════ -->
 <div class="screen active" id="home-screen">
   <div class="home-header">
     <div>
@@ -477,7 +501,7 @@ body {
   </div>
 </div>
 
-<!-- Learn Screen -->
+<!-- ═══════════ LEARN SCREEN ═══════════ -->
 <div class="screen" id="learn-screen">
   <div class="learn-header">
     <button class="back-btn" onclick="showScreen('home')">← 返回</button>
@@ -493,32 +517,40 @@ body {
   </div>
 
   <div id="learn-content" style="display:none">
-    <!-- XP + Combo + Progress dots -->
+    <!-- Stats bar -->
     <div class="ex-topbar">
       <span class="ex-xp" id="ex-xp">⭐ 0</span>
       <div class="ex-progress-dots" id="ex-dots"></div>
-      <span class="ex-combo" id="ex-combo" style="display:none">🔥 x1</span>
+      <span class="ex-combo" id="ex-combo">🔥 x1</span>
+      <div class="ex-hearts" id="ex-hearts"></div>
+    </div>
+
+    <!-- Mascot -->
+    <div class="mascot-area" id="mascot-area">
+      <div class="mascot idle" id="mascot">🦉</div>
+      <div class="mascot-speech" id="mascot-speech">准备好了吗？让我们开始吧！</div>
     </div>
 
     <!-- Exercise area -->
     <div class="ex-container" id="ex-container">
-      <div class="ex-type-label" id="ex-type-label"></div>
       <div id="ex-body"></div>
       <div class="ex-feedback" id="ex-feedback"></div>
-      <button class="ex-continue" id="ex-continue" onclick="nextExercise()">继续 →</button>
     </div>
 
-    <!-- SRS Rating (shown after all exercises) -->
-    <div class="rate-buttons" id="rate-buttons">
-      <button class="rate-btn again" onclick="rateWord(0)">😰 重来<br><small>Again</small></button>
-      <button class="rate-btn hard" onclick="rateWord(1)">🤔 困难<br><small>Hard</small></button>
-      <button class="rate-btn good" onclick="rateWord(2)">😊 良好<br><small>Good</small></button>
-      <button class="rate-btn easy" onclick="rateWord(3)">😎 简单<br><small>Easy</small></button>
+    <!-- Rate section -->
+    <div class="rate-section" id="rate-section">
+      <h4>你觉得这个单词掌握得怎么样？</h4>
+      <div class="rate-buttons">
+        <button class="rate-btn again" onclick="rateWord(0)">😰 重来<br><small>Again</small></button>
+        <button class="rate-btn hard" onclick="rateWord(1)">🤔 困难<br><small>Hard</small></button>
+        <button class="rate-btn good" onclick="rateWord(2)">😊 良好<br><small>Good</small></button>
+        <button class="rate-btn easy" onclick="rateWord(3)">😎 简单<br><small>Easy</small></button>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Word Bank Screen -->
+<!-- ═══════════ WORD BANK ═══════════ -->
 <div class="screen" id="wordbank-screen">
   <input class="wb-search" id="wb-search" placeholder="🔍 搜索单词..." oninput="filterWords()">
   <div class="wb-filters">
@@ -530,7 +562,7 @@ body {
   <div id="wb-word-list"></div>
 </div>
 
-<!-- Stats Screen -->
+<!-- ═══════════ STATS ═══════════ -->
 <div class="screen" id="stats-screen">
   <div class="stat-grid">
     <div class="stat-item">
@@ -563,112 +595,83 @@ body {
   </button>
 </div>
 
-<!-- Word Detail Modal -->
+<!-- ═══════════ MODAL ═══════════ -->
 <div class="modal-overlay" id="word-modal" onclick="closeModal(event)">
   <div class="modal-card" id="modal-card" onclick="event.stopPropagation()"></div>
 </div>
 
-<!-- Tab Bar -->
+<!-- ═══════════ TAB BAR ═══════════ -->
 <div class="tab-bar">
-  <button class="tab-btn active" onclick="showScreen('home')">
-    <span class="tab-icon">🏠</span>首页
-  </button>
-  <button class="tab-btn" onclick="startLearning()">
-    <span class="tab-icon">📖</span>学习
-  </button>
-  <button class="tab-btn" onclick="showScreen('wordbank')">
-    <span class="tab-icon">📚</span>词库
-  </button>
-  <button class="tab-btn" onclick="showScreen('stats')">
-    <span class="tab-icon">👤</span>我的
-  </button>
+  <button class="tab-btn active" onclick="showScreen('home')"><span class="tab-icon">🏠</span>首页</button>
+  <button class="tab-btn" onclick="startLearning()"><span class="tab-icon">📖</span>学习</button>
+  <button class="tab-btn" onclick="showScreen('wordbank')"><span class="tab-icon">📚</span>词库</button>
+  <button class="tab-btn" onclick="showScreen('stats')"><span class="tab-icon">👤</span>我的</button>
 </div>
 
 <script>
 // ═══════════════════ DATA & STATE ═══════════════════
 let words = [];
 let userState = {
-  wordProgress: {},  // wordId -> {ease, interval, reps, nextReview, correct, incorrect}
+  wordProgress: {},
   streak: 0,
   lastStudyDate: '',
   dailyGoal: 20,
   todayReviewed: 0,
   todayCorrect: 0,
-  todayWords: [],    // wordIds reviewed today
+  todayWords: [],
   totalXP: 0,
   todayXP: 0
 };
-
-const DAILY_NEW_LIMIT = 10;
 const DAILY_REVIEW_LIMIT = 20;
 
-// Persistence
 function loadState() {
   try {
     const raw = localStorage.getItem('vocab-master-state');
-    if (raw) {
-      const parsed = JSON.parse(raw);
-      userState = { ...userState, ...parsed };
-    }
-  } catch(e) { console.warn('state load failed', e); }
+    if (raw) { const p = JSON.parse(raw); userState = { ...userState, ...p }; }
+  } catch(e) {}
 }
 function saveState() {
   localStorage.setItem('vocab-master-state', JSON.stringify(userState));
 }
 
-// ═══════════════════ SM-2 Algorithm ═══════════════════
+// ═══════════════════ SM-2 ═══════════════════
 function sm2(quality, prevEase, prevInterval, prevReps) {
   let ease = prevEase || 2.5;
   let interval = prevInterval || 0;
   let reps = prevReps || 0;
-
   const qMap = {0: 2, 1: 3, 2: 4, 3: 5};
   const q = qMap[quality] || 3;
-
-  if (q < 3) {
-    reps = 0;
-    interval = 1;
-  } else {
+  if (q < 3) { reps = 0; interval = 1; }
+  else {
     if (reps === 0) interval = 1;
     else if (reps === 1) interval = 6;
     else interval = Math.round(interval * ease);
     reps++;
   }
-
   ease = ease + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
   ease = Math.max(1.3, ease);
-
   return { ease, interval, reps };
 }
 
-// ═══════════════════ Daily Queue ═══════════════════
+// ═══════════════════ DAILY QUEUE ═══════════════════
 function todayStr() { return new Date().toISOString().slice(0, 10); }
 
 function getDueWords() {
   const today = todayStr();
   const due = [];
-  const allIds = words.map(w => w.id);
-  const shuffled = [...allIds].sort(() => Math.random() - 0.5);
-
+  const shuffled = [...words.map(w => w.id)].sort(() => Math.random() - 0.5);
   for (const id of shuffled) {
     const p = userState.wordProgress[id];
-    if (!p || !p.nextReview || p.nextReview <= today) {
-      due.push(id);
-    }
+    if (!p || !p.nextReview || p.nextReview <= today) due.push(id);
   }
-
   return due.slice(0, Math.max(DAILY_REVIEW_LIMIT, due.length));
 }
 
 function getTodayWords() {
-  let todayWords = userState.todayWords || [];
-  if (userState.lastStudyDate !== todayStr()) {
-    todayWords = [];
-  }
-  if (todayWords.length === 0) {
-    todayWords = getDueWords();
-  }
-  return todayWords;
+  let tw = userState.todayWords || [];
+  if (userState.lastStudyDate !== todayStr()) tw = [];
+  if (tw.length === 0) tw = getDueWords();
+  return tw;
 }
 
 function startLearning() {
@@ -677,12 +680,10 @@ function startLearning() {
   userState.streak = calculateStreak();
   updateStreakForToday();
   saveState();
-
   if (userState.todayWords.length === 0) {
     userState.todayWords = words.map(w => w.id).sort(() => Math.random() - 0.5);
     saveState();
   }
-
   showScreen('learn');
   currentWordIdx = 0;
   startWordLesson();
@@ -690,9 +691,7 @@ function startLearning() {
 
 function resetDailyQueue() {
   userState.todayWords = getDueWords();
-  if (userState.todayWords.length === 0) {
-    userState.todayWords = words.map(w => w.id).sort(() => Math.random() - 0.5);
-  }
+  if (userState.todayWords.length === 0) userState.todayWords = words.map(w => w.id).sort(() => Math.random() - 0.5);
   saveState();
   currentWordIdx = 0;
   document.getElementById('learn-empty').style.display = 'none';
@@ -700,99 +699,97 @@ function resetDailyQueue() {
   startWordLesson();
 }
 
-// ═══════════════════ Streak ═══════════════════
+// ═══════════════════ STREAK ═══════════════════
 function calculateStreak() {
   let streak = userState.streak || 0;
   const today = new Date();
   const last = userState.lastStudyDate ? new Date(userState.lastStudyDate) : null;
-
   if (!last) return 1;
-
-  const diffDays = Math.floor((today - last) / (1000 * 60 * 60 * 24));
-
-  if (diffDays === 0) return streak;
-  if (diffDays === 1) return streak + 1;
-  if (diffDays > 1) return 1;
-
-  return streak;
+  const diff = Math.floor((today - last) / 86400000);
+  if (diff === 0) return streak;
+  if (diff === 1) return streak + 1;
+  return 1;
 }
-
 function updateStreakForToday() {
-  const s = calculateStreak();
-  userState.streak = s;
+  userState.streak = calculateStreak();
   userState.lastStudyDate = todayStr();
   saveState();
   updateStreakUI();
 }
-
 function updateStreakUI() {
   const s = userState.streak || 0;
-  document.getElementById('streak-badge').textContent = '\uD83D\uDD25 ' + s + ' 天';
+  document.getElementById('streak-badge').textContent = '🔥 ' + s + ' 天';
   document.getElementById('stat-streak').textContent = s + ' 天';
 }
 
-// ═══════════════════ Sound Effects (Web Audio API) ═══════════════════
+// ═══════════════════ SOUNDS ═══════════════════
 let audioCtx = null;
 function getAudioCtx() {
-  if (!audioCtx) {
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  }
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   return audioCtx;
 }
-
 function playSound(type) {
   try {
     const ctx = getAudioCtx();
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-
     const now = ctx.currentTime;
     if (type === 'correct') {
-      // Happy ascending two-note
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(523, now);       // C5
-      osc.frequency.setValueAtTime(659, now + 0.08); // E5
-      gain.gain.setValueAtTime(0.3, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
-      osc.start(now);
-      osc.stop(now + 0.2);
+      const o = ctx.createOscillator(); const g = ctx.createGain();
+      o.connect(g); g.connect(ctx.destination);
+      o.type = 'sine'; o.frequency.setValueAtTime(523, now); o.frequency.setValueAtTime(659, now + 0.07);
+      g.gain.setValueAtTime(0.25, now); g.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+      o.start(now); o.stop(now + 0.2);
     } else if (type === 'incorrect') {
-      // Low buzz
-      osc.type = 'square';
-      osc.frequency.setValueAtTime(180, now);
-      gain.gain.setValueAtTime(0.15, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
-      osc.start(now);
-      osc.stop(now + 0.3);
+      const o = ctx.createOscillator(); const g = ctx.createGain();
+      o.connect(g); g.connect(ctx.destination);
+      o.type = 'square'; o.frequency.setValueAtTime(180, now);
+      g.gain.setValueAtTime(0.12, now); g.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+      o.start(now); o.stop(now + 0.3);
     } else if (type === 'combo') {
-      // Rising sparkle
-      osc.type = 'sine';
-      osc.frequency.setValueAtTime(660, now);
-      osc.frequency.setValueAtTime(880, now + 0.05);
-      osc.frequency.setValueAtTime(1100, now + 0.1);
-      gain.gain.setValueAtTime(0.25, now);
-      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
-      osc.start(now);
-      osc.stop(now + 0.3);
-    } else if (type === 'complete') {
-      // Fanfare
-      const notes = [523, 659, 784, 1047];
-      notes.forEach((freq, i) => {
-        const o = ctx.createOscillator();
-        const g = ctx.createGain();
+      [660, 880, 1100].forEach((f, i) => {
+        const o = ctx.createOscillator(); const g = ctx.createGain();
         o.connect(g); g.connect(ctx.destination);
-        o.type = 'sine';
-        const t = now + i * 0.12;
-        o.frequency.setValueAtTime(freq, t);
-        g.gain.setValueAtTime(0.2, t);
-        g.gain.exponentialRampToValueAtTime(0.01, t + 0.25);
-        o.start(t);
-        o.stop(t + 0.25);
+        o.type = 'sine'; o.frequency.setValueAtTime(f, now + i * 0.04);
+        g.gain.setValueAtTime(0.2, now + i * 0.04);
+        g.gain.exponentialRampToValueAtTime(0.01, now + i * 0.04 + 0.25);
+        o.start(now + i * 0.04); o.stop(now + i * 0.04 + 0.25);
+      });
+    } else if (type === 'perfect') {
+      [523, 659, 784, 1047].forEach((f, i) => {
+        const o = ctx.createOscillator(); const g = ctx.createGain();
+        o.connect(g); g.connect(ctx.destination);
+        o.type = 'sine'; o.frequency.setValueAtTime(f, now + i * 0.1);
+        g.gain.setValueAtTime(0.2, now + i * 0.1);
+        g.gain.exponentialRampToValueAtTime(0.01, now + i * 0.1 + 0.3);
+        o.start(now + i * 0.1); o.stop(now + i * 0.1 + 0.3);
       });
     }
-  } catch(e) { /* audio not critical */ }
+  } catch(e) {}
+}
+
+// ═══════════════════ MASCOT ═══════════════════
+const MASCOT_EMOJI = { happy: '🦉', think: '🤔', celebrate: '🎉', encourage: '💪', idle: '🦉' };
+const MASCOT_CLASS = { happy: 'happy', think: 'think', celebrate: 'celebrate', encourage: 'encourage', idle: 'idle' };
+
+const MASCOT_MSGS = {
+  intro: ['来看看这个单词 👀', '新单词来啦！', '认识这个词吗？', '准备好了吗？😊'],
+  quiz: ['选哪个呢？', '好好想想～', '这个你肯定认识！', '仔细看哦 👀', '回忆一下…'],
+  correct: ['太棒了！🎉', '答对了！', '厉害！', '完美！', '你是天才！🌟', '继续保持！', '轻轻松松～'],
+  incorrect: ['没关系，记住它！💪', '下次一定对！', '别灰心～', '记住了吗？再来！', '这个有点难呢'],
+  allCorrect: ['全部正确！你是词汇大师！🏆', '完美通关！太厉害了！🌟', '满分！词博士为你骄傲！🎓'],
+  someWrong: ['还有进步空间，加油！💪', '不错哦，继续努力！', '多练练就记住了～'],
+  rate: ['这个单词你记住了吗？', '诚实评价哦～', '感觉怎么样？']
+};
+
+function setMascot(mood, msg) {
+  const m = document.getElementById('mascot');
+  const s = document.getElementById('mascot-speech');
+  // Pick message
+  let text = msg;
+  if (Array.isArray(msg)) text = msg[Math.floor(Math.random() * msg.length)];
+  // Update
+  m.className = 'mascot ' + MASCOT_CLASS[mood];
+  m.textContent = MASCOT_EMOJI[mood];
+  s.textContent = text;
 }
 
 // ═══════════════════ EXERCISE SYSTEM ═══════════════════
@@ -801,107 +798,134 @@ let currentExerciseIdx = 0;
 let exerciseAnswered = false;
 let sessionXP = 0;
 let sessionCombo = 0;
-let wordExercises = []; // The array of exercises for current word
+let sessionHearts = 3;
+let wordExercises = [];
+let wordCorrectCount = 0;
+let wordWrongCount = 0;
 
-// Define exercise sequence per word
-const EXERCISE_TYPES = ['intro', 'mc_enzh', 'listening', 'fill_blank'];
-
-function getWordById(id) {
-  return words.find(w => w.id === id);
-}
-
+function getWordById(id) { return words.find(w => w.id === id); }
 function getCurrentWordId() {
   const tw = userState.todayWords || [];
-  if (currentWordIdx < tw.length) return tw[currentWordIdx];
-  return null;
+  return currentWordIdx < tw.length ? tw[currentWordIdx] : null;
 }
 
-// Pick distractors from other words (same grade preferred)
-function getDistractors(word, count, pickField) {
-  // pickField: 'translation' for ZH distractors, 'word' for EN distractors
+// Shuffle array
+function shuffle(arr) { const a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+// Pick N random distractors
+function getDistractors(word, count, field) {
   const others = words.filter(w => w.id !== word.id);
-  // Prefer same grade
   const sameGrade = others.filter(w => w.grade === word.grade);
   const pool = sameGrade.length >= count ? sameGrade : others;
-  const shuffled = [...pool].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count).map(w => w[pickField]);
+  return shuffle(pool).slice(0, count).map(w => w[field]);
 }
 
+// ═══════════ BUILD RANDOMIZED EXERCISES ═══════════
 function generateExercises(word) {
-  const exs = [];
+  // Always starts with intro, then 5 randomized exercises
+  const exercises = [{ type: 'intro', word }];
 
-  // 1. INTRO: Show word with pronunciation
-  exs.push({
-    type: 'intro',
-    word: word,
-    label: '新单词'
+  // Pool of exercise generators (excluding intro)
+  const pool = [];
+
+  // MC: EN word → ZH meaning
+  pool.push(() => {
+    const opts = shuffle([word.translation, ...getDistractors(word, 3, 'translation')]);
+    return {
+      type: 'mc_enzh', word,
+      badge: '英 → 中', badgeClass: 'translate',
+      prompt: word.word,
+      subprompt: '这个词的中文意思是？',
+      options: opts, correct: word.translation
+    };
   });
 
-  // 2. Multiple Choice EN→ZH
-  const zhOptions = getDistractors(word, 3, 'translation');
-  const zhCorrect = word.translation;
-  const zhAll = [zhCorrect, ...zhOptions].sort(() => Math.random() - 0.5);
-  exs.push({
-    type: 'mc_enzh',
-    word: word,
-    label: '选择正确释义',
-    prompt: word.word,
-    subprompt: '选择这个单词的中文意思',
-    options: zhAll,
-    correct: zhCorrect
-  });
-
-  // 3. Listening: hear the word, pick the English word
-  const enOptions = getDistractors(word, 3, 'word');
-  const enCorrect = word.word;
-  const enAll = [enCorrect, ...enOptions].sort(() => Math.random() - 0.5);
-  exs.push({
-    type: 'listening',
-    word: word,
-    label: '听力选择',
-    prompt: '🔊 听到的是哪个单词？',
-    subprompt: '点击喇叭听发音',
-    options: enAll,
-    correct: enCorrect,
-    autoPlay: true
-  });
-
-  // 4. Fill in the blank
-  if (word.examples && word.examples.length > 0) {
-    const example = word.examples[Math.floor(Math.random() * word.examples.length)];
-    const sentence = example.sentence;
-    // Replace the word (case-insensitive) with _____
-    const blankSentence = sentence.replace(new RegExp(word.word, 'gi'), '_____');
-    const fillOptions = getDistractors(word, 3, 'word');
-    const fillAll = [word.word, ...fillOptions].sort(() => Math.random() - 0.5);
-    exs.push({
-      type: 'fill_blank',
-      word: word,
-      label: '完形填空',
-      prompt: blankSentence,
-      subprompt: example.translation,
-      options: fillAll,
-      correct: word.word
-    });
-  } else {
-    // Fallback: MC ZH→EN if no example sentences
-    const enOpts2 = getDistractors(word, 3, 'word');
-    const enCorrect2 = word.word;
-    const enAll2 = [enCorrect2, ...enOpts2].sort(() => Math.random() - 0.5);
-    exs.push({
-      type: 'mc_zhen',
-      word: word,
-      label: '选择正确单词',
+  // MC: ZH meaning → EN word
+  pool.push(() => {
+    const opts = shuffle([word.word, ...getDistractors(word, 3, 'word')]);
+    return {
+      type: 'mc_zhen', word,
+      badge: '中 → 英', badgeClass: 'translate',
       prompt: word.translation,
-      subprompt: '选择对应的英文单词',
-      options: enAll2,
-      correct: enCorrect2
+      subprompt: '对应的英文单词是？',
+      options: opts, correct: word.word
+    };
+  });
+
+  // Listening: hear word → pick it
+  pool.push(() => {
+    const opts = shuffle([word.word, ...getDistractors(word, 3, 'word')]);
+    return {
+      type: 'listening', word,
+      badge: '听力', badgeClass: 'listening',
+      prompt: '🔊 听到的是哪个单词？',
+      subprompt: '点击喇叭听发音',
+      options: opts, correct: word.word, autoPlay: true
+    };
+  });
+
+  // Fill blank: sentence with gap
+  if (word.examples && word.examples.length > 0) {
+    pool.push(() => {
+      const ex = word.examples[Math.floor(Math.random() * word.examples.length)];
+      const blank = ex.sentence.replace(new RegExp(word.word, 'gi'), '_____');
+      const opts = shuffle([word.word, ...getDistractors(word, 3, 'word')]);
+      return {
+        type: 'fill_blank', word,
+        badge: '完形填空', badgeClass: 'fill',
+        prompt: blank,
+        subprompt: ex.translation,
+        options: opts, correct: word.word
+      };
     });
   }
 
-  return exs;
+  // Phrase EN → ZH
+  if (word.phrases.length > 0) {
+    const phrase = word.phrases[Math.floor(Math.random() * word.phrases.length)];
+    const otherPhrases = words
+      .filter(w => w.id !== word.id && w.phrases.length > 0)
+      .flatMap(w => w.phrases.map(p => p.translation));
+    const distractorPhrases = shuffle([...new Set(otherPhrases)]).slice(0, 3);
+    pool.push(() => {
+      const opts = shuffle([phrase.translation, ...distractorPhrases]);
+      return {
+        type: 'phrase_enzh', word,
+        badge: '短语英→中', badgeClass: 'match',
+        prompt: '"' + phrase.phrase + '"',
+        subprompt: '这个短语的意思是？',
+        options: opts, correct: phrase.translation
+      };
+    });
+
+    // Phrase ZH → EN
+    const otherEnPhrases = words
+      .filter(w => w.id !== word.id && w.phrases.length > 0)
+      .flatMap(w => w.phrases.map(p => p.phrase));
+    const distractorEn = shuffle([...new Set(otherEnPhrases)]).slice(0, 3);
+    pool.push(() => {
+      const opts = shuffle([phrase.phrase, ...distractorEn]);
+      return {
+        type: 'phrase_zhen', word,
+        badge: '短语中→英', badgeClass: 'match',
+        prompt: '"' + phrase.translation + '"',
+        subprompt: '对应的英文短语是？',
+        options: opts, correct: phrase.phrase
+      };
+    });
+  }
+
+  // Select 5 exercises from pool (or all if pool is small)
+  const selectedCount = Math.min(5, pool.length);
+  const selected = shuffle(pool).slice(0, selectedCount);
+  for (const gen of selected) {
+    exercises.push(gen());
+  }
+
+  return exercises;
 }
 
+// ═══════════ START WORD LESSON ═══════════
 function startWordLesson() {
   const wid = getCurrentWordId();
   if (!wid) {
@@ -912,200 +936,161 @@ function startWordLesson() {
 
   document.getElementById('learn-empty').style.display = 'none';
   document.getElementById('learn-content').style.display = '';
-  document.getElementById('rate-buttons').classList.remove('show');
+  document.getElementById('rate-section').classList.remove('show');
 
   const word = getWordById(wid);
-  if (!word) {
-    currentWordIdx++;
-    startWordLesson();
-    return;
-  }
+  if (!word) { currentWordIdx++; startWordLesson(); return; }
 
   wordExercises = generateExercises(word);
   currentExerciseIdx = 0;
   exerciseAnswered = false;
+  wordCorrectCount = 0;
+  wordWrongCount = 0;
+
   updateQueueInfo();
-  renderExerciseDots();
+  renderDots();
   updateTopBar();
+  setMascot('idle', MASCOT_MSGS.intro);
   renderExercise();
 }
 
 function updateQueueInfo() {
-  const tw = userState.todayWords || [];
-  document.getElementById('queue-info').textContent = (currentWordIdx + 1) + ' / ' + tw.length;
+  document.getElementById('queue-info').textContent = (currentWordIdx + 1) + ' / ' + (userState.todayWords || []).length;
 }
 
-function renderExerciseDots() {
+function renderDots() {
   const dotsEl = document.getElementById('ex-dots');
-  dotsEl.innerHTML = wordExercises.map((ex, i) => {
+  dotsEl.innerHTML = wordExercises.map((_, i) => {
     let cls = 'ex-dot';
-    if (i < currentExerciseIdx) {
-      cls += ' done';
-    } else if (i === currentExerciseIdx) {
-      cls += ' current';
-    }
+    if (i < currentExerciseIdx) cls += ' done';
+    if (i === currentExerciseIdx) cls += ' current';
     return '<span class="' + cls + '"></span>';
   }).join('');
 }
 
-function getExerciseResult(exIdx) {
-  // Check if this exercise was answered correctly
-  // For intro, it's always "done"
-  if (wordExercises[exIdx].type === 'intro') return 'done';
-  // We track this via a data attribute on the container
-  const container = document.getElementById('ex-container');
-  const result = container.dataset['ex' + exIdx + 'result'];
-  return result || '';
-}
-
 function updateTopBar() {
   document.getElementById('ex-xp').textContent = '⭐ ' + sessionXP;
-  const comboEl = document.getElementById('ex-combo');
+  const combo = document.getElementById('ex-combo');
   if (sessionCombo >= 3) {
-    comboEl.style.display = '';
-    comboEl.textContent = '🔥 x' + sessionCombo;
+    combo.classList.add('show');
+    combo.textContent = '🔥 x' + sessionCombo;
   } else {
-    comboEl.style.display = 'none';
+    combo.classList.remove('show');
+  }
+
+  // Hearts
+  const heartsEl = document.getElementById('ex-hearts');
+  heartsEl.innerHTML = '';
+  for (let i = 0; i < 3; i++) {
+    const h = document.createElement('span');
+    h.className = 'ex-heart';
+    h.textContent = i < sessionHearts ? '❤️' : '🤍';
+    if (i >= sessionHearts) h.classList.add('lost');
+    heartsEl.appendChild(h);
   }
 }
 
+// ═══════════ RENDER EXERCISE ═══════════
 function renderExercise() {
   if (currentExerciseIdx >= wordExercises.length) {
-    showSRSRating();
+    showWordSummary();
     return;
   }
 
   exerciseAnswered = false;
   const ex = wordExercises[currentExerciseIdx];
-  document.getElementById('ex-type-label').textContent = ex.label;
   document.getElementById('ex-feedback').textContent = '';
   document.getElementById('ex-feedback').className = 'ex-feedback';
-  document.getElementById('ex-continue').classList.remove('show');
   document.getElementById('ex-container').classList.remove('shake', 'pop');
-  document.getElementById('rate-buttons').classList.remove('show');
-  renderExerciseDots();
-
-  const body = document.getElementById('ex-body');
+  document.getElementById('rate-section').classList.remove('show');
+  renderDots();
 
   if (ex.type === 'intro') {
-    renderIntro(ex, body);
-  } else if (ex.type === 'mc_enzh' || ex.type === 'mc_zhen') {
-    renderMultipleChoice(ex, body);
-  } else if (ex.type === 'listening') {
-    renderListening(ex, body);
-  } else if (ex.type === 'fill_blank') {
-    renderFillBlank(ex, body);
+    setMascot('happy', MASCOT_MSGS.intro);
+    renderIntro(ex);
+  } else {
+    setMascot('think', MASCOT_MSGS.quiz);
+    renderQuiz(ex);
   }
 }
 
-function renderIntro(ex, body) {
+function renderIntro(ex) {
   const w = ex.word;
-  body.innerHTML = `
+  document.getElementById('ex-body').innerHTML = `
     <div class="ex-intro-card">
       <div class="ex-intro-word">${w.word}</div>
       <div class="ex-intro-phonetic">${w.phonetic}</div>
       <button class="ex-audio-btn" id="ex-audio-btn" onclick="playWordAudio('${w.word.replace(/'/g, "\\'")}')">🔊</button>
       <div class="ex-intro-trans">${w.translation}</div>
-      <div class="ex-intro-phrases">
-        ${w.phrases.map(p => `
-          <div class="ex-intro-phrase-item">
-            <span><strong>${p.phrase}</strong><br><span style="color:var(--text-secondary);font-size:12px">${p.translation}</span></span>
-            <button class="audio-btn" onclick="event.stopPropagation(); speakPhrase('${p.phrase.replace(/'/g, "\\'")}')">🔊</button>
-          </div>
-        `).join('')}
-      </div>
-      <button class="ex-intro-ready" onclick="advanceIntro()">准备好了，开始练习 →</button>
-    </div>
-  `;
-
-  // Auto-play the word pronunciation
-  setTimeout(() => playWordAudio(w.word), 300);
-}
-
-function advanceIntro() {
-  exerciseAnswered = true;
-  const container = document.getElementById('ex-container');
-  container.dataset['ex' + currentExerciseIdx + 'result'] = 'done';
-  showContinue();
-}
-
-function renderMultipleChoice(ex, body) {
-  body.innerHTML = `
-    <div class="ex-prompt">${ex.prompt}</div>
-    <div class="ex-subprompt">${ex.subprompt}</div>
-    <div class="ex-options">
-      ${ex.options.map((opt, i) => `
-        <button class="ex-option" onclick="answerMC(${i}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>
+      ${w.phrases.map(p => `
+        <div class="ex-intro-phrase-row">
+          <span class="phr-en">${p.phrase}</span>
+          <span>—</span>
+          <span class="phr-zh">${p.translation}</span>
+          <button class="audio-btn" style="font-size:16px;padding:4px" onclick="event.stopPropagation(); speakPhrase('${p.phrase.replace(/'/g, "\\'")}')">🔊</button>
+        </div>
       `).join('')}
-    </div>
-  `;
+      <button class="ex-intro-start" onclick="startQuizRound()">🚀 开始挑战！</button>
+    </div>`;
+
+  setTimeout(() => playWordAudio(w.word), 400);
 }
 
-function renderListening(ex, body) {
-  body.innerHTML = `
-    <div class="ex-prompt">${ex.prompt}</div>
-    <div class="ex-subprompt">${ex.subprompt}</div>
-    <button class="ex-audio-btn" id="ex-audio-btn" onclick="playWordAudio('${ex.word.word.replace(/'/g, "\\'")}')">🔊</button>
-    <div class="ex-options">
+function startQuizRound() {
+  currentExerciseIdx++;
+  renderExercise();
+}
+
+function renderQuiz(ex) {
+  const body = document.getElementById('ex-body');
+  const badgeHTML = ex.badge ? '<span class="ex-type-badge ' + ex.badgeClass + '">' + ex.badge + '</span>' : '';
+
+  body.innerHTML = badgeHTML + `
+    <div class="ex-prompt${ex.prompt.length > 20 ? ' small' : ex.prompt.length < 8 ? ' big' : ''}">${ex.prompt}</div>
+    <div class="ex-subprompt">${ex.subprompt || ''}</div>
+    ${ex.type === 'listening' ? '<button class="ex-audio-btn" id="ex-audio-btn" onclick="playWordAudio(\'' + ex.word.word.replace(/'/g, "\\'") + '\')">🔊</button>' : ''}
+    <div class="ex-options${ex.options.some(o => o.length > 12) ? ' single-col' : ''}">
       ${ex.options.map((opt, i) => `
-        <button class="ex-option" onclick="answerMC(${i}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>
+        <button class="ex-option" onclick="answerQuiz(${i})">${opt}</button>
       `).join('')}
-    </div>
-  `;
+    </div>`;
 
-  // Auto-play after a short delay
-  if (ex.autoPlay) {
-    setTimeout(() => playWordAudio(ex.word.word), 500);
-  }
+  if (ex.autoPlay) setTimeout(() => playWordAudio(ex.word.word), 500);
 }
 
-function renderFillBlank(ex, body) {
-  body.innerHTML = `
-    <div class="ex-prompt small">${ex.prompt}</div>
-    <div class="ex-subprompt">${ex.subprompt}</div>
-    <div class="ex-options single-col">
-      ${ex.options.map((opt, i) => `
-        <button class="ex-option" onclick="answerMC(${i}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>
-      `).join('')}
-    </div>
-  `;
-}
-
-function answerMC(idx, selected) {
+// ═══════════ ANSWER QUIZ ═══════════
+function answerQuiz(idx) {
   if (exerciseAnswered) return;
   exerciseAnswered = true;
 
   const ex = wordExercises[currentExerciseIdx];
+  const selected = ex.options[idx];
   const isCorrect = selected === ex.correct;
-  const container = document.getElementById('ex-container');
 
-  // Store result
-  container.dataset['ex' + currentExerciseIdx + 'result'] = isCorrect ? 'correct' : 'incorrect';
-
-  // Highlight options
-  const options = document.querySelectorAll('.ex-option');
-  options.forEach((opt, i) => {
-    opt.disabled = true;
-    if (ex.options[i] === ex.correct) {
-      opt.classList.add('correct');
-    }
-    if (i === idx && !isCorrect) {
-      opt.classList.add('incorrect');
-    }
+  // Highlight
+  const optionEls = document.querySelectorAll('.ex-option');
+  optionEls.forEach((el, i) => {
+    el.disabled = true;
+    if (ex.options[i] === ex.correct) el.classList.add('correct');
+    if (i === idx && !isCorrect) el.classList.add('incorrect');
   });
 
-  // Feedback
   const fb = document.getElementById('ex-feedback');
+  const container = document.getElementById('ex-container');
+
   if (isCorrect) {
     fb.textContent = '✅ 正确！';
-    fb.className = 'ex-feedback correct';
+    fb.className = 'ex-feedback good';
     playSound('correct');
     sessionXP += 10;
     sessionCombo++;
+    wordCorrectCount++;
     userState.todayXP = (userState.todayXP || 0) + 10;
     userState.totalXP = (userState.totalXP || 0) + 10;
     userState.todayCorrect = (userState.todayCorrect || 0) + 1;
     container.classList.add('pop');
+    setMascot('happy', MASCOT_MSGS.correct);
+    floatXP('+10');
 
     if (sessionCombo >= 3) {
       playSound('combo');
@@ -1113,91 +1098,71 @@ function answerMC(idx, selected) {
       sessionXP += 5;
       userState.todayXP += 5;
       userState.totalXP += 5;
-      const comboEl = document.getElementById('ex-combo');
-      comboEl.classList.add('fire');
-      setTimeout(() => comboEl.classList.remove('fire'), 300);
+      document.getElementById('ex-combo').classList.add('fire');
+      setTimeout(() => document.getElementById('ex-combo').classList.remove('fire'), 300);
+      floatXP('+5');
     }
   } else {
     fb.textContent = '❌ 正确答案：' + ex.correct;
-    fb.className = 'ex-feedback incorrect';
+    fb.className = 'ex-feedback bad';
     playSound('incorrect');
     sessionCombo = 0;
+    wordWrongCount++;
+    sessionHearts = Math.max(0, sessionHearts - 1);
     container.classList.add('shake');
+    setMascot('encourage', MASCOT_MSGS.incorrect);
+
+    // Mark dot wrong
+    const dots = document.querySelectorAll('.ex-dot');
+    if (dots[currentExerciseIdx]) dots[currentExerciseIdx].classList.add('wrong');
   }
 
   userState.todayReviewed = (userState.todayReviewed || 0) + 1;
-
-  // Mark dot
-  const dots = document.querySelectorAll('.ex-dot');
-  if (dots[currentExerciseIdx]) {
-    dots[currentExerciseIdx].classList.remove('current');
-    dots[currentExerciseIdx].classList.add(isCorrect ? 'done' : 'wrong');
-  }
-
   updateTopBar();
   saveState();
-  showContinue();
+
+  // Auto-advance after delay
+  const delay = isCorrect ? 1000 : 1600;
+  setTimeout(() => {
+    currentExerciseIdx++;
+    if (currentExerciseIdx >= wordExercises.length) {
+      showWordSummary();
+    } else {
+      renderExercise();
+    }
+  }, delay);
 }
 
-function showContinue() {
-  document.getElementById('ex-continue').classList.add('show');
-}
+// ═══════════ WORD SUMMARY + RATING ═══════════
+function showWordSummary() {
+  const word = getWordById(getCurrentWordId());
+  const total = wordExercises.length - 1; // exclude intro
+  const perfect = wordCorrectCount === total;
 
-function nextExercise() {
-  currentExerciseIdx++;
-
-  if (currentExerciseIdx >= wordExercises.length) {
-    showSRSRating();
-  } else {
-    renderExercise();
-  }
-}
-
-// ═══════════════════ SRS Rating ═══════════════════
-function showSRSRating() {
-  const body = document.getElementById('ex-body');
-  const wid = getCurrentWordId();
-  const word = getWordById(wid);
-
-  // Calculate exercise score
-  const correctCount = wordExercises.filter((ex, i) => {
-    const result = document.getElementById('ex-container').dataset['ex' + i + 'result'];
-    if (ex.type === 'intro') return true;
-    return result === 'correct';
-  }).length;
-
-  const totalExercises = wordExercises.length;
-  const perfect = correctCount === totalExercises;
-
-  document.getElementById('ex-type-label').textContent = perfect ? '🎉 完美！' : '评分';
   document.getElementById('ex-feedback').textContent = '';
   document.getElementById('ex-feedback').className = 'ex-feedback';
-  document.getElementById('ex-continue').classList.remove('show');
 
   if (perfect) {
-    playSound('complete');
-    body.innerHTML = `
-      <div class="lesson-complete">
-        <div class="emoji">🌟</div>
-        <h3>全部正确！太棒了！</h3>
-        <p style="color:var(--text-secondary);margin-bottom:8px">${word.word} — ${word.translation}</p>
-        <div class="xp-earned">+${(totalExercises - 1) * 10 + (sessionCombo >= 3 ? 5 : 0)} XP</div>
-      </div>
-    `;
+    playSound('perfect');
+    setMascot('celebrate', MASCOT_MSGS.allCorrect);
+    spawnConfetti();
   } else {
-    body.innerHTML = `
-      <div style="text-align:center;padding:20px">
-        <div style="font-size:28px;font-weight:700;margin-bottom:8px">${word.word}</div>
-        <div style="font-size:16px;color:var(--text-secondary);margin-bottom:4px">${word.phonetic}</div>
-        <div style="font-size:18px;color:var(--secondary);font-weight:600;margin-bottom:16px">${word.translation}</div>
-        <div style="font-size:14px;color:var(--text-secondary)">
-          练习正确率：${correctCount}/${totalExercises}
-        </div>
-      </div>
-    `;
+    setMascot('encourage', MASCOT_MSGS.someWrong);
   }
 
-  document.getElementById('rate-buttons').classList.add('show');
+  document.getElementById('ex-body').innerHTML = `
+    <div class="word-summary">
+      ${perfect ? '<div class="perfect-badge">🌟 全部正确！</div>' : ''}
+      <div class="big-word" style="margin-top:12px">${word.word}</div>
+      <div style="font-size:15px;color:var(--text-secondary)">${word.phonetic}</div>
+      <div class="big-trans">${word.translation}</div>
+      <div class="result-stats">
+        ${wordCorrectCount}/${total} 正确
+        ${wordWrongCount > 0 ? ' · ' + wordWrongCount + ' 错误' : ''}
+      </div>
+    </div>`;
+
+  document.getElementById('rate-section').classList.add('show');
 }
 
 function rateWord(quality) {
@@ -1212,9 +1177,7 @@ function rateWord(quality) {
   nextDate.setDate(nextDate.getDate() + result.interval);
 
   userState.wordProgress[wid] = {
-    ease: result.ease,
-    interval: result.interval,
-    reps: result.reps,
+    ease: result.ease, interval: result.interval, reps: result.reps,
     correct: prev.correct + (quality >= 2 ? 1 : 0),
     incorrect: prev.incorrect + (quality < 2 ? 1 : 0),
     nextReview: nextDate.toISOString().slice(0, 10),
@@ -1223,12 +1186,9 @@ function rateWord(quality) {
 
   userState.lastStudyDate = todayStr();
   userState.streak = calculateStreak();
-
   saveState();
 
-  // Move to next word
   currentWordIdx++;
-
   const tw = userState.todayWords || [];
   if (currentWordIdx >= tw.length) {
     document.getElementById('learn-empty').style.display = '';
@@ -1241,9 +1201,36 @@ function rateWord(quality) {
   }
 }
 
-// ═══════════════════ Audio ═══════════════════
-let bestVoice = null;
+// ═══════════ VISUAL FX ═══════════
+function floatXP(text) {
+  const el = document.createElement('div');
+  el.className = 'xp-float';
+  el.textContent = text;
+  el.style.left = (40 + Math.random() * 40) + '%';
+  el.style.top = '40%';
+  el.style.color = text.startsWith('+5') ? '#F59E0B' : '#10B981';
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 1000);
+}
 
+function spawnConfetti() {
+  const emojis = ['🌟', '✨', '🎉', '💫', '⭐', '🎊', '💚', '🧡'];
+  for (let i = 0; i < 12; i++) {
+    setTimeout(() => {
+      const el = document.createElement('div');
+      el.className = 'confetti-piece';
+      el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      el.style.left = (10 + Math.random() * 80) + '%';
+      el.style.top = (20 + Math.random() * 30) + '%';
+      el.style.animationDuration = (1 + Math.random() * 1.5) + 's';
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 2000);
+    }, i * 60);
+  }
+}
+
+// ═══════════════════ AUDIO ═══════════════════
+let bestVoice = null;
 function loadVoices() {
   const voices = speechSynthesis.getVoices();
   if (voices.length === 0) return;
@@ -1260,140 +1247,92 @@ loadVoices();
 function speakText(text, btnEl) {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();
-
   const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = 'en-US';
-  utter.rate = 0.85;
-  utter.pitch = 1;
+  utter.lang = 'en-US'; utter.rate = 0.85; utter.pitch = 1;
   if (bestVoice) utter.voice = bestVoice;
-
   if (btnEl) btnEl.classList.add('playing');
-
-  utter.onend = () => {
-    if (btnEl) btnEl.classList.remove('playing');
-  };
-  utter.onerror = () => {
-    if (btnEl) btnEl.classList.remove('playing');
-  };
-
+  utter.onend = () => { if (btnEl) btnEl.classList.remove('playing'); };
+  utter.onerror = () => { if (btnEl) btnEl.classList.remove('playing'); };
   window.speechSynthesis.speak(utter);
 }
 
 function playWordAudio(word) {
-  const btn = document.getElementById('ex-audio-btn');
-  speakText(word, btn);
+  speakText(word, document.getElementById('ex-audio-btn'));
 }
 
 function speakPhrase(phrase) {
   speakText(phrase, null);
 }
 
-// ═══════════════════ Word Bank ═══════════════════
+// ═══════════════════ WORD BANK ═══════════════════
 let wbFilter = 'all';
-
 function setFilter(grade, el) {
   wbFilter = grade;
   document.querySelectorAll('.wb-filter').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
   filterWords();
 }
-
 function filterWords() {
   const query = document.getElementById('wb-search').value.toLowerCase();
-  const list = document.getElementById('wb-word-list');
   let filtered = words;
-
-  if (wbFilter !== 'all') {
-    filtered = filtered.filter(w => w.grade === parseInt(wbFilter));
-  }
-  if (query) {
-    filtered = filtered.filter(w =>
-      w.word.toLowerCase().includes(query) ||
-      w.translation.includes(query)
-    );
-  }
-
-  list.innerHTML = filtered.slice(0, 50).map(w => {
-    const p = userState.wordProgress[w.id];
+  if (wbFilter !== 'all') filtered = filtered.filter(w => w.grade === parseInt(wbFilter));
+  if (query) filtered = filtered.filter(w => w.word.toLowerCase().includes(query) || w.translation.includes(query));
+  document.getElementById('wb-word-list').innerHTML = filtered.slice(0, 50).map(w => {
     const gradeClass = 'g' + w.grade;
-    return '<div class="wb-word-item" onclick="showWordDetail(\'' + w.id + '\')">\n' +
-      '  <div>\n' +
-      '    <div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + w.phonetic + '</span></div>\n' +
-      '    <div class="wb-word-sub">' + w.translation + '</div>\n' +
-      '  </div>\n' +
-      '  <span class="wb-word-grade ' + gradeClass + '">' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span>\n' +
-      '</div>';
+    return '<div class="wb-word-item" onclick="showWordDetail(\'' + w.id + '\')">' +
+      '<div><div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + w.phonetic + '</span></div>' +
+      '<div class="wb-word-sub">' + w.translation + '</div></div>' +
+      '<span class="wb-word-grade ' + gradeClass + '">' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span></div>';
   }).join('');
 }
 
-// ═══════════════════ Word Detail Modal ═══════════════════
+// ═══════════════════ MODAL ═══════════════════
 function showWordDetail(id) {
   const w = getWordById(id);
   if (!w) return;
-
   const p = userState.wordProgress[id];
   const status = !p || !p.reps ? '未学习' : p.reps > 3 ? '✅ 已掌握' : '📖 学习中';
-  const correctPct = p && (p.correct + p.incorrect) > 0
-    ? Math.round(p.correct / (p.correct + p.incorrect) * 100) + '%'
-    : '--';
-
+  const correctPct = p && (p.correct + p.incorrect) > 0 ? Math.round(p.correct / (p.correct + p.incorrect) * 100) + '%' : '--';
   let html = '<button class="modal-close" onclick="document.getElementById(\'word-modal\').classList.remove(\'show\')">✕</button>';
   html += '<h3>' + w.word + '</h3>';
   html += '<div style="font-size:15px;color:var(--text-secondary);margin-bottom:8px">' + w.phonetic + '</div>';
   html += '<div style="font-size:18px;color:var(--secondary);font-weight:600;margin-bottom:16px">' + w.translation + '</div>';
   html += '<div style="display:flex;gap:12px;margin-bottom:16px;font-size:13px;color:var(--text-secondary)">' +
-    '<span>' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span>' +
-    '<span>' + status + '</span>' +
-    '<span>正确率: ' + correctPct + '</span>' +
-    '</div>';
+    '<span>' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span><span>' + status + '</span><span>正确率: ' + correctPct + '</span></div>';
   html += '<div style="font-weight:600;margin-bottom:8px">📝 常用短语</div>';
   w.phrases.forEach(p => {
-    html += '<div class="card-phrase-item" style="margin-bottom:6px">' +
-      '<span><span class="phrase-en">' + p.phrase + '</span><br><span class="phrase-zh">' + p.translation + '</span></span>' +
-      '<button class="audio-btn" onclick="speakPhrase(\'' + p.phrase.replace(/'/g, "\\'") + '\')">🔊</button>' +
-      '</div>';
+    html += '<div style="background:#F3F4F6;padding:8px 12px;border-radius:8px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center">' +
+      '<span><strong>' + p.phrase + '</strong><br><span style="color:var(--text-secondary);font-size:12px">' + p.translation + '</span></span>' +
+      '<button class="audio-btn" onclick="speakPhrase(\'' + p.phrase.replace(/'/g, "\\'") + '\')">🔊</button></div>';
   });
   if (w.examples && w.examples.length > 0) {
     html += '<div style="font-weight:600;margin:12px 0 8px">💬 例句</div>';
     w.examples.forEach(e => {
-      html += '<div style="margin-bottom:6px;font-size:14px;color:var(--text)">' + e.sentence + '</div>';
+      html += '<div style="margin-bottom:6px;font-size:14px">' + e.sentence + '</div>';
       html += '<div style="margin-bottom:10px;font-size:13px;color:var(--text-secondary)">' + e.translation + '</div>';
     });
   }
-
   document.getElementById('modal-card').innerHTML = html;
   document.getElementById('word-modal').classList.add('show');
 }
-
 function closeModal(e) {
-  if (e.target === e.currentTarget) {
-    document.getElementById('word-modal').classList.remove('show');
-  }
+  if (e.target === e.currentTarget) document.getElementById('word-modal').classList.remove('show');
 }
 
-// ═══════════════════ Progress & Stats ═══════════════════
+// ═══════════════════ PROGRESS ═══════════════════
 function updateProgressUI() {
   const total = Object.keys(userState.wordProgress).length;
   const goal = userState.dailyGoal || 20;
   const today = userState.todayReviewed || 0;
-
   document.getElementById('progress-count').textContent = today + '/' + goal;
-
   const circumference = 452;
-  const offset = circumference - (Math.min(today, goal) / goal) * circumference;
-  document.getElementById('progress-circle').style.strokeDashoffset = offset;
-
+  document.getElementById('progress-circle').style.strokeDashoffset = circumference - (Math.min(today, goal) / goal) * circumference;
   document.getElementById('stat-learned').textContent = total;
   document.getElementById('stat-today').textContent = today;
   document.getElementById('stat-xp').textContent = userState.totalXP || 0;
-
   const totalCorrect = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0), 0);
   const totalAttempts = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0) + (p.incorrect || 0), 0);
-  document.getElementById('stat-accuracy').textContent = totalAttempts > 0
-    ? Math.round(totalCorrect / totalAttempts * 100) + '%'
-    : '--%';
-
-  // Weak words
+  document.getElementById('stat-accuracy').textContent = totalAttempts > 0 ? Math.round(totalCorrect / totalAttempts * 100) + '%' : '--%';
   const weak = Object.entries(userState.wordProgress)
     .filter(([_, p]) => (p.incorrect || 0) >= 3 && (p.correct || 0) < (p.incorrect || 0))
     .slice(0, 10);
@@ -1409,9 +1348,7 @@ function updateHomeScreen() {
   if (hour >= 12 && hour < 18) greet = '下午好';
   if (hour >= 18) greet = '晚上好';
   document.getElementById('greeting').innerHTML = greet + ' 👋<strong>开始学习吧</strong>';
-
   document.getElementById('xp-badge-home').textContent = '⭐ ' + (userState.totalXP || 0) + ' XP';
-
   const tw = userState.todayWords || [];
   const chips = document.getElementById('word-chips');
   if (tw.length === 0) {
@@ -1429,56 +1366,35 @@ function updateHomeScreen() {
   }
 }
 
-// ═══════════════════ Screen Nav ═══════════════════
+// ═══════════════════ NAV ═══════════════════
 function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-
-  const screenMap = {
-    'home': 'home-screen',
-    'learn': 'learn-screen',
-    'wordbank': 'wordbank-screen',
-    'stats': 'stats-screen'
-  };
+  const screenMap = { 'home': 'home-screen', 'learn': 'learn-screen', 'wordbank': 'wordbank-screen', 'stats': 'stats-screen' };
   const screenId = screenMap[name];
   if (screenId) document.getElementById(screenId).classList.add('active');
-
-  const tabMap = {'home': 0, 'learn': 1, 'wordbank': 2, 'stats': 3};
+  const tabMap = { 'home': 0, 'learn': 1, 'wordbank': 2, 'stats': 3 };
   const idx = tabMap[name];
   if (idx !== undefined) document.querySelectorAll('.tab-btn')[idx].classList.add('active');
-
   if (name === 'stats') updateProgressUI();
   if (name === 'wordbank') filterWords();
   if (name === 'home') updateHomeScreen();
   updateStreakUI();
 }
 
-// ═══════════════════ Toast ═══════════════════
+// ═══════════════════ TOAST ═══════════════════
 function showToast(msg) {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
+  t.textContent = msg; t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// ═══════════════════ Reset ═══════════════════
+// ═══════════════════ RESET ═══════════════════
 function resetAllProgress() {
   if (confirm('确定要重置所有学习数据吗？此操作不可撤销！')) {
-    userState = {
-      wordProgress: {},
-      streak: 0,
-      lastStudyDate: '',
-      dailyGoal: 20,
-      todayReviewed: 0,
-      todayCorrect: 0,
-      todayWords: [],
-      totalXP: 0,
-      todayXP: 0
-    };
+    userState = { wordProgress: {}, streak: 0, lastStudyDate: '', dailyGoal: 20, todayReviewed: 0, todayCorrect: 0, todayWords: [], totalXP: 0, todayXP: 0 };
     saveState();
-    updateProgressUI();
-    updateHomeScreen();
-    updateStreakUI();
+    updateProgressUI(); updateHomeScreen(); updateStreakUI();
     showToast('已重置');
   }
 }
@@ -1489,32 +1405,18 @@ async function init() {
     const resp = await fetch('words.json');
     words = await resp.json();
   } catch(e) {
-    console.error('Failed to load words.json', e);
     showToast('⚠️ 无法加载词库数据');
     return;
   }
-
   loadState();
-
   if (userState.lastStudyDate !== todayStr()) {
-    userState.todayReviewed = 0;
-    userState.todayCorrect = 0;
-    userState.todayXP = 0;
+    userState.todayReviewed = 0; userState.todayCorrect = 0; userState.todayXP = 0;
   }
-
   userState.streak = calculateStreak();
   saveState();
-
-  updateHomeScreen();
-  updateStreakUI();
-  updateProgressUI();
-
-  // Resume audio context on first user gesture
-  document.addEventListener('click', () => {
-    try { getAudioCtx().resume(); } catch(e) {}
-  }, { once: true });
+  updateHomeScreen(); updateStreakUI(); updateProgressUI();
+  document.addEventListener('click', () => { try { getAudioCtx().resume(); } catch(e) {} }, { once: true });
 }
-
 init();
 </script>
 </body>
