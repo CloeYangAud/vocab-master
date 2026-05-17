@@ -1320,7 +1320,14 @@ function speakPhrase(phrase) {
 
 // ═══════════════════ DICTIONARY LOOKUP ═══════════════════
 let dictCache = {};
-try { dictCache = JSON.parse(localStorage.getItem('vocab-dict-cache') || '{}'); } catch(e) {}
+try {
+  const raw = JSON.parse(localStorage.getItem('vocab-dict-cache') || '{}');
+  // Migrate old format (raw API response) to new format ({data, zhTranslation})
+  for (const [key, val] of Object.entries(raw)) {
+    if (val.data) { dictCache[key] = val; }
+    else if (Array.isArray(val)) { dictCache[key] = { data: val, zhTranslation: '' }; }
+  }
+} catch(e) {}
 
 async function lookupDictionary() {
   const query = document.getElementById('dict-search').value.trim().toLowerCase();
@@ -1340,13 +1347,26 @@ async function lookupDictionary() {
   resultEl.innerHTML = '<div style="padding:40px"><span style="font-size:32px">⏳</span><br>查询中...</div>';
   localHitsEl.innerHTML = '';
 
+  // 3. Fetch dictionary + Chinese translation in parallel
   try {
-    const resp = await fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(query));
-    if (!resp.ok) throw new Error('not found');
-    const data = await resp.json();
-    dictCache[query] = data;
+    const [dictResp, zhResp] = await Promise.all([
+      fetch('https://api.dictionaryapi.dev/api/v2/entries/en/' + encodeURIComponent(query)),
+      fetch('https://api.mymemory.translated.net/get?q=' + encodeURIComponent(query) + '&langpair=en|zh')
+    ]);
+
+    if (!dictResp.ok) throw new Error('not found');
+    const data = await dictResp.json();
+    let zhTranslation = '';
+
+    try {
+      const zhData = await zhResp.json();
+      zhTranslation = zhData.responseData?.translatedText || '';
+    } catch(e) { /* translation optional */ }
+
+    const cached = { data, zhTranslation };
+    dictCache[query] = cached;
     localStorage.setItem('vocab-dict-cache', JSON.stringify(dictCache));
-    renderDictResult(query, data);
+    renderDictResult(query, cached);
   } catch(e) {
     resultEl.innerHTML = '<div style="padding:40px;color:var(--error)"><span style="font-size:32px">😕</span><br>未找到该单词<br><small>请检查拼写后重试</small></div>';
   }
@@ -1368,7 +1388,9 @@ function checkLocalHits(query) {
   }
 }
 
-function renderDictResult(query, data) {
+function renderDictResult(query, cached) {
+  const data = cached.data;
+  const zhTranslation = cached.zhTranslation || '';
   const entry = data[0];
   const word = entry.word;
   const phonetic = entry.phonetic || (entry.phonetics && entry.phonetics[0] && entry.phonetics[0].text) || '';
@@ -1377,7 +1399,7 @@ function renderDictResult(query, data) {
   let html = '<div style="background:var(--card-bg);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)">';
 
   // Word header
-  html += '<div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">';
+  html += '<div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">';
   html += '<div style="font-size:32px;font-weight:700;color:var(--text)">' + word + '</div>';
   if (phonetic) html += '<div style="font-size:17px;color:var(--text-secondary)">' + phonetic + '</div>';
   if (audioUrl) {
@@ -1386,6 +1408,11 @@ function renderDictResult(query, data) {
     html += '<button class="audio-btn" style="font-size:22px" onclick="speakText(\'' + word.replace(/'/g, "\\\\'") + '\', this)">🔊</button>';
   }
   html += '</div>';
+
+  // Chinese translation
+  if (zhTranslation) {
+    html += '<div style="font-size:20px;font-weight:600;color:var(--secondary);margin-bottom:14px;padding:10px 14px;background:#EFF6FF;border-radius:8px;border-left:4px solid var(--secondary)">' + zhTranslation + '</div>';
+  }
 
   // Meanings
   entry.meanings.forEach(m => {
