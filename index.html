@@ -83,6 +83,12 @@ body {
   0%, 100% { box-shadow: 0 4px 12px rgba(255,107,53,0.3); }
   50% { box-shadow: 0 4px 24px rgba(255,107,53,0.5); }
 }
+.xp-badge {
+  display: flex; align-items: center; gap: 4px;
+  background: linear-gradient(135deg, var(--accent), #FBBF24);
+  color: #92400E; padding: 6px 12px; border-radius: var(--radius-lg);
+  font-weight: 700; font-size: 13px; margin-top: 8px;
+}
 .progress-card {
   background: var(--card-bg); border-radius: var(--radius);
   padding: 24px; margin: 8px 0 16px;
@@ -122,11 +128,10 @@ body {
 .word-chip.mastered { background: #D1FAE5; border-color: var(--success); color: #065F46; }
 .word-chip.learning { background: #FEF3C7; border-color: var(--accent); color: #92400E; }
 
-/* Learn Screen */
-.learn-screen { text-align: center; padding-top: 8px; }
+/* =============== LEARN SCREEN (EXERCISE MODE) =============== */
 .learn-header {
   display: flex; justify-content: space-between; align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .learn-header .back-btn {
   background: var(--card-bg); border: 1px solid #E5E7EB;
@@ -136,86 +141,193 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 .learn-header .queue-info { font-size: 13px; color: var(--text-secondary); }
-.card-area {
-  perspective: 1000px;
-  width: 100%; max-width: 340px;
-  height: 420px; margin: 0 auto 24px;
-  position: relative;
+
+/* Top bar: XP + Combo + Progress */
+.ex-topbar {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 16px; padding: 10px 14px;
+  background: var(--card-bg); border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
-.flashcard {
-  width: 100%; height: 100%; position: relative;
-  transform-style: preserve-3d;
-  transition: transform 350ms ease-in-out;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
+.ex-xp {
+  font-weight: 700; font-size: 15px; color: var(--accent);
+  display: flex; align-items: center; gap: 4px;
 }
-.flashcard.flipped { transform: rotateY(180deg); }
-.flashcard.correct { animation: correct-pulse 400ms ease-out; }
-.flashcard.incorrect { animation: incorrect-shake 400ms ease-out; }
-@keyframes correct-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(16,185,129,0.5); }
-  100% { box-shadow: 0 0 0 16px rgba(16,185,129,0); }
+.ex-combo {
+  font-weight: 700; font-size: 14px; color: var(--primary);
+  margin-left: auto; display: flex; align-items: center; gap: 4px;
+  transition: all 200ms;
 }
-@keyframes incorrect-shake {
+.ex-combo.fire { animation: combo-pop 300ms ease-out; color: #DC2626; }
+@keyframes combo-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+.ex-progress-dots {
+  display: flex; gap: 6px; align-items: center;
+}
+.ex-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #E5E7EB; transition: all 200ms;
+}
+.ex-dot.done { background: var(--success); }
+.ex-dot.current { background: var(--primary); transform: scale(1.3); }
+.ex-dot.wrong { background: var(--error); }
+
+/* Exercise container */
+.ex-container {
+  background: var(--card-bg); border-radius: var(--radius);
+  padding: 24px 20px; box-shadow: var(--shadow);
+  min-height: 320px; display: flex; flex-direction: column;
+  transition: all 200ms;
+}
+.ex-container.shake { animation: ex-shake 400ms ease-out; }
+.ex-container.pop { animation: ex-pop 300ms ease-out; }
+@keyframes ex-shake {
   0%, 100% { transform: translateX(0); }
   20% { transform: translateX(-8px); }
   40% { transform: translateX(8px); }
   60% { transform: translateX(-5px); }
   80% { transform: translateX(5px); }
 }
-.card-face {
-  position: absolute; width: 100%; height: 100%;
-  backface-visibility: hidden;
-  border-radius: 16px;
-  background: var(--card-bg);
-  box-shadow: var(--shadow-lg);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  padding: 32px 24px;
+@keyframes ex-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
 }
-.card-back { transform: rotateY(180deg); }
-.card-word { font-size: 36px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-.card-phonetic { font-size: 16px; color: var(--text-secondary); margin-bottom: 20px; }
-.card-translation { font-size: 20px; color: var(--secondary); font-weight: 600; margin-bottom: 16px; }
-.card-phrases { width: 100%; text-align: left; }
-.card-phrase-item {
+
+.ex-type-label {
+  font-size: 12px; font-weight: 600; color: var(--text-secondary);
+  text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;
+}
+.ex-prompt {
+  font-size: 28px; font-weight: 700; color: var(--text);
+  text-align: center; margin-bottom: 8px; word-break: break-word;
+}
+.ex-prompt.small { font-size: 22px; }
+.ex-subprompt {
+  font-size: 15px; color: var(--text-secondary);
+  text-align: center; margin-bottom: 20px;
+}
+.ex-audio-btn {
+  display: block; margin: 0 auto 16px; width: 56px; height: 56px;
+  border-radius: 50%; border: 3px solid var(--primary);
+  background: var(--card-bg); cursor: pointer; font-size: 28px;
+  transition: all 150ms; -webkit-tap-highlight-color: transparent;
+}
+.ex-audio-btn:active { transform: scale(1.1); background: #FFF7F0; }
+.ex-audio-btn.playing { animation: audio-pulse 0.8s ease-in-out infinite; background: #FFF7F0; }
+@keyframes audio-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); box-shadow: 0 0 0 8px rgba(255,107,53,0.15); }
+}
+
+/* Option buttons */
+.ex-options {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 10px; margin-top: auto;
+}
+.ex-options.single-col { grid-template-columns: 1fr; }
+.ex-option {
+  padding: 16px 12px; border: 2px solid #E5E7EB;
+  border-radius: var(--radius); background: var(--card-bg);
+  cursor: pointer; font-family: inherit; font-size: 16px;
+  font-weight: 600; text-align: center;
+  transition: all 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+  word-break: break-word; min-height: 56px;
+  display: flex; align-items: center; justify-content: center;
+}
+.ex-option:active { transform: scale(0.96); }
+.ex-option.correct {
+  background: #D1FAE5; border-color: var(--success); color: #065F46;
+  animation: option-correct 400ms ease-out;
+}
+.ex-option.incorrect {
+  background: #FEE2E2; border-color: var(--error); color: #991B1B;
+  animation: option-incorrect 400ms ease-out;
+}
+.ex-option.reveal {
+  background: #D1FAE5; border-color: var(--success); color: #065F46;
+  border-style: dashed;
+}
+.ex-option:disabled { pointer-events: none; opacity: 0.7; }
+@keyframes option-correct {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+@keyframes option-incorrect {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+/* Feedback overlay */
+.ex-feedback {
+  text-align: center; margin-top: 16px; font-weight: 700; font-size: 18px;
+  min-height: 28px; transition: all 200ms;
+}
+.ex-feedback.correct { color: var(--success); }
+.ex-feedback.incorrect { color: var(--error); }
+
+/* Continue button */
+.ex-continue {
+  display: none; width: 100%; margin-top: 12px; padding: 14px;
+  border: none; border-radius: var(--radius);
+  background: var(--primary); color: white;
+  font-size: 16px; font-weight: 700; cursor: pointer;
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+.ex-continue.show { display: block; }
+.ex-continue:active { opacity: 0.9; transform: scale(0.98); }
+
+/* Word intro card */
+.ex-intro-card {
+  text-align: center;
+}
+.ex-intro-word {
+  font-size: 40px; font-weight: 700; color: var(--text); margin-bottom: 4px;
+}
+.ex-intro-phonetic {
+  font-size: 18px; color: var(--text-secondary); margin-bottom: 12px;
+}
+.ex-intro-trans {
+  font-size: 22px; color: var(--secondary); font-weight: 600; margin-bottom: 20px;
+}
+.ex-intro-phrases {
+  text-align: left; margin-bottom: 20px;
+}
+.ex-intro-phrase-item {
   background: #F3F4F6; padding: 10px 14px; border-radius: 8px;
   margin-bottom: 8px; display: flex; justify-content: space-between;
   align-items: center; font-size: 14px;
 }
-.card-phrase-item .phrase-en { font-weight: 500; color: var(--text); }
-.card-phrase-item .phrase-zh { color: var(--text-secondary); font-size: 12px; }
-.audio-btn {
-  background: none; border: none; cursor: pointer;
-  font-size: 24px; padding: 8px;
-  border-radius: 50%; transition: all 150ms ease-out;
+.ex-intro-ready {
+  width: 100%; padding: 14px; border: none;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white; font-size: 17px; font-weight: 700;
+  border-radius: var(--radius); cursor: pointer; font-family: inherit;
   -webkit-tap-highlight-color: transparent;
 }
-.audio-btn:active { transform: scale(1.2); }
-.audio-btn.playing { animation: audio-pulse 0.8s ease-in-out infinite; }
-@keyframes audio-pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.25); background: rgba(255,107,53,0.1); }
-}
-.swipe-hint {
-  display: flex; justify-content: space-between;
-  align-items: center; padding: 0 16px; gap: 12px;
-}
-.swipe-btn {
-  flex: 1; padding: 14px 16px; border: 2px solid #E5E7EB;
-  border-radius: var(--radius); cursor: pointer;
-  font-family: inherit; font-size: 16px; font-weight: 700;
-  background: var(--card-bg); transition: all 150ms ease-out;
-  -webkit-tap-highlight-color: transparent;
-}
-.swipe-dunno { color: var(--error); }
-.swipe-know { color: var(--success); }
-.swipe-dunno:active { background: #FEE2E2; border-color: var(--error); transform: scale(0.97); }
-.swipe-know:active { background: #D1FAE5; border-color: var(--success); transform: scale(0.97); }
+.ex-intro-ready:active { opacity: 0.9; transform: scale(0.98); }
+
+/* Learn empty */
+.learn-empty { text-align: center; padding: 40px 20px; }
+.learn-empty .emoji { font-size: 64px; margin-bottom: 16px; }
+.learn-empty h2 { font-size: 20px; color: var(--text); margin-bottom: 8px; }
+.learn-empty p { color: var(--text-secondary); margin-bottom: 8px; }
+
+/* Rate buttons (SRS) */
 .rate-buttons {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: none; grid-template-columns: repeat(4, 1fr);
   gap: 8px; margin-top: 16px;
 }
+.rate-buttons.show { display: grid; }
 .rate-btn {
   padding: 12px 8px; border: 2px solid #E5E7EB;
   border-radius: var(--radius); background: var(--card-bg);
@@ -233,11 +345,18 @@ body {
 .rate-btn:active.good { background: #DBEAFE; border-color: var(--secondary); }
 .rate-btn:active.easy { background: #D1FAE5; border-color: var(--success); }
 
-/* Learn empty */
-.learn-empty { text-align: center; padding: 40px 20px; }
-.learn-empty .emoji { font-size: 64px; margin-bottom: 16px; }
-.learn-empty h2 { font-size: 20px; color: var(--text); margin-bottom: 8px; }
-.learn-empty p { color: var(--text-secondary); }
+/* Lesson complete */
+.lesson-complete {
+  text-align: center; padding: 20px;
+}
+.lesson-complete .emoji { font-size: 72px; margin-bottom: 12px; animation: bounce-in 500ms ease-out; }
+.lesson-complete h3 { font-size: 22px; margin-bottom: 8px; }
+.lesson-complete .xp-earned { font-size: 28px; font-weight: 700; color: var(--accent); }
+@keyframes bounce-in {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
 
 /* Word Bank */
 .wb-search {
@@ -323,29 +442,6 @@ body {
   pointer-events: none;
 }
 .toast.show { opacity: 1; }
-
-/* Swipe indicators */
-.swipe-left, .swipe-right {
-  position: absolute; top: 50%; transform: translateY(-50%);
-  font-size: 36px; opacity: 0; transition: opacity 150ms;
-  pointer-events: none; z-index: 10;
-}
-.swipe-left { left: -50px; color: var(--error); }
-.swipe-right { right: -50px; color: var(--success); }
-.swiping-left .swipe-left { opacity: 0.8; }
-.swiping-right .swipe-right { opacity: 0.8; }
-
-/* Drop Zone */
-.drop-zone {
-  text-align: center; padding: 60px 20px; margin: 40px 0;
-  border: 2px dashed #D1D5DB; border-radius: var(--radius);
-  color: var(--text-secondary); cursor: pointer;
-  transition: all 200ms;
-}
-.drop-zone:hover { border-color: var(--primary); color: var(--primary); background: #FFF7F0; }
-.drop-zone .dz-icon { font-size: 48px; margin-bottom: 12px; }
-.drop-zone .dz-text { font-size: 16px; font-weight: 500; }
-.drop-zone .dz-hint { font-size: 12px; margin-top: 6px; }
 </style>
 </head>
 <body>
@@ -357,6 +453,7 @@ body {
   <div class="home-header">
     <div>
       <div class="home-greeting" id="greeting">加载中...</div>
+      <div class="xp-badge" id="xp-badge-home">⭐ 0 XP</div>
     </div>
     <div class="streak-badge" id="streak-badge">🔥 0 天</div>
   </div>
@@ -387,34 +484,32 @@ body {
     <span class="queue-info" id="queue-info"></span>
     <div style="width:60px"></div>
   </div>
+
   <div class="learn-empty" id="learn-empty">
     <div class="emoji">🎉</div>
     <h2>今日任务已完成！</h2>
     <p>明天再来吧，坚持就是胜利 💪</p>
     <button class="cta-btn" style="margin-top:20px; width:200px" onclick="resetDailyQueue()">开始新一批</button>
   </div>
-  <div id="learn-content">
-    <div class="card-area" id="card-area">
-      <div class="swipe-left">✕</div>
-      <div class="swipe-right">✓</div>
-      <div class="flashcard" id="flashcard" onclick="flipCard()">
-        <div class="card-face card-front" id="card-front">
-          <div class="card-word" id="card-word">word</div>
-          <div class="card-phonetic" id="card-phonetic">/fəˈnetɪk/</div>
-          <button class="audio-btn" id="audio-btn" onclick="event.stopPropagation(); playAudio()">🔊</button>
-          <div style="margin-top:16px; color:var(--text-secondary); font-size:13px">👆 点击翻转查看释义</div>
-        </div>
-        <div class="card-face card-back" id="card-back">
-          <div class="card-translation" id="card-translation">翻译</div>
-          <div class="card-phrases" id="card-phrases"></div>
-        </div>
-      </div>
+
+  <div id="learn-content" style="display:none">
+    <!-- XP + Combo + Progress dots -->
+    <div class="ex-topbar">
+      <span class="ex-xp" id="ex-xp">⭐ 0</span>
+      <div class="ex-progress-dots" id="ex-dots"></div>
+      <span class="ex-combo" id="ex-combo" style="display:none">🔥 x1</span>
     </div>
-    <div class="swipe-hint">
-      <button class="swipe-btn swipe-dunno" id="swipe-dunno">← 不认识</button>
-      <button class="swipe-btn swipe-know" id="swipe-know">认识 →</button>
+
+    <!-- Exercise area -->
+    <div class="ex-container" id="ex-container">
+      <div class="ex-type-label" id="ex-type-label"></div>
+      <div id="ex-body"></div>
+      <div class="ex-feedback" id="ex-feedback"></div>
+      <button class="ex-continue" id="ex-continue" onclick="nextExercise()">继续 →</button>
     </div>
-    <div class="rate-buttons" style="display:none" id="rate-buttons">
+
+    <!-- SRS Rating (shown after all exercises) -->
+    <div class="rate-buttons" id="rate-buttons">
       <button class="rate-btn again" onclick="rateWord(0)">😰 重来<br><small>Again</small></button>
       <button class="rate-btn hard" onclick="rateWord(1)">🤔 困难<br><small>Hard</small></button>
       <button class="rate-btn good" onclick="rateWord(2)">😊 良好<br><small>Good</small></button>
@@ -455,6 +550,10 @@ body {
       <div class="stat-label">连续打卡</div>
     </div>
   </div>
+  <div class="stat-item" style="margin-bottom:12px">
+    <div class="stat-value" id="stat-xp">0</div>
+    <div class="stat-label">总经验值 (XP)</div>
+  </div>
   <div class="weak-words">
     <h3>⚠️ 需要加强的单词</h3>
     <div id="weak-words-list"></div>
@@ -486,7 +585,7 @@ body {
 </div>
 
 <script>
-// ─────────────── DATA & STATE ───────────────
+// ═══════════════════ DATA & STATE ═══════════════════
 let words = [];
 let userState = {
   wordProgress: {},  // wordId -> {ease, interval, reps, nextReview, correct, incorrect}
@@ -495,7 +594,9 @@ let userState = {
   dailyGoal: 20,
   todayReviewed: 0,
   todayCorrect: 0,
-  todayWords: []  // wordIds reviewed today
+  todayWords: [],    // wordIds reviewed today
+  totalXP: 0,
+  todayXP: 0
 };
 
 const DAILY_NEW_LIMIT = 10;
@@ -505,27 +606,28 @@ const DAILY_REVIEW_LIMIT = 20;
 function loadState() {
   try {
     const raw = localStorage.getItem('vocab-master-state');
-    if (raw) userState = JSON.parse(raw);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      userState = { ...userState, ...parsed };
+    }
   } catch(e) { console.warn('state load failed', e); }
 }
 function saveState() {
   localStorage.setItem('vocab-master-state', JSON.stringify(userState));
 }
 
-// ─────────────── SM-2 Algorithm ───────────────
+// ═══════════════════ SM-2 Algorithm ═══════════════════
 function sm2(quality, prevEase, prevInterval, prevReps) {
-  // quality: 0=again, 1=hard, 2=good, 3=Easy
   let ease = prevEase || 2.5;
   let interval = prevInterval || 0;
   let reps = prevReps || 0;
 
-  // Map 0-3 quality to SM-2 0-5 scale
   const qMap = {0: 2, 1: 3, 2: 4, 3: 5};
   const q = qMap[quality] || 3;
 
   if (q < 3) {
     reps = 0;
-    interval = 1; // 1 day
+    interval = 1;
   } else {
     if (reps === 0) interval = 1;
     else if (reps === 1) interval = 6;
@@ -533,14 +635,13 @@ function sm2(quality, prevEase, prevInterval, prevReps) {
     reps++;
   }
 
-  // Update ease factor
   ease = ease + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
   ease = Math.max(1.3, ease);
 
   return { ease, interval, reps };
 }
 
-// ─────────────── Daily Queue ───────────────
+// ═══════════════════ Daily Queue ═══════════════════
 function todayStr() { return new Date().toISOString().slice(0, 10); }
 
 function getDueWords() {
@@ -561,11 +662,9 @@ function getDueWords() {
 
 function getTodayWords() {
   let todayWords = userState.todayWords || [];
-  // If new day, clear
   if (userState.lastStudyDate !== todayStr()) {
     todayWords = [];
   }
-  // If empty, populate
   if (todayWords.length === 0) {
     todayWords = getDueWords();
   }
@@ -580,14 +679,13 @@ function startLearning() {
   saveState();
 
   if (userState.todayWords.length === 0) {
-    // Queue up all words as new
     userState.todayWords = words.map(w => w.id).sort(() => Math.random() - 0.5);
     saveState();
   }
 
   showScreen('learn');
   currentWordIdx = 0;
-  renderCurrentCard();
+  startWordLesson();
 }
 
 function resetDailyQueue() {
@@ -599,10 +697,10 @@ function resetDailyQueue() {
   currentWordIdx = 0;
   document.getElementById('learn-empty').style.display = 'none';
   document.getElementById('learn-content').style.display = '';
-  renderCurrentCard();
+  startWordLesson();
 }
 
-// ─────────────── Streak ───────────────
+// ═══════════════════ Streak ═══════════════════
 function calculateStreak() {
   let streak = userState.streak || 0;
   const today = new Date();
@@ -614,7 +712,7 @@ function calculateStreak() {
 
   if (diffDays === 0) return streak;
   if (diffDays === 1) return streak + 1;
-  if (diffDays > 1) return 1; // broken
+  if (diffDays > 1) return 1;
 
   return streak;
 }
@@ -629,16 +727,88 @@ function updateStreakForToday() {
 
 function updateStreakUI() {
   const s = userState.streak || 0;
-  document.getElementById('streak-badge').textContent = `🔥 ${s} 天`;
-  document.getElementById('stat-streak').textContent = `${s} 天`;
+  document.getElementById('streak-badge').textContent = '\uD83D\uDD25 ' + s + ' 天';
+  document.getElementById('stat-streak').textContent = s + ' 天';
 }
 
-// ─────────────── Flashcard ───────────────
+// ═══════════════════ Sound Effects (Web Audio API) ═══════════════════
+let audioCtx = null;
+function getAudioCtx() {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  return audioCtx;
+}
+
+function playSound(type) {
+  try {
+    const ctx = getAudioCtx();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    const now = ctx.currentTime;
+    if (type === 'correct') {
+      // Happy ascending two-note
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(523, now);       // C5
+      osc.frequency.setValueAtTime(659, now + 0.08); // E5
+      gain.gain.setValueAtTime(0.3, now);
+      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.2);
+      osc.start(now);
+      osc.stop(now + 0.2);
+    } else if (type === 'incorrect') {
+      // Low buzz
+      osc.type = 'square';
+      osc.frequency.setValueAtTime(180, now);
+      gain.gain.setValueAtTime(0.15, now);
+      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+      osc.start(now);
+      osc.stop(now + 0.3);
+    } else if (type === 'combo') {
+      // Rising sparkle
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(660, now);
+      osc.frequency.setValueAtTime(880, now + 0.05);
+      osc.frequency.setValueAtTime(1100, now + 0.1);
+      gain.gain.setValueAtTime(0.25, now);
+      gain.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
+      osc.start(now);
+      osc.stop(now + 0.3);
+    } else if (type === 'complete') {
+      // Fanfare
+      const notes = [523, 659, 784, 1047];
+      notes.forEach((freq, i) => {
+        const o = ctx.createOscillator();
+        const g = ctx.createGain();
+        o.connect(g); g.connect(ctx.destination);
+        o.type = 'sine';
+        const t = now + i * 0.12;
+        o.frequency.setValueAtTime(freq, t);
+        g.gain.setValueAtTime(0.2, t);
+        g.gain.exponentialRampToValueAtTime(0.01, t + 0.25);
+        o.start(t);
+        o.stop(t + 0.25);
+      });
+    }
+  } catch(e) { /* audio not critical */ }
+}
+
+// ═══════════════════ EXERCISE SYSTEM ═══════════════════
 let currentWordIdx = 0;
-let cardFlipped = false;
-let touchStartX = 0;
-let touchStartY = 0;
-let swiping = false;
+let currentExerciseIdx = 0;
+let exerciseAnswered = false;
+let sessionXP = 0;
+let sessionCombo = 0;
+let wordExercises = []; // The array of exercises for current word
+
+// Define exercise sequence per word
+const EXERCISE_TYPES = ['intro', 'mc_enzh', 'listening', 'fill_blank'];
+
+function getWordById(id) {
+  return words.find(w => w.id === id);
+}
 
 function getCurrentWordId() {
   const tw = userState.todayWords || [];
@@ -646,11 +816,93 @@ function getCurrentWordId() {
   return null;
 }
 
-function getWordById(id) {
-  return words.find(w => w.id === id);
+// Pick distractors from other words (same grade preferred)
+function getDistractors(word, count, pickField) {
+  // pickField: 'translation' for ZH distractors, 'word' for EN distractors
+  const others = words.filter(w => w.id !== word.id);
+  // Prefer same grade
+  const sameGrade = others.filter(w => w.grade === word.grade);
+  const pool = sameGrade.length >= count ? sameGrade : others;
+  const shuffled = [...pool].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count).map(w => w[pickField]);
 }
 
-function renderCurrentCard() {
+function generateExercises(word) {
+  const exs = [];
+
+  // 1. INTRO: Show word with pronunciation
+  exs.push({
+    type: 'intro',
+    word: word,
+    label: '新单词'
+  });
+
+  // 2. Multiple Choice EN→ZH
+  const zhOptions = getDistractors(word, 3, 'translation');
+  const zhCorrect = word.translation;
+  const zhAll = [zhCorrect, ...zhOptions].sort(() => Math.random() - 0.5);
+  exs.push({
+    type: 'mc_enzh',
+    word: word,
+    label: '选择正确释义',
+    prompt: word.word,
+    subprompt: '选择这个单词的中文意思',
+    options: zhAll,
+    correct: zhCorrect
+  });
+
+  // 3. Listening: hear the word, pick the English word
+  const enOptions = getDistractors(word, 3, 'word');
+  const enCorrect = word.word;
+  const enAll = [enCorrect, ...enOptions].sort(() => Math.random() - 0.5);
+  exs.push({
+    type: 'listening',
+    word: word,
+    label: '听力选择',
+    prompt: '🔊 听到的是哪个单词？',
+    subprompt: '点击喇叭听发音',
+    options: enAll,
+    correct: enCorrect,
+    autoPlay: true
+  });
+
+  // 4. Fill in the blank
+  if (word.examples && word.examples.length > 0) {
+    const example = word.examples[Math.floor(Math.random() * word.examples.length)];
+    const sentence = example.sentence;
+    // Replace the word (case-insensitive) with _____
+    const blankSentence = sentence.replace(new RegExp(word.word, 'gi'), '_____');
+    const fillOptions = getDistractors(word, 3, 'word');
+    const fillAll = [word.word, ...fillOptions].sort(() => Math.random() - 0.5);
+    exs.push({
+      type: 'fill_blank',
+      word: word,
+      label: '完形填空',
+      prompt: blankSentence,
+      subprompt: example.translation,
+      options: fillAll,
+      correct: word.word
+    });
+  } else {
+    // Fallback: MC ZH→EN if no example sentences
+    const enOpts2 = getDistractors(word, 3, 'word');
+    const enCorrect2 = word.word;
+    const enAll2 = [enCorrect2, ...enOpts2].sort(() => Math.random() - 0.5);
+    exs.push({
+      type: 'mc_zhen',
+      word: word,
+      label: '选择正确单词',
+      prompt: word.translation,
+      subprompt: '选择对应的英文单词',
+      options: enAll2,
+      correct: enCorrect2
+    });
+  }
+
+  return exs;
+}
+
+function startWordLesson() {
   const wid = getCurrentWordId();
   if (!wid) {
     document.getElementById('learn-empty').style.display = '';
@@ -660,55 +912,292 @@ function renderCurrentCard() {
 
   document.getElementById('learn-empty').style.display = 'none';
   document.getElementById('learn-content').style.display = '';
+  document.getElementById('rate-buttons').classList.remove('show');
 
-  const w = getWordById(wid);
-  if (!w) {
-    nextCard();
+  const word = getWordById(wid);
+  if (!word) {
+    currentWordIdx++;
+    startWordLesson();
     return;
   }
 
-  cardFlipped = false;
-  const card = document.getElementById('flashcard');
-  card.classList.remove('flipped', 'correct', 'incorrect');
-  document.getElementById('rate-buttons').style.display = 'none';
-  document.getElementById('card-word').textContent = w.word;
-  document.getElementById('card-phonetic').textContent = w.phonetic;
-  document.getElementById('card-translation').textContent = w.translation;
-
-  // Render phrases
-  let phrasesHTML = '';
-  w.phrases.forEach((p, i) => {
-    phrasesHTML += `<div class="card-phrase-item">
-      <span><span class="phrase-en">${p.phrase}</span><br><span class="phrase-zh">${p.translation}</span></span>
-      <button class="audio-btn" onclick="event.stopPropagation(); speakPhrase('${p.phrase.replace(/'/g, "\\'")}')">🔊</button>
-    </div>`;
-  });
-  document.getElementById('card-phrases').innerHTML = phrasesHTML;
-
+  wordExercises = generateExercises(word);
+  currentExerciseIdx = 0;
+  exerciseAnswered = false;
   updateQueueInfo();
-
-  // Preload audio in case browser needs user gesture
-  document.getElementById('audio-btn').classList.remove('playing');
+  renderExerciseDots();
+  updateTopBar();
+  renderExercise();
 }
 
 function updateQueueInfo() {
   const tw = userState.todayWords || [];
-  const total = tw.length;
-  const remaining = total - currentWordIdx;
-  document.getElementById('queue-info').textContent = `${currentWordIdx + 1} / ${total}`;
+  document.getElementById('queue-info').textContent = (currentWordIdx + 1) + ' / ' + tw.length;
 }
 
-function flipCard() {
-  if (swiping) return;
-  cardFlipped = !cardFlipped;
-  const card = document.getElementById('flashcard');
-  if (cardFlipped) {
-    card.classList.add('flipped');
-    document.getElementById('rate-buttons').style.display = 'grid';
+function renderExerciseDots() {
+  const dotsEl = document.getElementById('ex-dots');
+  dotsEl.innerHTML = wordExercises.map((ex, i) => {
+    let cls = 'ex-dot';
+    if (i < currentExerciseIdx) {
+      cls += ' done';
+    } else if (i === currentExerciseIdx) {
+      cls += ' current';
+    }
+    return '<span class="' + cls + '"></span>';
+  }).join('');
+}
+
+function getExerciseResult(exIdx) {
+  // Check if this exercise was answered correctly
+  // For intro, it's always "done"
+  if (wordExercises[exIdx].type === 'intro') return 'done';
+  // We track this via a data attribute on the container
+  const container = document.getElementById('ex-container');
+  const result = container.dataset['ex' + exIdx + 'result'];
+  return result || '';
+}
+
+function updateTopBar() {
+  document.getElementById('ex-xp').textContent = '⭐ ' + sessionXP;
+  const comboEl = document.getElementById('ex-combo');
+  if (sessionCombo >= 3) {
+    comboEl.style.display = '';
+    comboEl.textContent = '🔥 x' + sessionCombo;
   } else {
-    card.classList.remove('flipped');
-    document.getElementById('rate-buttons').style.display = 'none';
+    comboEl.style.display = 'none';
   }
+}
+
+function renderExercise() {
+  if (currentExerciseIdx >= wordExercises.length) {
+    showSRSRating();
+    return;
+  }
+
+  exerciseAnswered = false;
+  const ex = wordExercises[currentExerciseIdx];
+  document.getElementById('ex-type-label').textContent = ex.label;
+  document.getElementById('ex-feedback').textContent = '';
+  document.getElementById('ex-feedback').className = 'ex-feedback';
+  document.getElementById('ex-continue').classList.remove('show');
+  document.getElementById('ex-container').classList.remove('shake', 'pop');
+  document.getElementById('rate-buttons').classList.remove('show');
+  renderExerciseDots();
+
+  const body = document.getElementById('ex-body');
+
+  if (ex.type === 'intro') {
+    renderIntro(ex, body);
+  } else if (ex.type === 'mc_enzh' || ex.type === 'mc_zhen') {
+    renderMultipleChoice(ex, body);
+  } else if (ex.type === 'listening') {
+    renderListening(ex, body);
+  } else if (ex.type === 'fill_blank') {
+    renderFillBlank(ex, body);
+  }
+}
+
+function renderIntro(ex, body) {
+  const w = ex.word;
+  body.innerHTML = `
+    <div class="ex-intro-card">
+      <div class="ex-intro-word">${w.word}</div>
+      <div class="ex-intro-phonetic">${w.phonetic}</div>
+      <button class="ex-audio-btn" id="ex-audio-btn" onclick="playWordAudio('${w.word.replace(/'/g, "\\'")}')">🔊</button>
+      <div class="ex-intro-trans">${w.translation}</div>
+      <div class="ex-intro-phrases">
+        ${w.phrases.map(p => `
+          <div class="ex-intro-phrase-item">
+            <span><strong>${p.phrase}</strong><br><span style="color:var(--text-secondary);font-size:12px">${p.translation}</span></span>
+            <button class="audio-btn" onclick="event.stopPropagation(); speakPhrase('${p.phrase.replace(/'/g, "\\'")}')">🔊</button>
+          </div>
+        `).join('')}
+      </div>
+      <button class="ex-intro-ready" onclick="advanceIntro()">准备好了，开始练习 →</button>
+    </div>
+  `;
+
+  // Auto-play the word pronunciation
+  setTimeout(() => playWordAudio(w.word), 300);
+}
+
+function advanceIntro() {
+  exerciseAnswered = true;
+  const container = document.getElementById('ex-container');
+  container.dataset['ex' + currentExerciseIdx + 'result'] = 'done';
+  showContinue();
+}
+
+function renderMultipleChoice(ex, body) {
+  body.innerHTML = `
+    <div class="ex-prompt">${ex.prompt}</div>
+    <div class="ex-subprompt">${ex.subprompt}</div>
+    <div class="ex-options">
+      ${ex.options.map((opt, i) => `
+        <button class="ex-option" onclick="answerMC(${i}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderListening(ex, body) {
+  body.innerHTML = `
+    <div class="ex-prompt">${ex.prompt}</div>
+    <div class="ex-subprompt">${ex.subprompt}</div>
+    <button class="ex-audio-btn" id="ex-audio-btn" onclick="playWordAudio('${ex.word.word.replace(/'/g, "\\'")}')">🔊</button>
+    <div class="ex-options">
+      ${ex.options.map((opt, i) => `
+        <button class="ex-option" onclick="answerMC(${i}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>
+      `).join('')}
+    </div>
+  `;
+
+  // Auto-play after a short delay
+  if (ex.autoPlay) {
+    setTimeout(() => playWordAudio(ex.word.word), 500);
+  }
+}
+
+function renderFillBlank(ex, body) {
+  body.innerHTML = `
+    <div class="ex-prompt small">${ex.prompt}</div>
+    <div class="ex-subprompt">${ex.subprompt}</div>
+    <div class="ex-options single-col">
+      ${ex.options.map((opt, i) => `
+        <button class="ex-option" onclick="answerMC(${i}, '${opt.replace(/'/g, "\\'")}')">${opt}</button>
+      `).join('')}
+    </div>
+  `;
+}
+
+function answerMC(idx, selected) {
+  if (exerciseAnswered) return;
+  exerciseAnswered = true;
+
+  const ex = wordExercises[currentExerciseIdx];
+  const isCorrect = selected === ex.correct;
+  const container = document.getElementById('ex-container');
+
+  // Store result
+  container.dataset['ex' + currentExerciseIdx + 'result'] = isCorrect ? 'correct' : 'incorrect';
+
+  // Highlight options
+  const options = document.querySelectorAll('.ex-option');
+  options.forEach((opt, i) => {
+    opt.disabled = true;
+    if (ex.options[i] === ex.correct) {
+      opt.classList.add('correct');
+    }
+    if (i === idx && !isCorrect) {
+      opt.classList.add('incorrect');
+    }
+  });
+
+  // Feedback
+  const fb = document.getElementById('ex-feedback');
+  if (isCorrect) {
+    fb.textContent = '✅ 正确！';
+    fb.className = 'ex-feedback correct';
+    playSound('correct');
+    sessionXP += 10;
+    sessionCombo++;
+    userState.todayXP = (userState.todayXP || 0) + 10;
+    userState.totalXP = (userState.totalXP || 0) + 10;
+    userState.todayCorrect = (userState.todayCorrect || 0) + 1;
+    container.classList.add('pop');
+
+    if (sessionCombo >= 3) {
+      playSound('combo');
+      fb.textContent += ' 🔥 连击 x' + sessionCombo + '!';
+      sessionXP += 5;
+      userState.todayXP += 5;
+      userState.totalXP += 5;
+      const comboEl = document.getElementById('ex-combo');
+      comboEl.classList.add('fire');
+      setTimeout(() => comboEl.classList.remove('fire'), 300);
+    }
+  } else {
+    fb.textContent = '❌ 正确答案：' + ex.correct;
+    fb.className = 'ex-feedback incorrect';
+    playSound('incorrect');
+    sessionCombo = 0;
+    container.classList.add('shake');
+  }
+
+  userState.todayReviewed = (userState.todayReviewed || 0) + 1;
+
+  // Mark dot
+  const dots = document.querySelectorAll('.ex-dot');
+  if (dots[currentExerciseIdx]) {
+    dots[currentExerciseIdx].classList.remove('current');
+    dots[currentExerciseIdx].classList.add(isCorrect ? 'done' : 'wrong');
+  }
+
+  updateTopBar();
+  saveState();
+  showContinue();
+}
+
+function showContinue() {
+  document.getElementById('ex-continue').classList.add('show');
+}
+
+function nextExercise() {
+  currentExerciseIdx++;
+
+  if (currentExerciseIdx >= wordExercises.length) {
+    showSRSRating();
+  } else {
+    renderExercise();
+  }
+}
+
+// ═══════════════════ SRS Rating ═══════════════════
+function showSRSRating() {
+  const body = document.getElementById('ex-body');
+  const wid = getCurrentWordId();
+  const word = getWordById(wid);
+
+  // Calculate exercise score
+  const correctCount = wordExercises.filter((ex, i) => {
+    const result = document.getElementById('ex-container').dataset['ex' + i + 'result'];
+    if (ex.type === 'intro') return true;
+    return result === 'correct';
+  }).length;
+
+  const totalExercises = wordExercises.length;
+  const perfect = correctCount === totalExercises;
+
+  document.getElementById('ex-type-label').textContent = perfect ? '🎉 完美！' : '评分';
+  document.getElementById('ex-feedback').textContent = '';
+  document.getElementById('ex-feedback').className = 'ex-feedback';
+  document.getElementById('ex-continue').classList.remove('show');
+
+  if (perfect) {
+    playSound('complete');
+    body.innerHTML = `
+      <div class="lesson-complete">
+        <div class="emoji">🌟</div>
+        <h3>全部正确！太棒了！</h3>
+        <p style="color:var(--text-secondary);margin-bottom:8px">${word.word} — ${word.translation}</p>
+        <div class="xp-earned">+${(totalExercises - 1) * 10 + (sessionCombo >= 3 ? 5 : 0)} XP</div>
+      </div>
+    `;
+  } else {
+    body.innerHTML = `
+      <div style="text-align:center;padding:20px">
+        <div style="font-size:28px;font-weight:700;margin-bottom:8px">${word.word}</div>
+        <div style="font-size:16px;color:var(--text-secondary);margin-bottom:4px">${word.phonetic}</div>
+        <div style="font-size:18px;color:var(--secondary);font-weight:600;margin-bottom:16px">${word.translation}</div>
+        <div style="font-size:14px;color:var(--text-secondary)">
+          练习正确率：${correctCount}/${totalExercises}
+        </div>
+      </div>
+    `;
+  }
+
+  document.getElementById('rate-buttons').classList.add('show');
 }
 
 function rateWord(quality) {
@@ -732,86 +1221,32 @@ function rateWord(quality) {
     lastReviewed: todayStr()
   };
 
-  // Update today stats
-  userState.todayReviewed = (userState.todayReviewed || 0) + 1;
-  if (quality >= 2) userState.todayCorrect = (userState.todayCorrect || 0) + 1;
   userState.lastStudyDate = todayStr();
+  userState.streak = calculateStreak();
 
   saveState();
 
-  // Animate feedback
-  const card = document.getElementById('flashcard');
-  card.classList.add(quality >= 2 ? 'correct' : 'incorrect');
-
-  setTimeout(() => {
-    card.classList.remove('correct', 'incorrect', 'flipped');
-    cardFlipped = false;
-    document.getElementById('rate-buttons').style.display = 'none';
-    nextCard();
-  }, 350);
-}
-
-function nextCard() {
+  // Move to next word
   currentWordIdx++;
+
   const tw = userState.todayWords || [];
   if (currentWordIdx >= tw.length) {
-    // Done!
     document.getElementById('learn-empty').style.display = '';
     document.getElementById('learn-content').style.display = 'none';
-    showToast('🎉 今日任务完成！');
+    showToast('🎉 今日任务完成！获得 ' + sessionXP + ' XP');
     updateProgressUI();
     updateHomeScreen();
   } else {
-    renderCurrentCard();
+    startWordLesson();
   }
 }
 
-// Quick rate: flip card first, then rate (for swipe buttons)
-function quickRate(quality) {
-  if (!cardFlipped) flipCard();
-  rateWord(quality);
-}
-
-// ─────────────── Touch Swipe ───────────────
-const cardArea = document.getElementById('card-area');
-
-cardArea.addEventListener('touchstart', e => {
-  touchStartX = e.touches[0].clientX;
-  touchStartY = e.touches[0].clientY;
-  swiping = false;
-}, {passive: true});
-
-cardArea.addEventListener('touchmove', e => {
-  const dx = e.touches[0].clientX - touchStartX;
-  const dy = e.touches[0].clientY - touchStartY;
-  if (Math.abs(dx) > 30 && Math.abs(dx) > Math.abs(dy) && !cardFlipped) {
-    swiping = true;
-    const area = document.getElementById('card-area');
-    area.classList.remove('swiping-left', 'swiping-right');
-    if (dx < 0) area.classList.add('swiping-left');
-    else area.classList.add('swiping-right');
-  }
-}, {passive: true});
-
-cardArea.addEventListener('touchend', e => {
-  const dx = e.changedTouches[0].clientX - touchStartX;
-  const dy = e.changedTouches[0].clientY - touchStartY;
-  const area = document.getElementById('card-area');
-  area.classList.remove('swiping-left', 'swiping-right');
-  if (swiping && Math.abs(dx) > 80 && Math.abs(dx) > Math.abs(dy)) {
-    if (dx > 0) rateWord(2); // right = good
-    else rateWord(0); // left = again
-  }
-  swiping = false;
-});
-
-// ─────────────── Audio ───────────────
+// ═══════════════════ Audio ═══════════════════
 let bestVoice = null;
 
 function loadVoices() {
   const voices = speechSynthesis.getVoices();
   if (voices.length === 0) return;
-  // Prefer high-quality macOS voices: Samantha > Karen > Alex > any en-US
   const preferred = ['Samantha', 'Karen', 'Alex', 'Moira', 'Fiona'];
   for (const name of preferred) {
     bestVoice = voices.find(v => v.name === name);
@@ -844,17 +1279,16 @@ function speakText(text, btnEl) {
   window.speechSynthesis.speak(utter);
 }
 
-function playAudio() {
-  const w = getWordById(getCurrentWordId());
-  if (!w) return;
-  speakText(w.word, document.getElementById('audio-btn'));
+function playWordAudio(word) {
+  const btn = document.getElementById('ex-audio-btn');
+  speakText(word, btn);
 }
 
 function speakPhrase(phrase) {
   speakText(phrase, null);
 }
 
-// ─────────────── Word Bank ───────────────
+// ═══════════════════ Word Bank ═══════════════════
 let wbFilter = 'all';
 
 function setFilter(grade, el) {
@@ -882,17 +1316,17 @@ function filterWords() {
   list.innerHTML = filtered.slice(0, 50).map(w => {
     const p = userState.wordProgress[w.id];
     const gradeClass = 'g' + w.grade;
-    return `<div class="wb-word-item" onclick="showWordDetail('${w.id}')">
-      <div>
-        <div class="wb-word-main">${w.word} <span style="font-size:13px;color:var(--text-secondary)">${w.phonetic}</span></div>
-        <div class="wb-word-sub">${w.translation}</div>
-      </div>
-      <span class="wb-word-grade ${gradeClass}">${w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三'}</span>
-    </div>`;
+    return '<div class="wb-word-item" onclick="showWordDetail(\'' + w.id + '\')">\n' +
+      '  <div>\n' +
+      '    <div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + w.phonetic + '</span></div>\n' +
+      '    <div class="wb-word-sub">' + w.translation + '</div>\n' +
+      '  </div>\n' +
+      '  <span class="wb-word-grade ' + gradeClass + '">' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span>\n' +
+      '</div>';
   }).join('');
 }
 
-// ─────────────── Word Detail Modal ───────────────
+// ═══════════════════ Word Detail Modal ═══════════════════
 function showWordDetail(id) {
   const w = getWordById(id);
   if (!w) return;
@@ -903,27 +1337,27 @@ function showWordDetail(id) {
     ? Math.round(p.correct / (p.correct + p.incorrect) * 100) + '%'
     : '--';
 
-  let html = `<button class="modal-close" onclick="document.getElementById('word-modal').classList.remove('show')">✕</button>`;
-  html += `<h3>${w.word}</h3>`;
-  html += `<div style="font-size:15px;color:var(--text-secondary);margin-bottom:8px">${w.phonetic}</div>`;
-  html += `<div style="font-size:18px;color:var(--secondary);font-weight:600;margin-bottom:16px">${w.translation}</div>`;
-  html += `<div style="display:flex;gap:12px;margin-bottom:16px;font-size:13px;color:var(--text-secondary)">
-    <span>${w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三'}</span>
-    <span>${status}</span>
-    <span>正确率: ${correctPct}</span>
-  </div>`;
-  html += `<div style="font-weight:600;margin-bottom:8px">📝 常用短语</div>`;
+  let html = '<button class="modal-close" onclick="document.getElementById(\'word-modal\').classList.remove(\'show\')">✕</button>';
+  html += '<h3>' + w.word + '</h3>';
+  html += '<div style="font-size:15px;color:var(--text-secondary);margin-bottom:8px">' + w.phonetic + '</div>';
+  html += '<div style="font-size:18px;color:var(--secondary);font-weight:600;margin-bottom:16px">' + w.translation + '</div>';
+  html += '<div style="display:flex;gap:12px;margin-bottom:16px;font-size:13px;color:var(--text-secondary)">' +
+    '<span>' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span>' +
+    '<span>' + status + '</span>' +
+    '<span>正确率: ' + correctPct + '</span>' +
+    '</div>';
+  html += '<div style="font-weight:600;margin-bottom:8px">📝 常用短语</div>';
   w.phrases.forEach(p => {
-    html += `<div class="card-phrase-item" style="margin-bottom:6px">
-      <span><span class="phrase-en">${p.phrase}</span><br><span class="phrase-zh">${p.translation}</span></span>
-      <button class="audio-btn" onclick="speakPhrase('${p.phrase.replace(/'/g, "\\'")}')">🔊</button>
-    </div>`;
+    html += '<div class="card-phrase-item" style="margin-bottom:6px">' +
+      '<span><span class="phrase-en">' + p.phrase + '</span><br><span class="phrase-zh">' + p.translation + '</span></span>' +
+      '<button class="audio-btn" onclick="speakPhrase(\'' + p.phrase.replace(/'/g, "\\'") + '\')">🔊</button>' +
+      '</div>';
   });
   if (w.examples && w.examples.length > 0) {
-    html += `<div style="font-weight:600;margin:12px 0 8px">💬 例句</div>`;
+    html += '<div style="font-weight:600;margin:12px 0 8px">💬 例句</div>';
     w.examples.forEach(e => {
-      html += `<div style="margin-bottom:6px;font-size:14px;color:var(--text)">${e.sentence}</div>`;
-      html += `<div style="margin-bottom:10px;font-size:13px;color:var(--text-secondary)">${e.translation}</div>`;
+      html += '<div style="margin-bottom:6px;font-size:14px;color:var(--text)">' + e.sentence + '</div>';
+      html += '<div style="margin-bottom:10px;font-size:13px;color:var(--text-secondary)">' + e.translation + '</div>';
     });
   }
 
@@ -937,13 +1371,13 @@ function closeModal(e) {
   }
 }
 
-// ─────────────── Progress & Stats ───────────────
+// ═══════════════════ Progress & Stats ═══════════════════
 function updateProgressUI() {
   const total = Object.keys(userState.wordProgress).length;
   const goal = userState.dailyGoal || 20;
   const today = userState.todayReviewed || 0;
 
-  document.getElementById('progress-count').textContent = `${today}/${goal}`;
+  document.getElementById('progress-count').textContent = today + '/' + goal;
 
   const circumference = 452;
   const offset = circumference - (Math.min(today, goal) / goal) * circumference;
@@ -951,6 +1385,7 @@ function updateProgressUI() {
 
   document.getElementById('stat-learned').textContent = total;
   document.getElementById('stat-today').textContent = today;
+  document.getElementById('stat-xp').textContent = userState.totalXP || 0;
 
   const totalCorrect = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0), 0);
   const totalAttempts = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0) + (p.incorrect || 0), 0);
@@ -964,19 +1399,19 @@ function updateProgressUI() {
     .slice(0, 10);
   document.getElementById('weak-words-list').innerHTML = weak.map(([id]) => {
     const w = getWordById(id);
-    return w ? `<div class="weak-word">${w.word} — ${w.translation}</div>` : '';
+    return w ? '<div class="weak-word">' + w.word + ' — ' + w.translation + '</div>' : '';
   }).join('');
 }
 
 function updateHomeScreen() {
-  // Greeting
   const hour = new Date().getHours();
   let greet = '早上好';
   if (hour >= 12 && hour < 18) greet = '下午好';
   if (hour >= 18) greet = '晚上好';
-  document.getElementById('greeting').innerHTML = `${greet} 👋<strong>开始学习吧</strong>`;
+  document.getElementById('greeting').innerHTML = greet + ' 👋<strong>开始学习吧</strong>';
 
-  // Word chips
+  document.getElementById('xp-badge-home').textContent = '⭐ ' + (userState.totalXP || 0) + ' XP';
+
   const tw = userState.todayWords || [];
   const chips = document.getElementById('word-chips');
   if (tw.length === 0) {
@@ -988,13 +1423,13 @@ function updateHomeScreen() {
       let cls = '';
       if (p && p.reps >= 3) cls = 'mastered';
       else if (p && p.reps > 0) cls = 'learning';
-      return w ? `<span class="word-chip ${cls}">${w.word}</span>` : '';
+      return w ? '<span class="word-chip ' + cls + '">' + w.word + '</span>' : '';
     }).join('');
-    if (tw.length > 10) chips.innerHTML += `<span class="word-chip">+${tw.length - 10} 个</span>`;
+    if (tw.length > 10) chips.innerHTML += '<span class="word-chip">+' + (tw.length - 10) + ' 个</span>';
   }
 }
 
-// ─────────────── Screen Nav ───────────────
+// ═══════════════════ Screen Nav ═══════════════════
 function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -1018,7 +1453,7 @@ function showScreen(name) {
   updateStreakUI();
 }
 
-// ─────────────── Toast ───────────────
+// ═══════════════════ Toast ═══════════════════
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
@@ -1026,7 +1461,7 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// ─────────────── Reset ───────────────
+// ═══════════════════ Reset ═══════════════════
 function resetAllProgress() {
   if (confirm('确定要重置所有学习数据吗？此操作不可撤销！')) {
     userState = {
@@ -1036,7 +1471,9 @@ function resetAllProgress() {
       dailyGoal: 20,
       todayReviewed: 0,
       todayCorrect: 0,
-      todayWords: []
+      todayWords: [],
+      totalXP: 0,
+      todayXP: 0
     };
     saveState();
     updateProgressUI();
@@ -1046,9 +1483,8 @@ function resetAllProgress() {
   }
 }
 
-// ─────────────── INIT ───────────────
+// ═══════════════════ INIT ═══════════════════
 async function init() {
-  // Load words
   try {
     const resp = await fetch('words.json');
     words = await resp.json();
@@ -1058,17 +1494,14 @@ async function init() {
     return;
   }
 
-  // Load state
   loadState();
 
-  // New day check
   if (userState.lastStudyDate !== todayStr()) {
-    // Don't reset todayWords here - startLearning handles it
     userState.todayReviewed = 0;
     userState.todayCorrect = 0;
+    userState.todayXP = 0;
   }
 
-  // Update streak
   userState.streak = calculateStreak();
   saveState();
 
@@ -1076,12 +1509,12 @@ async function init() {
   updateStreakUI();
   updateProgressUI();
 
-  // Wire up click handlers (more reliable than inline onclick on some browsers)
-  document.getElementById('swipe-dunno')?.addEventListener('click', () => quickRate(0));
-  document.getElementById('swipe-know')?.addEventListener('click', () => quickRate(2));
+  // Resume audio context on first user gesture
+  document.addEventListener('click', () => {
+    try { getAudioCtx().resume(); } catch(e) {}
+  }, { once: true });
 }
 
-// Start
 init();
 </script>
 </body>
