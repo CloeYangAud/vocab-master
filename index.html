@@ -199,11 +199,19 @@ body {
 }
 .swipe-hint {
   display: flex; justify-content: space-between;
-  align-items: center; padding: 0 16px;
-  color: var(--text-secondary); font-size: 13px;
+  align-items: center; padding: 0 16px; gap: 12px;
 }
-.swipe-hint .know { color: var(--success); font-weight: 600; }
-.swipe-hint .dunno { color: var(--error); font-weight: 600; }
+.swipe-btn {
+  flex: 1; padding: 14px 16px; border: 2px solid #E5E7EB;
+  border-radius: var(--radius); cursor: pointer;
+  font-family: inherit; font-size: 16px; font-weight: 700;
+  background: var(--card-bg); transition: all 150ms ease-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.swipe-dunno { color: var(--error); }
+.swipe-know { color: var(--success); }
+.swipe-dunno:active { background: #FEE2E2; border-color: var(--error); transform: scale(0.97); }
+.swipe-know:active { background: #D1FAE5; border-color: var(--success); transform: scale(0.97); }
 .rate-buttons {
   display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 8px; margin-top: 16px;
@@ -403,8 +411,8 @@ body {
       </div>
     </div>
     <div class="swipe-hint">
-      <span class="dunno">← 不认识</span>
-      <span class="know">认识 →</span>
+      <button class="swipe-btn swipe-dunno" id="swipe-dunno">← 不认识</button>
+      <button class="swipe-btn swipe-know" id="swipe-know">认识 →</button>
     </div>
     <div class="rate-buttons" style="display:none" id="rate-buttons">
       <button class="rate-btn again" onclick="rateWord(0)">😰 重来<br><small>Again</small></button>
@@ -758,6 +766,12 @@ function nextCard() {
   }
 }
 
+// Quick rate: flip card first, then rate (for swipe buttons)
+function quickRate(quality) {
+  if (!cardFlipped) flipCard();
+  rateWord(quality);
+}
+
 // ─────────────── Touch Swipe ───────────────
 const cardArea = document.getElementById('card-area');
 
@@ -792,6 +806,22 @@ cardArea.addEventListener('touchend', e => {
 });
 
 // ─────────────── Audio ───────────────
+let bestVoice = null;
+
+function loadVoices() {
+  const voices = speechSynthesis.getVoices();
+  if (voices.length === 0) return;
+  // Prefer high-quality macOS voices: Samantha > Karen > Alex > any en-US
+  const preferred = ['Samantha', 'Karen', 'Alex', 'Moira', 'Fiona'];
+  for (const name of preferred) {
+    bestVoice = voices.find(v => v.name === name);
+    if (bestVoice) break;
+  }
+  if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith('en')) || voices[0];
+}
+speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+
 function speakText(text, btnEl) {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();
@@ -800,6 +830,7 @@ function speakText(text, btnEl) {
   utter.lang = 'en-US';
   utter.rate = 0.85;
   utter.pitch = 1;
+  if (bestVoice) utter.voice = bestVoice;
 
   if (btnEl) btnEl.classList.add('playing');
 
@@ -1044,6 +1075,16 @@ async function init() {
   updateHomeScreen();
   updateStreakUI();
   updateProgressUI();
+
+  // Wire up click handlers (more reliable than inline onclick on some browsers)
+  document.getElementById('swipe-dunno')?.addEventListener('click', () => quickRate(0));
+  document.getElementById('swipe-know')?.addEventListener('click', () => quickRate(2));
+  document.querySelectorAll('.rate-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const q = parseInt(this.getAttribute('onclick')?.match(/rateWord\((\d)\)/)?.[1]);
+      if (q !== undefined && !isNaN(q)) rateWord(q);
+    });
+  });
 }
 
 // Start
