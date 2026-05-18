@@ -577,6 +577,7 @@ body {
     <button class="wb-filter" onclick="setFilter('8', this)">初二</button>
     <button class="wb-filter" onclick="setFilter('9', this)">初三</button>
   </div>
+  <div class="wb-filters" id="wb-unit-filters" style="display:none"></div>
   <div id="wb-word-list"></div>
 </div>
 
@@ -1452,22 +1453,45 @@ function playDictAudio(url, btn) {
 
 // ═══════════════════ WORD BANK ═══════════════════
 let wbFilter = 'all';
+let wbUnitFilter = 'all';
 function setFilter(grade, el) {
   wbFilter = grade;
-  document.querySelectorAll('.wb-filter').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#wordbank-screen .wb-filters:first-child .wb-filter').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
+  updateUnitFilters();
   filterWords();
+}
+function setUnitFilter(unit, el) {
+  wbUnitFilter = unit;
+  document.querySelectorAll('#wb-unit-filters .wb-filter').forEach(b => b.classList.remove('active'));
+  if (el) el.classList.add('active');
+  filterWords();
+}
+function updateUnitFilters() {
+  const unitEl = document.getElementById('wb-unit-filters');
+  if (wbFilter === 'all') {
+    unitEl.style.display = 'none';
+    wbUnitFilter = 'all';
+    return;
+  }
+  // Get unique units for this grade
+  const grade = parseInt(wbFilter);
+  const units = [...new Set(words.filter(w => w.grade === grade).map(w => w.semester + w.unit))].sort();
+  unitEl.style.display = 'flex';
+  unitEl.innerHTML = '<button class="wb-filter active" onclick="setUnitFilter(\'all\', this)">全部单元</button>' +
+    units.map(u => '<button class="wb-filter" onclick="setUnitFilter(\'' + u + '\', this)">' + u + '</button>').join('');
 }
 function filterWords() {
   const query = document.getElementById('wb-search').value.toLowerCase();
   let filtered = words;
   if (wbFilter !== 'all') filtered = filtered.filter(w => w.grade === parseInt(wbFilter));
+  if (wbUnitFilter !== 'all') filtered = filtered.filter(w => (w.semester + w.unit) === wbUnitFilter);
   if (query) filtered = filtered.filter(w => w.word.toLowerCase().includes(query) || w.translation.includes(query));
   document.getElementById('wb-word-list').innerHTML = filtered.slice(0, 50).map(w => {
     const gradeClass = 'g' + w.grade;
     return '<div class="wb-word-item" onclick="showWordDetail(\'' + w.id + '\')">' +
       '<div><div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + w.phonetic + '</span></div>' +
-      '<div class="wb-word-sub">' + w.translation + '</div></div>' +
+      '<div class="wb-word-sub">' + w.translation + ' <span style="font-size:11px;color:var(--text-secondary)">' + (w.semester||'') + (w.unit||'') + '</span></div></div>' +
       '<span class="wb-word-grade ' + gradeClass + '">' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span></div>';
   }).join('');
 }
@@ -1484,7 +1508,7 @@ function showWordDetail(id) {
   html += '<div style="font-size:15px;color:var(--text-secondary);margin-bottom:8px">' + w.phonetic + '</div>';
   html += '<div style="font-size:18px;color:var(--secondary);font-weight:600;margin-bottom:16px">' + w.translation + '</div>';
   html += '<div style="display:flex;gap:12px;margin-bottom:16px;font-size:13px;color:var(--text-secondary)">' +
-    '<span>' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span><span>' + status + '</span><span>正确率: ' + correctPct + '</span></div>';
+    '<span>' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + (w.semester||'') + (w.unit||'') + '</span><span>' + status + '</span><span>正确率: ' + correctPct + '</span></div>';
   html += '<div style="font-weight:600;margin-bottom:8px">📝 常用短语</div>';
   w.phrases.forEach(p => {
     html += '<div style="background:#F3F4F6;padding:8px 12px;border-radius:8px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center">' +
