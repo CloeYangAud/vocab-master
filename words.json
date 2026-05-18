@@ -21,12 +21,12 @@
     ],
     "examples": [
       {
-        "sentence": "Hard work achieves success.",
-        "translation": "努力工作就能成功。"
+        "sentence": "If you work hard, you will achieve your dream.",
+        "translation": "如果你努力学习，你就会实现梦想。"
       },
       {
-        "sentence": "She achieved her goal of losing weight.",
-        "translation": "她实现了减肥的目标。"
+        "sentence": "No one can achieve success without effort.",
+        "translation": "没有人能不劳而获。"
       }
     ],
     "semester": "上",
@@ -87,12 +87,12 @@
     ],
     "examples": [
       {
-        "sentence": "Please accept my apology.",
-        "translation": "请接受我的道歉。"
+        "sentence": "She accepted the invitation to the party.",
+        "translation": "她接受了聚会的邀请。"
       },
       {
-        "sentence": "He accepted the job offer.",
-        "translation": "他接受了这份工作。"
+        "sentence": "We should learn to accept our mistakes.",
+        "translation": "我们应该学会接受自己的错误。"
       }
     ],
     "semester": "上",
@@ -120,12 +120,12 @@
     ],
     "examples": [
       {
-        "sentence": "I admire people who never give up.",
-        "translation": "我钦佩永不放弃的人。"
+        "sentence": "I really admire people who never give up.",
+        "translation": "我真的很佩服那些永不放弃的人。"
       },
       {
-        "sentence": "We stopped to admire the sunset.",
-        "translation": "我们停下来欣赏日落。"
+        "sentence": "We all admire him for his courage.",
+        "translation": "我们都因他的勇气而敬佩他。"
       }
     ],
     "semester": "上",
@@ -252,12 +252,12 @@
     ],
     "examples": [
       {
-        "sentence": "Please pay attention in class.",
-        "translation": "上课请专心听讲。"
+        "sentence": "You should pay more attention to your spelling.",
+        "translation": "你应该多注意你的拼写。"
       },
       {
-        "sentence": "The story caught my attention.",
-        "translation": "这个故事吸引了我。"
+        "sentence": "The movie caught everyone's attention.",
+        "translation": "这部电影引起了所有人的注意。"
       }
     ],
     "semester": "上",
@@ -318,12 +318,12 @@
     ],
     "examples": [
       {
-        "sentence": "You are very brave.",
-        "translation": "你很勇敢。"
+        "sentence": "The brave boy saved the little girl from the river.",
+        "translation": "那个勇敢的男孩从河里救出了小女孩。"
       },
       {
-        "sentence": "It was a brave thing to do.",
-        "translation": "这么做很勇敢。"
+        "sentence": "It was brave of you to tell the truth.",
+        "translation": "你说出真相很勇敢。"
       }
     ],
     "semester": "上",
@@ -384,12 +384,12 @@
     ],
     "examples": [
       {
-        "sentence": "Learning English is a challenge.",
-        "translation": "学习英语是一个挑战。"
+        "sentence": "Learning a new language is a big challenge.",
+        "translation": "学习一门新语言是一个很大的挑战。"
       },
       {
-        "sentence": "She likes to challenge herself.",
-        "translation": "她喜欢挑战自己。"
+        "sentence": "She likes to face new challenges in life.",
+        "translation": "她喜欢面对生活中的新挑战。"
       }
     ],
     "semester": "下",
@@ -483,12 +483,12 @@
     ],
     "examples": [
       {
-        "sentence": "She is confident about the exam.",
-        "translation": "她对考试很有信心。"
+        "sentence": "She feels confident about passing the exam.",
+        "translation": "她对通过考试很有信心。"
       },
       {
-        "sentence": "Practice makes you more confident.",
-        "translation": "练习让你更有信心。"
+        "sentence": "Be more confident in yourself!",
+        "translation": "对自己更有信心！"
       }
     ],
     "semester": "上",
@@ -648,12 +648,12 @@
     ],
     "examples": [
       {
-        "sentence": "Children are curious about everything.",
-        "translation": "孩子们对一切都很好奇。"
+        "sentence": "Children are naturally curious about the world.",
+        "translation": "孩子们天生对世界充满好奇。"
       },
       {
-        "sentence": "I'm curious to know the answer.",
-        "translation": "我很想知道答案。"
+        "sentence": "I'm curious to know what happened next.",
+        "translation": "我很好奇接下来发生了什么。"
       }
     ],
     "semester": "下",
@@ -681,12 +681,12 @@
     ],
     "examples": [
       {
-        "sentence": "I decided to study harder.",
-        "translation": "我决定更努力学习。"
+        "sentence": "He decided to study harder this term.",
+        "translation": "他决定这学期更加努力地学习。"
       },
       {
-        "sentence": "Have you decided where to go?",
-        "translation": "你决定去哪里了吗？"
+        "sentence": "It's hard to decide which one to choose.",
+        "translation": "很难决定选哪一个。"
       }
     ],
     "semester": "下",
@@ -780,12 +780,12 @@
     ],
     "examples": [
       {
-        "sentence": "Who discovered America?",
-        "translation": "谁发现了美洲？"
+        "sentence": "Scientists have discovered a new way to save energy.",
+        "translation": "科学家们发现了一种新的节能方法。"
       },
       {
-        "sentence": "I discovered I love painting.",
-        "translation": "我发现我喜欢画画。"
+        "sentence": "I discovered that reading English every day really helps.",
+        "translation": "我发现每天读英语真的很有帮助。"
       }
     ],
     "semester": "下",
@@ -813,12 +813,12 @@
     ],
     "examples": [
       {
-        "sentence": "Teachers encourage students to ask questions.",
-        "translation": "老师鼓励学生提问。"
+        "sentence": "Parents should encourage their children to read more.",
+        "translation": "父母应该鼓励孩子多读书。"
       },
       {
-        "sentence": "My parents always encourage me.",
-        "translation": "父母总是鼓励我。"
+        "sentence": "Her words encouraged me to keep trying.",
+        "translation": "她的话鼓励我继续尝试。"
       }
     ],
     "semester": "上",
@@ -846,12 +846,12 @@
     ],
     "examples": [
       {
-        "sentence": "We should protect our environment.",
-        "translation": "我们应该保护环境。"
+        "sentence": "We must do something to protect the environment.",
+        "translation": "我们必须做点什么来保护环境。"
       },
       {
-        "sentence": "A quiet environment helps study.",
-        "translation": "安静的环境有助于学习。"
+        "sentence": "A good learning environment helps students focus.",
+        "translation": "良好的学习环境有助于学生集中注意力。"
       }
     ],
     "semester": "上",
@@ -879,12 +879,12 @@
     ],
     "examples": [
       {
-        "sentence": "Traveling is a great experience.",
-        "translation": "旅行是很棒的经历。"
+        "sentence": "Traveling is a great way to gain life experience.",
+        "translation": "旅行是获得人生经验的好方法。"
       },
       {
-        "sentence": "He has no experience in teaching.",
-        "translation": "他没有教学经验。"
+        "sentence": "Do you have any experience in teaching?",
+        "translation": "你有教学经验吗？"
       }
     ],
     "semester": "下",
@@ -912,12 +912,12 @@
     ],
     "examples": [
       {
-        "sentence": "Can you explain this word?",
-        "translation": "你能解释一下这个词吗？"
+        "sentence": "Can you explain why you were late again?",
+        "translation": "你能解释一下你为什么又迟到了吗？"
       },
       {
-        "sentence": "Let me explain how it works.",
-        "translation": "让我解释它是如何运作的。"
+        "sentence": "The teacher explained the problem clearly.",
+        "translation": "老师清楚地解释了这个问题。"
       }
     ],
     "semester": "上",
@@ -978,12 +978,12 @@
     ],
     "examples": [
       {
-        "sentence": "Are you familiar with this song?",
-        "translation": "你熟悉这首歌吗？"
+        "sentence": "This song sounds familiar to me.",
+        "translation": "这首歌我听着很耳熟。"
       },
       {
-        "sentence": "The place looked familiar to me.",
-        "translation": "这个地方看起来很眼熟。"
+        "sentence": "Are you familiar with the rules of the game?",
+        "translation": "你熟悉游戏规则吗？"
       }
     ],
     "semester": "上",
@@ -1011,12 +1011,12 @@
     ],
     "examples": [
       {
-        "sentence": "She is very generous to her friends.",
-        "translation": "她对朋友非常慷慨。"
+        "sentence": "The generous man gave all his money to charity.",
+        "translation": "那个慷慨的人把所有的钱都捐给了慈善机构。"
       },
       {
-        "sentence": "Thank you for your generous gift.",
-        "translation": "谢谢你慷慨的礼物。"
+        "sentence": "It's generous of you to share your lunch with me.",
+        "translation": "你把午餐分给我真是太大方了。"
       }
     ],
     "semester": "上",
@@ -1077,12 +1077,12 @@
     ],
     "examples": [
       {
-        "sentence": "To be honest, I don't like it.",
-        "translation": "老实说，我不喜欢。"
+        "sentence": "To be honest, I don't like the plan at all.",
+        "translation": "老实说，我一点也不喜欢这个计划。"
       },
       {
-        "sentence": "He is an honest boy.",
-        "translation": "他是一个诚实的男孩。"
+        "sentence": "An honest person always tells the truth.",
+        "translation": "诚实的人总是说真话。"
       }
     ],
     "semester": "下",
@@ -1143,12 +1143,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to improve my speaking skills.",
-        "translation": "我想提高口语能力。"
+        "sentence": "Reading more can help improve your English.",
+        "translation": "多阅读有助于提高你的英语水平。"
       },
       {
-        "sentence": "Her grades have improved a lot.",
-        "translation": "她的成绩提高了很多。"
+        "sentence": "The situation has improved a lot recently.",
+        "translation": "最近情况改善了很多。"
       }
     ],
     "semester": "上",
@@ -1176,12 +1176,12 @@
     ],
     "examples": [
       {
-        "sentence": "The book includes many pictures.",
-        "translation": "这本书包含很多图片。"
+        "sentence": "The price includes both food and drinks.",
+        "translation": "这个价格包括食物和饮料。"
       },
       {
-        "sentence": "Everyone was invited, including me.",
-        "translation": "所有人都被邀请了，包括我。"
+        "sentence": "Our class includes students from different countries.",
+        "translation": "我们班有来自不同国家的学生。"
       }
     ],
     "semester": "上",
@@ -1209,12 +1209,12 @@
     ],
     "examples": [
       {
-        "sentence": "You should learn to be independent.",
-        "translation": "你应该学会独立。"
+        "sentence": "Children should learn to be independent.",
+        "translation": "孩子们应该学会独立。"
       },
       {
-        "sentence": "She is an independent young woman.",
-        "translation": "她是一个独立的年轻女性。"
+        "sentence": "She has been independent since she was 18.",
+        "translation": "她从18岁起就独立了。"
       }
     ],
     "semester": "下",
@@ -1242,12 +1242,12 @@
     ],
     "examples": [
       {
-        "sentence": "Friends can influence your choices.",
-        "translation": "朋友会影响你的选择。"
+        "sentence": "Parents have a great influence on their children.",
+        "translation": "父母对孩子有很大的影响。"
       },
       {
-        "sentence": "Parents have a big influence on children.",
-        "translation": "父母对孩子影响很大。"
+        "sentence": "The Internet has changed our lives in many ways.",
+        "translation": "互联网在很多方面改变了我们的生活。"
       }
     ],
     "semester": "上",
@@ -1275,12 +1275,12 @@
     ],
     "examples": [
       {
-        "sentence": "Let me introduce my friend.",
-        "translation": "让我介绍我的朋友。"
+        "sentence": "Let me introduce my new friend to you.",
+        "translation": "让我把我的新朋友介绍给你。"
       },
       {
-        "sentence": "Please introduce yourself in English.",
-        "translation": "请用英语自我介绍。"
+        "sentence": "The company introduced a new product last month.",
+        "translation": "公司上个月推出了一款新产品。"
       }
     ],
     "semester": "上",
@@ -1341,12 +1341,12 @@
     ],
     "examples": [
       {
-        "sentence": "How do you manage your time?",
-        "translation": "你怎么管理时间？"
+        "sentence": "How do you manage to finish so much work every day?",
+        "translation": "你是怎么做到每天完成这么多工作的？"
       },
       {
-        "sentence": "I managed to finish my homework.",
-        "translation": "我设法完成了作业。"
+        "sentence": "She managed to solve the problem by herself.",
+        "translation": "她设法自己解决了问题。"
       }
     ],
     "semester": "下",
@@ -1506,12 +1506,12 @@
     ],
     "examples": [
       {
-        "sentence": "A good teacher is always patient.",
-        "translation": "好老师总是很有耐心。"
+        "sentence": "A good teacher must be patient with students.",
+        "translation": "好老师必须对学生有耐心。"
       },
       {
-        "sentence": "Please be patient with me.",
-        "translation": "请对我耐心一点。"
+        "sentence": "You need to be patient — good things take time.",
+        "translation": "你需要耐心——好事多磨。"
       }
     ],
     "semester": "下",
@@ -1572,12 +1572,12 @@
     ],
     "examples": [
       {
-        "sentence": "I prefer tea to coffee.",
-        "translation": "比起咖啡我更喜欢茶。"
+        "sentence": "I prefer reading books to watching TV.",
+        "translation": "比起看电视，我更喜欢读书。"
       },
       {
-        "sentence": "She prefers studying alone.",
-        "translation": "她更喜欢独自学习。"
+        "sentence": "Which do you prefer, tea or coffee?",
+        "translation": "你更喜欢哪个，茶还是咖啡？"
       }
     ],
     "semester": "下",
@@ -1605,12 +1605,12 @@
     ],
     "examples": [
       {
-        "sentence": "We are preparing for the exam.",
-        "translation": "我们在为考试做准备。"
+        "sentence": "We are busy preparing for the final exam.",
+        "translation": "我们正忙着准备期末考试。"
       },
       {
-        "sentence": "She prepared a nice dinner.",
-        "translation": "她准备了一顿丰盛的晚餐。"
+        "sentence": "You should prepare well before the interview.",
+        "translation": "你应该在面试前做好准备。"
       }
     ],
     "semester": "下",
@@ -1638,12 +1638,12 @@
     ],
     "examples": [
       {
-        "sentence": "I promise to try my best.",
-        "translation": "我保证尽力而为。"
+        "sentence": "He promised to help me with my homework.",
+        "translation": "他答应帮我做作业。"
       },
       {
-        "sentence": "Never break a promise.",
-        "translation": "永远不要违背承诺。"
+        "sentence": "Never make a promise you can't keep.",
+        "translation": "永远不要许下你无法兑现的承诺。"
       }
     ],
     "semester": "下",
@@ -1704,12 +1704,12 @@
     ],
     "examples": [
       {
-        "sentence": "I realized I was wrong.",
-        "translation": "我意识到我错了。"
+        "sentence": "I didn't realize how important health is until I got sick.",
+        "translation": "直到生病我才意识到健康有多重要。"
       },
       {
-        "sentence": "She realized her dream of becoming a doctor.",
-        "translation": "她实现了成为医生的梦想。"
+        "sentence": "She finally realized that she was wrong.",
+        "translation": "她终于意识到自己错了。"
       }
     ],
     "semester": "上",
@@ -1803,12 +1803,12 @@
     ],
     "examples": [
       {
-        "sentence": "Remember to bring your book.",
-        "translation": "记得带书。"
+        "sentence": "Remember to turn off the lights when you leave.",
+        "translation": "离开时记得关灯。"
       },
       {
-        "sentence": "I still remember that day.",
-        "translation": "我仍然记得那一天。"
+        "sentence": "I still remember the first day of school.",
+        "translation": "我还记得上学的第一天。"
       }
     ],
     "semester": "上",
@@ -1869,12 +1869,12 @@
     ],
     "examples": [
       {
-        "sentence": "I suggest starting early.",
-        "translation": "我建议早点开始。"
+        "sentence": "I suggest that you take a short break.",
+        "translation": "我建议你休息一会儿。"
       },
       {
-        "sentence": "She suggested a good restaurant.",
-        "translation": "她推荐了一家好餐厅。"
+        "sentence": "He suggested going to the museum this weekend.",
+        "translation": "他建议这周末去博物馆。"
       }
     ],
     "semester": "上",
@@ -1902,12 +1902,12 @@
     ],
     "examples": [
       {
-        "sentence": "My parents support my dream.",
-        "translation": "父母支持我的梦想。"
+        "sentence": "My family always supports my decisions.",
+        "translation": "我的家人总是支持我的决定。"
       },
       {
-        "sentence": "Thank you for your support.",
-        "translation": "谢谢你的支持。"
+        "sentence": "We should support each other in difficult times.",
+        "translation": "困难时期我们应该互相支持。"
       }
     ],
     "semester": "下",
@@ -2724,12 +2724,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'healthy'.",
-        "translation": "我想学习单词'healthy'。"
+        "sentence": "Eating vegetables and exercising keep you healthy.",
+        "translation": "吃蔬菜和锻炼能让你保持健康。"
       },
       {
-        "sentence": "Can you healthy this?",
-        "translation": "你能healthy这个吗？"
+        "sentence": "A healthy lifestyle is important for everyone.",
+        "translation": "健康的生活方式对每个人都很重要。"
       }
     ]
   },
@@ -2840,12 +2840,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'important'.",
-        "translation": "我想学习单词'important'。"
+        "sentence": "It is important to develop good study habits.",
+        "translation": "养成良好的学习习惯很重要。"
       },
       {
-        "sentence": "Can you important this?",
-        "translation": "你能important这个吗？"
+        "sentence": "Nothing is more important than your health.",
+        "translation": "没有什么比你的健康更重要。"
       }
     ]
   },
@@ -3246,12 +3246,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'careful'.",
-        "translation": "我想学习单词'careful'。"
+        "sentence": "Be careful when you cross the road.",
+        "translation": "过马路时要小心。"
       },
       {
-        "sentence": "Can you careful this?",
-        "translation": "你能careful这个吗？"
+        "sentence": "A careful driver seldom makes mistakes.",
+        "translation": "细心的司机很少出错。"
       }
     ]
   },
@@ -4232,12 +4232,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'practice'.",
-        "translation": "我想学习单词'practice'。"
+        "sentence": "You need more practice to speak English well.",
+        "translation": "你需要多练习才能说好英语。"
       },
       {
-        "sentence": "Can you practice this?",
-        "translation": "你能practice这个吗？"
+        "sentence": "Practice makes perfect, so keep trying!",
+        "translation": "熟能生巧，所以继续努力！"
       }
     ]
   },
@@ -4261,12 +4261,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'mistake'.",
-        "translation": "我想学习单词'mistake'。"
+        "sentence": "Don't be afraid of making mistakes.",
+        "translation": "不要害怕犯错。"
       },
       {
-        "sentence": "Can you mistake this?",
-        "translation": "你能mistake这个吗？"
+        "sentence": "I made a silly mistake in the test yesterday.",
+        "translation": "我昨天在考试中犯了一个愚蠢的错误。"
       }
     ]
   },
@@ -4754,12 +4754,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'chance'.",
-        "translation": "我想学习单词'chance'。"
+        "sentence": "This is a good chance to practice your English.",
+        "translation": "这是练习英语的好机会。"
       },
       {
-        "sentence": "Can you chance this?",
-        "translation": "你能chance这个吗？"
+        "sentence": "Don't miss the chance to see the show.",
+        "translation": "别错过看演出的机会。"
       }
     ]
   },
@@ -4986,12 +4986,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'choice'.",
-        "translation": "我想学习单词'choice'。"
+        "sentence": "You have no choice but to study harder.",
+        "translation": "你别无选择，只能更努力地学习。"
       },
       {
-        "sentence": "Can you choice this?",
-        "translation": "你能choice这个吗？"
+        "sentence": "Making the right choice is not always easy.",
+        "translation": "做出正确的选择并不总是容易的。"
       }
     ]
   },
@@ -5247,12 +5247,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'proud'.",
-        "translation": "我想学习单词'proud'。"
+        "sentence": "My parents are proud of my progress.",
+        "translation": "我的父母为我的进步感到骄傲。"
       },
       {
-        "sentence": "Can you proud this?",
-        "translation": "你能proud这个吗？"
+        "sentence": "She was proud to receive the first prize.",
+        "translation": "她为获得一等奖而感到自豪。"
       }
     ]
   },
@@ -5305,12 +5305,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'nervous'.",
-        "translation": "我想学习单词'nervous'。"
+        "sentence": "I always feel nervous before an exam.",
+        "translation": "我考试前总是感到紧张。"
       },
       {
-        "sentence": "Can you nervous this?",
-        "translation": "你能nervous这个吗？"
+        "sentence": "Don't be nervous, just take a deep breath.",
+        "translation": "别紧张，深呼吸就好。"
       }
     ]
   },
@@ -5769,12 +5769,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'condition'.",
-        "translation": "我想学习单词'condition'。"
+        "sentence": "The house is in very good condition.",
+        "translation": "这栋房子的状况非常好。"
       },
       {
-        "sentence": "Can you condition this?",
-        "translation": "你能condition这个吗？"
+        "sentence": "Under certain conditions, water turns into ice.",
+        "translation": "在特定条件下，水会变成冰。"
       }
     ]
   },
@@ -6117,12 +6117,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'opinion'.",
-        "translation": "我想学习单词'opinion'。"
+        "sentence": "In my opinion, health is more important than money.",
+        "translation": "在我看来，健康比金钱更重要。"
       },
       {
-        "sentence": "Can you opinion this?",
-        "translation": "你能opinion这个吗？"
+        "sentence": "Everyone has a right to express their opinion.",
+        "translation": "每个人都有表达意见的权利。"
       }
     ]
   },
@@ -6233,12 +6233,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'tradition'.",
-        "translation": "我想学习单词'tradition'。"
+        "sentence": "It's a Chinese tradition to have a big dinner on New Year's Eve.",
+        "translation": "除夕吃大餐是中国的传统。"
       },
       {
-        "sentence": "Can you tradition this?",
-        "translation": "你能tradition这个吗？"
+        "sentence": "We should respect different cultures and traditions.",
+        "translation": "我们应该尊重不同的文化和传统。"
       }
     ]
   },
@@ -6523,12 +6523,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'simple'.",
-        "translation": "我想学习单词'simple'。"
+        "sentence": "The answer is quite simple, actually.",
+        "translation": "答案其实很简单。"
       },
       {
-        "sentence": "Can you simple this?",
-        "translation": "你能simple这个吗？"
+        "sentence": "Sometimes the simple things in life are the best.",
+        "translation": "有时候生活中最简单的东西才是最好的。"
       }
     ]
   },
@@ -6900,12 +6900,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'effort'.",
-        "translation": "我想学习单词'effort'。"
+        "sentence": "Your effort will pay off in the end.",
+        "translation": "你的努力最终会有回报的。"
       },
       {
-        "sentence": "Can you effort this?",
-        "translation": "你能effort这个吗？"
+        "sentence": "Thanks to everyone's effort, the party was a success.",
+        "translation": "多亏了大家的努力，聚会很成功。"
       }
     ]
   },
@@ -7132,12 +7132,12 @@
     ],
     "examples": [
       {
-        "sentence": "I want to learn the word 'strict'.",
-        "translation": "我想学习单词'strict'。"
+        "sentence": "Our math teacher is very strict but also very kind.",
+        "translation": "我们的数学老师很严格但也很善良。"
       },
       {
-        "sentence": "Can you strict this?",
-        "translation": "你能strict这个吗？"
+        "sentence": "We should be strict with ourselves in study.",
+        "translation": "我们在学习上应该严格要求自己。"
       }
     ]
   }
