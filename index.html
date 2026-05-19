@@ -490,6 +490,18 @@ body {
 
 <div class="toast" id="toast"></div>
 
+<!-- Welcome Overlay (first visit) -->
+<div class="modal-overlay" id="welcome-overlay">
+  <div class="modal-card" style="text-align:center;max-width:360px">
+    <div style="font-size:48px;margin-bottom:8px">🦉</div>
+    <h3 style="font-size:22px;margin-bottom:4px">欢迎来到词博士！</h3>
+    <p style="color:var(--text-secondary);font-size:14px;margin-bottom:20px">我是你的学习伙伴，你叫什么名字？</p>
+    <input id="welcome-name" class="wb-search" placeholder="输入你的名字..." style="text-align:center;font-size:18px;margin-bottom:12px" maxlength="10" onkeydown="if(event.key==='Enter')saveName()">
+    <button class="cta-btn" onclick="saveName()" style="font-size:16px">开始学习 →</button>
+    <div style="margin-top:12px;font-size:12px;color:var(--text-secondary)">你可以随时在「我的」页面修改名字</div>
+  </div>
+</div>
+
 <!-- ═══════════ HOME SCREEN ═══════════ -->
 <div class="screen active" id="home-screen">
   <div class="home-header">
@@ -626,6 +638,10 @@ body {
     <div class="stat-label">总经验值 (XP)</div>
   </div>
 
+  <div style="text-align:center;margin-bottom:12px">
+    <input id="name-edit" class="wb-search" placeholder="你的名字" style="text-align:center;width:200px;display:inline;margin:0;padding:8px" maxlength="10" onchange="updateName(this.value)">
+  </div>
+
   <!-- 错题本 -->
   <div class="ebbinghaus-card" id="error-book" style="border-left:4px solid var(--error)">
     <h3>📕 错题本 <span style="font-size:12px;font-weight:400;color:var(--text-secondary)" id="error-count"></span></h3>
@@ -676,8 +692,11 @@ let userState = {
   todayCorrect: 0,
   todayWords: [],
   totalXP: 0,
-  todayXP: 0
+  todayXP: 0,
+  learnerName: ''
 };
+
+function getLearnerName() { return userState.learnerName || '同学'; }
 const DAILY_REVIEW_LIMIT = 20;
 
 function loadState() {
@@ -786,7 +805,19 @@ function updateStreakUI() {
   document.getElementById('stat-streak').textContent = s + ' 天';
 }
 
-// ═══════════════════ SOUNDS ═══════════════════
+// ═══════════════════ NAME & WELCOME ═══════════════════
+function saveName() {
+  const input = document.getElementById('welcome-name');
+  const name = input.value.trim() || '同学';
+  userState.learnerName = name;
+  saveState();
+  document.getElementById('welcome-overlay').classList.remove('show');
+  updateHomeScreen();
+  showToast('你好，' + name + '！🦉 开始学习吧');
+  playSound('welcome');
+}
+
+// ═══════════════════ SOUNDS (Enhanced) ═══════════════════
 let audioCtx = null;
 function getAudioCtx() {
   if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -836,21 +867,32 @@ const MASCOT_CLASS = { happy: 'happy', think: 'think', celebrate: 'celebrate', e
 
 const MASCOT_MSGS = {
   intro: ['来看看这个单词 👀', '新单词来啦！', '认识这个词吗？', '准备好了吗？😊'],
-  quiz: ['选哪个呢？', '好好想想～', '这个你肯定认识！', '仔细看哦 👀', '回忆一下…'],
+  quiz: ['选哪个呢？', '好好想想～', '这个你肯定认识！', '仔细看哦 👀', '回忆一下…', '加油！你能行！💪'],
   correct: ['太棒了！🎉', '答对了！', '厉害！', '完美！', '你是天才！🌟', '继续保持！', '轻轻松松～'],
   incorrect: ['没关系，记住它！💪', '下次一定对！', '别灰心～', '记住了吗？再来！', '这个有点难呢'],
   allCorrect: ['全部正确！你是词汇大师！🏆', '完美通关！太厉害了！🌟', '满分！词博士为你骄傲！🎓'],
   someWrong: ['还有进步空间，加油！💪', '不错哦，继续努力！', '多练练就记住了～'],
-  rate: ['这个单词你记住了吗？', '诚实评价哦～', '感觉怎么样？']
+  rate: ['这个单词你记住了吗？', '诚实评价哦～', '感觉怎么样？'],
+  // Milestone messages
+  streak3: ['连续3天打卡！你太棒了！🔥', '三天了！坚持就是胜利！'],
+  streak7: ['一周连续学习！了不起！🏆', '七天打卡！你是认真的！'],
+  streak30: ['坚持30天！你是传奇！👑', '一个月不间断！词博士佩服你！'],
+  words50: ['已经学了50个单词！🎯', '50词达成！继续前进！'],
+  words100: ['100个单词！太厉害了！💯', '百词斩！你是认真的吗？'],
+  words500: ['500词！你已经超越大多数人了！🚀'],
+  xp1000: ['1000 XP！经验满满！⭐'],
 };
 
 function setMascot(mood, msg) {
   const m = document.getElementById('mascot');
   const s = document.getElementById('mascot-speech');
-  // Pick message
   let text = msg;
   if (Array.isArray(msg)) text = msg[Math.floor(Math.random() * msg.length)];
-  // Update
+  // Personalize with name sometimes
+  const name = getLearnerName();
+  if (name !== '同学' && Math.random() < 0.3 && mood !== 'idle') {
+    text = name + '，' + text;
+  }
   m.className = 'mascot ' + MASCOT_CLASS[mood];
   m.textContent = MASCOT_EMOJI[mood];
   s.textContent = text;
@@ -1685,6 +1727,7 @@ function updateProgressUI() {
   document.getElementById('stat-learned').textContent = total;
   document.getElementById('stat-today').textContent = today;
   document.getElementById('stat-xp').textContent = userState.totalXP || 0;
+  document.getElementById('name-edit').value = getLearnerName();
   const totalCorrect = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0), 0);
   const totalAttempts = Object.values(userState.wordProgress).reduce((s, p) => s + (p.correct || 0) + (p.incorrect || 0), 0);
   document.getElementById('stat-accuracy').textContent = totalAttempts > 0 ? Math.round(totalCorrect / totalAttempts * 100) + '%' : '--%';
@@ -1826,7 +1869,8 @@ function updateHomeScreen() {
   let greet = '早上好';
   if (hour >= 12 && hour < 18) greet = '下午好';
   if (hour >= 18) greet = '晚上好';
-  document.getElementById('greeting').innerHTML = greet + ' 👋<strong>开始学习吧</strong>';
+  const name = getLearnerName();
+  document.getElementById('greeting').innerHTML = greet + '，' + name + ' 👋<strong>开始学习吧</strong>';
   document.getElementById('xp-badge-home').textContent = '⭐ ' + (userState.totalXP || 0) + ' XP';
   const tw = userState.todayWords || [];
   const chips = document.getElementById('word-chips');
@@ -1887,7 +1931,12 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// ═══════════════════ RESET ═══════════════════
+function updateName(name) {
+  userState.learnerName = name.trim() || '同学';
+  saveState();
+  updateHomeScreen();
+  showToast('名字已更新：' + getLearnerName());
+}
 function resetAllProgress() {
   if (confirm('确定要重置所有学习数据吗？此操作不可撤销！')) {
     userState = { wordProgress: {}, streak: 0, lastStudyDate: '', dailyGoal: 20, todayReviewed: 0, todayCorrect: 0, todayWords: [], totalXP: 0, todayXP: 0 };
@@ -1920,6 +1969,13 @@ async function init() {
   userState.streak = calculateStreak();
   saveState();
   updateHomeScreen(); updateStreakUI(); updateProgressUI();
+
+  // Show welcome overlay if no name set
+  if (!userState.learnerName) {
+    document.getElementById('welcome-overlay').classList.add('show');
+    setTimeout(() => document.getElementById('welcome-name').focus(), 500);
+  }
+
   document.addEventListener('click', () => { try { getAudioCtx().resume(); } catch(e) {} }, { once: true });
 }
 init();
