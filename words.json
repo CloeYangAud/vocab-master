@@ -30,7 +30,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "历史社会",
+    "subtopic": "历史文化"
   },
   {
     "id": "w0002",
@@ -129,7 +131,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0005",
@@ -261,7 +265,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M5"
+    "unit": "M5",
+    "topic": "语言学习",
+    "subtopic": "学习过程"
   },
   {
     "id": "w0009",
@@ -327,7 +333,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M3"
+    "unit": "M3",
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0011",
@@ -360,7 +368,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "节假日",
+    "subtopic": "节假日"
   },
   {
     "id": "w0012",
@@ -393,7 +403,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "历史社会",
+    "subtopic": "过程"
   },
   {
     "id": "w0013",
@@ -426,7 +438,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "日常活动",
+    "subtopic": "需求"
   },
   {
     "id": "w0014",
@@ -459,7 +473,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "购物",
+    "subtopic": "买卖"
   },
   {
     "id": "w0015",
@@ -525,7 +541,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "日常活动",
+    "subtopic": "需求"
   },
   {
     "id": "w0017",
@@ -558,7 +576,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "日常活动",
+    "subtopic": "记忆"
   },
   {
     "id": "w0018",
@@ -657,7 +677,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0021",
@@ -690,7 +712,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M3"
+    "unit": "M3",
+    "topic": "计划安排",
+    "subtopic": "意愿打算"
   },
   {
     "id": "w0022",
@@ -723,7 +747,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "人际交往",
+    "subtopic": "说"
   },
   {
     "id": "w0023",
@@ -756,7 +782,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "科普技术",
+    "subtopic": "科学技术"
   },
   {
     "id": "w0024",
@@ -789,7 +817,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "科普技术",
+    "subtopic": "科学技术"
   },
   {
     "id": "w0025",
@@ -822,7 +852,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M3"
+    "unit": "M3",
+    "topic": "历史社会",
+    "subtopic": "过程"
   },
   {
     "id": "w0026",
@@ -855,7 +887,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "世界环境",
+    "subtopic": "环境"
   },
   {
     "id": "w0027",
@@ -888,7 +922,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "日常活动",
+    "subtopic": "经验"
   },
   {
     "id": "w0028",
@@ -921,7 +957,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "语言学习",
+    "subtopic": "学习过程"
   },
   {
     "id": "w0029",
@@ -1053,7 +1091,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "学校",
+    "subtopic": "学习评估"
   },
   {
     "id": "w0033",
@@ -1086,7 +1126,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0034",
@@ -1119,7 +1161,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "情感情绪",
+    "subtopic": "希望愿望"
   },
   {
     "id": "w0035",
@@ -1152,7 +1196,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "语言学习",
+    "subtopic": "学习过程"
   },
   {
     "id": "w0036",
@@ -1185,7 +1231,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "历史社会",
+    "subtopic": "过程"
   },
   {
     "id": "w0037",
@@ -1218,7 +1266,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0038",
@@ -1251,7 +1301,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M5"
+    "unit": "M5",
+    "topic": "历史社会",
+    "subtopic": "历史文化"
   },
   {
     "id": "w0039",
@@ -1284,7 +1336,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "人际交往",
+    "subtopic": "交际"
   },
   {
     "id": "w0040",
@@ -1350,7 +1404,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "个人情况",
+    "subtopic": "农工商"
   },
   {
     "id": "w0042",
@@ -1515,7 +1571,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0047",
@@ -1548,7 +1606,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M5"
+    "unit": "M5",
+    "topic": "人际交往",
+    "subtopic": "说"
   },
   {
     "id": "w0048",
@@ -1581,7 +1641,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M3"
+    "unit": "M3",
+    "topic": "个人兴趣",
+    "subtopic": "喜欢"
   },
   {
     "id": "w0049",
@@ -1614,7 +1676,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M3"
+    "unit": "M3",
+    "topic": "日常活动",
+    "subtopic": "家务"
   },
   {
     "id": "w0050",
@@ -1647,7 +1711,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "人际交往",
+    "subtopic": "说"
   },
   {
     "id": "w0051",
@@ -1680,7 +1746,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "世界环境",
+    "subtopic": "环境"
   },
   {
     "id": "w0052",
@@ -1713,7 +1781,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M5"
+    "unit": "M5",
+    "topic": "历史社会",
+    "subtopic": "历史文化"
   },
   {
     "id": "w0053",
@@ -1746,7 +1816,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "日常活动",
+    "subtopic": "记忆"
   },
   {
     "id": "w0054",
@@ -1779,7 +1851,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M5"
+    "unit": "M5",
+    "topic": "人际交往",
+    "subtopic": "提出观点"
   },
   {
     "id": "w0055",
@@ -1812,7 +1886,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M4"
+    "unit": "M4",
+    "topic": "日常活动",
+    "subtopic": "记忆"
   },
   {
     "id": "w0056",
@@ -1845,7 +1921,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M3"
+    "unit": "M3",
+    "topic": "个人兴趣",
+    "subtopic": "喜欢"
   },
   {
     "id": "w0057",
@@ -1878,7 +1956,9 @@
       }
     ],
     "semester": "上",
-    "unit": "M1"
+    "unit": "M1",
+    "topic": "人际交往",
+    "subtopic": "提出观点"
   },
   {
     "id": "w0058",
@@ -1911,7 +1991,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "人际交往",
+    "subtopic": "提出观点"
   },
   {
     "id": "w0059",
@@ -1944,7 +2026,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M5"
+    "unit": "M5",
+    "topic": "人际交往",
+    "subtopic": "提出观点"
   },
   {
     "id": "w0060",
@@ -1977,7 +2061,9 @@
       }
     ],
     "semester": "下",
-    "unit": "M2"
+    "unit": "M2",
+    "topic": "个人情况",
+    "subtopic": "农工商"
   },
   {
     "id": "w0061",
@@ -2035,7 +2121,9 @@
         "sentence": "Can you classmate this?",
         "translation": "你能classmate这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "其他人"
   },
   {
     "id": "w0063",
@@ -2064,7 +2152,9 @@
         "sentence": "Can you friend this?",
         "translation": "你能friend这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "家人亲友"
   },
   {
     "id": "w0064",
@@ -2250,7 +2340,9 @@
         "sentence": "Can you family this?",
         "translation": "你能family这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "家人亲友"
   },
   {
     "id": "w0070",
@@ -2279,7 +2371,9 @@
         "sentence": "Can you parent this?",
         "translation": "你能parent这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "家人亲友"
   },
   {
     "id": "w0071",
@@ -2308,7 +2402,9 @@
         "sentence": "Can you brother this?",
         "translation": "你能brother这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "家人亲友"
   },
   {
     "id": "w0072",
@@ -2337,7 +2433,9 @@
         "sentence": "Can you sister this?",
         "translation": "你能sister这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "家人亲友"
   },
   {
     "id": "w0073",
@@ -2453,7 +2551,9 @@
         "sentence": "Can you people this?",
         "translation": "你能people这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "其他人"
   },
   {
     "id": "w0077",
@@ -2482,7 +2582,9 @@
         "sentence": "Can you school this?",
         "translation": "你能school这个吗？"
       }
-    ]
+    ],
+    "topic": "学校",
+    "subtopic": "学校设施"
   },
   {
     "id": "w0078",
@@ -2511,7 +2613,9 @@
         "sentence": "Can you classroom this?",
         "translation": "你能classroom这个吗？"
       }
-    ]
+    ],
+    "topic": "学校",
+    "subtopic": "学校设施"
   },
   {
     "id": "w0079",
@@ -2540,7 +2644,9 @@
         "sentence": "Can you teacher this?",
         "translation": "你能teacher这个吗？"
       }
-    ]
+    ],
+    "topic": "学校",
+    "subtopic": "学校人员"
   },
   {
     "id": "w0080",
@@ -2569,7 +2675,9 @@
         "sentence": "Can you student this?",
         "translation": "你能student这个吗？"
       }
-    ]
+    ],
+    "topic": "学校",
+    "subtopic": "学校人员"
   },
   {
     "id": "w0081",
@@ -2598,7 +2706,9 @@
         "sentence": "Can you library this?",
         "translation": "你能library这个吗？"
       }
-    ]
+    ],
+    "topic": "学校",
+    "subtopic": "学校设施"
   },
   {
     "id": "w0082",
@@ -2917,7 +3027,9 @@
         "sentence": "Can you subject this?",
         "translation": "你能subject这个吗？"
       }
-    ]
+    ],
+    "topic": "学校",
+    "subtopic": "学科"
   },
   {
     "id": "w0093",
@@ -3281,7 +3393,9 @@
         "sentence": "A careful driver seldom makes mistakes.",
         "translation": "细心的司机很少出错。"
       }
-    ]
+    ],
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0105",
@@ -3612,7 +3726,9 @@
         "sentence": "Can you enjoy this?",
         "translation": "你能enjoy这个吗？"
       }
-    ]
+    ],
+    "topic": "个人兴趣",
+    "subtopic": "喜欢"
   },
   {
     "id": "w0116",
@@ -4299,7 +4415,9 @@
         "sentence": "Practice makes perfect, so keep trying!",
         "translation": "熟能生巧，所以继续努力！"
       }
-    ]
+    ],
+    "topic": "语言学习",
+    "subtopic": "学习过程"
   },
   {
     "id": "w0139",
@@ -4390,7 +4508,9 @@
         "sentence": "Can you understand this?",
         "translation": "你能understand这个吗？"
       }
-    ]
+    ],
+    "topic": "语言学习",
+    "subtopic": "学习过程"
   },
   {
     "id": "w0142",
@@ -5338,7 +5458,9 @@
         "sentence": "She was proud to receive the first prize.",
         "translation": "她为获得一等奖而感到自豪。"
       }
-    ]
+    ],
+    "topic": "情感情绪",
+    "subtopic": "高兴"
   },
   {
     "id": "w0174",
@@ -5404,7 +5526,9 @@
         "sentence": "Don't be nervous, just take a deep breath.",
         "translation": "别紧张，深呼吸就好。"
       }
-    ]
+    ],
+    "topic": "情感情绪",
+    "subtopic": "悲伤"
   },
   {
     "id": "w0176",
@@ -5839,7 +5963,9 @@
         "sentence": "Can you member this?",
         "translation": "你能member这个吗？"
       }
-    ]
+    ],
+    "topic": "家庭朋友",
+    "subtopic": "其他人"
   },
   {
     "id": "w0191",
@@ -5897,7 +6023,9 @@
         "sentence": "Can you active this?",
         "translation": "你能active这个吗？"
       }
-    ]
+    ],
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0193",
@@ -6046,7 +6174,9 @@
         "sentence": "Can you humorous this?",
         "translation": "你能humorous这个吗？"
       }
-    ]
+    ],
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   },
   {
     "id": "w0198",
@@ -6104,7 +6234,9 @@
         "sentence": "Can you expect this?",
         "translation": "你能expect这个吗？"
       }
-    ]
+    ],
+    "topic": "情感情绪",
+    "subtopic": "希望愿望"
   },
   {
     "id": "w0200",
@@ -6460,7 +6592,9 @@
         "sentence": "Can you attend this?",
         "translation": "你能attend这个吗？"
       }
-    ]
+    ],
+    "topic": "人际交往",
+    "subtopic": "交际"
   },
   {
     "id": "w0212",
@@ -7234,7 +7368,9 @@
         "sentence": "Can you separate this?",
         "translation": "你能separate这个吗？"
       }
-    ]
+    ],
+    "topic": "日常活动",
+    "subtopic": "需求"
   },
   {
     "id": "w0238",
@@ -7267,6 +7403,8 @@
         "sentence": "We should be strict with ourselves in study.",
         "translation": "我们在学习上应该严格要求自己。"
       }
-    ]
+    ],
+    "topic": "个人情况",
+    "subtopic": "性格处世"
   }
 ]

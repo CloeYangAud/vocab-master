@@ -1604,7 +1604,7 @@ function filterWords() {
     const gradeClass = 'g' + w.grade;
     return '<div class="wb-word-item" onclick="showWordDetail(\'' + w.id + '\')">' +
       '<div><div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + w.phonetic + '</span></div>' +
-      '<div class="wb-word-sub">' + w.translation + ' <span style="font-size:11px;color:var(--text-secondary)">' + (w.semester||'') + (w.unit||'') + '</span></div></div>' +
+      '<div class="wb-word-sub">' + w.translation + ' <span style="font-size:11px;color:var(--text-secondary)">' + (w.semester||'') + (w.unit||'') + (w.topic?' · '+w.topic:'') + '</span></div></div>' +
       '<span class="wb-word-grade ' + gradeClass + '">' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span></div>';
   }).join('');
 }
