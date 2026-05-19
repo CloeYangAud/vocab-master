@@ -1736,12 +1736,12 @@
     ],
     "examples": [
       {
-        "sentence": "He promised to help me with my homework.",
-        "translation": "他答应帮我做作业。"
+        "sentence": "He promised to come on time.",
+        "translation": "他答应准时来。"
       },
       {
-        "sentence": "Never make a promise you can't keep.",
-        "translation": "永远不要许下你无法兑现的承诺。"
+        "sentence": "Never break a promise.",
+        "translation": "永远不要违背承诺。"
       }
     ],
     "semester": "下",
@@ -3798,12 +3798,12 @@
     ],
     "examples": [
       {
-        "sentence": "This is a plan.",
-        "translation": "这是一个计划。"
+        "sentence": "We need to plan our trip carefully.",
+        "translation": "我们需要仔细计划我们的旅行。"
       },
       {
-        "sentence": "I have a plan.",
-        "translation": "我有一个计划。"
+        "sentence": "What's your plan for the weekend?",
+        "translation": "你周末有什么计划？"
       }
     ],
     "topic": "人际交往",
@@ -4085,12 +4085,12 @@
     ],
     "examples": [
       {
-        "sentence": "I change every day.",
-        "translation": "我每天都改变。"
+        "sentence": "The weather can change quickly.",
+        "translation": "天气变化很快。"
       },
       {
-        "sentence": "She wants to change more.",
-        "translation": "她想更多地去改变。"
+        "sentence": "I want to change my seat.",
+        "translation": "我想换个座位。"
       }
     ],
     "topic": "日常活动",
@@ -5900,12 +5900,12 @@
     ],
     "examples": [
       {
-        "sentence": "This is a dream.",
-        "translation": "这是一个梦想 v. 做梦。"
+        "sentence": "I had a strange dream last night.",
+        "translation": "我昨晚做了一个奇怪的梦。"
       },
       {
-        "sentence": "I have a dream.",
-        "translation": "我有一个梦想 v. 做梦。"
+        "sentence": "She dreams of becoming a doctor.",
+        "translation": "她梦想成为一名医生。"
       }
     ],
     "topic": "个人情况",
@@ -6369,12 +6369,12 @@
     ],
     "examples": [
       {
-        "sentence": "I fight every day.",
-        "translation": "我每天都打架。"
+        "sentence": "We should not fight with each other.",
+        "translation": "我们不应该互相打架。"
       },
       {
-        "sentence": "She wants to fight more.",
-        "translation": "她想更多地去打架。"
+        "sentence": "He is fighting against the illness.",
+        "translation": "他正在与疾病作斗争。"
       }
     ],
     "topic": "个人情况",
@@ -7354,12 +7354,12 @@
     ],
     "examples": [
       {
-        "sentence": "I pass every day.",
-        "translation": "我每天都通过。"
+        "sentence": "Please pass me the salt.",
+        "translation": "请把盐递给我。"
       },
       {
-        "sentence": "She wants to pass more.",
-        "translation": "她想更多地去通过。"
+        "sentence": "I hope I can pass the exam.",
+        "translation": "我希望能通过考试。"
       }
     ],
     "topic": "历史与社会",
@@ -17284,12 +17284,12 @@
     "phrases": [],
     "examples": [
       {
-        "sentence": "This is a hope.",
-        "translation": "这是一个&v. 希望。"
+        "sentence": "I hope you can come to the party.",
+        "translation": "我希望你能来参加聚会。"
       },
       {
-        "sentence": "I have a hope.",
-        "translation": "我有一个&v. 希望。"
+        "sentence": "Don't lose hope.",
+        "translation": "不要失去希望。"
       }
     ]
   },
@@ -19814,12 +19814,12 @@
     "phrases": [],
     "examples": [
       {
-        "sentence": "I mark every day.",
-        "translation": "我每天都标记。"
+        "sentence": "The teacher marked my homework.",
+        "translation": "老师批改了我的作业。"
       },
       {
-        "sentence": "She wants to mark more.",
-        "translation": "她想更多地去标记。"
+        "sentence": "I got a high mark in the exam.",
+        "translation": "我考试得了高分。"
       }
     ]
   },
@@ -19880,12 +19880,12 @@
     "phrases": [],
     "examples": [
       {
-        "sentence": "This is a match.",
-        "translation": "这是一个火柴。"
+        "sentence": "Your shoes match your bag perfectly.",
+        "translation": "你的鞋和包很配。"
       },
       {
-        "sentence": "I have a match.",
-        "translation": "我有一个火柴。"
+        "sentence": "We won the football match.",
+        "translation": "我们赢了足球比赛。"
       }
     ]
   },
@@ -21244,12 +21244,12 @@
     "phrases": [],
     "examples": [
       {
-        "sentence": "This is a notice.",
-        "translation": "这是一个通告。"
+        "sentence": "Did you notice the sign on the door?",
+        "translation": "你注意到门上的标志了吗？"
       },
       {
-        "sentence": "I have a notice.",
-        "translation": "我有一个通告。"
+        "sentence": "There is a notice on the board.",
+        "translation": "布告牌上有一个通知。"
       }
     ]
   },
@@ -21662,12 +21662,12 @@
     "phrases": [],
     "examples": [
       {
-        "sentence": "I order every day.",
-        "translation": "我每天都订购。"
+        "sentence": "May I take your order?",
+        "translation": "可以点菜了吗？"
       },
       {
-        "sentence": "She wants to order more.",
-        "translation": "她想更多地去订购。"
+        "sentence": "Put the words in the right order.",
+        "translation": "把单词按正确顺序排列。"
       }
     ]
   },
@@ -31276,12 +31276,12 @@
     "phrases": [],
     "examples": [
       {
-        "sentence": "This is a wish.",
-        "translation": "这是一个&v. 愿望。"
+        "sentence": "I wish you a happy birthday.",
+        "translation": "祝你生日快乐。"
       },
       {
-        "sentence": "I have a wish.",
-        "translation": "我有一个&v. 愿望。"
+        "sentence": "Make a wish before you blow out the candles.",
+        "translation": "吹蜡烛前许个愿。"
       }
     ]
   },
