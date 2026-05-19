@@ -579,6 +579,11 @@ body {
   </div>
   <div class="wb-filters" id="wb-unit-filters" style="display:none"></div>
   <div id="wb-word-list"></div>
+  <div style="margin-top:24px">
+    <h3 style="font-size:16px;margin-bottom:12px">📝 核心短语 <span style="font-size:12px;font-weight:400;color:var(--text-secondary)" id="phrase-count"></span></h3>
+    <input class="wb-search" id="phrase-search" placeholder="🔍 搜索短语..." oninput="filterPhrases()" style="margin-bottom:8px">
+    <div id="phrase-list"></div>
+  </div>
 </div>
 
 <!-- ═══════════ DICTIONARY ═══════════ -->
@@ -658,6 +663,7 @@ body {
 <script>
 // ═══════════════════ DATA & STATE ═══════════════════
 let words = [];
+let corePhrases = [];
 let userState = {
   wordProgress: {},
   streak: 0,
@@ -1603,6 +1609,18 @@ function filterWords() {
   }).join('');
 }
 
+function filterPhrases() {
+  const query = document.getElementById('phrase-search').value.toLowerCase();
+  let filtered = corePhrases;
+  if (query) filtered = filtered.filter(p => p.phrase.toLowerCase().includes(query) || p.translation.includes(query));
+  document.getElementById('phrase-list').innerHTML = filtered.slice(0, 30).map(p =>
+    '<div class="wb-word-item" style="cursor:default">' +
+      '<div><div class="wb-word-main">' + p.phrase + '</div>' +
+      '<div class="wb-word-sub">' + p.translation + '</div></div>' +
+      '<span style="font-size:11px;color:var(--text-secondary)">核心</span></div>'
+  ).join('');
+}
+
 // ═══════════════════ MODAL ═══════════════════
 function showWordDetail(id) {
   const w = getWordById(id);
@@ -1837,7 +1855,7 @@ function showScreen(name) {
   const idx = tabMap[name];
   if (idx !== undefined) document.querySelectorAll('.tab-btn')[idx].classList.add('active');
   if (name === 'stats') updateProgressUI();
-  if (name === 'wordbank') filterWords();
+  if (name === 'wordbank') { filterWords(); filterPhrases(); }
   if (name === 'home') updateHomeScreen();
   updateStreakUI();
 }
@@ -1868,6 +1886,13 @@ async function init() {
     showToast('⚠️ 无法加载词库数据');
     return;
   }
+
+  // Load core phrases
+  try {
+    const pResp = await fetch('phrases.json');
+    corePhrases = await pResp.json();
+    document.getElementById('phrase-count').textContent = '— ' + corePhrases.length + ' 条';
+  } catch(e) { /* phrases optional */ }
   loadState();
   if (userState.lastStudyDate !== todayStr()) {
     userState.todayReviewed = 0; userState.todayCorrect = 0; userState.todayXP = 0;

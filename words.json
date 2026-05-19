@@ -2169,6 +2169,14 @@
       {
         "phrase": "use the word 'first'",
         "translation": "使用单词'first'"
+      },
+      {
+        "phrase": "first of all",
+        "translation": "首先"
+      },
+      {
+        "phrase": "at first",
+        "translation": "最初(首先,开始时)"
       }
     ],
     "examples": [
@@ -2198,6 +2206,10 @@
       {
         "phrase": "use the word 'last'",
         "translation": "使用单词'last'"
+      },
+      {
+        "phrase": "at last",
+        "translation": "终于, 最后"
       }
     ],
     "examples": [
@@ -3010,6 +3022,14 @@
       {
         "phrase": "use the word 'break'",
         "translation": "使用单词'break'"
+      },
+      {
+        "phrase": "take a break",
+        "translation": "休息一会儿"
+      },
+      {
+        "phrase": "break down",
+        "translation": "把...分解彻底失败, 崩溃, 停止运转, 放弃, (数据, 观点等)站不住脚"
       }
     ],
     "examples": [
@@ -3126,6 +3146,10 @@
       {
         "phrase": "use the word 'find'",
         "translation": "使用单词'find'"
+      },
+      {
+        "phrase": "find out",
+        "translation": "找出(查明,发现,想出,认识到,揭发出来)"
       }
     ],
     "examples": [
@@ -3242,6 +3266,10 @@
       {
         "phrase": "use the word 'careful'",
         "translation": "使用单词'careful'"
+      },
+      {
+        "phrase": "be careful with",
+        "translation": "注意(照顾)"
       }
     ],
     "examples": [
@@ -3329,6 +3357,10 @@
       {
         "phrase": "use the word 'play'",
         "translation": "使用单词'play'"
+      },
+      {
+        "phrase": "play with",
+        "translation": "玩弄，与…一起玩"
       }
     ],
     "examples": [
@@ -3474,6 +3506,10 @@
       {
         "phrase": "use the word 'worry'",
         "translation": "使用单词'worry'"
+      },
+      {
+        "phrase": "worry about",
+        "translation": "担心，烦恼"
       }
     ],
     "examples": [
@@ -3561,6 +3597,10 @@
       {
         "phrase": "use the word 'enjoy'",
         "translation": "使用单词'enjoy'"
+      },
+      {
+        "phrase": "enjoy oneself",
+        "translation": "过得快乐，玩得高兴"
       }
     ],
     "examples": [
@@ -3706,6 +3746,10 @@
       {
         "phrase": "use the word 'forward'",
         "translation": "使用单词'forward'"
+      },
+      {
+        "phrase": "look forward to",
+        "translation": "展望(期待)"
       }
     ],
     "examples": [
@@ -3880,6 +3924,10 @@
       {
         "phrase": "use the word 'able'",
         "translation": "使用单词'able'"
+      },
+      {
+        "phrase": "be able to",
+        "translation": "会,能 v. 能够"
       }
     ],
     "examples": [
@@ -4083,6 +4131,14 @@
       {
         "phrase": "use the word 'try'",
         "translation": "使用单词'try'"
+      },
+      {
+        "phrase": "try on",
+        "translation": "试穿"
+      },
+      {
+        "phrase": "try one's best",
+        "translation": "尽力"
       }
     ],
     "examples": [
@@ -4112,6 +4168,10 @@
       {
         "phrase": "use the word 'pay'",
         "translation": "使用单词'pay'"
+      },
+      {
+        "phrase": "pay for",
+        "translation": "偿还, 付款"
       }
     ],
     "examples": [
@@ -4257,6 +4317,10 @@
       {
         "phrase": "use the word 'mistake'",
         "translation": "使用单词'mistake'"
+      },
+      {
+        "phrase": "by mistake",
+        "translation": "错误地"
       }
     ],
     "examples": [
@@ -4692,6 +4756,10 @@
       {
         "phrase": "use the word 'train'",
         "translation": "使用单词'train'"
+      },
+      {
+        "phrase": "by train",
+        "translation": "乘火车"
       }
     ],
     "examples": [
@@ -4750,6 +4818,10 @@
       {
         "phrase": "use the word 'chance'",
         "translation": "使用单词'chance'"
+      },
+      {
+        "phrase": "by chance",
+        "translation": "偶然, 碰巧"
       }
     ],
     "examples": [
@@ -4924,6 +4996,10 @@
       {
         "phrase": "use the word 'accident'",
         "translation": "使用单词'accident'"
+      },
+      {
+        "phrase": "by accident",
+        "translation": "偶然"
       }
     ],
     "examples": [
@@ -5127,6 +5203,10 @@
       {
         "phrase": "use the word 'common'",
         "translation": "使用单词'common'"
+      },
+      {
+        "phrase": "have something in common",
+        "translation": "有一些共同之处"
       }
     ],
     "examples": [
@@ -5243,6 +5323,10 @@
       {
         "phrase": "use the word 'proud'",
         "translation": "使用单词'proud'"
+      },
+      {
+        "phrase": "be proud of",
+        "translation": "以...自豪；以...自负"
       }
     ],
     "examples": [
@@ -5272,6 +5356,14 @@
       {
         "phrase": "use the word 'message'",
         "translation": "使用单词'message'"
+      },
+      {
+        "phrase": "take a message",
+        "translation": "捎个口信"
+      },
+      {
+        "phrase": "leave a message",
+        "translation": "留个话"
       }
     ],
     "examples": [
@@ -5881,6 +5973,10 @@
       {
         "phrase": "use the word 'fight'",
         "translation": "使用单词'fight'"
+      },
+      {
+        "phrase": "fight with",
+        "translation": "斗争"
       }
     ],
     "examples": [
@@ -6142,6 +6238,10 @@
       {
         "phrase": "use the word 'though'",
         "translation": "使用单词'though'"
+      },
+      {
+        "phrase": "even though",
+        "translation": "即使"
       }
     ],
     "examples": [
@@ -6258,6 +6358,10 @@
       {
         "phrase": "use the word 'vacation'",
         "translation": "使用单词'vacation'"
+      },
+      {
+        "phrase": "on vacation",
+        "translation": "在度假"
       }
     ],
     "examples": [
@@ -6461,6 +6565,14 @@
       {
         "phrase": "use the word 'depend'",
         "translation": "使用单词'depend'"
+      },
+      {
+        "phrase": "depend on",
+        "translation": "取决于, 随...而定)"
+      },
+      {
+        "phrase": "depend upon",
+        "translation": "而定"
       }
     ],
     "examples": [
@@ -6548,6 +6660,10 @@
       {
         "phrase": "use the word 'business'",
         "translation": "使用单词'business'"
+      },
+      {
+        "phrase": "on business",
+        "translation": "出差"
       }
     ],
     "examples": [
@@ -6780,6 +6896,10 @@
       {
         "phrase": "use the word 'pass'",
         "translation": "使用单词'pass'"
+      },
+      {
+        "phrase": "pass on",
+        "translation": "死亡, 审核)"
       }
     ],
     "examples": [
@@ -6896,6 +7016,10 @@
       {
         "phrase": "use the word 'effort'",
         "translation": "使用单词'effort'"
+      },
+      {
+        "phrase": "make effort",
+        "translation": "作出努力"
       }
     ],
     "examples": [
@@ -7128,6 +7252,10 @@
       {
         "phrase": "use the word 'strict'",
         "translation": "使用单词'strict'"
+      },
+      {
+        "phrase": "be strict with",
+        "translation": "对 ... 要求严格"
       }
     ],
     "examples": [
