@@ -578,6 +578,9 @@ body {
     <button class="wb-filter" onclick="setFilter('9', this)">初三</button>
   </div>
   <div class="wb-filters" id="wb-unit-filters" style="display:none"></div>
+  <div class="wb-filters" id="wb-topic-filters" style="margin-top:4px">
+    <button class="wb-filter active" onclick="setTopicFilter('all', this)">按话题</button>
+  </div>
   <div id="wb-word-list"></div>
   <div style="margin-top:24px">
     <h3 style="font-size:16px;margin-bottom:12px">📝 核心短语 <span style="font-size:12px;font-weight:400;color:var(--text-secondary)" id="phrase-count"></span></h3>
@@ -1567,6 +1570,7 @@ function playDictAudio(url, btn) {
 // ═══════════════════ WORD BANK ═══════════════════
 let wbFilter = 'all';
 let wbUnitFilter = 'all';
+let wbTopicFilter = 'all';
 function setFilter(grade, el) {
   wbFilter = grade;
   document.querySelectorAll('#wordbank-screen .wb-filters:first-child .wb-filter').forEach(b => b.classList.remove('active'));
@@ -1599,15 +1603,31 @@ function filterWords() {
   let filtered = words;
   if (wbFilter !== 'all') filtered = filtered.filter(w => w.grade === parseInt(wbFilter));
   if (wbUnitFilter !== 'all') filtered = filtered.filter(w => (w.semester + w.unit) === wbUnitFilter);
+  if (wbTopicFilter !== 'all') filtered = filtered.filter(w => w.topic === wbTopicFilter);
   if (query) filtered = filtered.filter(w => w.word.toLowerCase().includes(query) || w.translation.includes(query));
   document.getElementById('wb-word-list').innerHTML = filtered.slice(0, 50).map(w => {
     const gradeClass = 'g' + w.grade;
     return '<div class="wb-word-item" onclick="showWordDetail(\'' + w.id + '\')">' +
-      '<div><div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + w.phonetic + '</span></div>' +
+      '<div><div class="wb-word-main">' + w.word + ' <span style="font-size:13px;color:var(--text-secondary)">' + (w.phonetic||'') + '</span></div>' +
       '<div class="wb-word-sub">' + w.translation + ' <span style="font-size:11px;color:var(--text-secondary)">' + (w.semester||'') + (w.unit||'') + (w.topic?' · '+w.topic:'') + '</span></div></div>' +
       '<span class="wb-word-grade ' + gradeClass + '">' + (w.grade === 7 ? '初一' : w.grade === 8 ? '初二' : '初三') + '</span></div>';
   }).join('');
 }
+
+function setTopicFilter(topic, el) {
+  wbTopicFilter = topic;
+  document.querySelectorAll('#wb-topic-filters .wb-filter').forEach(b => b.classList.remove('active'));
+  if (el) el.classList.add('active');
+  filterWords();
+}
+
+// Initialize topic filters
+(function initTopicFilters() {
+  const topics = [...new Set(words.map(w => w.topic).filter(Boolean))].sort();
+  const el = document.getElementById('wb-topic-filters');
+  el.innerHTML = '<button class="wb-filter active" onclick="setTopicFilter(\'all\', this)">全部话题</button>' +
+    topics.map(t => '<button class="wb-filter" onclick="setTopicFilter(\'' + t + '\', this)">' + t + '</button>').join('');
+})();
 
 function filterPhrases() {
   const query = document.getElementById('phrase-search').value.toLowerCase();
