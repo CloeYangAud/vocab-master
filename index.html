@@ -970,8 +970,8 @@ function generateExercises(word) {
     };
   });
 
-  // Fill blank: sentence with gap
-  if (word.examples && word.examples.length > 0) {
+  // Fill blank: sentence with gap — ONLY for words with real examples
+  if (word._has_real_examples && word.examples && word.examples.length > 0) {
     pool.push(() => {
       const ex = word.examples[Math.floor(Math.random() * word.examples.length)];
       const blank = ex.sentence.replace(new RegExp(word.word, 'gi'), '_____');
