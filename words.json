@@ -2293,12 +2293,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "the main welcome",
-        "translation": "主要的/n./adj. 欢迎"
+        "phrase": "forget to welcome",
+        "translation": "忘记"
       },
       {
-        "phrase": "a different welcome",
-        "translation": "一个不同的/n./adj. 欢迎"
+        "phrase": "welcome together",
+        "translation": "一起"
       }
     ],
     "examples": [
@@ -2325,12 +2325,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "every meet",
-        "translation": "每个遇见"
+        "phrase": "start to meet",
+        "translation": "开始遇见"
       },
       {
-        "phrase": "the main meet",
-        "translation": "主要的遇见"
+        "phrase": "meet every day",
+        "translation": "每天遇见"
       }
     ],
     "examples": [
@@ -3221,12 +3221,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "a small finish",
-        "translation": "一个小完成"
+        "phrase": "need to finish",
+        "translation": "需要完成"
       },
       {
-        "phrase": "every finish",
-        "translation": "每个完成"
+        "phrase": "finish together",
+        "translation": "一起完成"
       }
     ],
     "examples": [
@@ -3253,12 +3253,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "a common start",
-        "translation": "一个普通的/n. 开始"
+        "phrase": "start well",
+        "translation": "好"
       },
       {
-        "phrase": "a perfect start",
-        "translation": "一个完美的/n. 开始"
+        "phrase": "learn to start",
+        "translation": "学会"
       }
     ],
     "examples": [
@@ -3381,12 +3381,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a new lose",
-        "translation": "一个新的丢失"
+        "phrase": "start to lose",
+        "translation": "开始丢失"
       },
       {
-        "phrase": "a different lose",
-        "translation": "一个不同的丢失"
+        "phrase": "lose quickly",
+        "translation": "快速丢失"
       }
     ],
     "examples": [
@@ -3413,12 +3413,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "the main find",
-        "translation": "主要的发现"
+        "phrase": "how to find",
+        "translation": "如何发现"
       },
       {
-        "phrase": "a common find",
-        "translation": "一个普通的发现"
+        "phrase": "like to find",
+        "translation": "喜欢发现"
       }
     ],
     "examples": [
@@ -3637,12 +3637,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a common play",
-        "translation": "一个普通的玩"
+        "phrase": "want to play",
+        "translation": "想要玩"
       },
       {
-        "phrase": "the right play",
-        "translation": "正确的玩"
+        "phrase": "learn to play",
+        "translation": "学会玩"
       }
     ],
     "examples": [
@@ -3701,12 +3701,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a wonderful ride",
-        "translation": "一个精彩的骑 n. 旅程"
+        "phrase": "ride every day",
+        "translation": "每天骑 n. 旅程"
       },
       {
-        "phrase": "the whole ride",
-        "translation": "整个骑 n. 旅程"
+        "phrase": "try to ride",
+        "translation": "尝试骑 n. 旅程"
       }
     ],
     "examples": [
@@ -3765,12 +3765,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a strange teach",
-        "translation": "一个奇怪的教"
+        "phrase": "want to teach",
+        "translation": "想要教"
       },
       {
-        "phrase": "the right teach",
-        "translation": "正确的教"
+        "phrase": "teach quickly",
+        "translation": "快速教"
       }
     ],
     "examples": [
@@ -3797,12 +3797,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a perfect worry",
-        "translation": "一个完美的/n. 担心"
+        "phrase": "try to worry",
+        "translation": "尝试"
       },
       {
-        "phrase": "a simple worry",
-        "translation": "一个简单的/n. 担心"
+        "phrase": "how to worry",
+        "translation": "如何"
       }
     ],
     "examples": [
@@ -3893,12 +3893,12 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a common enjoy",
-        "translation": "一个普通的享受"
+        "phrase": "enjoy well",
+        "translation": "享受好"
       },
       {
-        "phrase": "the first enjoy",
-        "translation": "第一个享受"
+        "phrase": "enjoy together",
+        "translation": "一起享受"
       }
     ],
     "examples": [
@@ -3989,12 +3989,12 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a strange collect",
-        "translation": "一个奇怪的收集"
+        "phrase": "collect quickly",
+        "translation": "快速收集"
       },
       {
-        "phrase": "a wonderful collect",
-        "translation": "一个精彩的收集"
+        "phrase": "try to collect",
+        "translation": "尝试收集"
       }
     ],
     "examples": [
@@ -4149,12 +4149,12 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "every change",
-        "translation": "每个/n. 改变"
+        "phrase": "try to change",
+        "translation": "尝试"
       },
       {
-        "phrase": "the same change",
-        "translation": "同样的/n. 改变"
+        "phrase": "change better",
+        "translation": "更好地"
       }
     ],
     "examples": [
@@ -4341,12 +4341,12 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a strange rise",
-        "translation": "一个奇怪的上升"
+        "phrase": "rise better",
+        "translation": "更好地上升"
       },
       {
-        "phrase": "a new rise",
-        "translation": "一个新的上升"
+        "phrase": "need to rise",
+        "translation": "需要上升"
       }
     ],
     "examples": [
@@ -4469,12 +4469,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "a perfect try",
-        "translation": "一个完美的尝试"
+        "phrase": "try better",
+        "translation": "更好地尝试"
       },
       {
-        "phrase": "a small try",
-        "translation": "一个小尝试"
+        "phrase": "like to try",
+        "translation": "喜欢尝试"
       }
     ],
     "examples": [
@@ -4501,12 +4501,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "the right pay",
-        "translation": "正确的付款"
+        "phrase": "forget to pay",
+        "translation": "忘记付款"
       },
       {
-        "phrase": "a strange pay",
-        "translation": "一个奇怪的付款"
+        "phrase": "how to pay",
+        "translation": "如何付款"
       }
     ],
     "examples": [
@@ -4533,12 +4533,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "the whole receive",
-        "translation": "整个收到"
+        "phrase": "how to receive",
+        "translation": "如何收到"
       },
       {
-        "phrase": "a perfect receive",
-        "translation": "一个完美的收到"
+        "phrase": "need to receive",
+        "translation": "需要收到"
       }
     ],
     "examples": [
@@ -4693,12 +4693,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a new pronounce",
-        "translation": "一个新的发音"
+        "phrase": "want to pronounce",
+        "translation": "想要发音"
       },
       {
-        "phrase": "the main pronounce",
-        "translation": "主要的发音"
+        "phrase": "pronounce again",
+        "translation": "再次发音"
       }
     ],
     "examples": [
@@ -4725,12 +4725,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "every understand",
-        "translation": "每个理解"
+        "phrase": "like to understand",
+        "translation": "喜欢理解"
       },
       {
-        "phrase": "a strange understand",
-        "translation": "一个奇怪的理解"
+        "phrase": "understand better",
+        "translation": "更好地理解"
       }
     ],
     "examples": [
@@ -5109,12 +5109,12 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "an important beat",
-        "translation": "一个重要的打败"
+        "phrase": "learn to beat",
+        "translation": "学会打败"
       },
       {
-        "phrase": "a simple beat",
-        "translation": "一个简单的打败"
+        "phrase": "how to beat",
+        "translation": "如何打败"
       }
     ],
     "examples": [
@@ -5141,12 +5141,12 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a different train",
-        "translation": "一个不同的训练 n. 火车"
+        "phrase": "train quickly",
+        "translation": "快速训练 n. 火车"
       },
       {
-        "phrase": "every train",
-        "translation": "每个训练 n. 火车"
+        "phrase": "train carefully",
+        "translation": "仔细训练 n. 火车"
       }
     ],
     "examples": [
@@ -5301,12 +5301,12 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "an important book",
-        "translation": "一个重要的预订 n. 书"
+        "phrase": "book quickly",
+        "translation": "快速预订 n. 书"
       },
       {
-        "phrase": "the first book",
-        "translation": "第一个预订 n. 书"
+        "phrase": "book well",
+        "translation": "预订 n. 书好"
       }
     ],
     "examples": [
@@ -5685,12 +5685,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a different smell",
-        "translation": "一个不同的闻 n. 气味"
+        "phrase": "smell quickly",
+        "translation": "快速闻 n. 气味"
       },
       {
-        "phrase": "the main smell",
-        "translation": "主要的闻 n. 气味"
+        "phrase": "smell carefully",
+        "translation": "仔细闻 n. 气味"
       }
     ],
     "examples": [
@@ -6005,12 +6005,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a wonderful afford",
-        "translation": "一个精彩的负担得起"
+        "phrase": "afford quickly",
+        "translation": "快速负担得起"
       },
       {
-        "phrase": "a simple afford",
-        "translation": "一个简单的负担得起"
+        "phrase": "afford carefully",
+        "translation": "仔细负担得起"
       }
     ],
     "examples": [
@@ -6037,12 +6037,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a different invite",
-        "translation": "一个不同的邀请"
+        "phrase": "try to invite",
+        "translation": "尝试邀请"
       },
       {
-        "phrase": "a wonderful invite",
-        "translation": "一个精彩的邀请"
+        "phrase": "invite better",
+        "translation": "更好地邀请"
       }
     ],
     "examples": [
@@ -6069,12 +6069,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a common move",
-        "translation": "一个普通的移动"
+        "phrase": "start to move",
+        "translation": "开始移动"
       },
       {
-        "phrase": "a different move",
-        "translation": "一个不同的移动"
+        "phrase": "like to move",
+        "translation": "喜欢移动"
       }
     ],
     "examples": [
@@ -6197,12 +6197,12 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a new reach",
-        "translation": "一个新的到达"
+        "phrase": "need to reach",
+        "translation": "需要到达"
       },
       {
-        "phrase": "a different reach",
-        "translation": "一个不同的到达"
+        "phrase": "reach quickly",
+        "translation": "快速到达"
       }
     ],
     "examples": [
@@ -6453,12 +6453,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "every fight",
-        "translation": "每个/n. 打架"
+        "phrase": "want to fight",
+        "translation": "想要"
       },
       {
-        "phrase": "a simple fight",
-        "translation": "一个简单的/n. 打架"
+        "phrase": "forget to fight",
+        "translation": "忘记"
       }
     ],
     "examples": [
@@ -6549,12 +6549,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "the same lead",
-        "translation": "同样的领导"
+        "phrase": "lead every day",
+        "translation": "每天领导"
       },
       {
-        "phrase": "the main lead",
-        "translation": "主要的领导"
+        "phrase": "need to lead",
+        "translation": "需要领导"
       }
     ],
     "examples": [
@@ -6581,12 +6581,12 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "the right expect",
-        "translation": "正确的期望"
+        "phrase": "expect every day",
+        "translation": "每天期望"
       },
       {
-        "phrase": "a new expect",
-        "translation": "一个新的期望"
+        "phrase": "forget to expect",
+        "translation": "忘记期望"
       }
     ],
     "examples": [
@@ -6773,12 +6773,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a new remain",
-        "translation": "一个新的保持"
+        "phrase": "remain quickly",
+        "translation": "快速保持"
       },
       {
-        "phrase": "the first remain",
-        "translation": "第一个保持"
+        "phrase": "forget to remain",
+        "translation": "忘记保持"
       }
     ],
     "examples": [
@@ -6805,12 +6805,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a small reply",
-        "translation": "一个小/n. 回答"
+        "phrase": "reply together",
+        "translation": "一起"
       },
       {
-        "phrase": "a strange reply",
-        "translation": "一个奇怪的/n. 回答"
+        "phrase": "reply again",
+        "translation": "再次"
       }
     ],
     "examples": [
@@ -6901,12 +6901,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a common spread",
-        "translation": "一个普通的传播"
+        "phrase": "like to spread",
+        "translation": "喜欢传播"
       },
       {
-        "phrase": "the main spread",
-        "translation": "主要的传播"
+        "phrase": "spread quickly",
+        "translation": "快速传播"
       }
     ],
     "examples": [
@@ -6965,12 +6965,12 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "every attend",
-        "translation": "每个参加"
+        "phrase": "try to attend",
+        "translation": "尝试参加"
       },
       {
-        "phrase": "the whole attend",
-        "translation": "整个参加"
+        "phrase": "attend well",
+        "translation": "参加好"
       }
     ],
     "examples": [
@@ -7093,12 +7093,12 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a small depend",
-        "translation": "一个小依赖"
+        "phrase": "need to depend",
+        "translation": "需要依赖"
       },
       {
-        "phrase": "an important depend",
-        "translation": "一个重要的依赖"
+        "phrase": "depend quickly",
+        "translation": "快速依赖"
       }
     ],
     "examples": [
@@ -7125,12 +7125,12 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "the whole shut",
-        "translation": "整个关闭"
+        "phrase": "forget to shut",
+        "translation": "忘记关闭"
       },
       {
-        "phrase": "an important shut",
-        "translation": "一个重要的关闭"
+        "phrase": "shut better",
+        "translation": "更好地关闭"
       }
     ],
     "examples": [
@@ -7381,12 +7381,12 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a simple take off",
-        "translation": "一个简单的起飞"
+        "phrase": "take off every day",
+        "translation": "每天起飞"
       },
       {
-        "phrase": "a strange take off",
-        "translation": "一个奇怪的起飞"
+        "phrase": "want to take off",
+        "translation": "想要起飞"
       }
     ],
     "examples": [
@@ -7445,12 +7445,12 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a perfect pass",
-        "translation": "一个完美的通过"
+        "phrase": "pass quickly",
+        "translation": "快速通过"
       },
       {
-        "phrase": "a strange pass",
-        "translation": "一个奇怪的通过"
+        "phrase": "need to pass",
+        "translation": "需要通过"
       }
     ],
     "examples": [
@@ -7669,12 +7669,12 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a common double",
-        "translation": "一个普通的/adj. 加倍"
+        "phrase": "double every day",
+        "translation": "每天"
       },
       {
-        "phrase": "the first double",
-        "translation": "第一个/adj. 加倍"
+        "phrase": "learn to double",
+        "translation": "学会"
       }
     ],
     "examples": [
@@ -7797,12 +7797,12 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "every separate",
-        "translation": "每个分开 adj. 单独的"
+        "phrase": "want to separate",
+        "translation": "想要分开 adj. 单独的"
       },
       {
-        "phrase": "the whole separate",
-        "translation": "整个分开 adj. 单独的"
+        "phrase": "need to separate",
+        "translation": "需要分开 adj. 单独的"
       }
     ],
     "examples": [
@@ -7991,12 +7991,12 @@
     "subtopic": "影视戏剧",
     "phrases": [
       {
-        "phrase": "a simple act",
-        "translation": "一个简单的表演"
+        "phrase": "act every day",
+        "translation": "每天表演"
       },
       {
-        "phrase": "a different act",
-        "translation": "一个不同的表演"
+        "phrase": "act quickly",
+        "translation": "快速表演"
       }
     ],
     "examples": [
@@ -8119,12 +8119,12 @@
     "subtopic": "数量和计算",
     "phrases": [
       {
-        "phrase": "a perfect add",
-        "translation": "一个完美的添加"
+        "phrase": "need to add",
+        "translation": "需要添加"
       },
       {
-        "phrase": "the same add",
-        "translation": "同样的添加"
+        "phrase": "add every day",
+        "translation": "每天添加"
       }
     ],
     "examples": [
@@ -8183,12 +8183,12 @@
     "subtopic": "提出观点",
     "phrases": [
       {
-        "phrase": "a perfect advise",
-        "translation": "一个完美的劝告"
+        "phrase": "advise every day",
+        "translation": "每天劝告"
       },
       {
-        "phrase": "an important advise",
-        "translation": "一个重要的劝告"
+        "phrase": "advise well",
+        "translation": "劝告好"
       }
     ],
     "examples": [
@@ -8951,12 +8951,12 @@
     "subtopic": "拥有",
     "phrases": [
       {
-        "phrase": "the whole appear",
-        "translation": "整个出现"
+        "phrase": "like to appear",
+        "translation": "喜欢出现"
       },
       {
-        "phrase": "a new appear",
-        "translation": "一个新的出现"
+        "phrase": "appear every day",
+        "translation": "每天出现"
       }
     ],
     "examples": [
@@ -9143,12 +9143,12 @@
     "subtopic": "距离与速度",
     "phrases": [
       {
-        "phrase": "the first arrive",
-        "translation": "第一个到达"
+        "phrase": "try to arrive",
+        "translation": "尝试到达"
       },
       {
-        "phrase": "the right arrive",
-        "translation": "正确的到达"
+        "phrase": "start to arrive",
+        "translation": "开始到达"
       }
     ],
     "examples": [
@@ -9367,12 +9367,12 @@
     "subtopic": "交际",
     "phrases": [
       {
-        "phrase": "the main ask",
-        "translation": "主要的请求"
+        "phrase": "ask carefully",
+        "translation": "仔细请求"
       },
       {
-        "phrase": "a new ask",
-        "translation": "一个新的请求"
+        "phrase": "like to ask",
+        "translation": "喜欢请求"
       }
     ],
     "examples": [
@@ -10391,12 +10391,12 @@
     "subtopic": "顺序",
     "phrases": [
       {
-        "phrase": "a small begin",
-        "translation": "一个小开始"
+        "phrase": "need to begin",
+        "translation": "需要开始"
       },
       {
-        "phrase": "the right begin",
-        "translation": "正确的开始"
+        "phrase": "learn to begin",
+        "translation": "学会开始"
       }
     ],
     "examples": [
@@ -10423,12 +10423,12 @@
     "subtopic": "提出观点",
     "phrases": [
       {
-        "phrase": "a new believe",
-        "translation": "一个新的相信"
+        "phrase": "learn to believe",
+        "translation": "学会相信"
       },
       {
-        "phrase": "the main believe",
-        "translation": "主要的相信"
+        "phrase": "believe every day",
+        "translation": "每天相信"
       }
     ],
     "examples": [
@@ -11223,12 +11223,12 @@
     "subtopic": "借物品",
     "phrases": [
       {
-        "phrase": "a perfect borrow",
-        "translation": "一个完美的借入"
+        "phrase": "borrow every day",
+        "translation": "每天借入"
       },
       {
-        "phrase": "a different borrow",
-        "translation": "一个不同的借入"
+        "phrase": "borrow well",
+        "translation": "借入好"
       }
     ],
     "examples": [
@@ -11607,12 +11607,12 @@
     "subtopic": "拿取",
     "phrases": [
       {
-        "phrase": "a new bring",
-        "translation": "一个新的带来"
+        "phrase": "bring carefully",
+        "translation": "仔细带来"
       },
       {
-        "phrase": "the same bring",
-        "translation": "同样的带来"
+        "phrase": "bring well",
+        "translation": "带来好"
       }
     ],
     "examples": [
@@ -11799,12 +11799,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "the first burn",
-        "translation": "第一个燃烧"
+        "phrase": "like to burn",
+        "translation": "喜欢燃烧"
       },
       {
-        "phrase": "the same burn",
-        "translation": "同样的燃烧"
+        "phrase": "burn well",
+        "translation": "燃烧好"
       }
     ],
     "examples": [
@@ -11959,12 +11959,12 @@
     "subtopic": "买卖",
     "phrases": [
       {
-        "phrase": "a simple buy",
-        "translation": "一个简单的买"
+        "phrase": "buy every day",
+        "translation": "每天买"
       },
       {
-        "phrase": "the main buy",
-        "translation": "主要的买"
+        "phrase": "need to buy",
+        "translation": "需要买"
       }
     ],
     "examples": [
@@ -12407,12 +12407,12 @@
     "subtopic": "喜欢与不喜欢",
     "phrases": [
       {
-        "phrase": "a different care",
-        "translation": "一个不同的关心"
+        "phrase": "care every day",
+        "translation": "每天关心"
       },
       {
-        "phrase": "the same care",
-        "translation": "同样的关心"
+        "phrase": "care again",
+        "translation": "再次关心"
       }
     ],
     "examples": [
@@ -12503,12 +12503,12 @@
     "subtopic": "拿取",
     "phrases": [
       {
-        "phrase": "the whole carry",
-        "translation": "整个搬运"
+        "phrase": "need to carry",
+        "translation": "需要搬运"
       },
       {
-        "phrase": "the same carry",
-        "translation": "同样的搬运"
+        "phrase": "try to carry",
+        "translation": "尝试搬运"
       }
     ],
     "examples": [
@@ -12823,12 +12823,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "a different check",
-        "translation": "一个不同的检查"
+        "phrase": "check every day",
+        "translation": "每天检查"
       },
       {
-        "phrase": "a wonderful check",
-        "translation": "一个精彩的检查"
+        "phrase": "check again",
+        "translation": "再次检查"
       }
     ],
     "examples": [
@@ -12855,12 +12855,12 @@
     "subtopic": "高兴",
     "phrases": [
       {
-        "phrase": "a wonderful cheer",
-        "translation": "一个精彩的欢呼"
+        "phrase": "cheer well",
+        "translation": "欢呼好"
       },
       {
-        "phrase": "a simple cheer",
-        "translation": "一个简单的欢呼"
+        "phrase": "forget to cheer",
+        "translation": "忘记欢呼"
       }
     ],
     "examples": [
@@ -13143,12 +13143,12 @@
     "subtopic": "选择",
     "phrases": [
       {
-        "phrase": "an important choose",
-        "translation": "一个重要的选择"
+        "phrase": "like to choose",
+        "translation": "喜欢选择"
       },
       {
-        "phrase": "the main choose",
-        "translation": "主要的选择"
+        "phrase": "learn to choose",
+        "translation": "学会选择"
       }
     ],
     "examples": [
@@ -13399,12 +13399,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "a strange clean",
-        "translation": "一个奇怪的清洁"
+        "phrase": "need to clean",
+        "translation": "需要清洁"
       },
       {
-        "phrase": "a small clean",
-        "translation": "一个小清洁"
+        "phrase": "clean well",
+        "translation": "清洁好"
       }
     ],
     "examples": [
@@ -13495,12 +13495,12 @@
     "subtopic": "户外活动",
     "phrases": [
       {
-        "phrase": "an important climb",
-        "translation": "一个重要的爬"
+        "phrase": "forget to climb",
+        "translation": "忘记爬"
       },
       {
-        "phrase": "a wonderful climb",
-        "translation": "一个精彩的爬"
+        "phrase": "need to climb",
+        "translation": "需要爬"
       }
     ],
     "examples": [
@@ -14135,12 +14135,12 @@
     "subtopic": "烹调",
     "phrases": [
       {
-        "phrase": "a common cook",
-        "translation": "一个普通的烹饪"
+        "phrase": "learn to cook",
+        "translation": "学会烹饪"
       },
       {
-        "phrase": "the main cook",
-        "translation": "主要的烹饪"
+        "phrase": "how to cook",
+        "translation": "如何烹饪"
       }
     ],
     "examples": [
@@ -14327,12 +14327,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "every correct",
-        "translation": "每个纠正"
+        "phrase": "correct together",
+        "translation": "一起纠正"
       },
       {
-        "phrase": "a small correct",
-        "translation": "一个小纠正"
+        "phrase": "correct well",
+        "translation": "纠正好"
       }
     ],
     "examples": [
@@ -14359,12 +14359,12 @@
     "subtopic": "支付",
     "phrases": [
       {
-        "phrase": "a small cost",
-        "translation": "一个小花费"
+        "phrase": "cost well",
+        "translation": "花费好"
       },
       {
-        "phrase": "a strange cost",
-        "translation": "一个奇怪的花费"
+        "phrase": "cost better",
+        "translation": "更好地花费"
       }
     ],
     "examples": [
@@ -14423,12 +14423,12 @@
     "subtopic": "疾病",
     "phrases": [
       {
-        "phrase": "a different cough",
-        "translation": "一个不同的咳嗽"
+        "phrase": "try to cough",
+        "translation": "尝试咳嗽"
       },
       {
-        "phrase": "a small cough",
-        "translation": "一个小咳嗽"
+        "phrase": "want to cough",
+        "translation": "想要咳嗽"
       }
     ],
     "examples": [
@@ -14455,12 +14455,12 @@
     "subtopic": "数量和计算",
     "phrases": [
       {
-        "phrase": "a simple count",
-        "translation": "一个简单的数"
+        "phrase": "start to count",
+        "translation": "开始数"
       },
       {
-        "phrase": "an important count",
-        "translation": "一个重要的数"
+        "phrase": "count well",
+        "translation": "数好"
       }
     ],
     "examples": [
@@ -14775,12 +14775,12 @@
     "subtopic": "交通出行",
     "phrases": [
       {
-        "phrase": "the same cross",
-        "translation": "同样的穿过"
+        "phrase": "cross quickly",
+        "translation": "快速穿过"
       },
       {
-        "phrase": "a common cross",
-        "translation": "一个普通的穿过"
+        "phrase": "like to cross",
+        "translation": "喜欢穿过"
       }
     ],
     "examples": [
@@ -14807,12 +14807,12 @@
     "subtopic": "悲伤",
     "phrases": [
       {
-        "phrase": "a common cry",
-        "translation": "一个普通的哭"
+        "phrase": "learn to cry",
+        "translation": "学会哭"
       },
       {
-        "phrase": "a different cry",
-        "translation": "一个不同的哭"
+        "phrase": "want to cry",
+        "translation": "想要哭"
       }
     ],
     "examples": [
@@ -15031,12 +15031,12 @@
     "subtopic": "影视戏剧",
     "phrases": [
       {
-        "phrase": "the same dance",
-        "translation": "同样的跳舞"
+        "phrase": "dance quickly",
+        "translation": "快速跳舞"
       },
       {
-        "phrase": "a common dance",
-        "translation": "一个普通的跳舞"
+        "phrase": "dance carefully",
+        "translation": "仔细跳舞"
       }
     ],
     "examples": [
@@ -15639,12 +15639,12 @@
     "subtopic": "健康",
     "phrases": [
       {
-        "phrase": "the whole die",
-        "translation": "整个死"
+        "phrase": "die quickly",
+        "translation": "快速死"
       },
       {
-        "phrase": "every die",
-        "translation": "每个死"
+        "phrase": "try to die",
+        "translation": "尝试死"
       }
     ],
     "examples": [
@@ -15863,12 +15863,12 @@
     "subtopic": "需求",
     "phrases": [
       {
-        "phrase": "a common discuss",
-        "translation": "一个普通的讨论"
+        "phrase": "forget to discuss",
+        "translation": "忘记讨论"
       },
       {
-        "phrase": "a new discuss",
-        "translation": "一个新的讨论"
+        "phrase": "discuss together",
+        "translation": "一起讨论"
       }
     ],
     "examples": [
@@ -16023,12 +16023,12 @@
     "subtopic": "动作",
     "phrases": [
       {
-        "phrase": "the whole do",
-        "translation": "整个做"
+        "phrase": "do well",
+        "translation": "做好"
       },
       {
-        "phrase": "the first do",
-        "translation": "第一个做"
+        "phrase": "learn to do",
+        "translation": "学会做"
       }
     ],
     "examples": [
@@ -16279,12 +16279,12 @@
     "subtopic": "交通出行",
     "phrases": [
       {
-        "phrase": "a different drive",
-        "translation": "一个不同的驾驶"
+        "phrase": "like to drive",
+        "translation": "喜欢驾驶"
       },
       {
-        "phrase": "a common drive",
-        "translation": "一个普通的驾驶"
+        "phrase": "try to drive",
+        "translation": "尝试驾驶"
       }
     ],
     "examples": [
@@ -16343,12 +16343,12 @@
     "subtopic": "过程",
     "phrases": [
       {
-        "phrase": "a strange drop",
-        "translation": "一个奇怪的落下"
+        "phrase": "need to drop",
+        "translation": "需要落下"
       },
       {
-        "phrase": "the same drop",
-        "translation": "同样的落下"
+        "phrase": "how to drop",
+        "translation": "如何落下"
       }
     ],
     "examples": [
@@ -16759,12 +16759,12 @@
     "subtopic": "生活起居",
     "phrases": [
       {
-        "phrase": "a common eat",
-        "translation": "一个普通的吃"
+        "phrase": "eat better",
+        "translation": "更好地吃"
       },
       {
-        "phrase": "the main eat",
-        "translation": "主要的吃"
+        "phrase": "need to eat",
+        "translation": "需要吃"
       }
     ],
     "examples": [
@@ -17559,12 +17559,12 @@
     "subtopic": "交际",
     "phrases": [
       {
-        "phrase": "the whole excuse",
-        "translation": "整个原谅"
+        "phrase": "excuse carefully",
+        "translation": "仔细原谅"
       },
       {
-        "phrase": "a wonderful excuse",
-        "translation": "一个精彩的原谅"
+        "phrase": "excuse quickly",
+        "translation": "快速原谅"
       }
     ],
     "examples": [
@@ -17815,12 +17815,12 @@
     "subtopic": "颜色",
     "phrases": [
       {
-        "phrase": "a perfect fade",
-        "translation": "一个完美的褪色"
+        "phrase": "fade carefully",
+        "translation": "仔细褪色"
       },
       {
-        "phrase": "a wonderful fade",
-        "translation": "一个精彩的褪色"
+        "phrase": "need to fade",
+        "translation": "需要褪色"
       }
     ],
     "examples": [
@@ -17847,12 +17847,12 @@
     "subtopic": "历史文化",
     "phrases": [
       {
-        "phrase": "a common fail",
-        "translation": "一个普通的失败"
+        "phrase": "fail well",
+        "translation": "失败好"
       },
       {
-        "phrase": "an important fail",
-        "translation": "一个重要的失败"
+        "phrase": "like to fail",
+        "translation": "喜欢失败"
       }
     ],
     "examples": [
@@ -18231,12 +18231,12 @@
     "subtopic": "进食与感觉",
     "phrases": [
       {
-        "phrase": "a simple feed",
-        "translation": "一个简单的喂养"
+        "phrase": "how to feed",
+        "translation": "如何喂养"
       },
       {
-        "phrase": "the whole feed",
-        "translation": "整个喂养"
+        "phrase": "feed every day",
+        "translation": "每天喂养"
       }
     ],
     "examples": [
@@ -18647,12 +18647,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "a common fix",
-        "translation": "一个普通的修理"
+        "phrase": "need to fix",
+        "translation": "需要修理"
       },
       {
-        "phrase": "a simple fix",
-        "translation": "一个简单的修理"
+        "phrase": "forget to fix",
+        "translation": "忘记修理"
       }
     ],
     "examples": [
@@ -18807,12 +18807,12 @@
     "subtopic": "交通出行",
     "phrases": [
       {
-        "phrase": "every fly",
-        "translation": "每个飞"
+        "phrase": "learn to fly",
+        "translation": "学会飞"
       },
       {
-        "phrase": "the same fly",
-        "translation": "同样的飞"
+        "phrase": "fly carefully",
+        "translation": "仔细飞"
       }
     ],
     "examples": [
@@ -18967,12 +18967,12 @@
     "subtopic": "记忆",
     "phrases": [
       {
-        "phrase": "the whole forget",
-        "translation": "整个忘记"
+        "phrase": "how to forget",
+        "translation": "如何忘记"
       },
       {
-        "phrase": "a new forget",
-        "translation": "一个新的忘记"
+        "phrase": "forget together",
+        "translation": "一起忘记"
       }
     ],
     "examples": [
@@ -21079,12 +21079,12 @@
     "subtopic": "喜欢与不喜欢",
     "phrases": [
       {
-        "phrase": "a new hate",
-        "translation": "一个新的讨厌"
+        "phrase": "learn to hate",
+        "translation": "学会讨厌"
       },
       {
-        "phrase": "a simple hate",
-        "translation": "一个简单的讨厌"
+        "phrase": "hate well",
+        "translation": "讨厌好"
       }
     ],
     "examples": [
@@ -21111,12 +21111,12 @@
     "subtopic": "拥有",
     "phrases": [
       {
-        "phrase": "the whole have",
-        "translation": "整个有"
+        "phrase": "have quickly",
+        "translation": "快速有"
       },
       {
-        "phrase": "the same have",
-        "translation": "同样的有"
+        "phrase": "forget to have",
+        "translation": "忘记有"
       }
     ],
     "examples": [
@@ -21271,12 +21271,12 @@
     "subtopic": "烹调",
     "phrases": [
       {
-        "phrase": "the same heat",
-        "translation": "同样的加热"
+        "phrase": "how to heat",
+        "translation": "如何加热"
       },
       {
-        "phrase": "the main heat",
-        "translation": "主要的加热"
+        "phrase": "need to heat",
+        "translation": "需要加热"
       }
     ],
     "examples": [
@@ -22039,12 +22039,12 @@
     "subtopic": "受伤与疼痛",
     "phrases": [
       {
-        "phrase": "a small hurt",
-        "translation": "一个小受伤"
+        "phrase": "want to hurt",
+        "translation": "想要受伤"
       },
       {
-        "phrase": "a perfect hurt",
-        "translation": "一个完美的受伤"
+        "phrase": "try to hurt",
+        "translation": "尝试受伤"
       }
     ],
     "examples": [
@@ -22295,12 +22295,12 @@
     "subtopic": "数量和计算",
     "phrases": [
       {
-        "phrase": "a common increase",
-        "translation": "一个普通的增加"
+        "phrase": "increase quickly",
+        "translation": "快速增加"
       },
       {
-        "phrase": "a strange increase",
-        "translation": "一个奇怪的增加"
+        "phrase": "increase carefully",
+        "translation": "仔细增加"
       }
     ],
     "examples": [
@@ -22711,12 +22711,12 @@
     "subtopic": "广播电视",
     "phrases": [
       {
-        "phrase": "the main interview",
-        "translation": "主要的采访"
+        "phrase": "learn to interview",
+        "translation": "学会采访"
       },
       {
-        "phrase": "the whole interview",
-        "translation": "整个采访"
+        "phrase": "interview better",
+        "translation": "更好地采访"
       }
     ],
     "examples": [
@@ -22775,12 +22775,12 @@
     "subtopic": "科学技术",
     "phrases": [
       {
-        "phrase": "the main invent",
-        "translation": "主要的发明"
+        "phrase": "try to invent",
+        "translation": "尝试发明"
       },
       {
-        "phrase": "a new invent",
-        "translation": "一个新的发明"
+        "phrase": "invent every day",
+        "translation": "每天发明"
       }
     ],
     "examples": [
@@ -23063,12 +23063,12 @@
     "subtopic": "过程",
     "phrases": [
       {
-        "phrase": "every join",
-        "translation": "每个加入"
+        "phrase": "join carefully",
+        "translation": "仔细加入"
       },
       {
-        "phrase": "a new join",
-        "translation": "一个新的加入"
+        "phrase": "want to join",
+        "translation": "想要加入"
       }
     ],
     "examples": [
@@ -23191,12 +23191,12 @@
     "subtopic": "运动",
     "phrases": [
       {
-        "phrase": "a strange jump",
-        "translation": "一个奇怪的跳"
+        "phrase": "forget to jump",
+        "translation": "忘记跳"
       },
       {
-        "phrase": "a simple jump",
-        "translation": "一个简单的跳"
+        "phrase": "try to jump",
+        "translation": "尝试跳"
       }
     ],
     "examples": [
@@ -23287,12 +23287,12 @@
     "subtopic": "借物品",
     "phrases": [
       {
-        "phrase": "an important keep",
-        "translation": "一个重要的保存"
+        "phrase": "try to keep",
+        "translation": "尝试保存"
       },
       {
-        "phrase": "a common keep",
-        "translation": "一个普通的保存"
+        "phrase": "keep well",
+        "translation": "保存好"
       }
     ],
     "examples": [
@@ -23383,12 +23383,12 @@
     "subtopic": "运动",
     "phrases": [
       {
-        "phrase": "an important kick",
-        "translation": "一个重要的踢"
+        "phrase": "want to kick",
+        "translation": "想要踢"
       },
       {
-        "phrase": "a wonderful kick",
-        "translation": "一个精彩的踢"
+        "phrase": "kick again",
+        "translation": "再次踢"
       }
     ],
     "examples": [
@@ -23447,12 +23447,12 @@
     "subtopic": "军警法",
     "phrases": [
       {
-        "phrase": "the main kill",
-        "translation": "主要的杀死"
+        "phrase": "kill better",
+        "translation": "更好地杀死"
       },
       {
-        "phrase": "a perfect kill",
-        "translation": "一个完美的杀死"
+        "phrase": "kill well",
+        "translation": "杀死好"
       }
     ],
     "examples": [
@@ -23895,12 +23895,12 @@
     "subtopic": "交通出行",
     "phrases": [
       {
-        "phrase": "the same land",
-        "translation": "同样的着陆"
+        "phrase": "try to land",
+        "translation": "尝试着陆"
       },
       {
-        "phrase": "every land",
-        "translation": "每个着陆"
+        "phrase": "land together",
+        "translation": "一起着陆"
       }
     ],
     "examples": [
@@ -24055,12 +24055,12 @@
     "subtopic": "高兴",
     "phrases": [
       {
-        "phrase": "a simple laugh",
-        "translation": "一个简单的笑"
+        "phrase": "forget to laugh",
+        "translation": "忘记笑"
       },
       {
-        "phrase": "the first laugh",
-        "translation": "第一个笑"
+        "phrase": "laugh better",
+        "translation": "更好地笑"
       }
     ],
     "examples": [
@@ -24183,12 +24183,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "the same learn",
-        "translation": "同样的学习"
+        "phrase": "learn together",
+        "translation": "一起学习"
       },
       {
-        "phrase": "the whole learn",
-        "translation": "整个学习"
+        "phrase": "forget to learn",
+        "translation": "忘记学习"
       }
     ],
     "examples": [
@@ -24279,12 +24279,12 @@
     "subtopic": "借物品",
     "phrases": [
       {
-        "phrase": "a perfect lend",
-        "translation": "一个完美的借出"
+        "phrase": "learn to lend",
+        "translation": "学会借出"
       },
       {
-        "phrase": "the same lend",
-        "translation": "同样的借出"
+        "phrase": "lend again",
+        "translation": "再次借出"
       }
     ],
     "examples": [
@@ -24343,12 +24343,12 @@
     "subtopic": "动作",
     "phrases": [
       {
-        "phrase": "a simple let",
-        "translation": "一个简单的让"
+        "phrase": "forget to let",
+        "translation": "忘记让"
       },
       {
-        "phrase": "a perfect let",
-        "translation": "一个完美的让"
+        "phrase": "try to let",
+        "translation": "尝试让"
       }
     ],
     "examples": [
@@ -24471,12 +24471,12 @@
     "subtopic": "康复与治疗",
     "phrases": [
       {
-        "phrase": "the right lift",
-        "translation": "正确的消散"
+        "phrase": "lift every day",
+        "translation": "每天消散"
       },
       {
-        "phrase": "a common lift",
-        "translation": "一个普通的消散"
+        "phrase": "need to lift",
+        "translation": "需要消散"
       }
     ],
     "examples": [
@@ -24503,12 +24503,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "an important light",
-        "translation": "一个重要的点燃"
+        "phrase": "light quickly",
+        "translation": "快速点燃"
       },
       {
-        "phrase": "a different light",
-        "translation": "一个不同的点燃"
+        "phrase": "start to light",
+        "translation": "开始点燃"
       }
     ],
     "examples": [
@@ -24535,12 +24535,12 @@
     "subtopic": "喜欢与不喜欢",
     "phrases": [
       {
-        "phrase": "a wonderful like",
-        "translation": "一个精彩的喜欢"
+        "phrase": "like to like",
+        "translation": "喜欢喜欢"
       },
       {
-        "phrase": "a common like",
-        "translation": "一个普通的喜欢"
+        "phrase": "try to like",
+        "translation": "尝试喜欢"
       }
     ],
     "examples": [
@@ -24663,12 +24663,12 @@
     "subtopic": "生活用品",
     "phrases": [
       {
-        "phrase": "the whole litter",
-        "translation": "整个乱扔垃圾"
+        "phrase": "litter again",
+        "translation": "再次乱扔垃圾"
       },
       {
-        "phrase": "a simple litter",
-        "translation": "一个简单的乱扔垃圾"
+        "phrase": "litter better",
+        "translation": "更好地乱扔垃圾"
       }
     ],
     "examples": [
@@ -24727,12 +24727,12 @@
     "subtopic": "生活起居",
     "phrases": [
       {
-        "phrase": "the main live",
-        "translation": "主要的生活"
+        "phrase": "live again",
+        "translation": "再次生活"
       },
       {
-        "phrase": "the right live",
-        "translation": "正确的生活"
+        "phrase": "start to live",
+        "translation": "开始生活"
       }
     ],
     "examples": [
@@ -24983,12 +24983,12 @@
     "subtopic": "喜欢与不喜欢",
     "phrases": [
       {
-        "phrase": "the right love",
-        "translation": "正确的热爱"
+        "phrase": "like to love",
+        "translation": "喜欢热爱"
       },
       {
-        "phrase": "every love",
-        "translation": "每个热爱"
+        "phrase": "love better",
+        "translation": "更好地热爱"
       }
     ],
     "examples": [
@@ -25399,12 +25399,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "the right mark",
-        "translation": "正确的标记"
+        "phrase": "mark every day",
+        "translation": "每天标记"
       },
       {
-        "phrase": "every mark",
-        "translation": "每个标记"
+        "phrase": "need to mark",
+        "translation": "需要标记"
       }
     ],
     "examples": [
@@ -25463,12 +25463,12 @@
     "subtopic": "家人与亲友",
     "phrases": [
       {
-        "phrase": "the right marry",
-        "translation": "正确的结婚"
+        "phrase": "marry carefully",
+        "translation": "仔细结婚"
       },
       {
-        "phrase": "the first marry",
-        "translation": "第一个结婚"
+        "phrase": "marry every day",
+        "translation": "每天结婚"
       }
     ],
     "examples": [
@@ -25623,12 +25623,12 @@
     "subtopic": "说",
     "phrases": [
       {
-        "phrase": "the main mean",
-        "translation": "主要的意思是"
+        "phrase": "mean quickly",
+        "translation": "快速意思是"
       },
       {
-        "phrase": "a wonderful mean",
-        "translation": "一个精彩的意思是"
+        "phrase": "mean well",
+        "translation": "意思是好"
       }
     ],
     "examples": [
@@ -26071,12 +26071,12 @@
     "subtopic": "交际",
     "phrases": [
       {
-        "phrase": "a new mind",
-        "translation": "一个新的介意"
+        "phrase": "need to mind",
+        "translation": "需要介意"
       },
       {
-        "phrase": "the first mind",
-        "translation": "第一个介意"
+        "phrase": "try to mind",
+        "translation": "尝试介意"
       }
     ],
     "examples": [
@@ -27735,12 +27735,12 @@
     "subtopic": "买卖",
     "phrases": [
       {
-        "phrase": "a simple offer",
-        "translation": "一个简单的提供"
+        "phrase": "offer well",
+        "translation": "提供好"
       },
       {
-        "phrase": "a small offer",
-        "translation": "一个小提供"
+        "phrase": "how to offer",
+        "translation": "如何提供"
       }
     ],
     "examples": [
@@ -28087,12 +28087,12 @@
     "subtopic": "生活起居",
     "phrases": [
       {
-        "phrase": "the right order",
-        "translation": "正确的订购"
+        "phrase": "want to order",
+        "translation": "想要订购"
       },
       {
-        "phrase": "the same order",
-        "translation": "同样的订购"
+        "phrase": "order quickly",
+        "translation": "快速订购"
       }
     ],
     "examples": [
@@ -28567,12 +28567,12 @@
     "subtopic": "交际",
     "phrases": [
       {
-        "phrase": "a small pardon",
-        "translation": "一个小原谅"
+        "phrase": "need to pardon",
+        "translation": "需要原谅"
       },
       {
-        "phrase": "a different pardon",
-        "translation": "一个不同的原谅"
+        "phrase": "forget to pardon",
+        "translation": "忘记原谅"
       }
     ],
     "examples": [
@@ -29655,12 +29655,12 @@
     "subtopic": "希望与愿望",
     "phrases": [
       {
-        "phrase": "a different please",
-        "translation": "一个不同的使高兴"
+        "phrase": "want to please",
+        "translation": "想要使高兴"
       },
       {
-        "phrase": "the same please",
-        "translation": "同样的使高兴"
+        "phrase": "learn to please",
+        "translation": "学会使高兴"
       }
     ],
     "examples": [
@@ -29975,12 +29975,12 @@
     "subtopic": "环境",
     "phrases": [
       {
-        "phrase": "the main pollute",
-        "translation": "主要的污染"
+        "phrase": "how to pollute",
+        "translation": "如何污染"
       },
       {
-        "phrase": "a different pollute",
-        "translation": "一个不同的污染"
+        "phrase": "pollute quickly",
+        "translation": "快速污染"
       }
     ],
     "examples": [
@@ -30231,12 +30231,12 @@
     "subtopic": "信息",
     "phrases": [
       {
-        "phrase": "a new post",
-        "translation": "一个新的邮寄"
+        "phrase": "post again",
+        "translation": "再次邮寄"
       },
       {
-        "phrase": "the first post",
-        "translation": "第一个邮寄"
+        "phrase": "post carefully",
+        "translation": "仔细邮寄"
       }
     ],
     "examples": [
@@ -30391,12 +30391,12 @@
     "subtopic": "需求",
     "phrases": [
       {
-        "phrase": "a perfect praise",
-        "translation": "一个完美的赞扬"
+        "phrase": "want to praise",
+        "translation": "想要赞扬"
       },
       {
-        "phrase": "a different praise",
-        "translation": "一个不同的赞扬"
+        "phrase": "praise quickly",
+        "translation": "快速赞扬"
       }
     ],
     "examples": [
@@ -30679,12 +30679,12 @@
     "subtopic": "农工商",
     "phrases": [
       {
-        "phrase": "the whole produce",
-        "translation": "整个生产"
+        "phrase": "produce again",
+        "translation": "再次生产"
       },
       {
-        "phrase": "a different produce",
-        "translation": "一个不同的生产"
+        "phrase": "produce together",
+        "translation": "一起生产"
       }
     ],
     "examples": [
@@ -30903,12 +30903,12 @@
     "subtopic": "买卖",
     "phrases": [
       {
-        "phrase": "a small provide",
-        "translation": "一个小提供"
+        "phrase": "start to provide",
+        "translation": "开始提供"
       },
       {
-        "phrase": "an important provide",
-        "translation": "一个重要的提供"
+        "phrase": "provide together",
+        "translation": "一起提供"
       }
     ],
     "examples": [
@@ -31031,12 +31031,12 @@
     "subtopic": "军警法",
     "phrases": [
       {
-        "phrase": "a wonderful punish",
-        "translation": "一个精彩的惩罚"
+        "phrase": "forget to punish",
+        "translation": "忘记惩罚"
       },
       {
-        "phrase": "the main punish",
-        "translation": "主要的惩罚"
+        "phrase": "learn to punish",
+        "translation": "学会惩罚"
       }
     ],
     "examples": [
@@ -31575,12 +31575,12 @@
     "subtopic": "家人与亲友",
     "phrases": [
       {
-        "phrase": "a different raise",
-        "translation": "一个不同的养育"
+        "phrase": "raise every day",
+        "translation": "每天养育"
       },
       {
-        "phrase": "the first raise",
-        "translation": "第一个养育"
+        "phrase": "start to raise",
+        "translation": "开始养育"
       }
     ],
     "examples": [
@@ -31703,12 +31703,12 @@
     "subtopic": "历史文化",
     "phrases": [
       {
-        "phrase": "a common realise",
-        "translation": "一个普通的实现"
+        "phrase": "realise quickly",
+        "translation": "快速实现"
       },
       {
-        "phrase": "a wonderful realise",
-        "translation": "一个精彩的实现"
+        "phrase": "how to realise",
+        "translation": "如何实现"
       }
     ],
     "examples": [
@@ -31735,12 +31735,12 @@
     "subtopic": "说",
     "phrases": [
       {
-        "phrase": "a strange reason",
-        "translation": "一个奇怪的劝说"
+        "phrase": "want to reason",
+        "translation": "想要劝说"
       },
       {
-        "phrase": "a wonderful reason",
-        "translation": "一个精彩的劝说"
+        "phrase": "how to reason",
+        "translation": "如何劝说"
       }
     ],
     "examples": [
@@ -31799,12 +31799,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "a new recite",
-        "translation": "一个新的背诵"
+        "phrase": "learn to recite",
+        "translation": "学会背诵"
       },
       {
-        "phrase": "the main recite",
-        "translation": "主要的背诵"
+        "phrase": "recite well",
+        "translation": "背诵好"
       }
     ],
     "examples": [
@@ -31895,12 +31895,12 @@
     "subtopic": "悲伤",
     "phrases": [
       {
-        "phrase": "the whole regret",
-        "translation": "整个后悔"
+        "phrase": "forget to regret",
+        "translation": "忘记后悔"
       },
       {
-        "phrase": "a different regret",
-        "translation": "一个不同的后悔"
+        "phrase": "how to regret",
+        "translation": "如何后悔"
       }
     ],
     "examples": [
@@ -32023,12 +32023,12 @@
     "subtopic": "旅游",
     "phrases": [
       {
-        "phrase": "the main relax",
-        "translation": "主要的放松"
+        "phrase": "how to relax",
+        "translation": "如何放松"
       },
       {
-        "phrase": "a perfect relax",
-        "translation": "一个完美的放松"
+        "phrase": "relax better",
+        "translation": "更好地放松"
       }
     ],
     "examples": [
@@ -32055,12 +32055,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "a different repair",
-        "translation": "一个不同的修理"
+        "phrase": "repair every day",
+        "translation": "每天修理"
       },
       {
-        "phrase": "a common repair",
-        "translation": "一个普通的修理"
+        "phrase": "try to repair",
+        "translation": "尝试修理"
       }
     ],
     "examples": [
@@ -32119,12 +32119,12 @@
     "subtopic": "需求",
     "phrases": [
       {
-        "phrase": "a strange require",
-        "translation": "一个奇怪的要求"
+        "phrase": "need to require",
+        "translation": "需要要求"
       },
       {
-        "phrase": "the whole require",
-        "translation": "整个要求"
+        "phrase": "forget to require",
+        "translation": "忘记要求"
       }
     ],
     "examples": [
@@ -32247,12 +32247,12 @@
     "subtopic": "借物品",
     "phrases": [
       {
-        "phrase": "a new return",
-        "translation": "一个新的归还"
+        "phrase": "forget to return",
+        "translation": "忘记归还"
       },
       {
-        "phrase": "the whole return",
-        "translation": "整个归还"
+        "phrase": "want to return",
+        "translation": "想要归还"
       }
     ],
     "examples": [
@@ -32279,12 +32279,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "a small review",
-        "translation": "一个小复习"
+        "phrase": "start to review",
+        "translation": "开始复习"
       },
       {
-        "phrase": "the first review",
-        "translation": "第一个复习"
+        "phrase": "review again",
+        "translation": "再次复习"
       }
     ],
     "examples": [
@@ -32919,12 +32919,12 @@
     "subtopic": "交通出行",
     "phrases": [
       {
-        "phrase": "a common sail",
-        "translation": "一个普通的航行"
+        "phrase": "want to sail",
+        "translation": "想要航行"
       },
       {
-        "phrase": "a small sail",
-        "translation": "一个小航行"
+        "phrase": "learn to sail",
+        "translation": "学会航行"
       }
     ],
     "examples": [
@@ -33175,12 +33175,12 @@
     "subtopic": "说",
     "phrases": [
       {
-        "phrase": "a small say",
-        "translation": "一个小说"
+        "phrase": "say quickly",
+        "translation": "快速说"
       },
       {
-        "phrase": "an important say",
-        "translation": "一个重要的说"
+        "phrase": "learn to say",
+        "translation": "学会说"
       }
     ],
     "examples": [
@@ -33431,12 +33431,12 @@
     "subtopic": "网络",
     "phrases": [
       {
-        "phrase": "an important search",
-        "translation": "一个重要的搜索"
+        "phrase": "want to search",
+        "translation": "想要搜索"
       },
       {
-        "phrase": "a different search",
-        "translation": "一个不同的搜索"
+        "phrase": "search better",
+        "translation": "更好地搜索"
       }
     ],
     "examples": [
@@ -33623,12 +33623,12 @@
     "subtopic": "买卖",
     "phrases": [
       {
-        "phrase": "a different sell",
-        "translation": "一个不同的卖"
+        "phrase": "forget to sell",
+        "translation": "忘记卖"
       },
       {
-        "phrase": "the first sell",
-        "translation": "第一个卖"
+        "phrase": "need to sell",
+        "translation": "需要卖"
       }
     ],
     "examples": [
@@ -33655,12 +33655,12 @@
     "subtopic": "信息",
     "phrases": [
       {
-        "phrase": "a strange send",
-        "translation": "一个奇怪的发送"
+        "phrase": "try to send",
+        "translation": "尝试发送"
       },
       {
-        "phrase": "the main send",
-        "translation": "主要的发送"
+        "phrase": "start to send",
+        "translation": "开始发送"
       }
     ],
     "examples": [
@@ -33815,12 +33815,12 @@
     "subtopic": "买卖",
     "phrases": [
       {
-        "phrase": "the first serve",
-        "translation": "第一个服务"
+        "phrase": "serve together",
+        "translation": "一起服务"
       },
       {
-        "phrase": "the main serve",
-        "translation": "主要的服务"
+        "phrase": "how to serve",
+        "translation": "如何服务"
       }
     ],
     "examples": [
@@ -34007,12 +34007,12 @@
     "subtopic": "交际",
     "phrases": [
       {
-        "phrase": "the whole share",
-        "translation": "整个分享"
+        "phrase": "share quickly",
+        "translation": "快速分享"
       },
       {
-        "phrase": "the same share",
-        "translation": "同样的分享"
+        "phrase": "forget to share",
+        "translation": "忘记分享"
       }
     ],
     "examples": [
@@ -34071,12 +34071,12 @@
     "subtopic": "康复与治疗",
     "phrases": [
       {
-        "phrase": "a common shine",
-        "translation": "一个普通的照耀"
+        "phrase": "shine together",
+        "translation": "一起照耀"
       },
       {
-        "phrase": "a different shine",
-        "translation": "一个不同的照耀"
+        "phrase": "want to shine",
+        "translation": "想要照耀"
       }
     ],
     "examples": [
@@ -34295,12 +34295,12 @@
     "subtopic": "拿取",
     "phrases": [
       {
-        "phrase": "a perfect show",
-        "translation": "一个完美的展示"
+        "phrase": "show carefully",
+        "translation": "仔细展示"
       },
       {
-        "phrase": "an important show",
-        "translation": "一个重要的展示"
+        "phrase": "try to show",
+        "translation": "尝试展示"
       }
     ],
     "examples": [
@@ -34711,12 +34711,12 @@
     "subtopic": "影视戏剧",
     "phrases": [
       {
-        "phrase": "the first sing",
-        "translation": "第一个唱歌"
+        "phrase": "sing every day",
+        "translation": "每天唱歌"
       },
       {
-        "phrase": "a wonderful sing",
-        "translation": "一个精彩的唱歌"
+        "phrase": "want to sing",
+        "translation": "想要唱歌"
       }
     ],
     "examples": [
@@ -34775,12 +34775,12 @@
     "subtopic": "运动",
     "phrases": [
       {
-        "phrase": "every skate",
-        "translation": "每个滑冰"
+        "phrase": "skate every day",
+        "translation": "每天滑冰"
       },
       {
-        "phrase": "a perfect skate",
-        "translation": "一个完美的滑冰"
+        "phrase": "skate well",
+        "translation": "滑冰好"
       }
     ],
     "examples": [
@@ -34903,12 +34903,12 @@
     "subtopic": "生活起居",
     "phrases": [
       {
-        "phrase": "a wonderful sleep",
-        "translation": "一个精彩的睡觉"
+        "phrase": "like to sleep",
+        "translation": "喜欢睡觉"
       },
       {
-        "phrase": "a strange sleep",
-        "translation": "一个奇怪的睡觉"
+        "phrase": "learn to sleep",
+        "translation": "学会睡觉"
       }
     ],
     "examples": [
@@ -35063,12 +35063,12 @@
     "subtopic": "高兴",
     "phrases": [
       {
-        "phrase": "every smile",
-        "translation": "每个微笑"
+        "phrase": "smile every day",
+        "translation": "每天微笑"
       },
       {
-        "phrase": "the right smile",
-        "translation": "正确的微笑"
+        "phrase": "smile carefully",
+        "translation": "仔细微笑"
       }
     ],
     "examples": [
@@ -35415,12 +35415,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "an important solve",
-        "translation": "一个重要的解决"
+        "phrase": "how to solve",
+        "translation": "如何解决"
       },
       {
-        "phrase": "a perfect solve",
-        "translation": "一个完美的解决"
+        "phrase": "solve again",
+        "translation": "再次解决"
       }
     ],
     "examples": [
@@ -35735,12 +35735,12 @@
     "subtopic": "说",
     "phrases": [
       {
-        "phrase": "a different speak",
-        "translation": "一个不同的讲"
+        "phrase": "forget to speak",
+        "translation": "忘记讲"
       },
       {
-        "phrase": "a perfect speak",
-        "translation": "一个完美的讲"
+        "phrase": "speak carefully",
+        "translation": "仔细讲"
       }
     ],
     "examples": [
@@ -35831,12 +35831,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "a perfect spell",
-        "translation": "一个完美的拼写"
+        "phrase": "spell together",
+        "translation": "一起拼写"
       },
       {
-        "phrase": "the first spell",
-        "translation": "第一个拼写"
+        "phrase": "want to spell",
+        "translation": "想要拼写"
       }
     ],
     "examples": [
@@ -35863,12 +35863,12 @@
     "subtopic": "节假日",
     "phrases": [
       {
-        "phrase": "a new spend",
-        "translation": "一个新的度过"
+        "phrase": "like to spend",
+        "translation": "喜欢度过"
       },
       {
-        "phrase": "every spend",
-        "translation": "每个度过"
+        "phrase": "spend carefully",
+        "translation": "仔细度过"
       }
     ],
     "examples": [
@@ -36791,12 +36791,12 @@
     "subtopic": "历史文化",
     "phrases": [
       {
-        "phrase": "a simple succeed",
-        "translation": "一个简单的成功"
+        "phrase": "forget to succeed",
+        "translation": "忘记成功"
       },
       {
-        "phrase": "a wonderful succeed",
-        "translation": "一个精彩的成功"
+        "phrase": "succeed together",
+        "translation": "一起成功"
       }
     ],
     "examples": [
@@ -37239,12 +37239,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "an important sweep",
-        "translation": "一个重要的打扫"
+        "phrase": "sweep well",
+        "translation": "打扫好"
       },
       {
-        "phrase": "the whole sweep",
-        "translation": "整个打扫"
+        "phrase": "sweep again",
+        "translation": "再次打扫"
       }
     ],
     "examples": [
@@ -37303,12 +37303,12 @@
     "subtopic": "运动",
     "phrases": [
       {
-        "phrase": "the same swim",
-        "translation": "同样的游泳"
+        "phrase": "need to swim",
+        "translation": "需要游泳"
       },
       {
-        "phrase": "every swim",
-        "translation": "每个游泳"
+        "phrase": "swim quickly",
+        "translation": "快速游泳"
       }
     ],
     "examples": [
@@ -37527,12 +37527,12 @@
     "subtopic": "拿取",
     "phrases": [
       {
-        "phrase": "a different take",
-        "translation": "一个不同的带走"
+        "phrase": "try to take",
+        "translation": "尝试带走"
       },
       {
-        "phrase": "an important take",
-        "translation": "一个重要的带走"
+        "phrase": "take again",
+        "translation": "再次带走"
       }
     ],
     "examples": [
@@ -37559,12 +37559,12 @@
     "subtopic": "说",
     "phrases": [
       {
-        "phrase": "the same talk",
-        "translation": "同样的谈话"
+        "phrase": "talk well",
+        "translation": "谈话好"
       },
       {
-        "phrase": "a common talk",
-        "translation": "一个普通的谈话"
+        "phrase": "start to talk",
+        "translation": "开始谈话"
       }
     ],
     "examples": [
@@ -37847,12 +37847,12 @@
     "subtopic": "说",
     "phrases": [
       {
-        "phrase": "the whole tell",
-        "translation": "整个告诉"
+        "phrase": "tell every day",
+        "translation": "每天告诉"
       },
       {
-        "phrase": "a different tell",
-        "translation": "一个不同的告诉"
+        "phrase": "tell together",
+        "translation": "一起告诉"
       }
     ],
     "examples": [
@@ -38103,12 +38103,12 @@
     "subtopic": "交际",
     "phrases": [
       {
-        "phrase": "a common thank",
-        "translation": "一个普通的感谢"
+        "phrase": "how to thank",
+        "translation": "如何感谢"
       },
       {
-        "phrase": "a small thank",
-        "translation": "一个小感谢"
+        "phrase": "like to thank",
+        "translation": "喜欢感谢"
       }
     ],
     "examples": [
@@ -38231,12 +38231,12 @@
     "subtopic": "记忆",
     "phrases": [
       {
-        "phrase": "an important think",
-        "translation": "一个重要的思考"
+        "phrase": "forget to think",
+        "translation": "忘记思考"
       },
       {
-        "phrase": "a small think",
-        "translation": "一个小思考"
+        "phrase": "think well",
+        "translation": "思考好"
       }
     ],
     "examples": [
@@ -38391,12 +38391,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "the first tidy",
-        "translation": "第一个整理"
+        "phrase": "learn to tidy",
+        "translation": "学会整理"
       },
       {
-        "phrase": "a strange tidy",
-        "translation": "一个奇怪的整理"
+        "phrase": "want to tidy",
+        "translation": "想要整理"
       }
     ],
     "examples": [
@@ -39383,12 +39383,12 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "the right translate",
-        "translation": "正确的翻译"
+        "phrase": "need to translate",
+        "translation": "需要翻译"
       },
       {
-        "phrase": "an important translate",
-        "translation": "一个重要的翻译"
+        "phrase": "translate again",
+        "translation": "再次翻译"
       }
     ],
     "examples": [
@@ -39511,12 +39511,12 @@
     "subtopic": "需求",
     "phrases": [
       {
-        "phrase": "every treat",
-        "translation": "每个对待"
+        "phrase": "want to treat",
+        "translation": "想要对待"
       },
       {
-        "phrase": "a small treat",
-        "translation": "一个小对待"
+        "phrase": "treat quickly",
+        "translation": "快速对待"
       }
     ],
     "examples": [
@@ -40279,12 +40279,12 @@
     "subtopic": "动作",
     "phrases": [
       {
-        "phrase": "a strange use",
-        "translation": "一个奇怪的使用"
+        "phrase": "need to use",
+        "translation": "需要使用"
       },
       {
-        "phrase": "every use",
-        "translation": "每个使用"
+        "phrase": "start to use",
+        "translation": "开始使用"
       }
     ],
     "examples": [
@@ -40567,12 +40567,12 @@
     "subtopic": "旅游",
     "phrases": [
       {
-        "phrase": "a common visit",
-        "translation": "一个普通的参观"
+        "phrase": "how to visit",
+        "translation": "如何参观"
       },
       {
-        "phrase": "a perfect visit",
-        "translation": "一个完美的参观"
+        "phrase": "visit well",
+        "translation": "参观好"
       }
     ],
     "examples": [
@@ -40663,12 +40663,12 @@
     "subtopic": "生活起居",
     "phrases": [
       {
-        "phrase": "the same wake",
-        "translation": "同样的醒来"
+        "phrase": "need to wake",
+        "translation": "需要醒来"
       },
       {
-        "phrase": "a simple wake",
-        "translation": "一个简单的醒来"
+        "phrase": "like to wake",
+        "translation": "喜欢醒来"
       }
     ],
     "examples": [
@@ -40695,12 +40695,12 @@
     "subtopic": "户外活动",
     "phrases": [
       {
-        "phrase": "a simple walk",
-        "translation": "一个简单的步行"
+        "phrase": "start to walk",
+        "translation": "开始步行"
       },
       {
-        "phrase": "a small walk",
-        "translation": "一个小步行"
+        "phrase": "walk quickly",
+        "translation": "快速步行"
       }
     ],
     "examples": [
@@ -40791,12 +40791,12 @@
     "subtopic": "意愿与打算",
     "phrases": [
       {
-        "phrase": "every want",
-        "translation": "每个想要"
+        "phrase": "how to want",
+        "translation": "如何想要"
       },
       {
-        "phrase": "a different want",
-        "translation": "一个不同的想要"
+        "phrase": "start to want",
+        "translation": "开始想要"
       }
     ],
     "examples": [
@@ -40887,12 +40887,12 @@
     "subtopic": "军警法",
     "phrases": [
       {
-        "phrase": "the right warn",
-        "translation": "正确的警告"
+        "phrase": "like to warn",
+        "translation": "喜欢警告"
       },
       {
-        "phrase": "every warn",
-        "translation": "每个警告"
+        "phrase": "warn again",
+        "translation": "再次警告"
       }
     ],
     "examples": [
@@ -40919,12 +40919,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "every wash",
-        "translation": "每个洗"
+        "phrase": "wash together",
+        "translation": "一起洗"
       },
       {
-        "phrase": "the main wash",
-        "translation": "主要的洗"
+        "phrase": "start to wash",
+        "translation": "开始洗"
       }
     ],
     "examples": [
@@ -41015,12 +41015,12 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "a strange water",
-        "translation": "一个奇怪的浇水"
+        "phrase": "water well",
+        "translation": "浇水好"
       },
       {
-        "phrase": "an important water",
-        "translation": "一个重要的浇水"
+        "phrase": "water every day",
+        "translation": "每天浇水"
       }
     ],
     "examples": [
@@ -41143,12 +41143,12 @@
     "subtopic": "生活起居",
     "phrases": [
       {
-        "phrase": "the main wear",
-        "translation": "主要的穿戴"
+        "phrase": "forget to wear",
+        "translation": "忘记穿戴"
       },
       {
-        "phrase": "a wonderful wear",
-        "translation": "一个精彩的穿戴"
+        "phrase": "need to wear",
+        "translation": "需要穿戴"
       }
     ],
     "examples": [
@@ -41335,12 +41335,12 @@
     "subtopic": "支付",
     "phrases": [
       {
-        "phrase": "a different weigh",
-        "translation": "一个不同的称重"
+        "phrase": "weigh together",
+        "translation": "一起称重"
       },
       {
-        "phrase": "a new weigh",
-        "translation": "一个新的称重"
+        "phrase": "weigh better",
+        "translation": "更好地称重"
       }
     ],
     "examples": [
@@ -41815,12 +41815,12 @@
     "subtopic": "结果",
     "phrases": [
       {
-        "phrase": "the same win",
-        "translation": "同样的赢"
+        "phrase": "win together",
+        "translation": "一起赢"
       },
       {
-        "phrase": "the right win",
-        "translation": "正确的赢"
+        "phrase": "try to win",
+        "translation": "尝试赢"
       }
     ],
     "examples": [
@@ -42231,12 +42231,12 @@
     "subtopic": "农工商",
     "phrases": [
       {
-        "phrase": "the first work",
-        "translation": "第一个工作"
+        "phrase": "work well",
+        "translation": "工作好"
       },
       {
-        "phrase": "a wonderful work",
-        "translation": "一个精彩的工作"
+        "phrase": "need to work",
+        "translation": "需要工作"
       }
     ],
     "examples": [
