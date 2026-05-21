@@ -2229,12 +2229,20 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a wonderful friend",
-        "translation": "一个精彩的朋友"
+        "phrase": "best friend",
+        "translation": "最好的朋友"
       },
       {
-        "phrase": "a strange friend",
-        "translation": "一个奇怪的朋友"
+        "phrase": "make friends",
+        "translation": "交朋友"
+      },
+      {
+        "phrase": "close friend",
+        "translation": "亲密的朋友"
+      },
+      {
+        "phrase": "old friend",
+        "translation": "老朋友"
       }
     ],
     "examples": [
@@ -2261,12 +2269,20 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a simple name",
-        "translation": "一个简单的名字 v. 命名"
+        "phrase": "first name",
+        "translation": "名"
       },
       {
-        "phrase": "a perfect name",
-        "translation": "一个完美的名字 v. 命名"
+        "phrase": "last name",
+        "translation": "姓"
+      },
+      {
+        "phrase": "full name",
+        "translation": "全名"
+      },
+      {
+        "phrase": "my name is",
+        "translation": "我的名字是"
       }
     ],
     "examples": [
@@ -2421,12 +2437,20 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a wonderful family",
-        "translation": "一个精彩的家庭"
+        "phrase": "family member",
+        "translation": "家庭成员"
       },
       {
-        "phrase": "the right family",
-        "translation": "正确的家庭"
+        "phrase": "family name",
+        "translation": "姓氏"
+      },
+      {
+        "phrase": "big family",
+        "translation": "大家庭"
+      },
+      {
+        "phrase": "family photo",
+        "translation": "全家福"
       }
     ],
     "examples": [
@@ -2453,12 +2477,16 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "every parent",
-        "translation": "每个父亲"
+        "phrase": "my parents",
+        "translation": "我的父母"
       },
       {
-        "phrase": "the whole parent",
-        "translation": "整个父亲"
+        "phrase": "single parent",
+        "translation": "单亲"
+      },
+      {
+        "phrase": "parent meeting",
+        "translation": "家长会"
       }
     ],
     "examples": [
@@ -2485,12 +2513,16 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "the main brother",
-        "translation": "主要的兄弟"
+        "phrase": "elder brother",
+        "translation": "哥哥"
       },
       {
-        "phrase": "the whole brother",
-        "translation": "整个兄弟"
+        "phrase": "younger brother",
+        "translation": "弟弟"
+      },
+      {
+        "phrase": "big brother",
+        "translation": "大哥"
       }
     ],
     "examples": [
@@ -2517,12 +2549,16 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "an important sister",
-        "translation": "一个重要的姐妹"
+        "phrase": "elder sister",
+        "translation": "姐姐"
       },
       {
-        "phrase": "a new sister",
-        "translation": "一个新的姐妹"
+        "phrase": "younger sister",
+        "translation": "妹妹"
+      },
+      {
+        "phrase": "little sister",
+        "translation": "小妹妹"
       }
     ],
     "examples": [
@@ -2549,12 +2585,16 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a common photo",
-        "translation": "一个普通的照片"
+        "phrase": "take a photo",
+        "translation": "拍照"
       },
       {
-        "phrase": "a strange photo",
-        "translation": "一个奇怪的照片"
+        "phrase": "family photo",
+        "translation": "全家福"
+      },
+      {
+        "phrase": "photo album",
+        "translation": "相册"
       }
     ],
     "examples": [
@@ -2677,12 +2717,28 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "an important school",
-        "translation": "一个重要的学校"
+        "phrase": "go to school",
+        "translation": "上学"
       },
       {
-        "phrase": "a wonderful school",
-        "translation": "一个精彩的学校"
+        "phrase": "after school",
+        "translation": "放学后"
+      },
+      {
+        "phrase": "at school",
+        "translation": "在学校"
+      },
+      {
+        "phrase": "elementary school",
+        "translation": "小学"
+      },
+      {
+        "phrase": "middle school",
+        "translation": "中学"
+      },
+      {
+        "phrase": "high school",
+        "translation": "高中"
       }
     ],
     "examples": [
@@ -2709,12 +2765,16 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a different classroom",
-        "translation": "一个不同的教室"
+        "phrase": "in the classroom",
+        "translation": "在教室里"
       },
       {
-        "phrase": "the right classroom",
-        "translation": "正确的教室"
+        "phrase": "classroom rules",
+        "translation": "课堂规则"
+      },
+      {
+        "phrase": "classroom management",
+        "translation": "课堂管理"
       }
     ],
     "examples": [
@@ -2741,12 +2801,20 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "the right teacher",
-        "translation": "正确的老师"
+        "phrase": "English teacher",
+        "translation": "英语老师"
       },
       {
-        "phrase": "the first teacher",
-        "translation": "第一个老师"
+        "phrase": "head teacher",
+        "translation": "班主任"
+      },
+      {
+        "phrase": "good teacher",
+        "translation": "好老师"
+      },
+      {
+        "phrase": "math teacher",
+        "translation": "数学老师"
       }
     ],
     "examples": [
@@ -2773,12 +2841,20 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "the right student",
-        "translation": "正确的学生"
+        "phrase": "college student",
+        "translation": "大学生"
       },
       {
-        "phrase": "an important student",
-        "translation": "一个重要的学生"
+        "phrase": "good student",
+        "translation": "好学生"
+      },
+      {
+        "phrase": "exchange student",
+        "translation": "交换生"
+      },
+      {
+        "phrase": "student life",
+        "translation": "学生生活"
       }
     ],
     "examples": [
@@ -2805,12 +2881,20 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a perfect library",
-        "translation": "一个完美的图书馆"
+        "phrase": "school library",
+        "translation": "学校图书馆"
       },
       {
-        "phrase": "an important library",
-        "translation": "一个重要的图书馆"
+        "phrase": "public library",
+        "translation": "公共图书馆"
+      },
+      {
+        "phrase": "library card",
+        "translation": "借书证"
+      },
+      {
+        "phrase": "in the library",
+        "translation": "在图书馆"
       }
     ],
     "examples": [
@@ -2837,12 +2921,20 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a simple office",
-        "translation": "一个简单的办公室"
+        "phrase": "post office",
+        "translation": "邮局"
       },
       {
-        "phrase": "a small office",
-        "translation": "一个小办公室"
+        "phrase": "office worker",
+        "translation": "上班族"
+      },
+      {
+        "phrase": "office building",
+        "translation": "办公楼"
+      },
+      {
+        "phrase": "in the office",
+        "translation": "在办公室"
       }
     ],
     "examples": [
@@ -2933,12 +3025,20 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "the first food",
-        "translation": "第一个食物"
+        "phrase": "fast food",
+        "translation": "快餐"
       },
       {
-        "phrase": "a different food",
-        "translation": "一个不同的食物"
+        "phrase": "healthy food",
+        "translation": "健康食品"
+      },
+      {
+        "phrase": "delicious food",
+        "translation": "美味的食物"
+      },
+      {
+        "phrase": "food and drink",
+        "translation": "饮食"
       }
     ],
     "examples": [
@@ -2997,12 +3097,16 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a wonderful vegetable",
-        "translation": "一个精彩的蔬菜"
+        "phrase": "fresh vegetables",
+        "translation": "新鲜蔬菜"
       },
       {
-        "phrase": "the main vegetable",
-        "translation": "主要的蔬菜"
+        "phrase": "green vegetables",
+        "translation": "绿色蔬菜"
+      },
+      {
+        "phrase": "vegetable soup",
+        "translation": "蔬菜汤"
       }
     ],
     "examples": [
@@ -3029,12 +3133,16 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a wonderful fruit",
-        "translation": "一个精彩的水果"
+        "phrase": "fresh fruit",
+        "translation": "新鲜水果"
       },
       {
-        "phrase": "a perfect fruit",
-        "translation": "一个完美的水果"
+        "phrase": "fruit juice",
+        "translation": "果汁"
+      },
+      {
+        "phrase": "fruit salad",
+        "translation": "水果沙拉"
       }
     ],
     "examples": [
@@ -3061,12 +3169,16 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "every drink",
-        "translation": "每个饮料 v. 喝"
+        "phrase": "soft drink",
+        "translation": "软饮料"
       },
       {
-        "phrase": "the whole drink",
-        "translation": "整个饮料 v. 喝"
+        "phrase": "drink water",
+        "translation": "喝水"
+      },
+      {
+        "phrase": "food and drink",
+        "translation": "饮食"
       }
     ],
     "examples": [
@@ -3317,12 +3429,16 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "the first dinner",
-        "translation": "第一个正餐"
+        "phrase": "have dinner",
+        "translation": "吃晚餐"
       },
       {
-        "phrase": "a strange dinner",
-        "translation": "一个奇怪的正餐"
+        "phrase": "dinner time",
+        "translation": "晚餐时间"
+      },
+      {
+        "phrase": "dinner party",
+        "translation": "晚宴"
       }
     ],
     "examples": [
@@ -3605,12 +3721,20 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "the right phone",
-        "translation": "正确的电话"
+        "phrase": "mobile phone",
+        "translation": "手机"
       },
       {
-        "phrase": "a small phone",
-        "translation": "一个小电话"
+        "phrase": "phone call",
+        "translation": "电话"
+      },
+      {
+        "phrase": "phone number",
+        "translation": "电话号码"
+      },
+      {
+        "phrase": "cell phone",
+        "translation": "手机"
       }
     ],
     "examples": [
@@ -3861,12 +3985,20 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "the main plan",
-        "translation": "主要的/v. 计划"
+        "phrase": "make a plan",
+        "translation": "制定计划"
       },
       {
-        "phrase": "an important plan",
-        "translation": "一个重要的/v. 计划"
+        "phrase": "study plan",
+        "translation": "学习计划"
+      },
+      {
+        "phrase": "travel plan",
+        "translation": "旅行计划"
+      },
+      {
+        "phrase": "plan ahead",
+        "translation": "提前计划"
       }
     ],
     "examples": [
@@ -4117,12 +4249,16 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a strange future",
-        "translation": "一个奇怪的未来 adj. 将来的"
+        "phrase": "in the future",
+        "translation": "在未来"
       },
       {
-        "phrase": "the right future",
-        "translation": "正确的未来 adj. 将来的"
+        "phrase": "bright future",
+        "translation": "光明的未来"
+      },
+      {
+        "phrase": "the near future",
+        "translation": "不久的将来"
       }
     ],
     "examples": [
@@ -4181,12 +4317,16 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a strange machine",
-        "translation": "一个奇怪的机器"
+        "phrase": "washing machine",
+        "translation": "洗衣机"
       },
       {
-        "phrase": "the main machine",
-        "translation": "主要的机器"
+        "phrase": "machine learning",
+        "translation": "机器学习"
+      },
+      {
+        "phrase": "time machine",
+        "translation": "时光机"
       }
     ],
     "examples": [
@@ -4213,12 +4353,16 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "the right robot",
-        "translation": "正确的机器人"
+        "phrase": "robot arm",
+        "translation": "机械臂"
       },
       {
-        "phrase": "a wonderful robot",
-        "translation": "一个精彩的机器人"
+        "phrase": "robot vacuum",
+        "translation": "扫地机器人"
+      },
+      {
+        "phrase": "humanoid robot",
+        "translation": "人形机器人"
       }
     ],
     "examples": [
@@ -4597,12 +4741,20 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a small advice",
-        "translation": "一个小建议"
+        "phrase": "give advice",
+        "translation": "给建议"
       },
       {
-        "phrase": "the same advice",
-        "translation": "同样的建议"
+        "phrase": "take advice",
+        "translation": "接受建议"
+      },
+      {
+        "phrase": "good advice",
+        "translation": "好建议"
+      },
+      {
+        "phrase": "ask for advice",
+        "translation": "征求意见"
       }
     ],
     "examples": [
@@ -4661,12 +4813,20 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "the first mistake",
-        "translation": "第一个错误"
+        "phrase": "make a mistake",
+        "translation": "犯错"
       },
       {
-        "phrase": "a small mistake",
-        "translation": "一个小错误"
+        "phrase": "spelling mistake",
+        "translation": "拼写错误"
+      },
+      {
+        "phrase": "big mistake",
+        "translation": "大错误"
+      },
+      {
+        "phrase": "learn from mistakes",
+        "translation": "从错误中学习"
       }
     ],
     "examples": [
@@ -4885,12 +5045,16 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "a simple island",
-        "translation": "一个简单的岛屿"
+        "phrase": "on the island",
+        "translation": "在岛上"
       },
       {
-        "phrase": "every island",
-        "translation": "每个岛屿"
+        "phrase": "small island",
+        "translation": "小岛"
+      },
+      {
+        "phrase": "desert island",
+        "translation": "荒岛"
       }
     ],
     "examples": [
@@ -4917,12 +5081,20 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "every mountain",
-        "translation": "每个山"
+        "phrase": "climb a mountain",
+        "translation": "爬山"
       },
       {
-        "phrase": "a common mountain",
-        "translation": "一个普通的山"
+        "phrase": "mountain top",
+        "translation": "山顶"
+      },
+      {
+        "phrase": "high mountain",
+        "translation": "高山"
+      },
+      {
+        "phrase": "mountain climbing",
+        "translation": "登山"
       }
     ],
     "examples": [
@@ -5205,12 +5377,20 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "the first chance",
-        "translation": "第一个机会"
+        "phrase": "by chance",
+        "translation": "偶然"
       },
       {
-        "phrase": "every chance",
-        "translation": "每个机会"
+        "phrase": "last chance",
+        "translation": "最后的机会"
+      },
+      {
+        "phrase": "take a chance",
+        "translation": "冒险一试"
+      },
+      {
+        "phrase": "second chance",
+        "translation": "第二次机会"
       }
     ],
     "examples": [
@@ -5301,12 +5481,20 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "book quickly",
-        "translation": "快速预订 n. 书"
+        "phrase": "read a book",
+        "translation": "读书"
       },
       {
-        "phrase": "book well",
-        "translation": "预订 n. 书好"
+        "phrase": "story book",
+        "translation": "故事书"
+      },
+      {
+        "phrase": "book store",
+        "translation": "书店"
+      },
+      {
+        "phrase": "text book",
+        "translation": "教科书"
       }
     ],
     "examples": [
@@ -5461,12 +5649,20 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a simple choice",
-        "translation": "一个简单的选择"
+        "phrase": "make a choice",
+        "translation": "做出选择"
       },
       {
-        "phrase": "a wonderful choice",
-        "translation": "一个精彩的选择"
+        "phrase": "good choice",
+        "translation": "好的选择"
+      },
+      {
+        "phrase": "first choice",
+        "translation": "首选"
+      },
+      {
+        "phrase": "no choice",
+        "translation": "别无选择"
       }
     ],
     "examples": [
@@ -5781,12 +5977,20 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "the first message",
-        "translation": "第一个信息"
+        "phrase": "text message",
+        "translation": "短信"
       },
       {
-        "phrase": "a small message",
-        "translation": "一个小信息"
+        "phrase": "leave a message",
+        "translation": "留言"
+      },
+      {
+        "phrase": "send a message",
+        "translation": "发信息"
+      },
+      {
+        "phrase": "get the message",
+        "translation": "明白"
       }
     ],
     "examples": [
@@ -5973,12 +6177,20 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "the same dream",
-        "translation": "同样的梦想 v. 做梦"
+        "phrase": "have a dream",
+        "translation": "有一个梦想"
       },
       {
-        "phrase": "the right dream",
-        "translation": "正确的梦想 v. 做梦"
+        "phrase": "bad dream",
+        "translation": "噩梦"
+      },
+      {
+        "phrase": "dream come true",
+        "translation": "梦想成真"
+      },
+      {
+        "phrase": "sweet dreams",
+        "translation": "好梦"
       }
     ],
     "examples": [
@@ -6101,12 +6313,16 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "the same earth",
-        "translation": "同样的地球"
+        "phrase": "on earth",
+        "translation": "在地球上"
       },
       {
-        "phrase": "a small earth",
-        "translation": "一个小地球"
+        "phrase": "earth quake",
+        "translation": "地震"
+      },
+      {
+        "phrase": "mother earth",
+        "translation": "大地母亲"
       }
     ],
     "examples": [
@@ -6133,12 +6349,16 @@
     "unit": "M3",
     "phrases": [
       {
-        "phrase": "a new moon",
-        "translation": "一个新的月亮"
+        "phrase": "full moon",
+        "translation": "满月"
       },
       {
-        "phrase": "a small moon",
-        "translation": "一个小月亮"
+        "phrase": "new moon",
+        "translation": "新月"
+      },
+      {
+        "phrase": "moon light",
+        "translation": "月光"
       }
     ],
     "examples": [
@@ -6293,12 +6513,16 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "a perfect member",
-        "translation": "一个完美的成员"
+        "phrase": "family member",
+        "translation": "家庭成员"
       },
       {
-        "phrase": "every member",
-        "translation": "每个成员"
+        "phrase": "team member",
+        "translation": "团队成员"
+      },
+      {
+        "phrase": "club member",
+        "translation": "俱乐部成员"
       }
     ],
     "examples": [
@@ -6485,12 +6709,16 @@
     "unit": "M5",
     "phrases": [
       {
-        "phrase": "the whole hero",
-        "translation": "整个英雄"
+        "phrase": "national hero",
+        "translation": "民族英雄"
       },
       {
-        "phrase": "a simple hero",
-        "translation": "一个简单的英雄"
+        "phrase": "super hero",
+        "translation": "超级英雄"
+      },
+      {
+        "phrase": "my hero",
+        "translation": "我的英雄"
       }
     ],
     "examples": [
@@ -6709,12 +6937,16 @@
     "unit": "M1",
     "phrases": [
       {
-        "phrase": "a perfect opinion",
-        "translation": "一个完美的意见"
+        "phrase": "in my opinion",
+        "translation": "在我看来"
       },
       {
-        "phrase": "a strange opinion",
-        "translation": "一个奇怪的意见"
+        "phrase": "personal opinion",
+        "translation": "个人意见"
+      },
+      {
+        "phrase": "strong opinion",
+        "translation": "强烈的意见"
       }
     ],
     "examples": [
@@ -7509,12 +7741,20 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "the main luck",
-        "translation": "主要的运气"
+        "phrase": "good luck",
+        "translation": "好运"
       },
       {
-        "phrase": "a wonderful luck",
-        "translation": "一个精彩的运气"
+        "phrase": "bad luck",
+        "translation": "厄运"
+      },
+      {
+        "phrase": "wish me luck",
+        "translation": "祝我好运"
+      },
+      {
+        "phrase": "lucky day",
+        "translation": "幸运日"
       }
     ],
     "examples": [
@@ -7573,12 +7813,20 @@
     "unit": "M2",
     "phrases": [
       {
-        "phrase": "every effort",
-        "translation": "每个努力"
+        "phrase": "make an effort",
+        "translation": "努力"
       },
       {
-        "phrase": "the same effort",
-        "translation": "同样的努力"
+        "phrase": "team effort",
+        "translation": "团队努力"
+      },
+      {
+        "phrase": "great effort",
+        "translation": "巨大的努力"
+      },
+      {
+        "phrase": "spare no effort",
+        "translation": "不遗余力"
       }
     ],
     "examples": [
@@ -7765,12 +8013,20 @@
     "unit": "M4",
     "phrases": [
       {
-        "phrase": "the same rule",
-        "translation": "同样的规则 v. 统治"
+        "phrase": "classroom rules",
+        "translation": "课堂规则"
       },
       {
-        "phrase": "a common rule",
-        "translation": "一个普通的规则 v. 统治"
+        "phrase": "traffic rules",
+        "translation": "交通规则"
+      },
+      {
+        "phrase": "school rules",
+        "translation": "校规"
+      },
+      {
+        "phrase": "follow the rules",
+        "translation": "遵守规则"
       }
     ],
     "examples": [
@@ -8311,12 +8567,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "the whole afternoon",
-        "translation": "整个下午"
+        "phrase": "this afternoon",
+        "translation": "今天下午"
       },
       {
-        "phrase": "the same afternoon",
-        "translation": "同样的下午"
+        "phrase": "late afternoon",
+        "translation": "傍晚"
+      },
+      {
+        "phrase": "afternoon tea",
+        "translation": "下午茶"
       }
     ],
     "examples": [
@@ -8375,12 +8635,16 @@
     "subtopic": "个人信息",
     "phrases": [
       {
-        "phrase": "a common age",
-        "translation": "一个普通的年龄"
+        "phrase": "at the age of",
+        "translation": "在……岁时"
       },
       {
-        "phrase": "a small age",
-        "translation": "一个小年龄"
+        "phrase": "old age",
+        "translation": "老年"
+      },
+      {
+        "phrase": "age group",
+        "translation": "年龄段"
       }
     ],
     "examples": [
@@ -8823,12 +9087,20 @@
     "subtopic": "动物",
     "phrases": [
       {
-        "phrase": "the first animal",
-        "translation": "第一个动物"
+        "phrase": "wild animal",
+        "translation": "野生动物"
       },
       {
-        "phrase": "a common animal",
-        "translation": "一个普通的动物"
+        "phrase": "animal world",
+        "translation": "动物世界"
+      },
+      {
+        "phrase": "animal rights",
+        "translation": "动物权利"
+      },
+      {
+        "phrase": "pet animal",
+        "translation": "宠物"
       }
     ],
     "examples": [
@@ -8855,12 +9127,20 @@
     "subtopic": "问题",
     "phrases": [
       {
-        "phrase": "a different answer",
-        "translation": "一个不同的&v. 回答"
+        "phrase": "right answer",
+        "translation": "正确答案"
       },
       {
-        "phrase": "the right answer",
-        "translation": "正确的&v. 回答"
+        "phrase": "wrong answer",
+        "translation": "错误答案"
+      },
+      {
+        "phrase": "no answer",
+        "translation": "没有答案"
+      },
+      {
+        "phrase": "answer the phone",
+        "translation": "接电话"
       }
     ],
     "examples": [
@@ -8983,12 +9263,16 @@
     "subtopic": "植物",
     "phrases": [
       {
-        "phrase": "the main apple",
-        "translation": "主要的苹果"
+        "phrase": "apple pie",
+        "translation": "苹果派"
       },
       {
-        "phrase": "a new apple",
-        "translation": "一个新的苹果"
+        "phrase": "green apple",
+        "translation": "青苹果"
+      },
+      {
+        "phrase": "apple juice",
+        "translation": "苹果汁"
       }
     ],
     "examples": [
@@ -9239,12 +9523,16 @@
     "subtopic": "读物",
     "phrases": [
       {
-        "phrase": "the first artist",
-        "translation": "第一个艺术家"
+        "phrase": "famous artist",
+        "translation": "著名艺术家"
       },
       {
-        "phrase": "a common artist",
-        "translation": "一个普通的艺术家"
+        "phrase": "street artist",
+        "translation": "街头艺人"
+      },
+      {
+        "phrase": "artist studio",
+        "translation": "艺术家工作室"
       }
     ],
     "examples": [
@@ -9559,12 +9847,16 @@
     "subtopic": "季节",
     "phrases": [
       {
-        "phrase": "a strange autumn",
-        "translation": "一个奇怪的秋天"
+        "phrase": "autumn leaves",
+        "translation": "秋叶"
       },
       {
-        "phrase": "the whole autumn",
-        "translation": "整个秋天"
+        "phrase": "late autumn",
+        "translation": "深秋"
+      },
+      {
+        "phrase": "autumn festival",
+        "translation": "秋季节日"
       }
     ],
     "examples": [
@@ -9719,12 +10011,16 @@
     "subtopic": "其他人",
     "phrases": [
       {
-        "phrase": "the whole baby",
-        "translation": "整个婴儿"
+        "phrase": "baby girl",
+        "translation": "女婴"
       },
       {
-        "phrase": "a perfect baby",
-        "translation": "一个完美的婴儿"
+        "phrase": "baby boy",
+        "translation": "男婴"
+      },
+      {
+        "phrase": "baby crying",
+        "translation": "婴儿哭闹"
       }
     ],
     "examples": [
@@ -9847,12 +10143,20 @@
     "subtopic": "学习用品",
     "phrases": [
       {
-        "phrase": "every bag",
-        "translation": "每个包"
+        "phrase": "school bag",
+        "translation": "书包"
       },
       {
-        "phrase": "a simple bag",
-        "translation": "一个简单的包"
+        "phrase": "paper bag",
+        "translation": "纸袋"
+      },
+      {
+        "phrase": "sleeping bag",
+        "translation": "睡袋"
+      },
+      {
+        "phrase": "plastic bag",
+        "translation": "塑料袋"
       }
     ],
     "examples": [
@@ -9879,12 +10183,20 @@
     "subtopic": "运动",
     "phrases": [
       {
-        "phrase": "the whole ball",
-        "translation": "整个球"
+        "phrase": "football",
+        "translation": "足球"
       },
       {
-        "phrase": "the right ball",
-        "translation": "正确的球"
+        "phrase": "basketball",
+        "translation": "篮球"
+      },
+      {
+        "phrase": "play ball",
+        "translation": "打球"
+      },
+      {
+        "phrase": "ball game",
+        "translation": "球类运动"
       }
     ],
     "examples": [
@@ -9975,12 +10287,16 @@
     "subtopic": "植物",
     "phrases": [
       {
-        "phrase": "the whole banana",
-        "translation": "整个香蕉"
+        "phrase": "banana tree",
+        "translation": "香蕉树"
       },
       {
-        "phrase": "an important banana",
-        "translation": "一个重要的香蕉"
+        "phrase": "banana milk",
+        "translation": "香蕉牛奶"
+      },
+      {
+        "phrase": "ripe banana",
+        "translation": "熟香蕉"
       }
     ],
     "examples": [
@@ -10103,12 +10419,16 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "the first bathroom",
-        "translation": "第一个浴室"
+        "phrase": "go to the bathroom",
+        "translation": "去洗手间"
       },
       {
-        "phrase": "a new bathroom",
-        "translation": "一个新的浴室"
+        "phrase": "bathroom mirror",
+        "translation": "浴室镜子"
+      },
+      {
+        "phrase": "bathroom door",
+        "translation": "浴室门"
       }
     ],
     "examples": [
@@ -10295,12 +10615,16 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "the same bedroom",
-        "translation": "同样的卧室"
+        "phrase": "in the bedroom",
+        "translation": "在卧室"
       },
       {
-        "phrase": "the first bedroom",
-        "translation": "第一个卧室"
+        "phrase": "bedroom door",
+        "translation": "卧室门"
+      },
+      {
+        "phrase": "bedroom window",
+        "translation": "卧室窗户"
       }
     ],
     "examples": [
@@ -10711,12 +11035,20 @@
     "subtopic": "个人信息",
     "phrases": [
       {
-        "phrase": "the main birthday",
-        "translation": "主要的生日"
+        "phrase": "happy birthday",
+        "translation": "生日快乐"
       },
       {
-        "phrase": "the right birthday",
-        "translation": "正确的生日"
+        "phrase": "birthday cake",
+        "translation": "生日蛋糕"
+      },
+      {
+        "phrase": "birthday party",
+        "translation": "生日聚会"
+      },
+      {
+        "phrase": "birthday gift",
+        "translation": "生日礼物"
       }
     ],
     "examples": [
@@ -11255,12 +11587,16 @@
     "subtopic": "农工商",
     "phrases": [
       {
-        "phrase": "a common boss",
-        "translation": "一个普通的老板"
+        "phrase": "my boss",
+        "translation": "我的老板"
       },
       {
-        "phrase": "every boss",
-        "translation": "每个老板"
+        "phrase": "big boss",
+        "translation": "大老板"
+      },
+      {
+        "phrase": "boss lady",
+        "translation": "女老板"
       }
     ],
     "examples": [
@@ -11383,12 +11719,20 @@
     "subtopic": "餐具厨具",
     "phrases": [
       {
-        "phrase": "a wonderful box",
-        "translation": "一个精彩的盒子"
+        "phrase": "lunch box",
+        "translation": "便当盒"
       },
       {
-        "phrase": "a small box",
-        "translation": "一个小盒子"
+        "phrase": "pencil box",
+        "translation": "铅笔盒"
+      },
+      {
+        "phrase": "mail box",
+        "translation": "邮箱"
+      },
+      {
+        "phrase": "gift box",
+        "translation": "礼盒"
       }
     ],
     "examples": [
@@ -11479,12 +11823,16 @@
     "subtopic": "食物",
     "phrases": [
       {
-        "phrase": "a small bread",
-        "translation": "一个小面包"
+        "phrase": "a piece of bread",
+        "translation": "一片面包"
       },
       {
-        "phrase": "the same bread",
-        "translation": "同样的面包"
+        "phrase": "bread and butter",
+        "translation": "面包和黄油"
+      },
+      {
+        "phrase": "fresh bread",
+        "translation": "新鲜面包"
       }
     ],
     "examples": [
@@ -11511,12 +11859,16 @@
     "subtopic": "进食与感觉",
     "phrases": [
       {
-        "phrase": "the right breakfast",
-        "translation": "正确的早餐"
+        "phrase": "have breakfast",
+        "translation": "吃早餐"
       },
       {
-        "phrase": "a different breakfast",
-        "translation": "一个不同的早餐"
+        "phrase": "eat breakfast",
+        "translation": "吃早餐"
+      },
+      {
+        "phrase": "breakfast time",
+        "translation": "早餐时间"
       }
     ],
     "examples": [
@@ -11543,12 +11895,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "a strange bridge",
-        "translation": "一个奇怪的桥"
+        "phrase": "cross the bridge",
+        "translation": "过桥"
       },
       {
-        "phrase": "a small bridge",
-        "translation": "一个小桥"
+        "phrase": "bridge over water",
+        "translation": "水上桥梁"
+      },
+      {
+        "phrase": "wooden bridge",
+        "translation": "木桥"
       }
     ],
     "examples": [
@@ -12087,12 +12443,16 @@
     "subtopic": "食物",
     "phrases": [
       {
-        "phrase": "a small cake",
-        "translation": "一个小蛋糕"
+        "phrase": "birthday cake",
+        "translation": "生日蛋糕"
       },
       {
-        "phrase": "the main cake",
-        "translation": "主要的蛋糕"
+        "phrase": "chocolate cake",
+        "translation": "巧克力蛋糕"
+      },
+      {
+        "phrase": "a piece of cake",
+        "translation": "小菜一碟"
       }
     ],
     "examples": [
@@ -12375,12 +12735,20 @@
     "subtopic": "生活用品",
     "phrases": [
       {
-        "phrase": "a common card",
-        "translation": "一个普通的卡片"
+        "phrase": "ID card",
+        "translation": "身份证"
       },
       {
-        "phrase": "the same card",
-        "translation": "同样的卡片"
+        "phrase": "credit card",
+        "translation": "信用卡"
+      },
+      {
+        "phrase": "birthday card",
+        "translation": "生日卡"
+      },
+      {
+        "phrase": "playing card",
+        "translation": "扑克牌"
       }
     ],
     "examples": [
@@ -12695,12 +13063,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "the first century",
-        "translation": "第一个世纪"
+        "phrase": "21st century",
+        "translation": "21世纪"
       },
       {
-        "phrase": "the right century",
-        "translation": "正确的世纪"
+        "phrase": "last century",
+        "translation": "上个世纪"
+      },
+      {
+        "phrase": "for centuries",
+        "translation": "几个世纪以来"
       }
     ],
     "examples": [
@@ -12983,12 +13355,16 @@
     "subtopic": "食物",
     "phrases": [
       {
-        "phrase": "the same chicken",
-        "translation": "同样的鸡肉"
+        "phrase": "fried chicken",
+        "translation": "炸鸡"
       },
       {
-        "phrase": "a strange chicken",
-        "translation": "一个奇怪的鸡肉"
+        "phrase": "chicken soup",
+        "translation": "鸡汤"
+      },
+      {
+        "phrase": "chicken wing",
+        "translation": "鸡翅"
       }
     ],
     "examples": [
@@ -13015,12 +13391,16 @@
     "subtopic": "其他人",
     "phrases": [
       {
-        "phrase": "the right child",
-        "translation": "正确的孩子"
+        "phrase": "only child",
+        "translation": "独生子女"
       },
       {
-        "phrase": "a different child",
-        "translation": "一个不同的孩子"
+        "phrase": "childhood memory",
+        "translation": "童年记忆"
+      },
+      {
+        "phrase": "child care",
+        "translation": "儿童看护"
       }
     ],
     "examples": [
@@ -13271,12 +13651,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "the whole cinema",
-        "translation": "整个电影院"
+        "phrase": "go to the cinema",
+        "translation": "去电影院"
       },
       {
-        "phrase": "a new cinema",
-        "translation": "一个新的电影院"
+        "phrase": "cinema ticket",
+        "translation": "电影票"
+      },
+      {
+        "phrase": "at the cinema",
+        "translation": "在电影院"
       }
     ],
     "examples": [
@@ -13335,12 +13719,20 @@
     "subtopic": "洲、国家",
     "phrases": [
       {
-        "phrase": "a perfect city",
-        "translation": "一个完美的城市"
+        "phrase": "big city",
+        "translation": "大城市"
       },
       {
-        "phrase": "the same city",
-        "translation": "同样的城市"
+        "phrase": "city center",
+        "translation": "市中心"
+      },
+      {
+        "phrase": "capital city",
+        "translation": "首都"
+      },
+      {
+        "phrase": "city life",
+        "translation": "城市生活"
       }
     ],
     "examples": [
@@ -13623,12 +14015,16 @@
     "subtopic": "太空",
     "phrases": [
       {
-        "phrase": "a wonderful cloud",
-        "translation": "一个精彩的云"
+        "phrase": "dark cloud",
+        "translation": "乌云"
       },
       {
-        "phrase": "the whole cloud",
-        "translation": "整个云"
+        "phrase": "white cloud",
+        "translation": "白云"
+      },
+      {
+        "phrase": "cloudy sky",
+        "translation": "多云的天空"
       }
     ],
     "examples": [
@@ -13783,12 +14179,16 @@
     "subtopic": "饮品",
     "phrases": [
       {
-        "phrase": "the same coffee",
-        "translation": "同样的咖啡"
+        "phrase": "black coffee",
+        "translation": "黑咖啡"
       },
       {
-        "phrase": "a simple coffee",
-        "translation": "一个简单的咖啡"
+        "phrase": "coffee shop",
+        "translation": "咖啡店"
+      },
+      {
+        "phrase": "make coffee",
+        "translation": "泡咖啡"
       }
     ],
     "examples": [
@@ -14039,12 +14439,16 @@
     "subtopic": "网络",
     "phrases": [
       {
-        "phrase": "a perfect computer",
-        "translation": "一个完美的电脑"
+        "phrase": "personal computer",
+        "translation": "个人电脑"
       },
       {
-        "phrase": "an important computer",
-        "translation": "一个重要的电脑"
+        "phrase": "computer game",
+        "translation": "电脑游戏"
+      },
+      {
+        "phrase": "computer screen",
+        "translation": "电脑屏幕"
       }
     ],
     "examples": [
@@ -14487,12 +14891,20 @@
     "subtopic": "洲、国家",
     "phrases": [
       {
-        "phrase": "an important country",
-        "translation": "一个重要的国家"
+        "phrase": "foreign country",
+        "translation": "外国"
       },
       {
-        "phrase": "the same country",
-        "translation": "同样的国家"
+        "phrase": "home country",
+        "translation": "祖国"
+      },
+      {
+        "phrase": "developing country",
+        "translation": "发展中国家"
+      },
+      {
+        "phrase": "country music",
+        "translation": "乡村音乐"
       }
     ],
     "examples": [
@@ -14839,12 +15251,16 @@
     "subtopic": "历史文化",
     "phrases": [
       {
-        "phrase": "a new culture",
-        "translation": "一个新的文化"
+        "phrase": "traditional culture",
+        "translation": "传统文化"
       },
       {
-        "phrase": "the main culture",
-        "translation": "主要的文化"
+        "phrase": "pop culture",
+        "translation": "流行文化"
+      },
+      {
+        "phrase": "culture shock",
+        "translation": "文化冲击"
       }
     ],
     "examples": [
@@ -15191,12 +15607,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "a wonderful day",
-        "translation": "一个精彩的天"
+        "phrase": "every day",
+        "translation": "每天"
       },
       {
-        "phrase": "the first day",
-        "translation": "第一个天"
+        "phrase": "one day",
+        "translation": "有一天"
+      },
+      {
+        "phrase": "the next day",
+        "translation": "第二天"
       }
     ],
     "examples": [
@@ -15383,12 +15803,20 @@
     "subtopic": "意愿与打算",
     "phrases": [
       {
-        "phrase": "a strange decision",
-        "translation": "一个奇怪的决定"
+        "phrase": "make a decision",
+        "translation": "做决定"
       },
       {
-        "phrase": "a common decision",
-        "translation": "一个普通的决定"
+        "phrase": "right decision",
+        "translation": "正确的决定"
+      },
+      {
+        "phrase": "final decision",
+        "translation": "最终决定"
+      },
+      {
+        "phrase": "hard decision",
+        "translation": "艰难的决定"
       }
     ],
     "examples": [
@@ -16055,12 +16483,16 @@
     "subtopic": "教育、医疗",
     "phrases": [
       {
-        "phrase": "a simple doctor",
-        "translation": "一个简单的医生"
+        "phrase": "see a doctor",
+        "translation": "看医生"
       },
       {
-        "phrase": "a wonderful doctor",
-        "translation": "一个精彩的医生"
+        "phrase": "family doctor",
+        "translation": "家庭医生"
+      },
+      {
+        "phrase": "doctor's advice",
+        "translation": "医生的建议"
       }
     ],
     "examples": [
@@ -16151,12 +16583,20 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "a small door",
-        "translation": "一个小门"
+        "phrase": "open the door",
+        "translation": "开门"
       },
       {
-        "phrase": "a different door",
-        "translation": "一个不同的门"
+        "phrase": "close the door",
+        "translation": "关门"
+      },
+      {
+        "phrase": "front door",
+        "translation": "前门"
+      },
+      {
+        "phrase": "door bell",
+        "translation": "门铃"
       }
     ],
     "examples": [
@@ -16311,12 +16751,16 @@
     "subtopic": "交通出行",
     "phrases": [
       {
-        "phrase": "a simple driver",
-        "translation": "一个简单的司机"
+        "phrase": "bus driver",
+        "translation": "公交车司机"
       },
       {
-        "phrase": "the first driver",
-        "translation": "第一个司机"
+        "phrase": "taxi driver",
+        "translation": "出租车司机"
+      },
+      {
+        "phrase": "careful driver",
+        "translation": "谨慎的司机"
       }
     ],
     "examples": [
@@ -16791,12 +17235,16 @@
     "subtopic": "食物",
     "phrases": [
       {
-        "phrase": "an important egg",
-        "translation": "一个重要的鸡蛋"
+        "phrase": "fried egg",
+        "translation": "煎蛋"
       },
       {
-        "phrase": "every egg",
-        "translation": "每个鸡蛋"
+        "phrase": "boiled egg",
+        "translation": "煮蛋"
+      },
+      {
+        "phrase": "egg soup",
+        "translation": "蛋花汤"
       }
     ],
     "examples": [
@@ -17047,12 +17495,20 @@
     "subtopic": "性格、处世",
     "phrases": [
       {
-        "phrase": "a perfect energy",
-        "translation": "一个完美的精力"
+        "phrase": "solar energy",
+        "translation": "太阳能"
       },
       {
-        "phrase": "an important energy",
-        "translation": "一个重要的精力"
+        "phrase": "full of energy",
+        "translation": "精力充沛"
+      },
+      {
+        "phrase": "save energy",
+        "translation": "节能"
+      },
+      {
+        "phrase": "energy drink",
+        "translation": "能量饮料"
       }
     ],
     "examples": [
@@ -17335,12 +17791,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "a common evening",
-        "translation": "一个普通的傍晚"
+        "phrase": "this evening",
+        "translation": "今天晚上"
       },
       {
-        "phrase": "a strange evening",
-        "translation": "一个奇怪的傍晚"
+        "phrase": "evening news",
+        "translation": "晚间新闻"
+      },
+      {
+        "phrase": "good evening",
+        "translation": "晚上好"
       }
     ],
     "examples": [
@@ -17751,12 +18211,16 @@
     "subtopic": "原因",
     "phrases": [
       {
-        "phrase": "a new fact",
-        "translation": "一个新的事实"
+        "phrase": "in fact",
+        "translation": "事实上"
       },
       {
-        "phrase": "a small fact",
-        "translation": "一个小事实"
+        "phrase": "fact of life",
+        "translation": "生活现实"
+      },
+      {
+        "phrase": "face the fact",
+        "translation": "面对事实"
       }
     ],
     "examples": [
@@ -18039,12 +18503,16 @@
     "subtopic": "农工商",
     "phrases": [
       {
-        "phrase": "the first farmer",
-        "translation": "第一个农民"
+        "phrase": "local farmer",
+        "translation": "当地农民"
       },
       {
-        "phrase": "every farmer",
-        "translation": "每个农民"
+        "phrase": "farmer's market",
+        "translation": "农贸市场"
+      },
+      {
+        "phrase": "rice farmer",
+        "translation": "稻农"
       }
     ],
     "examples": [
@@ -18135,12 +18603,16 @@
     "subtopic": "家人与亲友",
     "phrases": [
       {
-        "phrase": "a strange father",
-        "translation": "一个奇怪的父亲"
+        "phrase": "my father",
+        "translation": "我的父亲"
       },
       {
-        "phrase": "a small father",
-        "translation": "一个小父亲"
+        "phrase": "father's Day",
+        "translation": "父亲节"
+      },
+      {
+        "phrase": "like father like son",
+        "translation": "有其父必有其子"
       }
     ],
     "examples": [
@@ -18423,12 +18895,16 @@
     "subtopic": "影视戏剧",
     "phrases": [
       {
-        "phrase": "the first film",
-        "translation": "第一个电影"
+        "phrase": "watch a film",
+        "translation": "看电影"
       },
       {
-        "phrase": "a perfect film",
-        "translation": "一个完美的电影"
+        "phrase": "film star",
+        "translation": "电影明星"
+      },
+      {
+        "phrase": "film director",
+        "translation": "电影导演"
       }
     ],
     "examples": [
@@ -18519,12 +18995,20 @@
     "subtopic": "生活用品",
     "phrases": [
       {
-        "phrase": "a wonderful fire",
-        "translation": "一个精彩的火"
+        "phrase": "on fire",
+        "translation": "着火"
       },
       {
-        "phrase": "a strange fire",
-        "translation": "一个奇怪的火"
+        "phrase": "fire fighter",
+        "translation": "消防员"
+      },
+      {
+        "phrase": "fire station",
+        "translation": "消防站"
+      },
+      {
+        "phrase": "camp fire",
+        "translation": "篝火"
       }
     ],
     "examples": [
@@ -18551,12 +19035,16 @@
     "subtopic": "食物",
     "phrases": [
       {
-        "phrase": "a small fish",
-        "translation": "一个小鱼"
+        "phrase": "fresh fish",
+        "translation": "新鲜的鱼"
       },
       {
-        "phrase": "the first fish",
-        "translation": "第一个鱼"
+        "phrase": "fish market",
+        "translation": "鱼市"
+      },
+      {
+        "phrase": "go fishing",
+        "translation": "去钓鱼"
       }
     ],
     "examples": [
@@ -18711,12 +19199,16 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "the first floor",
-        "translation": "第一个地板"
+        "phrase": "on the floor",
+        "translation": "在地上"
       },
       {
-        "phrase": "a common floor",
-        "translation": "一个普通的地板"
+        "phrase": "first floor",
+        "translation": "一楼"
+      },
+      {
+        "phrase": "second floor",
+        "translation": "二楼"
       }
     ],
     "examples": [
@@ -18743,12 +19235,16 @@
     "subtopic": "植物",
     "phrases": [
       {
-        "phrase": "a wonderful flower",
-        "translation": "一个精彩的花"
+        "phrase": "beautiful flower",
+        "translation": "美丽的花"
       },
       {
-        "phrase": "an important flower",
-        "translation": "一个重要的花"
+        "phrase": "flower shop",
+        "translation": "花店"
+      },
+      {
+        "phrase": "flower garden",
+        "translation": "花园"
       }
     ],
     "examples": [
@@ -18935,12 +19431,16 @@
     "subtopic": "自然地貌",
     "phrases": [
       {
-        "phrase": "a wonderful forest",
-        "translation": "一个精彩的森林"
+        "phrase": "in the forest",
+        "translation": "在森林里"
       },
       {
-        "phrase": "the main forest",
-        "translation": "主要的森林"
+        "phrase": "rain forest",
+        "translation": "雨林"
+      },
+      {
+        "phrase": "forest fire",
+        "translation": "森林火灾"
       }
     ],
     "examples": [
@@ -19479,12 +19979,20 @@
     "subtopic": "运动",
     "phrases": [
       {
-        "phrase": "a new game",
-        "translation": "一个新的游戏"
+        "phrase": "video game",
+        "translation": "电子游戏"
       },
       {
-        "phrase": "a wonderful game",
-        "translation": "一个精彩的游戏"
+        "phrase": "computer game",
+        "translation": "电脑游戏"
+      },
+      {
+        "phrase": "play a game",
+        "translation": "玩游戏"
+      },
+      {
+        "phrase": "Olympic Games",
+        "translation": "奥运会"
       }
     ],
     "examples": [
@@ -19511,12 +20019,16 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "a different garden",
-        "translation": "一个不同的花园"
+        "phrase": "flower garden",
+        "translation": "花园"
       },
       {
-        "phrase": "a common garden",
-        "translation": "一个普通的花园"
+        "phrase": "botanical garden",
+        "translation": "植物园"
+      },
+      {
+        "phrase": "in the garden",
+        "translation": "在花园里"
       }
     ],
     "examples": [
@@ -19671,12 +20183,20 @@
     "subtopic": "节假日",
     "phrases": [
       {
-        "phrase": "the same gift",
-        "translation": "同样的礼物"
+        "phrase": "birthday gift",
+        "translation": "生日礼物"
       },
       {
-        "phrase": "every gift",
-        "translation": "每个礼物"
+        "phrase": "free gift",
+        "translation": "免费赠品"
+      },
+      {
+        "phrase": "special gift",
+        "translation": "特别的礼物"
+      },
+      {
+        "phrase": "gift box",
+        "translation": "礼盒"
       }
     ],
     "examples": [
@@ -20279,12 +20799,16 @@
     "subtopic": "植物",
     "phrases": [
       {
-        "phrase": "a different grass",
-        "translation": "一个不同的草"
+        "phrase": "green grass",
+        "translation": "绿草"
       },
       {
-        "phrase": "the same grass",
-        "translation": "同样的草"
+        "phrase": "on the grass",
+        "translation": "在草地上"
+      },
+      {
+        "phrase": "grass field",
+        "translation": "草地"
       }
     ],
     "examples": [
@@ -20503,12 +21027,16 @@
     "subtopic": "其他人",
     "phrases": [
       {
-        "phrase": "every guest",
-        "translation": "每个客人"
+        "phrase": "special guest",
+        "translation": "特别来宾"
       },
       {
-        "phrase": "a strange guest",
-        "translation": "一个奇怪的客人"
+        "phrase": "welcome guest",
+        "translation": "欢迎客人"
+      },
+      {
+        "phrase": "guest room",
+        "translation": "客房"
       }
     ],
     "examples": [
@@ -20663,12 +21191,20 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "the same habit",
-        "translation": "同样的习惯"
+        "phrase": "good habit",
+        "translation": "好习惯"
       },
       {
-        "phrase": "a strange habit",
-        "translation": "一个奇怪的习惯"
+        "phrase": "bad habit",
+        "translation": "坏习惯"
+      },
+      {
+        "phrase": "eating habit",
+        "translation": "饮食习惯"
+      },
+      {
+        "phrase": "daily habit",
+        "translation": "日常习惯"
       }
     ],
     "examples": [
@@ -21207,12 +21743,20 @@
     "subtopic": "健康",
     "phrases": [
       {
-        "phrase": "a strange health",
-        "translation": "一个奇怪的健康"
+        "phrase": "good health",
+        "translation": "健康"
       },
       {
-        "phrase": "the same health",
-        "translation": "同样的健康"
+        "phrase": "health problem",
+        "translation": "健康问题"
+      },
+      {
+        "phrase": "mental health",
+        "translation": "心理健康"
+      },
+      {
+        "phrase": "health care",
+        "translation": "医疗保健"
       }
     ],
     "examples": [
@@ -21463,12 +22007,16 @@
     "subtopic": "自然地貌",
     "phrases": [
       {
-        "phrase": "a different hill",
-        "translation": "一个不同的小山"
+        "phrase": "on the hill",
+        "translation": "在山上"
       },
       {
-        "phrase": "a wonderful hill",
-        "translation": "一个精彩的小山"
+        "phrase": "green hill",
+        "translation": "青山"
+      },
+      {
+        "phrase": "hill climbing",
+        "translation": "爬山"
       }
     ],
     "examples": [
@@ -21623,12 +22171,20 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "a different home",
-        "translation": "一个不同的家"
+        "phrase": "at home",
+        "translation": "在家"
       },
       {
-        "phrase": "a strange home",
-        "translation": "一个奇怪的家"
+        "phrase": "go home",
+        "translation": "回家"
+      },
+      {
+        "phrase": "stay home",
+        "translation": "待在家"
+      },
+      {
+        "phrase": "home town",
+        "translation": "家乡"
       }
     ],
     "examples": [
@@ -21687,12 +22243,20 @@
     "subtopic": "学习内容",
     "phrases": [
       {
-        "phrase": "an important homework",
-        "translation": "一个重要的作业"
+        "phrase": "do homework",
+        "translation": "做作业"
       },
       {
-        "phrase": "the main homework",
-        "translation": "主要的作业"
+        "phrase": "math homework",
+        "translation": "数学作业"
+      },
+      {
+        "phrase": "finish homework",
+        "translation": "完成作业"
+      },
+      {
+        "phrase": "homework help",
+        "translation": "作业辅导"
       }
     ],
     "examples": [
@@ -21719,12 +22283,20 @@
     "subtopic": "希望与愿望",
     "phrases": [
       {
-        "phrase": "a small hope",
-        "translation": "一个小&v. 希望"
+        "phrase": "hope so",
+        "translation": "希望如此"
       },
       {
-        "phrase": "a different hope",
-        "translation": "一个不同的&v. 希望"
+        "phrase": "lose hope",
+        "translation": "失去希望"
+      },
+      {
+        "phrase": "full of hope",
+        "translation": "充满希望"
+      },
+      {
+        "phrase": "I hope",
+        "translation": "我希望"
       }
     ],
     "examples": [
@@ -21783,12 +22355,20 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "a simple hospital",
-        "translation": "一个简单的医院"
+        "phrase": "go to hospital",
+        "translation": "去医院"
       },
       {
-        "phrase": "every hospital",
-        "translation": "每个医院"
+        "phrase": "in hospital",
+        "translation": "住院"
+      },
+      {
+        "phrase": "hospital bed",
+        "translation": "病床"
+      },
+      {
+        "phrase": "children's hospital",
+        "translation": "儿童医院"
       }
     ],
     "examples": [
@@ -21847,12 +22427,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "the right hotel",
-        "translation": "正确的旅馆"
+        "phrase": "five-star hotel",
+        "translation": "五星级酒店"
       },
       {
-        "phrase": "a wonderful hotel",
-        "translation": "一个精彩的旅馆"
+        "phrase": "hotel room",
+        "translation": "酒店房间"
+      },
+      {
+        "phrase": "stay at a hotel",
+        "translation": "住酒店"
       }
     ],
     "examples": [
@@ -21879,12 +22463,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "a common hour",
-        "translation": "一个普通的小时"
+        "phrase": "an hour",
+        "translation": "一小时"
       },
       {
-        "phrase": "a small hour",
-        "translation": "一个小小时"
+        "phrase": "half an hour",
+        "translation": "半小时"
+      },
+      {
+        "phrase": "rush hour",
+        "translation": "高峰时间"
       }
     ],
     "examples": [
@@ -21911,12 +22499,20 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "the right house",
-        "translation": "正确的房子"
+        "phrase": "my house",
+        "translation": "我家"
       },
       {
-        "phrase": "an important house",
-        "translation": "一个重要的房子"
+        "phrase": "house work",
+        "translation": "家务"
+      },
+      {
+        "phrase": "tree house",
+        "translation": "树屋"
+      },
+      {
+        "phrase": "in the house",
+        "translation": "在房子里"
       }
     ],
     "examples": [
@@ -22167,12 +22763,20 @@
     "subtopic": "提出观点",
     "phrases": [
       {
-        "phrase": "a perfect idea",
-        "translation": "一个完美的主意"
+        "phrase": "good idea",
+        "translation": "好主意"
       },
       {
-        "phrase": "the same idea",
-        "translation": "同样的主意"
+        "phrase": "no idea",
+        "translation": "不知道"
+      },
+      {
+        "phrase": "bright idea",
+        "translation": "聪明的主意"
+      },
+      {
+        "phrase": "new idea",
+        "translation": "新想法"
       }
     ],
     "examples": [
@@ -22391,12 +22995,20 @@
     "subtopic": "广播电视",
     "phrases": [
       {
-        "phrase": "a simple information",
-        "translation": "一个简单的信息"
+        "phrase": "useful information",
+        "translation": "有用的信息"
       },
       {
-        "phrase": "a different information",
-        "translation": "一个不同的信息"
+        "phrase": "personal information",
+        "translation": "个人信息"
+      },
+      {
+        "phrase": "more information",
+        "translation": "更多信息"
+      },
+      {
+        "phrase": "information age",
+        "translation": "信息时代"
       }
     ],
     "examples": [
@@ -23031,12 +23643,20 @@
     "subtopic": "工作与职业",
     "phrases": [
       {
-        "phrase": "the whole job",
-        "translation": "整个工作"
+        "phrase": "find a job",
+        "translation": "找工作"
       },
       {
-        "phrase": "a perfect job",
-        "translation": "一个完美的工作"
+        "phrase": "good job",
+        "translation": "干得好"
+      },
+      {
+        "phrase": "part-time job",
+        "translation": "兼职"
+      },
+      {
+        "phrase": "job interview",
+        "translation": "工作面试"
       }
     ],
     "examples": [
@@ -23127,12 +23747,16 @@
     "subtopic": "饮品",
     "phrases": [
       {
-        "phrase": "a common juice",
-        "translation": "一个普通的果汁"
+        "phrase": "apple juice",
+        "translation": "苹果汁"
       },
       {
-        "phrase": "a strange juice",
-        "translation": "一个奇怪的果汁"
+        "phrase": "orange juice",
+        "translation": "橙汁"
+      },
+      {
+        "phrase": "fruit juice",
+        "translation": "果汁"
       }
     ],
     "examples": [
@@ -23319,12 +23943,16 @@
     "subtopic": "生活用品",
     "phrases": [
       {
-        "phrase": "the whole key",
-        "translation": "整个钥匙"
+        "phrase": "car key",
+        "translation": "车钥匙"
       },
       {
-        "phrase": "an important key",
-        "translation": "一个重要的钥匙"
+        "phrase": "the key to",
+        "translation": "……的关键"
+      },
+      {
+        "phrase": "key point",
+        "translation": "关键点"
       }
     ],
     "examples": [
@@ -23575,12 +24203,16 @@
     "subtopic": "政府部门",
     "phrases": [
       {
-        "phrase": "the same king",
-        "translation": "同样的国王"
+        "phrase": "king and queen",
+        "translation": "国王和王后"
       },
       {
-        "phrase": "the main king",
-        "translation": "主要的国王"
+        "phrase": "lion king",
+        "translation": "狮子王"
+      },
+      {
+        "phrase": "three kings",
+        "translation": "三王"
       }
     ],
     "examples": [
@@ -23607,12 +24239,16 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "a strange kitchen",
-        "translation": "一个奇怪的厨房"
+        "phrase": "in the kitchen",
+        "translation": "在厨房"
       },
       {
-        "phrase": "the main kitchen",
-        "translation": "主要的厨房"
+        "phrase": "kitchen table",
+        "translation": "厨房桌子"
+      },
+      {
+        "phrase": "kitchen knife",
+        "translation": "菜刀"
       }
     ],
     "examples": [
@@ -23799,12 +24435,16 @@
     "subtopic": "自然地貌",
     "phrases": [
       {
-        "phrase": "a strange lake",
-        "translation": "一个奇怪的湖"
+        "phrase": "by the lake",
+        "translation": "湖边"
       },
       {
-        "phrase": "a different lake",
-        "translation": "一个不同的湖"
+        "phrase": "lake water",
+        "translation": "湖水"
+      },
+      {
+        "phrase": "West Lake",
+        "translation": "西湖"
       }
     ],
     "examples": [
@@ -23927,12 +24567,20 @@
     "subtopic": "学习内容",
     "phrases": [
       {
-        "phrase": "a perfect language",
-        "translation": "一个完美的语言"
+        "phrase": "foreign language",
+        "translation": "外语"
       },
       {
-        "phrase": "the first language",
-        "translation": "第一个语言"
+        "phrase": "mother language",
+        "translation": "母语"
+      },
+      {
+        "phrase": "body language",
+        "translation": "肢体语言"
+      },
+      {
+        "phrase": "language barrier",
+        "translation": "语言障碍"
       }
     ],
     "examples": [
@@ -24375,12 +25023,20 @@
     "subtopic": "学习内容",
     "phrases": [
       {
-        "phrase": "a common letter",
-        "translation": "一个普通的字母"
+        "phrase": "write a letter",
+        "translation": "写信"
       },
       {
-        "phrase": "a new letter",
-        "translation": "一个新的字母"
+        "phrase": "love letter",
+        "translation": "情书"
+      },
+      {
+        "phrase": "capital letter",
+        "translation": "大写字母"
+      },
+      {
+        "phrase": "letter box",
+        "translation": "信箱"
       }
     ],
     "examples": [
@@ -24439,12 +25095,20 @@
     "subtopic": "生活起居",
     "phrases": [
       {
-        "phrase": "the first life",
-        "translation": "第一个生活"
+        "phrase": "daily life",
+        "translation": "日常生活"
       },
       {
-        "phrase": "every life",
-        "translation": "每个生活"
+        "phrase": "real life",
+        "translation": "现实生活"
+      },
+      {
+        "phrase": "save a life",
+        "translation": "救命"
+      },
+      {
+        "phrase": "way of life",
+        "translation": "生活方式"
       }
     ],
     "examples": [
@@ -24983,12 +25647,20 @@
     "subtopic": "喜欢与不喜欢",
     "phrases": [
       {
-        "phrase": "like to love",
-        "translation": "喜欢热爱"
+        "phrase": "fall in love",
+        "translation": "坠入爱河"
       },
       {
-        "phrase": "love better",
-        "translation": "更好地热爱"
+        "phrase": "love story",
+        "translation": "爱情故事"
+      },
+      {
+        "phrase": "true love",
+        "translation": "真爱"
+      },
+      {
+        "phrase": "mother's love",
+        "translation": "母爱"
       }
     ],
     "examples": [
@@ -25111,12 +25783,16 @@
     "subtopic": "进食与感觉",
     "phrases": [
       {
-        "phrase": "a strange lunch",
-        "translation": "一个奇怪的午餐"
+        "phrase": "have lunch",
+        "translation": "吃午饭"
       },
       {
-        "phrase": "the whole lunch",
-        "translation": "整个午餐"
+        "phrase": "lunch box",
+        "translation": "便当盒"
+      },
+      {
+        "phrase": "lunch break",
+        "translation": "午休"
       }
     ],
     "examples": [
@@ -25335,12 +26011,16 @@
     "subtopic": "学习用品",
     "phrases": [
       {
-        "phrase": "a new map",
-        "translation": "一个新的地图"
+        "phrase": "world map",
+        "translation": "世界地图"
       },
       {
-        "phrase": "a wonderful map",
-        "translation": "一个精彩的地图"
+        "phrase": "road map",
+        "translation": "路线图"
+      },
+      {
+        "phrase": "city map",
+        "translation": "城市地图"
       }
     ],
     "examples": [
@@ -25655,12 +26335,16 @@
     "subtopic": "食物",
     "phrases": [
       {
-        "phrase": "an important meat",
-        "translation": "一个重要的肉"
+        "phrase": "fresh meat",
+        "translation": "新鲜肉"
       },
       {
-        "phrase": "the first meat",
-        "translation": "第一个肉"
+        "phrase": "meat ball",
+        "translation": "肉丸"
+      },
+      {
+        "phrase": "eat meat",
+        "translation": "吃肉"
       }
     ],
     "examples": [
@@ -25783,12 +26467,20 @@
     "subtopic": "记忆",
     "phrases": [
       {
-        "phrase": "the whole memory",
-        "translation": "整个记忆"
+        "phrase": "good memory",
+        "translation": "好记性"
       },
       {
-        "phrase": "the main memory",
-        "translation": "主要的记忆"
+        "phrase": "bad memory",
+        "translation": "不好的回忆"
+      },
+      {
+        "phrase": "childhood memory",
+        "translation": "童年回忆"
+      },
+      {
+        "phrase": "in memory of",
+        "translation": "纪念"
       }
     ],
     "examples": [
@@ -26039,12 +26731,16 @@
     "subtopic": "饮品",
     "phrases": [
       {
-        "phrase": "the whole milk",
-        "translation": "整个牛奶"
+        "phrase": "hot milk",
+        "translation": "热牛奶"
       },
       {
-        "phrase": "a strange milk",
-        "translation": "一个奇怪的牛奶"
+        "phrase": "milk tea",
+        "translation": "奶茶"
+      },
+      {
+        "phrase": "drink milk",
+        "translation": "喝牛奶"
       }
     ],
     "examples": [
@@ -26103,12 +26799,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "an important minute",
-        "translation": "一个重要的分钟"
+        "phrase": "wait a minute",
+        "translation": "等一下"
       },
       {
-        "phrase": "a strange minute",
-        "translation": "一个奇怪的分钟"
+        "phrase": "just a minute",
+        "translation": "就一分钟"
+      },
+      {
+        "phrase": "last minute",
+        "translation": "最后一刻"
       }
     ],
     "examples": [
@@ -26295,12 +26995,16 @@
     "subtopic": "时间点",
     "phrases": [
       {
-        "phrase": "a perfect moment",
-        "translation": "一个完美的片刻"
+        "phrase": "at the moment",
+        "translation": "此刻"
       },
       {
-        "phrase": "the same moment",
-        "translation": "同样的片刻"
+        "phrase": "wait a moment",
+        "translation": "等一下"
+      },
+      {
+        "phrase": "for a moment",
+        "translation": "一会儿"
       }
     ],
     "examples": [
@@ -26359,12 +27063,20 @@
     "subtopic": "支付",
     "phrases": [
       {
-        "phrase": "a perfect money",
-        "translation": "一个完美的钱"
+        "phrase": "pocket money",
+        "translation": "零花钱"
       },
       {
-        "phrase": "a simple money",
-        "translation": "一个简单的钱"
+        "phrase": "make money",
+        "translation": "赚钱"
+      },
+      {
+        "phrase": "save money",
+        "translation": "省钱"
+      },
+      {
+        "phrase": "spend money",
+        "translation": "花钱"
       }
     ],
     "examples": [
@@ -26423,8 +27135,12 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "an important month",
-        "translation": "一个重要的月"
+        "phrase": "next month",
+        "translation": "下个月"
+      },
+      {
+        "phrase": "last month",
+        "translation": "上个月"
       },
       {
         "phrase": "every month",
@@ -26487,12 +27203,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "an important morning",
-        "translation": "一个重要的早上"
+        "phrase": "every morning",
+        "translation": "每天早上"
       },
       {
-        "phrase": "a simple morning",
-        "translation": "一个简单的早上"
+        "phrase": "tomorrow morning",
+        "translation": "明天早上"
+      },
+      {
+        "phrase": "early morning",
+        "translation": "清晨"
       }
     ],
     "examples": [
@@ -26519,12 +27239,16 @@
     "subtopic": "家人与亲友",
     "phrases": [
       {
-        "phrase": "a simple mother",
-        "translation": "一个简单的母亲"
+        "phrase": "my mother",
+        "translation": "我的母亲"
       },
       {
-        "phrase": "every mother",
-        "translation": "每个母亲"
+        "phrase": "mother tongue",
+        "translation": "母语"
+      },
+      {
+        "phrase": "mother's Day",
+        "translation": "母亲节"
       }
     ],
     "examples": [
@@ -26679,12 +27403,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "every museum",
-        "translation": "每个博物馆"
+        "phrase": "science museum",
+        "translation": "科学博物馆"
       },
       {
-        "phrase": "a wonderful museum",
-        "translation": "一个精彩的博物馆"
+        "phrase": "art museum",
+        "translation": "艺术博物馆"
+      },
+      {
+        "phrase": "museum visit",
+        "translation": "参观博物馆"
       }
     ],
     "examples": [
@@ -26711,12 +27439,20 @@
     "subtopic": "学科",
     "phrases": [
       {
-        "phrase": "the same music",
-        "translation": "同样的音乐"
+        "phrase": "listen to music",
+        "translation": "听音乐"
       },
       {
-        "phrase": "the first music",
-        "translation": "第一个音乐"
+        "phrase": "music class",
+        "translation": "音乐课"
+      },
+      {
+        "phrase": "music player",
+        "translation": "音乐播放器"
+      },
+      {
+        "phrase": "pop music",
+        "translation": "流行音乐"
       }
     ],
     "examples": [
@@ -26807,12 +27543,20 @@
     "subtopic": "自然地貌",
     "phrases": [
       {
-        "phrase": "the right nature",
-        "translation": "正确的自然"
+        "phrase": "mother nature",
+        "translation": "大自然"
       },
       {
-        "phrase": "a small nature",
-        "translation": "一个小自然"
+        "phrase": "nature reserve",
+        "translation": "自然保护区"
+      },
+      {
+        "phrase": "human nature",
+        "translation": "人性"
+      },
+      {
+        "phrase": "back to nature",
+        "translation": "回归自然"
       }
     ],
     "examples": [
@@ -27031,12 +27775,20 @@
     "subtopic": "读物",
     "phrases": [
       {
-        "phrase": "a common news",
-        "translation": "一个普通的新闻"
+        "phrase": "good news",
+        "translation": "好消息"
       },
       {
-        "phrase": "every news",
-        "translation": "每个新闻"
+        "phrase": "breaking news",
+        "translation": "突发新闻"
+      },
+      {
+        "phrase": "bad news",
+        "translation": "坏消息"
+      },
+      {
+        "phrase": "news report",
+        "translation": "新闻报道"
       }
     ],
     "examples": [
@@ -27159,12 +27911,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "the main night",
-        "translation": "主要的夜晚"
+        "phrase": "last night",
+        "translation": "昨晚"
       },
       {
-        "phrase": "the whole night",
-        "translation": "整个夜晚"
+        "phrase": "at night",
+        "translation": "在晚上"
+      },
+      {
+        "phrase": "good night",
+        "translation": "晚安"
       }
     ],
     "examples": [
@@ -27607,12 +28363,16 @@
     "subtopic": "教育、医疗",
     "phrases": [
       {
-        "phrase": "the whole nurse",
-        "translation": "整个护士"
+        "phrase": "head nurse",
+        "translation": "护士长"
       },
       {
-        "phrase": "every nurse",
-        "translation": "每个护士"
+        "phrase": "school nurse",
+        "translation": "校医"
+      },
+      {
+        "phrase": "nurse station",
+        "translation": "护士站"
       }
     ],
     "examples": [
@@ -28055,12 +28815,16 @@
     "subtopic": "饮品",
     "phrases": [
       {
-        "phrase": "a small orange",
-        "translation": "一个小橘子"
+        "phrase": "orange juice",
+        "translation": "橙汁"
       },
       {
-        "phrase": "a different orange",
-        "translation": "一个不同的橘子"
+        "phrase": "fresh orange",
+        "translation": "新鲜橙子"
+      },
+      {
+        "phrase": "orange tree",
+        "translation": "橙树"
       }
     ],
     "examples": [
@@ -28535,12 +29299,20 @@
     "subtopic": "学习用品",
     "phrases": [
       {
-        "phrase": "the main paper",
-        "translation": "主要的纸"
+        "phrase": "a piece of paper",
+        "translation": "一张纸"
       },
       {
-        "phrase": "a simple paper",
-        "translation": "一个简单的纸"
+        "phrase": "paper plane",
+        "translation": "纸飞机"
+      },
+      {
+        "phrase": "exam paper",
+        "translation": "试卷"
+      },
+      {
+        "phrase": "toilet paper",
+        "translation": "卫生纸"
       }
     ],
     "examples": [
@@ -28599,12 +29371,20 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "the whole park",
-        "translation": "整个公园"
+        "phrase": "in the park",
+        "translation": "在公园"
       },
       {
-        "phrase": "a wonderful park",
-        "translation": "一个精彩的公园"
+        "phrase": "national park",
+        "translation": "国家公园"
+      },
+      {
+        "phrase": "amusement park",
+        "translation": "游乐园"
+      },
+      {
+        "phrase": "parking lot",
+        "translation": "停车场"
       }
     ],
     "examples": [
@@ -28727,12 +29507,16 @@
     "subtopic": "时间相关",
     "phrases": [
       {
-        "phrase": "quite past",
-        "translation": "相当过去的"
+        "phrase": "in the past",
+        "translation": "在过去"
       },
       {
-        "phrase": "feel past",
-        "translation": "感到过去的"
+        "phrase": "past experience",
+        "translation": "过去的经验"
+      },
+      {
+        "phrase": "walk past",
+        "translation": "走过"
       }
     ],
     "examples": [
@@ -28791,12 +29575,16 @@
     "subtopic": "环境",
     "phrases": [
       {
-        "phrase": "the first peace",
-        "translation": "第一个和平"
+        "phrase": "world peace",
+        "translation": "世界和平"
       },
       {
-        "phrase": "the whole peace",
-        "translation": "整个和平"
+        "phrase": "peace of mind",
+        "translation": "内心的平静"
+      },
+      {
+        "phrase": "in peace",
+        "translation": "安宁地"
       }
     ],
     "examples": [
@@ -28855,12 +29643,20 @@
     "subtopic": "学习用品",
     "phrases": [
       {
-        "phrase": "the same pen",
-        "translation": "同样的钢笔"
+        "phrase": "ball pen",
+        "translation": "圆珠笔"
       },
       {
-        "phrase": "a perfect pen",
-        "translation": "一个完美的钢笔"
+        "phrase": "pen name",
+        "translation": "笔名"
+      },
+      {
+        "phrase": "with a pen",
+        "translation": "用笔"
+      },
+      {
+        "phrase": "pen friend",
+        "translation": "笔友"
       }
     ],
     "examples": [
@@ -28887,12 +29683,16 @@
     "subtopic": "学习用品",
     "phrases": [
       {
-        "phrase": "the first pencil",
-        "translation": "第一个铅笔"
+        "phrase": "pencil box",
+        "translation": "铅笔盒"
       },
       {
-        "phrase": "an important pencil",
-        "translation": "一个重要的铅笔"
+        "phrase": "color pencil",
+        "translation": "彩色铅笔"
+      },
+      {
+        "phrase": "pencil case",
+        "translation": "笔袋"
       }
     ],
     "examples": [
@@ -29143,12 +29943,20 @@
     "subtopic": "学习用品",
     "phrases": [
       {
-        "phrase": "a simple picture",
-        "translation": "一个简单的图片"
+        "phrase": "take a picture",
+        "translation": "拍照"
       },
       {
-        "phrase": "the first picture",
-        "translation": "第一个图片"
+        "phrase": "draw a picture",
+        "translation": "画画"
+      },
+      {
+        "phrase": "picture book",
+        "translation": "图画书"
+      },
+      {
+        "phrase": "beautiful picture",
+        "translation": "美丽的画"
       }
     ],
     "examples": [
@@ -29463,12 +30271,20 @@
     "subtopic": "植物",
     "phrases": [
       {
-        "phrase": "a common plant",
-        "translation": "一个普通的植物"
+        "phrase": "green plant",
+        "translation": "绿色植物"
       },
       {
-        "phrase": "a perfect plant",
-        "translation": "一个完美的植物"
+        "phrase": "plant trees",
+        "translation": "植树"
+      },
+      {
+        "phrase": "plant growth",
+        "translation": "植物生长"
+      },
+      {
+        "phrase": "power plant",
+        "translation": "发电厂"
       }
     ],
     "examples": [
@@ -30007,12 +30823,20 @@
     "subtopic": "环境",
     "phrases": [
       {
-        "phrase": "a simple pollution",
-        "translation": "一个简单的污染"
+        "phrase": "air pollution",
+        "translation": "空气污染"
       },
       {
-        "phrase": "a new pollution",
-        "translation": "一个新的污染"
+        "phrase": "water pollution",
+        "translation": "水污染"
+      },
+      {
+        "phrase": "noise pollution",
+        "translation": "噪音污染"
+      },
+      {
+        "phrase": "environmental pollution",
+        "translation": "环境污染"
       }
     ],
     "examples": [
@@ -30647,12 +31471,20 @@
     "subtopic": "问题",
     "phrases": [
       {
-        "phrase": "the right problem",
-        "translation": "正确的难题"
+        "phrase": "solve a problem",
+        "translation": "解决问题"
       },
       {
-        "phrase": "the same problem",
-        "translation": "同样的难题"
+        "phrase": "big problem",
+        "translation": "大问题"
+      },
+      {
+        "phrase": "no problem",
+        "translation": "没问题"
+      },
+      {
+        "phrase": "health problem",
+        "translation": "健康问题"
       }
     ],
     "examples": [
@@ -30775,12 +31607,16 @@
     "subtopic": "学习过程",
     "phrases": [
       {
-        "phrase": "a simple progress",
-        "translation": "一个简单的进步"
+        "phrase": "make progress",
+        "translation": "取得进步"
       },
       {
-        "phrase": "the right progress",
-        "translation": "正确的进步"
+        "phrase": "good progress",
+        "translation": "良好的进展"
+      },
+      {
+        "phrase": "progress report",
+        "translation": "进展报告"
       }
     ],
     "examples": [
@@ -31191,12 +32027,16 @@
     "subtopic": "政府部门",
     "phrases": [
       {
-        "phrase": "the right queen",
-        "translation": "正确的王后"
+        "phrase": "beauty queen",
+        "translation": "选美皇后"
       },
       {
-        "phrase": "every queen",
-        "translation": "每个王后"
+        "phrase": "queen bee",
+        "translation": "蜂后"
+      },
+      {
+        "phrase": "drama queen",
+        "translation": "戏精"
       }
     ],
     "examples": [
@@ -31223,12 +32063,20 @@
     "subtopic": "问题",
     "phrases": [
       {
-        "phrase": "the right question",
-        "translation": "正确的问题"
+        "phrase": "ask a question",
+        "translation": "问问题"
       },
       {
-        "phrase": "an important question",
-        "translation": "一个重要的问题"
+        "phrase": "answer a question",
+        "translation": "回答问题"
+      },
+      {
+        "phrase": "good question",
+        "translation": "好问题"
+      },
+      {
+        "phrase": "question mark",
+        "translation": "问号"
       }
     ],
     "examples": [
@@ -31479,12 +32327,16 @@
     "subtopic": "康复与治疗",
     "phrases": [
       {
-        "phrase": "a new rain",
-        "translation": "一个新的&v. 雨"
+        "phrase": "heavy rain",
+        "translation": "大雨"
       },
       {
-        "phrase": "a small rain",
-        "translation": "一个小&v. 雨"
+        "phrase": "light rain",
+        "translation": "小雨"
+      },
+      {
+        "phrase": "rain coat",
+        "translation": "雨衣"
       }
     ],
     "examples": [
@@ -31735,12 +32587,20 @@
     "subtopic": "说",
     "phrases": [
       {
-        "phrase": "want to reason",
-        "translation": "想要劝说"
+        "phrase": "main reason",
+        "translation": "主要原因"
       },
       {
-        "phrase": "how to reason",
-        "translation": "如何劝说"
+        "phrase": "good reason",
+        "translation": "充分的理由"
+      },
+      {
+        "phrase": "for some reason",
+        "translation": "出于某种原因"
+      },
+      {
+        "phrase": "no reason",
+        "translation": "没有理由"
       }
     ],
     "examples": [
@@ -32087,12 +32947,20 @@
     "subtopic": "广播电视",
     "phrases": [
       {
-        "phrase": "an important report",
-        "translation": "一个重要的&v. 报道"
+        "phrase": "news report",
+        "translation": "新闻报道"
       },
       {
-        "phrase": "the first report",
-        "translation": "第一个&v. 报道"
+        "phrase": "weather report",
+        "translation": "天气预报"
+      },
+      {
+        "phrase": "school report",
+        "translation": "成绩单"
+      },
+      {
+        "phrase": "report card",
+        "translation": "成绩单"
       }
     ],
     "examples": [
@@ -32183,12 +33051,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "a different restaurant",
-        "translation": "一个不同的饭店"
+        "phrase": "Chinese restaurant",
+        "translation": "中餐馆"
       },
       {
-        "phrase": "the whole restaurant",
-        "translation": "整个饭店"
+        "phrase": "fast food restaurant",
+        "translation": "快餐店"
+      },
+      {
+        "phrase": "go to a restaurant",
+        "translation": "去餐馆"
       }
     ],
     "examples": [
@@ -32215,12 +33087,20 @@
     "subtopic": "学习评估",
     "phrases": [
       {
-        "phrase": "a common result",
-        "translation": "一个普通的结果"
+        "phrase": "exam result",
+        "translation": "考试成绩"
       },
       {
-        "phrase": "a small result",
-        "translation": "一个小结果"
+        "phrase": "final result",
+        "translation": "最终结果"
+      },
+      {
+        "phrase": "as a result",
+        "translation": "结果"
+      },
+      {
+        "phrase": "good result",
+        "translation": "好结果"
       }
     ],
     "examples": [
@@ -32311,12 +33191,16 @@
     "subtopic": "食物",
     "phrases": [
       {
-        "phrase": "a different rice",
-        "translation": "一个不同的米饭"
+        "phrase": "fried rice",
+        "translation": "炒饭"
       },
       {
-        "phrase": "a perfect rice",
-        "translation": "一个完美的米饭"
+        "phrase": "rice cake",
+        "translation": "年糕"
+      },
+      {
+        "phrase": "rice field",
+        "translation": "稻田"
       }
     ],
     "examples": [
@@ -32439,12 +33323,16 @@
     "subtopic": "自然地貌",
     "phrases": [
       {
-        "phrase": "the main river",
-        "translation": "主要的河流"
+        "phrase": "cross the river",
+        "translation": "过河"
       },
       {
-        "phrase": "a small river",
-        "translation": "一个小河流"
+        "phrase": "river bank",
+        "translation": "河岸"
+      },
+      {
+        "phrase": "long river",
+        "translation": "长河"
       }
     ],
     "examples": [
@@ -32471,12 +33359,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "a strange road",
-        "translation": "一个奇怪的道路"
+        "phrase": "on the road",
+        "translation": "在路上"
       },
       {
-        "phrase": "a perfect road",
-        "translation": "一个完美的道路"
+        "phrase": "main road",
+        "translation": "主路"
+      },
+      {
+        "phrase": "cross the road",
+        "translation": "过马路"
       }
     ],
     "examples": [
@@ -32567,12 +33459,20 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "a small room",
-        "translation": "一个小房间"
+        "phrase": "living room",
+        "translation": "客厅"
       },
       {
-        "phrase": "the whole room",
-        "translation": "整个房间"
+        "phrase": "dining room",
+        "translation": "餐厅"
+      },
+      {
+        "phrase": "waiting room",
+        "translation": "等候室"
+      },
+      {
+        "phrase": "room number",
+        "translation": "房间号"
       }
     ],
     "examples": [
@@ -33015,12 +33915,16 @@
     "subtopic": "调料",
     "phrases": [
       {
-        "phrase": "the same salt",
-        "translation": "同样的盐"
+        "phrase": "salt water",
+        "translation": "盐水"
       },
       {
-        "phrase": "the first salt",
-        "translation": "第一个盐"
+        "phrase": "sea salt",
+        "translation": "海盐"
+      },
+      {
+        "phrase": "add salt",
+        "translation": "加盐"
       }
     ],
     "examples": [
@@ -33271,12 +34175,16 @@
     "subtopic": "学科",
     "phrases": [
       {
-        "phrase": "the right science",
-        "translation": "正确的科学"
+        "phrase": "computer science",
+        "translation": "计算机科学"
       },
       {
-        "phrase": "a small science",
-        "translation": "一个小科学"
+        "phrase": "science fiction",
+        "translation": "科幻小说"
+      },
+      {
+        "phrase": "science museum",
+        "translation": "科学博物馆"
       }
     ],
     "examples": [
@@ -33399,12 +34307,16 @@
     "subtopic": "自然地貌",
     "phrases": [
       {
-        "phrase": "the right sea",
-        "translation": "正确的大海"
+        "phrase": "at sea",
+        "translation": "在海上"
       },
       {
-        "phrase": "a simple sea",
-        "translation": "一个简单的大海"
+        "phrase": "sea food",
+        "translation": "海鲜"
+      },
+      {
+        "phrase": "sea level",
+        "translation": "海平面"
       }
     ],
     "examples": [
@@ -33463,12 +34375,16 @@
     "subtopic": "季节",
     "phrases": [
       {
-        "phrase": "the first season",
-        "translation": "第一个季节"
+        "phrase": "rainy season",
+        "translation": "雨季"
       },
       {
-        "phrase": "a common season",
-        "translation": "一个普通的季节"
+        "phrase": "dry season",
+        "translation": "旱季"
+      },
+      {
+        "phrase": "holiday season",
+        "translation": "假期季节"
       }
     ],
     "examples": [
@@ -33559,12 +34475,20 @@
     "subtopic": "交际",
     "phrases": [
       {
-        "phrase": "the same secret",
-        "translation": "同样的秘密"
+        "phrase": "keep a secret",
+        "translation": "保守秘密"
       },
       {
-        "phrase": "a new secret",
-        "translation": "一个新的秘密"
+        "phrase": "top secret",
+        "translation": "最高机密"
+      },
+      {
+        "phrase": "trade secret",
+        "translation": "商业秘密"
+      },
+      {
+        "phrase": "secret plan",
+        "translation": "秘密计划"
       }
     ],
     "examples": [
@@ -34807,12 +35731,20 @@
     "subtopic": "学习内容",
     "phrases": [
       {
-        "phrase": "a simple skill",
-        "translation": "一个简单的技能"
+        "phrase": "language skill",
+        "translation": "语言技能"
       },
       {
-        "phrase": "a different skill",
-        "translation": "一个不同的技能"
+        "phrase": "basic skill",
+        "translation": "基本技能"
+      },
+      {
+        "phrase": "skill training",
+        "translation": "技能培训"
+      },
+      {
+        "phrase": "life skill",
+        "translation": "生活技能"
       }
     ],
     "examples": [
@@ -34871,12 +35803,16 @@
     "subtopic": "太空",
     "phrases": [
       {
-        "phrase": "a new sky",
-        "translation": "一个新的天空"
+        "phrase": "blue sky",
+        "translation": "蓝天"
       },
       {
-        "phrase": "a wonderful sky",
-        "translation": "一个精彩的天空"
+        "phrase": "night sky",
+        "translation": "夜空"
+      },
+      {
+        "phrase": "clear sky",
+        "translation": "晴朗的天空"
       }
     ],
     "examples": [
@@ -35159,12 +36095,16 @@
     "subtopic": "康复与治疗",
     "phrases": [
       {
-        "phrase": "the same snow",
-        "translation": "同样的&v. 雪"
+        "phrase": "heavy snow",
+        "translation": "大雪"
       },
       {
-        "phrase": "a common snow",
-        "translation": "一个普通的&v. 雪"
+        "phrase": "snow ball",
+        "translation": "雪球"
+      },
+      {
+        "phrase": "snow man",
+        "translation": "雪人"
       }
     ],
     "examples": [
@@ -35511,12 +36451,20 @@
     "subtopic": "影视戏剧",
     "phrases": [
       {
-        "phrase": "a small song",
-        "translation": "一个小歌曲"
+        "phrase": "sing a song",
+        "translation": "唱歌"
       },
       {
-        "phrase": "a perfect song",
-        "translation": "一个完美的歌曲"
+        "phrase": "love song",
+        "translation": "情歌"
+      },
+      {
+        "phrase": "pop song",
+        "translation": "流行歌曲"
+      },
+      {
+        "phrase": "theme song",
+        "translation": "主题曲"
       }
     ],
     "examples": [
@@ -35991,12 +36939,16 @@
     "subtopic": "饮品",
     "phrases": [
       {
-        "phrase": "the main spring",
-        "translation": "主要的泉水"
+        "phrase": "spring festival",
+        "translation": "春节"
       },
       {
-        "phrase": "every spring",
-        "translation": "每个泉水"
+        "phrase": "spring break",
+        "translation": "春假"
+      },
+      {
+        "phrase": "hot spring",
+        "translation": "温泉"
       }
     ],
     "examples": [
@@ -36151,12 +37103,16 @@
     "subtopic": "太空",
     "phrases": [
       {
-        "phrase": "the right star",
-        "translation": "正确的星星"
+        "phrase": "movie star",
+        "translation": "电影明星"
       },
       {
-        "phrase": "a common star",
-        "translation": "一个普通的星星"
+        "phrase": "shining star",
+        "translation": "闪耀的星星"
+      },
+      {
+        "phrase": "star light",
+        "translation": "星光"
       }
     ],
     "examples": [
@@ -36503,12 +37459,20 @@
     "subtopic": "读物",
     "phrases": [
       {
-        "phrase": "the whole story",
-        "translation": "整个故事"
+        "phrase": "tell a story",
+        "translation": "讲故事"
       },
       {
-        "phrase": "a new story",
-        "translation": "一个新的故事"
+        "phrase": "love story",
+        "translation": "爱情故事"
+      },
+      {
+        "phrase": "short story",
+        "translation": "短篇小说"
+      },
+      {
+        "phrase": "story book",
+        "translation": "故事书"
       }
     ],
     "examples": [
@@ -36663,12 +37627,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "a new street",
-        "translation": "一个新的街道"
+        "phrase": "on the street",
+        "translation": "在街上"
       },
       {
-        "phrase": "a simple street",
-        "translation": "一个简单的街道"
+        "phrase": "street food",
+        "translation": "街边小吃"
+      },
+      {
+        "phrase": "street light",
+        "translation": "路灯"
       }
     ],
     "examples": [
@@ -36823,12 +37791,20 @@
     "subtopic": "历史文化",
     "phrases": [
       {
-        "phrase": "a different success",
-        "translation": "一个不同的成功"
+        "phrase": "great success",
+        "translation": "巨大的成功"
       },
       {
-        "phrase": "an important success",
-        "translation": "一个重要的成功"
+        "phrase": "road to success",
+        "translation": "成功之路"
+      },
+      {
+        "phrase": "success story",
+        "translation": "成功故事"
+      },
+      {
+        "phrase": "key to success",
+        "translation": "成功的关键"
       }
     ],
     "examples": [
@@ -36919,12 +37895,16 @@
     "subtopic": "调料",
     "phrases": [
       {
-        "phrase": "an important sugar",
-        "translation": "一个重要的糖"
+        "phrase": "brown sugar",
+        "translation": "红糖"
       },
       {
-        "phrase": "the first sugar",
-        "translation": "第一个糖"
+        "phrase": "sugar free",
+        "translation": "无糖"
+      },
+      {
+        "phrase": "add sugar",
+        "translation": "加糖"
       }
     ],
     "examples": [
@@ -36951,12 +37931,16 @@
     "subtopic": "季节",
     "phrases": [
       {
-        "phrase": "a wonderful summer",
-        "translation": "一个精彩的夏天"
+        "phrase": "summer holiday",
+        "translation": "暑假"
       },
       {
-        "phrase": "the main summer",
-        "translation": "主要的夏天"
+        "phrase": "summer camp",
+        "translation": "夏令营"
+      },
+      {
+        "phrase": "hot summer",
+        "translation": "炎热的夏天"
       }
     ],
     "examples": [
@@ -36983,12 +37967,16 @@
     "subtopic": "太空",
     "phrases": [
       {
-        "phrase": "a different sun",
-        "translation": "一个不同的太阳"
+        "phrase": "bright sun",
+        "translation": "明亮的太阳"
       },
       {
-        "phrase": "every sun",
-        "translation": "每个太阳"
+        "phrase": "morning sun",
+        "translation": "朝阳"
+      },
+      {
+        "phrase": "under the sun",
+        "translation": "在阳光下"
       }
     ],
     "examples": [
@@ -37719,12 +38707,20 @@
     "subtopic": "饮品",
     "phrases": [
       {
-        "phrase": "a common tea",
-        "translation": "一个普通的茶"
+        "phrase": "green tea",
+        "translation": "绿茶"
       },
       {
-        "phrase": "a perfect tea",
-        "translation": "一个完美的茶"
+        "phrase": "black tea",
+        "translation": "红茶"
+      },
+      {
+        "phrase": "milk tea",
+        "translation": "奶茶"
+      },
+      {
+        "phrase": "tea cup",
+        "translation": "茶杯"
       }
     ],
     "examples": [
@@ -37783,12 +38779,16 @@
     "subtopic": "科学技术",
     "phrases": [
       {
-        "phrase": "a strange technology",
-        "translation": "一个奇怪的技术"
+        "phrase": "modern technology",
+        "translation": "现代技术"
       },
       {
-        "phrase": "a wonderful technology",
-        "translation": "一个精彩的技术"
+        "phrase": "information technology",
+        "translation": "信息技术"
+      },
+      {
+        "phrase": "high technology",
+        "translation": "高科技"
       }
     ],
     "examples": [
@@ -38359,12 +39359,20 @@
     "subtopic": "旅游",
     "phrases": [
       {
-        "phrase": "a small ticket",
-        "translation": "一个小票"
+        "phrase": "buy a ticket",
+        "translation": "买票"
       },
       {
-        "phrase": "the whole ticket",
-        "translation": "整个票"
+        "phrase": "plane ticket",
+        "translation": "机票"
+      },
+      {
+        "phrase": "train ticket",
+        "translation": "火车票"
+      },
+      {
+        "phrase": "free ticket",
+        "translation": "免费票"
       }
     ],
     "examples": [
@@ -38487,12 +39495,16 @@
     "subtopic": "时间相关",
     "phrases": [
       {
-        "phrase": "every time",
-        "translation": "每个时间"
+        "phrase": "free time",
+        "translation": "空闲时间"
       },
       {
-        "phrase": "the whole time",
-        "translation": "整个时间"
+        "phrase": "on time",
+        "translation": "准时"
+      },
+      {
+        "phrase": "spend time",
+        "translation": "花时间"
       }
     ],
     "examples": [
@@ -38583,12 +39595,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "a perfect today",
-        "translation": "一个完美的今天"
+        "phrase": "today's news",
+        "translation": "今天的新闻"
       },
       {
-        "phrase": "a new today",
-        "translation": "一个新的今天"
+        "phrase": "from today",
+        "translation": "从今天起"
+      },
+      {
+        "phrase": "later today",
+        "translation": "今天晚些时候"
       }
     ],
     "examples": [
@@ -38711,12 +39727,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "a small tomorrow",
-        "translation": "一个小明天"
+        "phrase": "tomorrow morning",
+        "translation": "明天早上"
       },
       {
-        "phrase": "a simple tomorrow",
-        "translation": "一个简单的明天"
+        "phrase": "see you tomorrow",
+        "translation": "明天见"
+      },
+      {
+        "phrase": "tomorrow night",
+        "translation": "明天晚上"
       }
     ],
     "examples": [
@@ -39255,12 +40275,16 @@
     "subtopic": "生活用品",
     "phrases": [
       {
-        "phrase": "the same toy",
-        "translation": "同样的玩具"
+        "phrase": "toy car",
+        "translation": "玩具车"
       },
       {
-        "phrase": "a perfect toy",
-        "translation": "一个完美的玩具"
+        "phrase": "toy store",
+        "translation": "玩具店"
+      },
+      {
+        "phrase": "stuffed toy",
+        "translation": "毛绒玩具"
       }
     ],
     "examples": [
@@ -39543,12 +40567,20 @@
     "subtopic": "植物",
     "phrases": [
       {
-        "phrase": "a new tree",
-        "translation": "一个新的树"
+        "phrase": "apple tree",
+        "translation": "苹果树"
       },
       {
-        "phrase": "every tree",
-        "translation": "每个树"
+        "phrase": "family tree",
+        "translation": "家谱"
+      },
+      {
+        "phrase": "Christmas tree",
+        "translation": "圣诞树"
+      },
+      {
+        "phrase": "under the tree",
+        "translation": "在树下"
       }
     ],
     "examples": [
@@ -39735,12 +40767,16 @@
     "subtopic": "原因",
     "phrases": [
       {
-        "phrase": "every truth",
-        "translation": "每个真相"
+        "phrase": "tell the truth",
+        "translation": "说实话"
       },
       {
-        "phrase": "a small truth",
-        "translation": "一个小真相"
+        "phrase": "the truth is",
+        "translation": "事实是"
+      },
+      {
+        "phrase": "search for truth",
+        "translation": "寻求真相"
       }
     ],
     "examples": [
@@ -40503,12 +41539,16 @@
     "subtopic": "农工商",
     "phrases": [
       {
-        "phrase": "the right village",
-        "translation": "正确的村庄"
+        "phrase": "small village",
+        "translation": "小村庄"
       },
       {
-        "phrase": "the whole village",
-        "translation": "整个村庄"
+        "phrase": "village life",
+        "translation": "乡村生活"
+      },
+      {
+        "phrase": "fishing village",
+        "translation": "渔村"
       }
     ],
     "examples": [
@@ -40727,12 +41767,16 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "a simple wall",
-        "translation": "一个简单的墙"
+        "phrase": "on the wall",
+        "translation": "在墙上"
       },
       {
-        "phrase": "the main wall",
-        "translation": "主要的墙"
+        "phrase": "Great Wall",
+        "translation": "长城"
+      },
+      {
+        "phrase": "wall painting",
+        "translation": "壁画"
       }
     ],
     "examples": [
@@ -40823,12 +41867,16 @@
     "subtopic": "历史文化",
     "phrases": [
       {
-        "phrase": "the whole war",
-        "translation": "整个战争"
+        "phrase": "world war",
+        "translation": "世界大战"
       },
       {
-        "phrase": "a perfect war",
-        "translation": "一个完美的战争"
+        "phrase": "war and peace",
+        "translation": "战争与和平"
+      },
+      {
+        "phrase": "cold war",
+        "translation": "冷战"
       }
     ],
     "examples": [
@@ -41015,12 +42063,20 @@
     "subtopic": "家务",
     "phrases": [
       {
-        "phrase": "water well",
-        "translation": "浇水好"
+        "phrase": "drink water",
+        "translation": "喝水"
       },
       {
-        "phrase": "water every day",
-        "translation": "每天浇水"
+        "phrase": "hot water",
+        "translation": "热水"
+      },
+      {
+        "phrase": "cold water",
+        "translation": "冷水"
+      },
+      {
+        "phrase": "fresh water",
+        "translation": "淡水"
       }
     ],
     "examples": [
@@ -41175,12 +42231,16 @@
     "subtopic": "康复与治疗",
     "phrases": [
       {
-        "phrase": "a simple weather",
-        "translation": "一个简单的天气"
+        "phrase": "bad weather",
+        "translation": "坏天气"
       },
       {
-        "phrase": "a common weather",
-        "translation": "一个普通的天气"
+        "phrase": "nice weather",
+        "translation": "好天气"
+      },
+      {
+        "phrase": "weather forecast",
+        "translation": "天气预报"
       }
     ],
     "examples": [
@@ -41271,12 +42331,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "the right week",
-        "translation": "正确的周"
+        "phrase": "next week",
+        "translation": "下周"
       },
       {
-        "phrase": "the same week",
-        "translation": "同样的周"
+        "phrase": "last week",
+        "translation": "上周"
+      },
+      {
+        "phrase": "this week",
+        "translation": "这周"
       }
     ],
     "examples": [
@@ -41847,12 +42911,16 @@
     "subtopic": "康复与治疗",
     "phrases": [
       {
-        "phrase": "the right wind",
-        "translation": "正确的风"
+        "phrase": "strong wind",
+        "translation": "大风"
       },
       {
-        "phrase": "a new wind",
-        "translation": "一个新的风"
+        "phrase": "cold wind",
+        "translation": "冷风"
+      },
+      {
+        "phrase": "wind power",
+        "translation": "风力"
       }
     ],
     "examples": [
@@ -41879,12 +42947,16 @@
     "subtopic": "房屋与住所",
     "phrases": [
       {
-        "phrase": "a simple window",
-        "translation": "一个简单的窗户"
+        "phrase": "open the window",
+        "translation": "开窗"
       },
       {
-        "phrase": "a wonderful window",
-        "translation": "一个精彩的窗户"
+        "phrase": "close the window",
+        "translation": "关窗"
+      },
+      {
+        "phrase": "window seat",
+        "translation": "靠窗座位"
       }
     ],
     "examples": [
@@ -42007,12 +43079,16 @@
     "subtopic": "季节",
     "phrases": [
       {
-        "phrase": "a new winter",
-        "translation": "一个新的冬天"
+        "phrase": "winter holiday",
+        "translation": "寒假"
       },
       {
-        "phrase": "a strange winter",
-        "translation": "一个奇怪的冬天"
+        "phrase": "cold winter",
+        "translation": "寒冷的冬天"
+      },
+      {
+        "phrase": "winter sports",
+        "translation": "冬季运动"
       }
     ],
     "examples": [
@@ -42071,12 +43147,20 @@
     "subtopic": "希望与愿望",
     "phrases": [
       {
-        "phrase": "a simple wish",
-        "translation": "一个简单的&v. 愿望"
+        "phrase": "make a wish",
+        "translation": "许愿"
       },
       {
-        "phrase": "an important wish",
-        "translation": "一个重要的&v. 愿望"
+        "phrase": "wish you luck",
+        "translation": "祝你好运"
+      },
+      {
+        "phrase": "best wishes",
+        "translation": "最好的祝福"
+      },
+      {
+        "phrase": "wish list",
+        "translation": "愿望清单"
       }
     ],
     "examples": [
@@ -42231,12 +43315,20 @@
     "subtopic": "农工商",
     "phrases": [
       {
-        "phrase": "work well",
-        "translation": "工作好"
+        "phrase": "hard work",
+        "translation": "努力工作"
       },
       {
-        "phrase": "need to work",
-        "translation": "需要工作"
+        "phrase": "go to work",
+        "translation": "上班"
+      },
+      {
+        "phrase": "after work",
+        "translation": "下班后"
+      },
+      {
+        "phrase": "team work",
+        "translation": "团队合作"
       }
     ],
     "examples": [
@@ -42263,12 +43355,16 @@
     "subtopic": "农工商",
     "phrases": [
       {
-        "phrase": "a new worker",
-        "translation": "一个新的工人"
+        "phrase": "hard worker",
+        "translation": "勤奋的工人"
       },
       {
-        "phrase": "a simple worker",
-        "translation": "一个简单的工人"
+        "phrase": "factory worker",
+        "translation": "工厂工人"
+      },
+      {
+        "phrase": "social worker",
+        "translation": "社工"
       }
     ],
     "examples": [
@@ -42295,12 +43391,20 @@
     "subtopic": "洲、国家",
     "phrases": [
       {
-        "phrase": "the right world",
-        "translation": "正确的世界"
+        "phrase": "around the world",
+        "translation": "世界各地"
       },
       {
-        "phrase": "a strange world",
-        "translation": "一个奇怪的世界"
+        "phrase": "world record",
+        "translation": "世界纪录"
+      },
+      {
+        "phrase": "world war",
+        "translation": "世界大战"
+      },
+      {
+        "phrase": "real world",
+        "translation": "现实世界"
       }
     ],
     "examples": [
@@ -42359,12 +43463,16 @@
     "subtopic": "文艺",
     "phrases": [
       {
-        "phrase": "a small writer",
-        "translation": "一个小作家"
+        "phrase": "famous writer",
+        "translation": "著名作家"
       },
       {
-        "phrase": "a wonderful writer",
-        "translation": "一个精彩的作家"
+        "phrase": "book writer",
+        "translation": "书籍作者"
+      },
+      {
+        "phrase": "letter writer",
+        "translation": "写信人"
       }
     ],
     "examples": [
@@ -42455,12 +43563,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "a strange year",
-        "translation": "一个奇怪的年"
+        "phrase": "next year",
+        "translation": "明年"
       },
       {
-        "phrase": "a new year",
-        "translation": "一个新的年"
+        "phrase": "last year",
+        "translation": "去年"
+      },
+      {
+        "phrase": "every year",
+        "translation": "每年"
       }
     ],
     "examples": [
@@ -42519,12 +43631,16 @@
     "subtopic": "时间段",
     "phrases": [
       {
-        "phrase": "a new yesterday",
-        "translation": "一个新的昨天"
+        "phrase": "yesterday morning",
+        "translation": "昨天早上"
       },
       {
-        "phrase": "a different yesterday",
-        "translation": "一个不同的昨天"
+        "phrase": "the day before yesterday",
+        "translation": "前天"
+      },
+      {
+        "phrase": "yesterday afternoon",
+        "translation": "昨天下午"
       }
     ],
     "examples": [
@@ -42679,12 +43795,16 @@
     "subtopic": "城市设施",
     "phrases": [
       {
-        "phrase": "a perfect zoo",
-        "translation": "一个完美的动物园"
+        "phrase": "go to the zoo",
+        "translation": "去动物园"
       },
       {
-        "phrase": "a common zoo",
-        "translation": "一个普通的动物园"
+        "phrase": "zoo animals",
+        "translation": "动物园动物"
+      },
+      {
+        "phrase": "at the zoo",
+        "translation": "在动物园"
       }
     ],
     "examples": [
