@@ -441,7 +441,7 @@ function rateWord(q){
   let wid=getCurWordId();if(!wid)return;
   let prev=userState.wordProgress[wid]||{stage:0,correct:0,incorrect:0},r=ebSchedule(prev.stage||0,q);
   let nd=new Date();nd.setDate(nd.getDate()+r.interval);
-  userState.wordProgress[wid]={stage:r.stage,interval:r.interval,correct:prev.correct+(q>=2?1:0),incorrect:prev.incorrect+(q<2?1:0),nextReview:nd.toISOString().slice(0,10),lastReviewed:todayStr()};
+  userState.wordProgress[wid]={stage:r.stage,interval:r.interval,correct:prev.correct+wordOK+(q>=2?1:0),incorrect:(prev.incorrect||0)+wordNG+(q<2?1:0),nextReview:nd.toISOString().slice(0,10),lastReviewed:todayStr()};
   userState.lastStudyDate=todayStr();userState.streak=calcStreak();saveState();
   curWordIdx++;
   if(curWordIdx>=(userState.todayWords||[]).length){document.getElementById('learn-done').style.display='';document.getElementById('learn-body').style.display='none';document.getElementById('done-title').textContent='🎉 任务完成！';document.getElementById('done-msg').textContent='获得 '+sessXP+' XP！明天继续加油 💪';updateHomeScreen();updateStats()}else startWordLesson()
