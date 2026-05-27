@@ -1,0 +1,2662 @@
+[
+  {
+    "id": "c0001",
+    "word": "accept",
+    "phonetic": "/əkˈsept/",
+    "translation": "v. 接受；同意",
+    "phrases": [
+      {
+        "phrase": "accept an invitation",
+        "translation": "接受邀请"
+      },
+      {
+        "phrase": "accept the truth",
+        "translation": "接受真相"
+      },
+      {
+        "phrase": "accept responsibility",
+        "translation": "承担责任"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "She accepted the invitation to the party.",
+        "translation": "她接受了聚会的邀请。"
+      },
+      {
+        "sentence": "We should learn to accept our mistakes.",
+        "translation": "我们应该学会接受自己的错误。"
+      }
+    ],
+    "grade": 7,
+    "topic": ""
+  },
+  {
+    "id": "c0002",
+    "word": "always",
+    "phonetic": "",
+    "translation": "adv. 总是",
+    "phrases": [
+      {
+        "phrase": "speak always",
+        "translation": "说得总是"
+      },
+      {
+        "phrase": "always done",
+        "translation": "总是完成"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "He always arrives at school before 7:30.",
+        "translation": "他总是七点半前到校。"
+      },
+      {
+        "sentence": "I will always remember this wonderful trip.",
+        "translation": "我会永远记住这次美好的旅行。"
+      }
+    ],
+    "grade": 7,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0003",
+    "word": "attention",
+    "phonetic": "/əˈtenʃn/",
+    "translation": "n. 注意；关注；注意力",
+    "phrases": [
+      {
+        "phrase": "pay attention to",
+        "translation": "注意；关注"
+      },
+      {
+        "phrase": "draw attention",
+        "translation": "引起注意"
+      },
+      {
+        "phrase": "catch someone's attention",
+        "translation": "吸引某人的注意"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Please pay attention to what the teacher is saying.",
+        "translation": "请注意听老师说的话。"
+      },
+      {
+        "sentence": "Your full attention is needed during the experiment.",
+        "translation": "实验过程中需要你全神贯注。"
+      }
+    ],
+    "grade": 7,
+    "topic": "语言学习"
+  },
+  {
+    "id": "c0004",
+    "word": "brave",
+    "phonetic": "/breɪv/",
+    "translation": "adj. 勇敢的",
+    "phrases": [
+      {
+        "phrase": "a brave decision",
+        "translation": "勇敢的决定"
+      },
+      {
+        "phrase": "brave enough",
+        "translation": "足够勇敢"
+      },
+      {
+        "phrase": "be brave to do",
+        "translation": "勇敢做某事"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "The brave firefighter saved three people from the fire.",
+        "translation": "勇敢的消防员从火中救出了三个人。"
+      },
+      {
+        "sentence": "It was very brave of you to tell the truth.",
+        "translation": "你说出真相非常勇敢。"
+      }
+    ],
+    "grade": 7,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0005",
+    "word": "celebrate",
+    "phonetic": "/ˈselɪbreɪt/",
+    "translation": "v. 庆祝；庆贺",
+    "phrases": [
+      {
+        "phrase": "celebrate a birthday",
+        "translation": "庆祝生日"
+      },
+      {
+        "phrase": "celebrate success",
+        "translation": "庆祝成功"
+      },
+      {
+        "phrase": "celebrate with friends",
+        "translation": "和朋友一起庆祝"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "How do you celebrate Spring Festival?",
+        "translation": "你们怎么庆祝春节？"
+      },
+      {
+        "sentence": "Let's celebrate your good grades!",
+        "translation": "让我们庆祝你取得好成绩！"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0006",
+    "word": "classmate",
+    "phonetic": "/ˈklɑːsmeɪt/",
+    "translation": "n. 同班同学",
+    "phrases": [
+      {
+        "phrase": "the main classmate",
+        "translation": "主要的同班同学"
+      },
+      {
+        "phrase": "every classmate",
+        "translation": "每个同班同学"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "My deskmate is also my best classmate.",
+        "translation": "我的同桌也是我最好的同学。"
+      },
+      {
+        "sentence": "We have been classmates for almost three years.",
+        "translation": "我们做同学快三年了。"
+      }
+    ],
+    "grade": 7,
+    "topic": "家庭、朋友与周围的人"
+  },
+  {
+    "id": "c0007",
+    "word": "classroom",
+    "phonetic": "/ˈklæsruːm/",
+    "translation": "n. 教室",
+    "phrases": [
+      {
+        "phrase": "in the classroom",
+        "translation": "在教室里"
+      },
+      {
+        "phrase": "classroom rules",
+        "translation": "课堂规则"
+      },
+      {
+        "phrase": "classroom management",
+        "translation": "课堂管理"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Our classroom is on the third floor.",
+        "translation": "我们的教室在三楼。"
+      },
+      {
+        "sentence": "Keep the classroom clean and tidy.",
+        "translation": "保持教室干净整洁。"
+      }
+    ],
+    "grade": 7,
+    "topic": "学校"
+  },
+  {
+    "id": "c0008",
+    "word": "comfortable",
+    "phonetic": "",
+    "translation": "adj. 舒服的",
+    "phrases": [
+      {
+        "phrase": "feel comfortable",
+        "translation": "感到舒服的"
+      },
+      {
+        "phrase": "more comfortable",
+        "translation": "更舒服的"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "This chair is very comfortable to sit on.",
+        "translation": "这把椅子坐起来很舒服。"
+      },
+      {
+        "sentence": "Make yourself comfortable and enjoy the show.",
+        "translation": "请随意，好好欣赏表演。"
+      }
+    ],
+    "grade": 7,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0009",
+    "word": "connect",
+    "phonetic": "/kəˈnekt/",
+    "translation": "v. 连接；联系",
+    "phrases": [
+      {
+        "phrase": "connect to the Internet",
+        "translation": "连接互联网"
+      },
+      {
+        "phrase": "connect with people",
+        "translation": "与人建立联系"
+      },
+      {
+        "phrase": "connect A to B",
+        "translation": "把A连接到B"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "The bridge connects the two cities.",
+        "translation": "这座桥连接着两座城市。"
+      },
+      {
+        "sentence": "I want to connect with classmates.",
+        "translation": "我想和同学们建立联系。"
+      }
+    ],
+    "grade": 7,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0010",
+    "word": "courage",
+    "phonetic": "",
+    "translation": "n. 勇气",
+    "phrases": [
+      {
+        "phrase": "a simple courage",
+        "translation": "一个简单的勇气"
+      },
+      {
+        "phrase": "a strange courage",
+        "translation": "一个奇怪的勇气"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "It takes courage to admit your mistakes.",
+        "translation": "承认错误需要勇气。"
+      },
+      {
+        "sentence": "She showed great courage during her illness.",
+        "translation": "她在病中展现了巨大的勇气。"
+      }
+    ],
+    "grade": 7,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0011",
+    "word": "curious",
+    "phonetic": "/ˈkjʊəriəs/",
+    "translation": "adj. 好奇的；求知欲强的",
+    "phrases": [
+      {
+        "phrase": "curious about",
+        "translation": "对……好奇"
+      },
+      {
+        "phrase": "a curious child",
+        "translation": "好奇的孩子"
+      },
+      {
+        "phrase": "curious to know",
+        "translation": "想知道"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Young children are naturally curious about everything.",
+        "translation": "小孩子天生对一切都很好奇。"
+      },
+      {
+        "sentence": "I'm curious to know what happened next.",
+        "translation": "我很好奇接下来发生了什么。"
+      }
+    ],
+    "grade": 7,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0012",
+    "word": "decide",
+    "phonetic": "/dɪˈsaɪd/",
+    "translation": "v. 决定；下决心",
+    "phrases": [
+      {
+        "phrase": "decide to do",
+        "translation": "决定做某事"
+      },
+      {
+        "phrase": "make a decision",
+        "translation": "做决定"
+      },
+      {
+        "phrase": "decide on",
+        "translation": "选定；决定"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I can't decide which color to choose.",
+        "translation": "我决定不了选哪个颜色。"
+      },
+      {
+        "sentence": "She finally decided to study abroad.",
+        "translation": "她最终决定去国外读书。"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0013",
+    "word": "discover",
+    "phonetic": "/dɪˈskʌvər/",
+    "translation": "v. 发现；发觉",
+    "phrases": [
+      {
+        "phrase": "discover the truth",
+        "translation": "发现真相"
+      },
+      {
+        "phrase": "discover new things",
+        "translation": "发现新事物"
+      },
+      {
+        "phrase": "scientist discovered",
+        "translation": "科学家发现"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Who discovered America in 1492?",
+        "translation": "谁在1492年发现了美洲？"
+      },
+      {
+        "sentence": "I just discovered a great new restaurant.",
+        "translation": "我刚发现了一家很棒的新餐厅。"
+      }
+    ],
+    "grade": 7,
+    "topic": "科普技术"
+  },
+  {
+    "id": "c0014",
+    "word": "doctor",
+    "phonetic": "",
+    "translation": "n. 医生",
+    "phrases": [
+      {
+        "phrase": "see a doctor",
+        "translation": "看医生"
+      },
+      {
+        "phrase": "family doctor",
+        "translation": "家庭医生"
+      },
+      {
+        "phrase": "doctor's advice",
+        "translation": "医生的建议"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "You should see a doctor if the pain continues.",
+        "translation": "如果疼痛持续，你应该去看医生。"
+      },
+      {
+        "sentence": "The doctor checked my temperature carefully.",
+        "translation": "医生仔细地量了我的体温。"
+      }
+    ],
+    "grade": 7,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0015",
+    "word": "explain",
+    "phonetic": "/ɪkˈspleɪn/",
+    "translation": "v. 解释；说明",
+    "phrases": [
+      {
+        "phrase": "explain clearly",
+        "translation": "清楚地解释"
+      },
+      {
+        "phrase": "explain to someone",
+        "translation": "向某人解释"
+      },
+      {
+        "phrase": "explain the reason",
+        "translation": "解释原因"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Can you explain why the sky is blue?",
+        "translation": "你能解释一下为什么天是蓝色的吗？"
+      },
+      {
+        "sentence": "The teacher explained the rule three times.",
+        "translation": "老师把这个规则解释了三遍。"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0016",
+    "word": "family",
+    "phonetic": "/ˈfæməli/",
+    "translation": "n. 家庭；家人",
+    "phrases": [
+      {
+        "phrase": "family member",
+        "translation": "家庭成员"
+      },
+      {
+        "phrase": "family name",
+        "translation": "姓氏"
+      },
+      {
+        "phrase": "big family",
+        "translation": "大家庭"
+      },
+      {
+        "phrase": "family photo",
+        "translation": "全家福"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Family is the most important thing in life.",
+        "translation": "家庭是生命中最重要的东西。"
+      },
+      {
+        "sentence": "There are four members in my family.",
+        "translation": "我家有四口人。"
+      }
+    ],
+    "grade": 7,
+    "topic": "家庭、朋友与周围的人"
+  },
+  {
+    "id": "c0017",
+    "word": "friend",
+    "phonetic": "/frend/",
+    "translation": "n. 朋友",
+    "phrases": [
+      {
+        "phrase": "best friend",
+        "translation": "最好的朋友"
+      },
+      {
+        "phrase": "make friends",
+        "translation": "交朋友"
+      },
+      {
+        "phrase": "close friend",
+        "translation": "亲密的朋友"
+      },
+      {
+        "phrase": "old friend",
+        "translation": "老朋友"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "A true friend will always tell you the truth.",
+        "translation": "真正的朋友会永远对你说真话。"
+      },
+      {
+        "sentence": "I made many new friends at summer camp.",
+        "translation": "我在夏令营交了很多新朋友。"
+      }
+    ],
+    "grade": 7,
+    "topic": "家庭、朋友与周围的人"
+  },
+  {
+    "id": "c0018",
+    "word": "front",
+    "phonetic": "",
+    "translation": "n. 前面",
+    "phrases": [
+      {
+        "phrase": "a strange front",
+        "translation": "一个奇怪的前面"
+      },
+      {
+        "phrase": "a wonderful front",
+        "translation": "一个精彩的前面"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "There is a big old tree in front of our school.",
+        "translation": "我们学校前面有一棵古老的大树。"
+      },
+      {
+        "sentence": "She sat at the front of the classroom.",
+        "translation": "她坐在教室前面。"
+      }
+    ],
+    "grade": 7,
+    "topic": "旅游与交通"
+  },
+  {
+    "id": "c0019",
+    "word": "future",
+    "phonetic": "/ˈfjuːtʃər/",
+    "translation": "n. 未来 adj. 将来的",
+    "phrases": [
+      {
+        "phrase": "in the future",
+        "translation": "在未来"
+      },
+      {
+        "phrase": "bright future",
+        "translation": "光明的未来"
+      },
+      {
+        "phrase": "the near future",
+        "translation": "不久的将来"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "What do you want to be in the future?",
+        "translation": "你将来想做什么？"
+      },
+      {
+        "sentence": "We should plan for the future now.",
+        "translation": "我们现在就应该为未来做打算。"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0020",
+    "word": "habit",
+    "phonetic": "",
+    "translation": "n. 习惯",
+    "phrases": [
+      {
+        "phrase": "good habit",
+        "translation": "好习惯"
+      },
+      {
+        "phrase": "bad habit",
+        "translation": "坏习惯"
+      },
+      {
+        "phrase": "eating habit",
+        "translation": "饮食习惯"
+      },
+      {
+        "phrase": "daily habit",
+        "translation": "日常习惯"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Brushing teeth twice a day is a good habit.",
+        "translation": "每天刷两次牙是个好习惯。"
+      },
+      {
+        "sentence": "It's hard to break a bad habit once it forms.",
+        "translation": "坏习惯一旦形成就很难改掉。"
+      }
+    ],
+    "grade": 7,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0021",
+    "word": "health",
+    "phonetic": "",
+    "translation": "n. 健康",
+    "phrases": [
+      {
+        "phrase": "good health",
+        "translation": "健康"
+      },
+      {
+        "phrase": "health problem",
+        "translation": "健康问题"
+      },
+      {
+        "phrase": "mental health",
+        "translation": "心理健康"
+      },
+      {
+        "phrase": "health care",
+        "translation": "医疗保健"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Nothing is more important than good health.",
+        "translation": "没有什么比健康更重要。"
+      },
+      {
+        "sentence": "Regular exercise is good for both body and mental health.",
+        "translation": "经常锻炼对身心健康都有好处。"
+      }
+    ],
+    "grade": 7,
+    "topic": "卫生与健康"
+  },
+  {
+    "id": "c0022",
+    "word": "honest",
+    "phonetic": "/ˈɒnɪst/",
+    "translation": "adj. 诚实的；正直的",
+    "phrases": [
+      {
+        "phrase": "an honest answer",
+        "translation": "诚实的回答"
+      },
+      {
+        "phrase": "to be honest",
+        "translation": "说实话；老实说"
+      },
+      {
+        "phrase": "honest and kind",
+        "translation": "诚实善良"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "To be honest, I don't like the food here.",
+        "translation": "老实说，我不喜欢这里的食物。"
+      },
+      {
+        "sentence": "An honest person will never cheat in an exam.",
+        "translation": "诚实的人永远不会考试作弊。"
+      }
+    ],
+    "grade": 7,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0023",
+    "word": "hospital",
+    "phonetic": "",
+    "translation": "n. 医院",
+    "phrases": [
+      {
+        "phrase": "go to hospital",
+        "translation": "去医院"
+      },
+      {
+        "phrase": "in hospital",
+        "translation": "住院"
+      },
+      {
+        "phrase": "hospital bed",
+        "translation": "病床"
+      },
+      {
+        "phrase": "children's hospital",
+        "translation": "儿童医院"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "The nearest hospital is two miles away.",
+        "translation": "最近的医院在两英里外。"
+      },
+      {
+        "sentence": "She works as a nurse at the city hospital.",
+        "translation": "她在市医院当护士。"
+      }
+    ],
+    "grade": 7,
+    "topic": "居住环境"
+  },
+  {
+    "id": "c0024",
+    "word": "include",
+    "phonetic": "/ɪnˈkluːd/",
+    "translation": "v. 包括；包含",
+    "phrases": [
+      {
+        "phrase": "including me",
+        "translation": "包括我"
+      },
+      {
+        "phrase": "the price includes",
+        "translation": "价格包括"
+      },
+      {
+        "phrase": "include in the list",
+        "translation": "包含在列表中"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Does the price include breakfast?",
+        "translation": "这个价格包含早餐吗？"
+      },
+      {
+        "sentence": "Our group includes five boys and three girls.",
+        "translation": "我们组包括五个男生和三个女生。"
+      }
+    ],
+    "grade": 7,
+    "topic": "历史社会"
+  },
+  {
+    "id": "c0025",
+    "word": "introduce",
+    "phonetic": "/ˌɪntrəˈdjuːs/",
+    "translation": "v. 介绍；引入",
+    "phrases": [
+      {
+        "phrase": "introduce yourself",
+        "translation": "自我介绍"
+      },
+      {
+        "phrase": "introduce someone to",
+        "translation": "把某人介绍给"
+      },
+      {
+        "phrase": "introduce a new idea",
+        "translation": "引入新想法"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Let me introduce you to my best friend.",
+        "translation": "让我把你介绍给我最好的朋友。"
+      },
+      {
+        "sentence": "The company will introduce a new product next month.",
+        "translation": "公司下个月将推出一款新产品。"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0026",
+    "word": "library",
+    "phonetic": "/ˈlaɪbreri/",
+    "translation": "n. 图书馆",
+    "phrases": [
+      {
+        "phrase": "school library",
+        "translation": "学校图书馆"
+      },
+      {
+        "phrase": "public library",
+        "translation": "公共图书馆"
+      },
+      {
+        "phrase": "library card",
+        "translation": "借书证"
+      },
+      {
+        "phrase": "in the library",
+        "translation": "在图书馆"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "You can borrow books from the school library.",
+        "translation": "你可以从学校图书馆借书。"
+      },
+      {
+        "sentence": "Please keep quiet in the library.",
+        "translation": "在图书馆里请保持安静。"
+      }
+    ],
+    "grade": 7,
+    "topic": "居住环境"
+  },
+  {
+    "id": "c0027",
+    "word": "memory",
+    "phonetic": "",
+    "translation": "n. 记忆",
+    "phrases": [
+      {
+        "phrase": "good memory",
+        "translation": "好记性"
+      },
+      {
+        "phrase": "bad memory",
+        "translation": "不好的回忆"
+      },
+      {
+        "phrase": "childhood memory",
+        "translation": "童年回忆"
+      },
+      {
+        "phrase": "in memory of",
+        "translation": "纪念"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "That song brings back so many happy memories.",
+        "translation": "那首歌勾起了许多快乐的回忆。"
+      },
+      {
+        "sentence": "She has an amazing memory for people's names.",
+        "translation": "她记人名记得特别牢。"
+      }
+    ],
+    "grade": 7,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0028",
+    "word": "moment",
+    "phonetic": "",
+    "translation": "n. 片刻",
+    "phrases": [
+      {
+        "phrase": "at the moment",
+        "translation": "此刻"
+      },
+      {
+        "phrase": "wait a moment",
+        "translation": "等一下"
+      },
+      {
+        "phrase": "for a moment",
+        "translation": "一会儿"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Wait a moment, I'm almost ready.",
+        "translation": "等一下，我快好了。"
+      },
+      {
+        "sentence": "This is the happiest moment of my life.",
+        "translation": "这是我一生中最快乐的时刻。"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0029",
+    "word": "never",
+    "phonetic": "",
+    "translation": "adv. 从不",
+    "phrases": [
+      {
+        "phrase": "never done",
+        "translation": "从不完成"
+      },
+      {
+        "phrase": "speak never",
+        "translation": "说得从不"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I have never seen such a beautiful sunset.",
+        "translation": "我从没见过这么美的日落。"
+      },
+      {
+        "sentence": "She never gives up, no matter how hard it gets.",
+        "translation": "无论多难，她从不放弃。"
+      }
+    ],
+    "grade": 7,
+    "topic": "科普知识与现代技术"
+  },
+  {
+    "id": "c0030",
+    "word": "office",
+    "phonetic": "/ˈɔːfɪs/",
+    "translation": "n. 办公室",
+    "phrases": [
+      {
+        "phrase": "post office",
+        "translation": "邮局"
+      },
+      {
+        "phrase": "office worker",
+        "translation": "上班族"
+      },
+      {
+        "phrase": "office building",
+        "translation": "办公楼"
+      },
+      {
+        "phrase": "in the office",
+        "translation": "在办公室"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "My father works in an office downtown.",
+        "translation": "我父亲在市中心的一间办公室工作。"
+      },
+      {
+        "sentence": "Please wait in the office until I return.",
+        "translation": "请在办公室里等我回来。"
+      }
+    ],
+    "grade": 7,
+    "topic": "学校"
+  },
+  {
+    "id": "c0031",
+    "word": "parent",
+    "phonetic": "/ˈperənt/",
+    "translation": "n. 父亲；母亲",
+    "phrases": [
+      {
+        "phrase": "my parents",
+        "translation": "我的父母"
+      },
+      {
+        "phrase": "single parent",
+        "translation": "单亲"
+      },
+      {
+        "phrase": "parent meeting",
+        "translation": "家长会"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "My parents always support my decisions.",
+        "translation": "我的父母总是支持我的决定。"
+      },
+      {
+        "sentence": "Every parent wants the best for their child.",
+        "translation": "每个父母都想给孩子最好的。"
+      }
+    ],
+    "grade": 7,
+    "topic": "家庭、朋友与周围的人"
+  },
+  {
+    "id": "c0032",
+    "word": "plate",
+    "phonetic": "",
+    "translation": "n. 碟子",
+    "phrases": [
+      {
+        "phrase": "the same plate",
+        "translation": "同样的碟子"
+      },
+      {
+        "phrase": "the first plate",
+        "translation": "第一个碟子"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Please wash the plates after dinner.",
+        "translation": "晚饭后请把盘子洗了。"
+      },
+      {
+        "sentence": "There is too much food on my plate.",
+        "translation": "我盘子里食物太多了。"
+      }
+    ],
+    "grade": 7,
+    "topic": "饮食"
+  },
+  {
+    "id": "c0033",
+    "word": "prefer",
+    "phonetic": "/prɪˈfɜːr/",
+    "translation": "v. 更喜欢；宁愿",
+    "phrases": [
+      {
+        "phrase": "prefer A to B",
+        "translation": "比起B更喜欢A"
+      },
+      {
+        "phrase": "prefer doing",
+        "translation": "更喜欢做某事"
+      },
+      {
+        "phrase": "would prefer",
+        "translation": "宁愿"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I prefer reading books to watching TV.",
+        "translation": "比起看电视，我更喜欢读书。"
+      },
+      {
+        "sentence": "Which do you prefer, tea or coffee?",
+        "translation": "你更喜欢哪个，茶还是咖啡？"
+      }
+    ],
+    "grade": 7,
+    "topic": "个人兴趣"
+  },
+  {
+    "id": "c0034",
+    "word": "prepare",
+    "phonetic": "/prɪˈpeər/",
+    "translation": "v. 准备；预备",
+    "phrases": [
+      {
+        "phrase": "prepare for",
+        "translation": "为……做准备"
+      },
+      {
+        "phrase": "prepare a meal",
+        "translation": "准备一顿饭"
+      },
+      {
+        "phrase": "be well prepared",
+        "translation": "充分准备"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "We are busy preparing for the final exam.",
+        "translation": "我们正忙着准备期末考试。"
+      },
+      {
+        "sentence": "You should prepare well before the speech.",
+        "translation": "你应该在演讲前好好准备。"
+      }
+    ],
+    "grade": 7,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0035",
+    "word": "promise",
+    "phonetic": "/ˈprɒmɪs/",
+    "translation": "v. 承诺；答应 n. 承诺",
+    "phrases": [
+      {
+        "phrase": "make a promise",
+        "translation": "许下承诺"
+      },
+      {
+        "phrase": "keep a promise",
+        "translation": "遵守承诺"
+      },
+      {
+        "phrase": "break a promise",
+        "translation": "违背承诺"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I promise I will never lie to you again.",
+        "translation": "我保证再也不对你撒谎了。"
+      },
+      {
+        "sentence": "She made a promise to visit her grandma every week.",
+        "translation": "她承诺每周去看奶奶。"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0036",
+    "word": "provide",
+    "phonetic": "",
+    "translation": "v. 提供",
+    "phrases": [
+      {
+        "phrase": "start to provide",
+        "translation": "开始提供"
+      },
+      {
+        "phrase": "provide together",
+        "translation": "一起提供"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "The hotel provides free breakfast for all guests.",
+        "translation": "酒店为所有客人提供免费早餐。"
+      },
+      {
+        "sentence": "Parents provide food and shelter for their children.",
+        "translation": "父母为子女提供食物和住所。"
+      }
+    ],
+    "grade": 7,
+    "topic": "购物"
+  },
+  {
+    "id": "c0037",
+    "word": "remember",
+    "phonetic": "/rɪˈmembər/",
+    "translation": "v. 记住；记得",
+    "phrases": [
+      {
+        "phrase": "remember to do",
+        "translation": "记得要做某事"
+      },
+      {
+        "phrase": "remember doing",
+        "translation": "记得做过某事"
+      },
+      {
+        "phrase": "remember forever",
+        "translation": "永远铭记"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Remember to turn off the lights before you leave.",
+        "translation": "离开之前记得关灯。"
+      },
+      {
+        "sentence": "I still remember my first day of school clearly.",
+        "translation": "我仍然清楚地记得上学的第一天。"
+      }
+    ],
+    "grade": 7,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0038",
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "translation": "n. 学校",
+    "phrases": [
+      {
+        "phrase": "go to school",
+        "translation": "上学"
+      },
+      {
+        "phrase": "after school",
+        "translation": "放学后"
+      },
+      {
+        "phrase": "at school",
+        "translation": "在学校"
+      },
+      {
+        "phrase": "elementary school",
+        "translation": "小学"
+      },
+      {
+        "phrase": "middle school",
+        "translation": "中学"
+      },
+      {
+        "phrase": "high school",
+        "translation": "高中"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Our school is very close to the park.",
+        "translation": "我们学校离公园很近。"
+      },
+      {
+        "sentence": "I walk to school every morning.",
+        "translation": "我每天早上走路上学。"
+      }
+    ],
+    "grade": 7,
+    "topic": "学校"
+  },
+  {
+    "id": "c0039",
+    "word": "share",
+    "phonetic": "",
+    "translation": "v. 分享",
+    "phrases": [
+      {
+        "phrase": "share quickly",
+        "translation": "快速分享"
+      },
+      {
+        "phrase": "forget to share",
+        "translation": "忘记分享"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "She shared her lunch with the new student.",
+        "translation": "她把午餐分享给了新同学。"
+      },
+      {
+        "sentence": "It's good to share your feelings with friends.",
+        "translation": "和朋友分享感受是好事。"
+      }
+    ],
+    "grade": 7,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0040",
+    "word": "student",
+    "phonetic": "/ˈstuːdnt/",
+    "translation": "n. 学生",
+    "phrases": [
+      {
+        "phrase": "college student",
+        "translation": "大学生"
+      },
+      {
+        "phrase": "good student",
+        "translation": "好学生"
+      },
+      {
+        "phrase": "exchange student",
+        "translation": "交换生"
+      },
+      {
+        "phrase": "student life",
+        "translation": "学生生活"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Every student should try their best.",
+        "translation": "每个学生都应该尽力。"
+      },
+      {
+        "sentence": "He is the top student in our grade.",
+        "translation": "他是我们年级最好的学生。"
+      }
+    ],
+    "grade": 7,
+    "topic": "学校"
+  },
+  {
+    "id": "c0041",
+    "word": "success",
+    "phonetic": "",
+    "translation": "n. 成功",
+    "phrases": [
+      {
+        "phrase": "great success",
+        "translation": "巨大的成功"
+      },
+      {
+        "phrase": "road to success",
+        "translation": "成功之路"
+      },
+      {
+        "phrase": "success story",
+        "translation": "成功故事"
+      },
+      {
+        "phrase": "key to success",
+        "translation": "成功的关键"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Hard work is the secret to success.",
+        "translation": "努力工作是成功的秘诀。"
+      },
+      {
+        "sentence": "The party was a great success.",
+        "translation": "这次聚会非常成功。"
+      }
+    ],
+    "grade": 7,
+    "topic": "历史与社会"
+  },
+  {
+    "id": "c0042",
+    "word": "teacher",
+    "phonetic": "/ˈtiːtʃər/",
+    "translation": "n. 老师",
+    "phrases": [
+      {
+        "phrase": "English teacher",
+        "translation": "英语老师"
+      },
+      {
+        "phrase": "head teacher",
+        "translation": "班主任"
+      },
+      {
+        "phrase": "good teacher",
+        "translation": "好老师"
+      },
+      {
+        "phrase": "math teacher",
+        "translation": "数学老师"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Our English teacher makes learning fun.",
+        "translation": "我们的英语老师让学习变得有趣。"
+      },
+      {
+        "sentence": "She wants to be a teacher when she grows up.",
+        "translation": "她长大后想当老师。"
+      }
+    ],
+    "grade": 7,
+    "topic": "学校"
+  },
+  {
+    "id": "c0043",
+    "word": "tool",
+    "phonetic": "",
+    "translation": "n. 工具",
+    "phrases": [
+      {
+        "phrase": "the main tool",
+        "translation": "主要的工具"
+      },
+      {
+        "phrase": "the whole tool",
+        "translation": "整个工具"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "A dictionary is a useful tool for learning English.",
+        "translation": "词典是学英语的有用工具。"
+      },
+      {
+        "sentence": "He fixed the chair using only simple tools.",
+        "translation": "他只用简单的工具就修好了椅子。"
+      }
+    ],
+    "grade": 7,
+    "topic": "居住环境"
+  },
+  {
+    "id": "c0044",
+    "word": "weather",
+    "phonetic": "",
+    "translation": "n. 天气",
+    "phrases": [
+      {
+        "phrase": "bad weather",
+        "translation": "坏天气"
+      },
+      {
+        "phrase": "nice weather",
+        "translation": "好天气"
+      },
+      {
+        "phrase": "weather forecast",
+        "translation": "天气预报"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "What nice weather we are having today!",
+        "translation": "今天天气真好啊！"
+      },
+      {
+        "sentence": "The weather forecast says it will rain tomorrow.",
+        "translation": "天气预报说明天会下雨。"
+      }
+    ],
+    "grade": 7,
+    "topic": "天气"
+  },
+  {
+    "id": "c0045",
+    "word": "achieve",
+    "phonetic": "/əˈtʃiːv/",
+    "translation": "v. 达到；完成；实现",
+    "phrases": [
+      {
+        "phrase": "achieve success",
+        "translation": "取得成功"
+      },
+      {
+        "phrase": "achieve one's goal",
+        "translation": "实现目标"
+      },
+      {
+        "phrase": "achieve great progress",
+        "translation": "取得很大进步"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "If you work hard, you will achieve your dream.",
+        "translation": "如果你努力学习，你就会实现梦想。"
+      },
+      {
+        "sentence": "No one can achieve success without effort.",
+        "translation": "没有人能不劳而获。"
+      }
+    ],
+    "grade": 8,
+    "topic": "历史社会"
+  },
+  {
+    "id": "c0046",
+    "word": "admire",
+    "phonetic": "/ədˈmaɪər/",
+    "translation": "v. 钦佩；欣赏；羡慕",
+    "phrases": [
+      {
+        "phrase": "admire someone's courage",
+        "translation": "钦佩某人的勇气"
+      },
+      {
+        "phrase": "admire the view",
+        "translation": "欣赏风景"
+      },
+      {
+        "phrase": "deeply admire",
+        "translation": "深深敬佩"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I really admire people who never give up.",
+        "translation": "我真的很佩服那些永不放弃的人。"
+      },
+      {
+        "sentence": "We all admire him for his courage.",
+        "translation": "我们都因他的勇气而敬佩他。"
+      }
+    ],
+    "grade": 8,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0047",
+    "word": "admit",
+    "phonetic": "/ədˈmɪt/",
+    "translation": "v. 承认；准许进入",
+    "phrases": [
+      {
+        "phrase": "admit a mistake",
+        "translation": "承认错误"
+      },
+      {
+        "phrase": "admit to doing something",
+        "translation": "承认做了某事"
+      },
+      {
+        "phrase": "be admitted to university",
+        "translation": "被大学录取"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "She admits English every morning.",
+        "translation": "她每天早上承认英语。"
+      },
+      {
+        "sentence": "I want to admit how to swim.",
+        "translation": "我想承认如何游泳。"
+      }
+    ],
+    "grade": 8,
+    "topic": ""
+  },
+  {
+    "id": "c0048",
+    "word": "benefit",
+    "phonetic": "/ˈbenɪfɪt/",
+    "translation": "n. 好处；益处 v. 受益",
+    "phrases": [
+      {
+        "phrase": "health benefits",
+        "translation": "健康益处"
+      },
+      {
+        "phrase": "benefit from",
+        "translation": "从……受益"
+      },
+      {
+        "phrase": "for the benefit of",
+        "translation": "为了……的利益"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Exercise has many health benefits.",
+        "translation": "运动对健康有很多好处。"
+      },
+      {
+        "sentence": "Students benefit from reading every day.",
+        "translation": "学生每天阅读会受益。"
+      }
+    ],
+    "grade": 8,
+    "topic": ""
+  },
+  {
+    "id": "c0049",
+    "word": "chance",
+    "phonetic": "/tʃæns/",
+    "translation": "n. 机会",
+    "phrases": [
+      {
+        "phrase": "by chance",
+        "translation": "偶然"
+      },
+      {
+        "phrase": "last chance",
+        "translation": "最后的机会"
+      },
+      {
+        "phrase": "take a chance",
+        "translation": "冒险一试"
+      },
+      {
+        "phrase": "second chance",
+        "translation": "第二次机会"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "This is your last chance — don't miss it!",
+        "translation": "这是你最后的机会——别错过！"
+      },
+      {
+        "sentence": "By chance, I met an old friend on the street.",
+        "translation": "我碰巧在街上遇到了一位老朋友。"
+      }
+    ],
+    "grade": 8,
+    "topic": ""
+  },
+  {
+    "id": "c0050",
+    "word": "compare",
+    "phonetic": "/kəmˈpeər/",
+    "translation": "v. 比较；对比",
+    "phrases": [
+      {
+        "phrase": "compare with",
+        "translation": "与……比较"
+      },
+      {
+        "phrase": "compare to",
+        "translation": "比作；相比"
+      },
+      {
+        "phrase": "compare notes",
+        "translation": "交换意见"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Don't compare yourself with others.",
+        "translation": "不要拿自己和别人比较。"
+      },
+      {
+        "sentence": "Compare the two pictures.",
+        "translation": "比较这两张图。"
+      }
+    ],
+    "grade": 8,
+    "topic": "购物"
+  },
+  {
+    "id": "c0051",
+    "word": "confident",
+    "phonetic": "/ˈkɒnfɪdənt/",
+    "translation": "adj. 自信的；确信的",
+    "phrases": [
+      {
+        "phrase": "feel confident",
+        "translation": "感到自信"
+      },
+      {
+        "phrase": "confident about",
+        "translation": "对……有信心"
+      },
+      {
+        "phrase": "become more confident",
+        "translation": "变得更有自信"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Practice more and you will feel more confident.",
+        "translation": "多练习你就会感到更自信。"
+      },
+      {
+        "sentence": "She is confident that she can pass the test.",
+        "translation": "她自信能通过考试。"
+      }
+    ],
+    "grade": 8,
+    "topic": ""
+  },
+  {
+    "id": "c0052",
+    "word": "create",
+    "phonetic": "/kriˈeɪt/",
+    "translation": "v. 创造；创建",
+    "phrases": [
+      {
+        "phrase": "create a plan",
+        "translation": "制定计划"
+      },
+      {
+        "phrase": "create new things",
+        "translation": "创造新事物"
+      },
+      {
+        "phrase": "create opportunities",
+        "translation": "创造机会"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Artists create beautiful things.",
+        "translation": "艺术家创造美丽的东西。"
+      },
+      {
+        "sentence": "We need to create a better future.",
+        "translation": "我们需要创造更美好的未来。"
+      }
+    ],
+    "grade": 8,
+    "topic": "语言学习"
+  },
+  {
+    "id": "c0053",
+    "word": "describe",
+    "phonetic": "/dɪˈskraɪb/",
+    "translation": "v. 描述；形容",
+    "phrases": [
+      {
+        "phrase": "describe someone",
+        "translation": "描述某人"
+      },
+      {
+        "phrase": "describe in detail",
+        "translation": "详细描述"
+      },
+      {
+        "phrase": "hard to describe",
+        "translation": "难以形容"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "He describes English every day.",
+        "translation": "他每天都描述英语。"
+      },
+      {
+        "sentence": "Can you describe this word in English?",
+        "translation": "你能用英语描述这个单词吗？"
+      }
+    ],
+    "grade": 8,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0054",
+    "word": "encourage",
+    "phonetic": "/ɪnˈkʌrɪdʒ/",
+    "translation": "v. 鼓励；激励",
+    "phrases": [
+      {
+        "phrase": "encourage someone to do",
+        "translation": "鼓励某人做某事"
+      },
+      {
+        "phrase": "encourage each other",
+        "translation": "互相鼓励"
+      },
+      {
+        "phrase": "strongly encourage",
+        "translation": "强烈鼓励"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Teachers should encourage students to ask questions.",
+        "translation": "老师应该鼓励学生提问。"
+      },
+      {
+        "sentence": "Her smile encouraged me to continue.",
+        "translation": "她的微笑鼓励我继续下去。"
+      }
+    ],
+    "grade": 8,
+    "topic": "历史与社会"
+  },
+  {
+    "id": "c0055",
+    "word": "familiar",
+    "phonetic": "/fəˈmɪliər/",
+    "translation": "adj. 熟悉的；常见的",
+    "phrases": [
+      {
+        "phrase": "familiar with",
+        "translation": "熟悉；了解"
+      },
+      {
+        "phrase": "look familiar",
+        "translation": "看起来眼熟"
+      },
+      {
+        "phrase": "a familiar face",
+        "translation": "熟悉的面孔"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "This place looks very familiar to me.",
+        "translation": "这个地方我看起来很眼熟。"
+      },
+      {
+        "sentence": "Are you familiar with the rules of this game?",
+        "translation": "你熟悉这个游戏的规则吗？"
+      }
+    ],
+    "grade": 8,
+    "topic": ""
+  },
+  {
+    "id": "c0056",
+    "word": "generous",
+    "phonetic": "/ˈdʒenərəs/",
+    "translation": "adj. 慷慨的；大方的",
+    "phrases": [
+      {
+        "phrase": "generous with time",
+        "translation": "慷慨付出时间"
+      },
+      {
+        "phrase": "a generous person",
+        "translation": "慷慨的人"
+      },
+      {
+        "phrase": "generous help",
+        "translation": "慷慨的帮助"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "The generous man gave all his money to charity.",
+        "translation": "那个慷慨的人把所有的钱都捐给了慈善机构。"
+      },
+      {
+        "sentence": "It's generous of you to share your lunch with me.",
+        "translation": "你把午餐分给我真是太大方了。"
+      }
+    ],
+    "grade": 8,
+    "topic": ""
+  },
+  {
+    "id": "c0057",
+    "word": "improve",
+    "phonetic": "/ɪmˈpruːv/",
+    "translation": "v. 改进；提高",
+    "phrases": [
+      {
+        "phrase": "improve English",
+        "translation": "提高英语"
+      },
+      {
+        "phrase": "improve yourself",
+        "translation": "提升自己"
+      },
+      {
+        "phrase": "greatly improve",
+        "translation": "大大提高"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Reading every day can greatly improve your English.",
+        "translation": "每天阅读能大大提高你的英语水平。"
+      },
+      {
+        "sentence": "My grades have improved a lot this term.",
+        "translation": "这学期我的成绩进步了很多。"
+      }
+    ],
+    "grade": 8,
+    "topic": "语言学习"
+  },
+  {
+    "id": "c0058",
+    "word": "knowledge",
+    "phonetic": "/ˈnɒlɪdʒ/",
+    "translation": "n. 知识；学问",
+    "phrases": [
+      {
+        "phrase": "general knowledge",
+        "translation": "常识"
+      },
+      {
+        "phrase": "gain knowledge",
+        "translation": "获取知识"
+      },
+      {
+        "phrase": "knowledge is power",
+        "translation": "知识就是力量"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Knowledge is more valuable than money.",
+        "translation": "知识比金钱更有价值。"
+      },
+      {
+        "sentence": "Reading is the best way to increase your knowledge.",
+        "translation": "阅读是增长知识最好的方法。"
+      }
+    ],
+    "grade": 8,
+    "topic": "语言学习"
+  },
+  {
+    "id": "c0059",
+    "word": "manage",
+    "phonetic": "/ˈmænɪdʒ/",
+    "translation": "v. 管理；设法做到",
+    "phrases": [
+      {
+        "phrase": "manage time",
+        "translation": "管理时间"
+      },
+      {
+        "phrase": "manage to do",
+        "translation": "设法做成"
+      },
+      {
+        "phrase": "manage a company",
+        "translation": "管理公司"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "How do you manage to stay so calm?",
+        "translation": "你是怎么做到保持如此冷静的？"
+      },
+      {
+        "sentence": "She managed to finish the work on time.",
+        "translation": "她设法按时完成了工作。"
+      }
+    ],
+    "grade": 8,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0060",
+    "word": "member",
+    "phonetic": "/ˈmembər/",
+    "translation": "n. 成员",
+    "phrases": [
+      {
+        "phrase": "family member",
+        "translation": "家庭成员"
+      },
+      {
+        "phrase": "team member",
+        "translation": "团队成员"
+      },
+      {
+        "phrase": "club member",
+        "translation": "俱乐部成员"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I am a member of the school basketball team.",
+        "translation": "我是校篮球队的成员。"
+      },
+      {
+        "sentence": "Every family member helped with the housework.",
+        "translation": "每个家庭成员都帮忙做家务。"
+      }
+    ],
+    "grade": 8,
+    "topic": "家庭、朋友与周围的人"
+  },
+  {
+    "id": "c0061",
+    "word": "nervous",
+    "phonetic": "/ˈnɜːrvəs/",
+    "translation": "adj. 紧张的",
+    "phrases": [
+      {
+        "phrase": "more nervous",
+        "translation": "更紧张的"
+      },
+      {
+        "phrase": "very nervous",
+        "translation": "非常紧张的"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I always feel a little nervous before speaking in public.",
+        "translation": "公开演讲前我总是感到有点紧张。"
+      },
+      {
+        "sentence": "Don't be nervous — you've prepared well.",
+        "translation": "别紧张——你已经准备得很好了。"
+      }
+    ],
+    "grade": 8,
+    "topic": "情感与情绪"
+  },
+  {
+    "id": "c0062",
+    "word": "patient",
+    "phonetic": "/ˈpeɪʃnt/",
+    "translation": "adj. 耐心的 n. 病人",
+    "phrases": [
+      {
+        "phrase": "be patient with",
+        "translation": "对……有耐心"
+      },
+      {
+        "phrase": "stay patient",
+        "translation": "保持耐心"
+      },
+      {
+        "phrase": "a patient person",
+        "translation": "有耐心的人"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "You need to be patient when learning a new language.",
+        "translation": "学一门新语言需要耐心。"
+      },
+      {
+        "sentence": "The doctor was very patient with the little boy.",
+        "translation": "医生对那个小男孩非常耐心。"
+      }
+    ],
+    "grade": 8,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0063",
+    "word": "practice",
+    "phonetic": "/ˈpræktɪs/",
+    "translation": "n./v. 练习",
+    "phrases": [
+      {
+        "phrase": "a common practice",
+        "translation": "一个普通的/v. 练习"
+      },
+      {
+        "phrase": "a simple practice",
+        "translation": "一个简单的/v. 练习"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "If you want to improve, you need more practice.",
+        "translation": "如果你想进步，就需要更多练习。"
+      },
+      {
+        "sentence": "She practices the piano for two hours every day.",
+        "translation": "她每天练两小时钢琴。"
+      }
+    ],
+    "grade": 8,
+    "topic": "语言学习"
+  },
+  {
+    "id": "c0064",
+    "word": "protect",
+    "phonetic": "/prəˈtekt/",
+    "translation": "v. 保护；防护",
+    "phrases": [
+      {
+        "phrase": "protect the environment",
+        "translation": "保护环境"
+      },
+      {
+        "phrase": "protect from",
+        "translation": "保护免受"
+      },
+      {
+        "phrase": "protect yourself",
+        "translation": "保护自己"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "We must protect the environment for future generations.",
+        "translation": "我们必须为子孙后代保护环境。"
+      },
+      {
+        "sentence": "Sunglasses can protect your eyes from the sun.",
+        "translation": "太阳镜可以保护你的眼睛免受阳光伤害。"
+      }
+    ],
+    "grade": 8,
+    "topic": "世界环境"
+  },
+  {
+    "id": "c0065",
+    "word": "proud",
+    "phonetic": "/praʊd/",
+    "translation": "adj. 骄傲的；自豪的",
+    "phrases": [
+      {
+        "phrase": "feel proud",
+        "translation": "感到骄傲的"
+      },
+      {
+        "phrase": "look proud",
+        "translation": "看起来骄傲的"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "My parents are very proud of my achievements.",
+        "translation": "我的父母为我的成就感到非常自豪。"
+      },
+      {
+        "sentence": "I'm so proud to be part of this team.",
+        "translation": "成为这个团队的一员我感到很自豪。"
+      }
+    ],
+    "grade": 8,
+    "topic": "情感与情绪"
+  },
+  {
+    "id": "c0066",
+    "word": "realize",
+    "phonetic": "/ˈrɪəlaɪz/",
+    "translation": "v. 意识到；实现",
+    "phrases": [
+      {
+        "phrase": "realize a dream",
+        "translation": "实现梦想"
+      },
+      {
+        "phrase": "suddenly realize",
+        "translation": "突然意识到"
+      },
+      {
+        "phrase": "make someone realize",
+        "translation": "让某人意识到"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I didn't realize how late it was until I looked at the clock.",
+        "translation": "直到看钟我才意识到有多晚了。"
+      },
+      {
+        "sentence": "She suddenly realized that she had left her keys at home.",
+        "translation": "她突然意识到她把钥匙落在家里了。"
+      }
+    ],
+    "grade": 8,
+    "topic": "历史社会"
+  },
+  {
+    "id": "c0067",
+    "word": "recognize",
+    "phonetic": "/ˈrekəɡnaɪz/",
+    "translation": "v. 认出；承认；认可",
+    "phrases": [
+      {
+        "phrase": "recognize someone",
+        "translation": "认出某人"
+      },
+      {
+        "phrase": "recognize the importance",
+        "translation": "认识到重要性"
+      },
+      {
+        "phrase": "widely recognized",
+        "translation": "被广泛认可"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I didn't recognize you with your new haircut.",
+        "translation": "你换了新发型我都认不出你了。"
+      },
+      {
+        "sentence": "Can you recognize his voice on the phone?",
+        "translation": "你能在电话里认出他的声音吗？"
+      }
+    ],
+    "grade": 8,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0068",
+    "word": "recommend",
+    "phonetic": "/ˌrekəˈmend/",
+    "translation": "v. 推荐；建议",
+    "phrases": [
+      {
+        "phrase": "recommend a book",
+        "translation": "推荐一本书"
+      },
+      {
+        "phrase": "highly recommend",
+        "translation": "强烈推荐"
+      },
+      {
+        "phrase": "recommend doing",
+        "translation": "建议做某事"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "He recommends English every day.",
+        "translation": "他每天都推荐英语。"
+      },
+      {
+        "sentence": "Can you recommend this word in English?",
+        "translation": "你能用英语推荐这个单词吗？"
+      }
+    ],
+    "grade": 8,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0069",
+    "word": "satisfy",
+    "phonetic": "/ˈsætɪsfaɪ/",
+    "translation": "v. 使满意；满足",
+    "phrases": [
+      {
+        "phrase": "satisfy needs",
+        "translation": "满足需求"
+      },
+      {
+        "phrase": "be satisfied with",
+        "translation": "对……满意"
+      },
+      {
+        "phrase": "hard to satisfy",
+        "translation": "难以满足"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Are you satisfied with the result?",
+        "translation": "你对结果满意吗？"
+      },
+      {
+        "sentence": "Nothing can satisfy him.",
+        "translation": "没什么能让他满意。"
+      }
+    ],
+    "grade": 8,
+    "topic": "个人兴趣"
+  },
+  {
+    "id": "c0070",
+    "word": "stranger",
+    "phonetic": "/ˈstreɪndʒər/",
+    "translation": "n. 陌生人",
+    "phrases": [
+      {
+        "phrase": "a new stranger",
+        "translation": "一个新的陌生人"
+      },
+      {
+        "phrase": "the main stranger",
+        "translation": "主要的陌生人"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Never open the door to a stranger.",
+        "translation": "永远不要给陌生人开门。"
+      },
+      {
+        "sentence": "A kind stranger helped me find my way.",
+        "translation": "一个好心的陌生人帮我找到了路。"
+      }
+    ],
+    "grade": 8,
+    "topic": "家庭、朋友与周围的人"
+  },
+  {
+    "id": "c0071",
+    "word": "suggest",
+    "phonetic": "/səˈdʒest/",
+    "translation": "v. 建议；提议；暗示",
+    "phrases": [
+      {
+        "phrase": "suggest doing",
+        "translation": "建议做某事"
+      },
+      {
+        "phrase": "suggest an idea",
+        "translation": "提出一个想法"
+      },
+      {
+        "phrase": "what do you suggest",
+        "translation": "你有什么建议"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I suggest we take a short break.",
+        "translation": "我建议我们休息一会儿。"
+      },
+      {
+        "sentence": "Can you suggest a good book to read?",
+        "translation": "你能推荐一本好书吗？"
+      }
+    ],
+    "grade": 8,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0072",
+    "word": "support",
+    "phonetic": "/səˈpɔːt/",
+    "translation": "v. 支持；帮助 n. 支持",
+    "phrases": [
+      {
+        "phrase": "support a family",
+        "translation": "养家糊口"
+      },
+      {
+        "phrase": "support an idea",
+        "translation": "支持一个想法"
+      },
+      {
+        "phrase": "in support of",
+        "translation": "支持；拥护"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Thank you for supporting me all these years.",
+        "translation": "谢谢你这么多年来的支持。"
+      },
+      {
+        "sentence": "The bridge is supported by four strong pillars.",
+        "translation": "这座桥由四根坚固的柱子支撑。"
+      }
+    ],
+    "grade": 8,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0073",
+    "word": "suppose",
+    "phonetic": "/səˈpəʊz/",
+    "translation": "v. 假设；认为；猜想",
+    "phrases": [
+      {
+        "phrase": "I suppose so",
+        "translation": "我想是的"
+      },
+      {
+        "phrase": "be supposed to",
+        "translation": "应该；被期望"
+      },
+      {
+        "phrase": "suppose that",
+        "translation": "假设……"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "You are supposed to finish on time.",
+        "translation": "你应该按时完成。"
+      },
+      {
+        "sentence": "I suppose you are right.",
+        "translation": "我想你是对的。"
+      }
+    ],
+    "grade": 8,
+    "topic": "人际交往"
+  },
+  {
+    "id": "c0074",
+    "word": "appreciate",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "translation": "v. 欣赏；感激；领会",
+    "phrases": [
+      {
+        "phrase": "appreciate your help",
+        "translation": "感谢你的帮助"
+      },
+      {
+        "phrase": "appreciate art",
+        "translation": "欣赏艺术"
+      },
+      {
+        "phrase": "fully appreciate",
+        "translation": "充分理解"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "I really appreciate your kindness.",
+        "translation": "我真心感谢你的好意。"
+      },
+      {
+        "sentence": "You don't appreciate how hard it is.",
+        "translation": "你不明白这有多难。"
+      }
+    ],
+    "grade": 9,
+    "topic": ""
+  },
+  {
+    "id": "c0075",
+    "word": "challenge",
+    "phonetic": "/ˈtʃælɪndʒ/",
+    "translation": "n. 挑战 v. 向……挑战",
+    "phrases": [
+      {
+        "phrase": "face a challenge",
+        "translation": "面对挑战"
+      },
+      {
+        "phrase": "meet the challenge",
+        "translation": "迎接挑战"
+      },
+      {
+        "phrase": "a big challenge",
+        "translation": "一个巨大的挑战"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Learning a new language is a big challenge.",
+        "translation": "学习一门新语言是一个很大的挑战。"
+      },
+      {
+        "sentence": "She likes to face new challenges in life.",
+        "translation": "她喜欢面对生活中的新挑战。"
+      }
+    ],
+    "grade": 9,
+    "topic": "历史社会"
+  },
+  {
+    "id": "c0076",
+    "word": "consider",
+    "phonetic": "/kənˈsɪdər/",
+    "translation": "v. 考虑；认为",
+    "phrases": [
+      {
+        "phrase": "consider carefully",
+        "translation": "仔细考虑"
+      },
+      {
+        "phrase": "consider doing",
+        "translation": "考虑做某事"
+      },
+      {
+        "phrase": "be considered as",
+        "translation": "被认为是"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "He considers English every day.",
+        "translation": "他每天都考虑英语。"
+      },
+      {
+        "sentence": "Can you consider this word in English?",
+        "translation": "你能用英语考虑这个单词吗？"
+      }
+    ],
+    "grade": 9,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0077",
+    "word": "effort",
+    "phonetic": "/ˈefərt/",
+    "translation": "n. 努力",
+    "phrases": [
+      {
+        "phrase": "make an effort",
+        "translation": "努力"
+      },
+      {
+        "phrase": "team effort",
+        "translation": "团队努力"
+      },
+      {
+        "phrase": "great effort",
+        "translation": "巨大的努力"
+      },
+      {
+        "phrase": "spare no effort",
+        "translation": "不遗余力"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Your effort will surely pay off one day.",
+        "translation": "你的努力总有一天会有回报。"
+      },
+      {
+        "sentence": "It was a team effort — everyone contributed.",
+        "translation": "这是团队的努力——每个人都贡献了力量。"
+      }
+    ],
+    "grade": 9,
+    "topic": "语言学习"
+  },
+  {
+    "id": "c0078",
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "translation": "n. 环境",
+    "phrases": [
+      {
+        "phrase": "protect the environment",
+        "translation": "保护环境"
+      },
+      {
+        "phrase": "learning environment",
+        "translation": "学习环境"
+      },
+      {
+        "phrase": "natural environment",
+        "translation": "自然环境"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "We all have a duty to protect the environment.",
+        "translation": "我们都有责任保护环境。"
+      },
+      {
+        "sentence": "A quiet environment helps you concentrate better.",
+        "translation": "安静的环境有助于你更好地集中注意力。"
+      }
+    ],
+    "grade": 9,
+    "topic": "世界与环境"
+  },
+  {
+    "id": "c0079",
+    "word": "exactly",
+    "phonetic": "/ɪɡˈzæktli/",
+    "translation": "adv. 确切地",
+    "phrases": [
+      {
+        "phrase": "speak exactly",
+        "translation": "说得确切地"
+      },
+      {
+        "phrase": "exactly done",
+        "translation": "确切地完成"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "That is exactly what I wanted to say.",
+        "translation": "那正是我想说的。"
+      },
+      {
+        "sentence": "I don't remember exactly where I put the key.",
+        "translation": "我不太记得把钥匙放在哪了。"
+      }
+    ],
+    "grade": 9,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0080",
+    "word": "experience",
+    "phonetic": "/ɪkˈspɪəriəns/",
+    "translation": "n. 经验；经历 v. 经历",
+    "phrases": [
+      {
+        "phrase": "work experience",
+        "translation": "工作经验"
+      },
+      {
+        "phrase": "a wonderful experience",
+        "translation": "一次美妙的经历"
+      },
+      {
+        "phrase": "learn from experience",
+        "translation": "从经验中学习"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Traveling gives you a lot of life experience.",
+        "translation": "旅行能给你很多人生经验。"
+      },
+      {
+        "sentence": "Do you have any work experience?",
+        "translation": "你有工作经验吗？"
+      }
+    ],
+    "grade": 9,
+    "topic": "日常活动"
+  },
+  {
+    "id": "c0081",
+    "word": "independent",
+    "phonetic": "/ˌɪndɪˈpendənt/",
+    "translation": "adj. 独立的；自主的",
+    "phrases": [
+      {
+        "phrase": "independent thinking",
+        "translation": "独立思考"
+      },
+      {
+        "phrase": "become independent",
+        "translation": "变得独立"
+      },
+      {
+        "phrase": "financially independent",
+        "translation": "经济独立"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Learning to be independent is part of growing up.",
+        "translation": "学会独立是成长的一部分。"
+      },
+      {
+        "sentence": "She has been independent since she left home at 18.",
+        "translation": "她从18岁离家后就一直独立生活。"
+      }
+    ],
+    "grade": 9,
+    "topic": "个人情况"
+  },
+  {
+    "id": "c0082",
+    "word": "influence",
+    "phonetic": "/ˈɪnfluəns/",
+    "translation": "n. 影响 v. 影响",
+    "phrases": [
+      {
+        "phrase": "have an influence on",
+        "translation": "对……有影响"
+      },
+      {
+        "phrase": "under the influence of",
+        "translation": "在……的影响下"
+      },
+      {
+        "phrase": "a good influence",
+        "translation": "好的影响"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Parents have a great influence on their children.",
+        "translation": "父母对孩子有很大的影响。"
+      },
+      {
+        "sentence": "The Internet has changed our lives in many ways.",
+        "translation": "互联网在很多方面改变了我们的生活。"
+      }
+    ],
+    "grade": 9,
+    "topic": "历史与社会"
+  },
+  {
+    "id": "c0083",
+    "word": "opportunity",
+    "phonetic": "/ˌɒpəˈtjuːnəti/",
+    "translation": "n. 机会；时机",
+    "phrases": [
+      {
+        "phrase": "seize the opportunity",
+        "translation": "抓住机会"
+      },
+      {
+        "phrase": "a great opportunity",
+        "translation": "一个绝佳机会"
+      },
+      {
+        "phrase": "equal opportunity",
+        "translation": "平等的机会"
+      }
+    ],
+    "examples": [
+      {
+        "sentence": "Opportunity is very important in our life.",
+        "translation": "机会在我们的生活中非常重要。"
+      },
+      {
+        "sentence": "We should pay more attention to opportunity.",
+        "translation": "我们应该更加关注机会。"
+      }
+    ],
+    "grade": 9,
+    "topic": ""
+  }
+]
