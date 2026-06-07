@@ -308,7 +308,16 @@ body{font-family:'Inter',-apple-system,'PingFang SC',sans-serif;background:var(-
         <div class="lbl">今日目标</div>
       </div>
     </div>
-    <button class="cta-btn" onclick="startLearning()">🎯 开始学习</button>
+  <button class="cta" onclick="startLearning()">🎯 开始学习</button>
+  <div class="progress-bar" style="margin-top:12px">
+    <div class="lab"><span>📖 当前词库</span><span id="unit-label">全部词汇</span></div>
+    <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap" id="unit-chips">
+      <span class="unit-chip active" onclick="selectUnit('all',this)" style="background:var(--card);border:1px solid var(--bd);padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-weight:600">全部</span>
+    </div>
+    <div style="margin-top:8px;text-align:right">
+      <span onclick="showAddUnit()" style="font-size:11px;color:var(--b);cursor:pointer;font-weight:600">+ 添加单元</span>
+    </div>
+  </div>
     <div class="unit-row" id="unit-row">
       <span class="unit-chip active" onclick="setUnit('all',this)">全部</span>
       <span class="unit-chip" onclick="setUnit('7上',this)">初一上</span>
@@ -544,6 +553,92 @@ async function init(){
   userState.streak=calcStreak();saveState();updateHomeScreen();updateStats();
   document.addEventListener('click',()=>{try{audioCtx().resume()}catch(e){}},{once:true})
 }
+// ═══ CUSTOM UNITS ═══
+var activeUnit='all', customUnits={};
+try{customUnits=JSON.parse(localStorage.getItem('v4cu')||'{}')}catch(e){}
+
+function addCustomWord(word,trans,phonetic){
+  return {id:'cu_'+word.toLowerCase().replace(/[^a-z]/g,'_'),word:word,translation:trans,phonetic:phonetic||'',unit:'custom',
+    examples:[{sentence:'I learned the word '+word+'.',translation:'我学会了单词'+trans+'。'},{sentence:'Do you know the word '+word+'?',translation:'你认识'+trans+'这个词吗？'}],
+    phrases:[{phrase:word+' is useful',translation:trans+'很有用'}],_isCustom:true};
+}
+
+function showAddUnit(){
+  var n=prompt('📖 单元名称（如：初一下 Unit 7）','');
+  if(!n)return;
+  var txt=prompt('📝 粘贴单词列表（每行：英文 中文）\n例如：apple 苹果\n      banana 香蕉','');
+  if(!txt)return;
+  var lines=txt.trim().split('\n'), newWords=[];
+  for(var i=0;i<lines.length;i++){
+    var parts=lines[i].trim().split(/\s+/);
+    if(parts.length>=2){
+      var en=parts[0], zh=parts.slice(1).join(' ');
+      var w=addCustomWord(en,zh);
+      newWords.push(w);
+    }
+  }
+  if(newWords.length){
+    customUnits[n]=newWords;
+    localStorage.setItem('v4cu',JSON.stringify(customUnits));
+    renderUnitChips();
+    selectUnit(n);
+    st('✅ 已添加「'+n+'」'+newWords.length+'个词');
+  }
+}
+
+function selectUnit(name,el){
+  activeUnit=name;
+  if(el){
+    var chips=document.querySelectorAll('#unit-chips .unit-chip');
+    for(var i=0;i<chips.length;i++)chips[i].classList.remove('active');
+    el.classList.add('active');
+  }
+  document.getElementById('unit-label').textContent=name==='all'?'全部词汇 ('+words.length+'词)':name+' ('+getActiveWords().length+'词)';
+  updateHome();
+}
+
+function getActiveWords(){
+  if(activeUnit==='all')return words;
+  return customUnits[activeUnit]||[];
+}
+
+function renderUnitChips(){
+  var h='<span class="unit-chip'+(activeUnit==='all'?' active':'')+'" onclick="selectUnit(\'all\',this)" style="background:var(--card);border:1px solid var(--bd);padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-weight:600">全部</span>';
+  for(var n in customUnits){
+    h+='<span class="unit-chip'+(activeUnit===n?' active':'')+'" onclick="selectUnit(\''+n+'\',this)" style="background:var(--card);border:1px solid var(--bd);padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-weight:600">'+n+'</span>';
+  }
+  document.getElementById('unit-chips').innerHTML=h;
+}
+
+// Override startLearning to use active unit words
+var _startLearning=startLearning;
+startLearning=function(){
+  uS.tw=tw();uS.lsd=td();uS.streak=cs();us();ss();
+  var aw=getActiveWords();
+  if(aw.length===0){st('⚠️ 该单元没有单词');return}
+  // Build daily words from active unit only
+  var aids=aw.map(function(w){return w.id}).sort(function(){return Math.random()-.5});
+  if(activeUnit!=='all'){
+    // Merge custom words into global words array for the session
+    var existingIds={};for(var i=0;i<words.length;i++)existingIds[words[i].id]=true;
+    for(var j=0;j<aw.length;j++){if(!existingIds[aw[j].id])words.push(aw[j])}
+    uS.tw=aids.slice(0,20);
+  }else{
+    if(!uS.tw.length)uS.tw=dw();
+  }
+  ss();shSc('learn');cwI=0;sw();
+};
+
+// Override dueWords to include active unit
+var _dw=dw;
+dw=function(){
+  if(activeUnit!=='all'){
+    var aw=getActiveWords();
+    return aw.map(function(w){return w.id}).sort(function(){return Math.random()-.5});
+  }
+  return _dw();
+};
+
 init();
 </script>
 </body>
