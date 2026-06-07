@@ -309,6 +309,7 @@ body{font-family:'Inter',-apple-system,'PingFang SC',sans-serif;background:var(-
       </div>
     </div>
   <button class="cta" onclick="startLearning()">🎯 开始学习</button>
+  <button class="cta" style="margin-top:8px;background:linear-gradient(135deg,#238636,#1f7a31)" onclick="startSpeed()">⚡ 速打模式</button>
   <div class="progress-bar" style="margin-top:12px">
     <div class="lab"><span>📖 当前词库</span><span id="unit-label">全部词汇</span></div>
     <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap" id="unit-chips">
@@ -553,7 +554,101 @@ async function init(){
   userState.streak=calcStreak();saveState();updateHomeScreen();updateStats();
   document.addEventListener('click',()=>{try{audioCtx().resume()}catch(e){}},{once:true})
 }
-// ═══ CUSTOM UNITS ═══
+// ═══ SPEED TYPING MODE (QWERTY-LEARNER STYLE) ═══
+var spWords=[],spIdx=0,spOK=0,spNG=0,spStart=0,spTimer=null,spCombo=0;
+
+function startSpeed(){
+  var aw=activeUnit==='all'?words:getActiveWords();
+  if(!aw.length){st('⚠️ 没有单词');return}
+  spWords=aw.sort(function(){return Math.random()-.5}).slice(0,Math.min(20,aw.length));
+  spIdx=0;spOK=0;spNG=0;spCombo=0;spStart=Date.now();
+  shSc('learn');
+  document.getElementById('learn-classic').style.display='none';
+  document.getElementById('learn-done').style.display='none';
+  var el=document.getElementById('learn-body');
+  if(!el)el=document.getElementById('learn');
+  el.innerHTML='<div style="text-align:center;padding:10px 0">'+
+    '<div style="font-size:12px;color:var(--t2);margin-bottom:4px" id="sp-prog">1 / '+spWords.length+'</div>'+
+    '<div style="height:6px;background:#1a1f2b;border-radius:3px;overflow:hidden;margin-bottom:16px"><div id="sp-bar" style="width:0%;height:100%;background:linear-gradient(90deg,#238636,#2ea043);border-radius:3px;transition:width .2s"></div></div>'+
+    '<div style="font-size:48px;font-weight:800;margin:8px 0;letter-spacing:-1px;min-height:64px" id="sp-zh"></div>'+
+    '<div style="font-size:14px;color:var(--t2);margin-bottom:8px">听发音，输入英文单词</div>'+
+    '<button class="audio-btn" style="margin:0 auto 12px" id="sp-audio" onclick="spPlay()">🔊</button>'+
+    '<input id="sp-input" style="display:block;width:100%;padding:16px;border:2px solid var(--bd);border-radius:var(--ra);background:var(--card);color:var(--tx);font-size:24px;font-family:monospace;text-align:center;outline:none;transition:all .15s" placeholder="输入单词..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onkeydown="spKey(event)">'+
+    '<div style="margin-top:12px;display:flex;gap:16px;justify-content:center;font-size:12px;color:var(--t2)">'+
+      '<span>⏱️ <span id="sp-time">0s</span></span><span>✅ <span id="sp-ok">0</span></span><span>❌ <span id="sp-ng">0</span></span><span>🔥 <span id="sp-cb">x1</span></span></div>'+
+    '<div style="margin-top:8px;font-size:18px;font-weight:700;min-height:28px" id="sp-fb"></div></div>';
+  spShow();
+  document.getElementById('sp-input').focus();
+}
+
+function spShow(){
+  if(spIdx>=spWords.length){spEnd();return}
+  var w=spWords[spIdx];
+  document.getElementById('sp-zh').textContent=w.translation||'';
+  document.getElementById('sp-prog').textContent=(spIdx+1)+' / '+spWords.length;
+  document.getElementById('sp-bar').style.width=((spIdx/spWords.length)*100)+'%';
+  document.getElementById('sp-ok').textContent=spOK;
+  document.getElementById('sp-ng').textContent=spNG;
+  document.getElementById('sp-cb').textContent='x'+Math.max(1,spCombo);
+  document.getElementById('sp-fb').textContent='';
+  var inp=document.getElementById('sp-input');
+  if(inp){inp.value='';inp.style.borderColor='var(--bd)';inp.focus()}
+  spCurrentWord=w;
+}
+
+var spCurrentWord=null;
+function spPlay(){if(spCurrentWord)speak(spCurrentWord.word)}
+
+function spKey(e){
+  if(e.key!=='Enter')return;
+  if(!spCurrentWord)return;
+  var inp=document.getElementById('sp-input'),val=inp.value.trim().toLowerCase();
+  var correct=spCurrentWord.word.toLowerCase(),ok=val===correct;
+  var fb=document.getElementById('sp-fb'),si=document.getElementById('sp-input');
+  document.getElementById('sp-zh').textContent=spCurrentWord.word;
+  if(ok){
+    spOK++;spCombo++;fb.textContent='✅ 正确！';fb.style.color='#3fb950';
+    si.style.borderColor='#3fb950';
+    if(spCombo>=5)fb.textContent+=' 🔥x'+spCombo;
+  }else{
+    spNG++;spCombo=0;fb.textContent='❌ '+correct;fb.style.color='#f85149';
+    si.style.borderColor='#f85149';
+    document.getElementById('sp-zh').style.color='#f85149';
+    setTimeout(function(){document.getElementById('sp-zh').style.color=''},600);
+  }
+  updateSpeedStats();
+  spIdx++;
+  setTimeout(function(){
+    if(spIdx<spWords.length){spShow()}else{spEnd()}
+  },ok?400:1200);
+}
+
+function updateSpeedStats(){
+  var elapsed=Math.floor((Date.now()-spStart)/1000);
+  document.getElementById('sp-time').textContent=elapsed+'s';
+  document.getElementById('sp-ok').textContent=spOK;
+  document.getElementById('sp-ng').textContent=spNG;
+  document.getElementById('sp-cb').textContent='x'+Math.max(1,spCombo);
+}
+
+function spEnd(){
+  var elapsed=Math.floor((Date.now()-spStart)/1000);
+  var total=spOK+spNG,acc=total?Math.round(spOK/total*100):0;
+  var wpm=elapsed?Math.round(spOK/(elapsed/60)):0;
+  var xp=spOK*10;
+  uS.dxp+=xp;uS.txp+=xp;uS.tr+=total;ss();
+  document.getElementById('learn-body').innerHTML='<div style="text-align:center;padding:30px 0">'+
+    '<div style="font-size:56px;margin-bottom:8px">'+(acc>=90?'🏆':acc>=70?'🎉':'💪')+'</div>'+
+    '<h2 style="font-size:20px;margin-bottom:4px">速打完成！</h2>'+
+    '<div style="font-size:14px;color:var(--t2);margin-bottom:16px">'+spOK+'/'+total+' 正确 · '+acc+'% 准确率</div>'+
+    '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">'+
+      '<div style="background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:12px"><div style="font-size:22px;font-weight:800;color:#f4785c">'+wpm+'</div><div style="font-size:10px;color:var(--t2)">WPM</div></div>'+
+      '<div style="background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:12px"><div style="font-size:22px;font-weight:800;color:#3fb950">'+acc+'%</div><div style="font-size:10px;color:var(--t2)">准确率</div></div>'+
+      '<div style="background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:12px"><div style="font-size:22px;font-weight:800;color:#d2991d">+'+xp+'</div><div style="font-size:10px;color:var(--t2)">经验值</div></div></div>'+
+    '<button class="cta" style="margin-bottom:6px" onclick="startSpeed()">再来一局</button>'+
+    '<button class="cta" style="background:var(--card);border:1px solid var(--bd);color:var(--tx)" onclick="showScreen(\'home\')">返回首页</button></div>';
+  updateHome();updateStats();
+}
 var activeUnit='all', customUnits={};
 try{customUnits=JSON.parse(localStorage.getItem('v4cu')||'{}')}catch(e){}
 
