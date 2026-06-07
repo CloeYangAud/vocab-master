@@ -564,8 +564,10 @@ function addCustomWord(word,trans,phonetic){
 }
 
 function showAddUnit(){
-  var n=prompt('📖 单元名称（如：初一下 Unit 7）','');
+  var n=prompt('📖 单元名称（如：初一下 Unit 7）\n已存在的单元会合并新单词','');
   if(!n)return;
+  var exist=customUnits[n];
+  if(exist)st('📝 向「'+n+'」添加单词（已有'+exist.length+'个词）');
   var txt=prompt('📝 粘贴单词列表（每行：英文 中文）\n例如：apple 苹果\n      banana 香蕉','');
   if(!txt)return;
   var lines=txt.trim().split('\n'), newWords=[];
@@ -573,16 +575,22 @@ function showAddUnit(){
     var parts=lines[i].trim().split(/\s+/);
     if(parts.length>=2){
       var en=parts[0], zh=parts.slice(1).join(' ');
-      var w=addCustomWord(en,zh);
-      newWords.push(w);
+      newWords.push(addCustomWord(en,zh));
     }
   }
   if(newWords.length){
-    customUnits[n]=newWords;
+    if(exist){
+      // Merge: skip duplicates by word
+      var existingWords={};exist.forEach(function(w){existingWords[w.word.toLowerCase()]=true});
+      var added=0;
+      newWords.forEach(function(w){if(!existingWords[w.word.toLowerCase()]){exist.push(w);added++}});
+      st('✅ 向「'+n+'」添加了'+added+'个新词（'+(newWords.length-added)+'个重复已跳过）');
+    }else{
+      customUnits[n]=newWords;
+      st('✅ 已添加「'+n+'」'+newWords.length+'个词');
+    }
     localStorage.setItem('v4cu',JSON.stringify(customUnits));
-    renderUnitChips();
-    selectUnit(n);
-    st('✅ 已添加「'+n+'」'+newWords.length+'个词');
+    renderUnitChips();selectUnit(n);
   }
 }
 
@@ -605,9 +613,40 @@ function getActiveWords(){
 function renderUnitChips(){
   var h='<span class="unit-chip'+(activeUnit==='all'?' active':'')+'" onclick="selectUnit(\'all\',this)" style="background:var(--card);border:1px solid var(--bd);padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-weight:600">全部</span>';
   for(var n in customUnits){
-    h+='<span class="unit-chip'+(activeUnit===n?' active':'')+'" onclick="selectUnit(\''+n+'\',this)" style="background:var(--card);border:1px solid var(--bd);padding:4px 12px;border-radius:14px;font-size:11px;cursor:pointer;font-weight:600">'+n+'</span>';
+    h+='<span class="unit-chip'+(activeUnit===n?' active':'')+'" style="background:var(--card);border:1px solid var(--bd);padding:4px 12px;border-radius:14px;font-size:11px;font-weight:600">';
+    h+='<span onclick="selectUnit(\''+n+'\',this.parentElement)" style="cursor:pointer">'+n+' ('+customUnits[n].length+')</span>';
+    h+='<span onclick="editUnit(\''+n+'\')" style="margin-left:4px;cursor:pointer;font-size:10px" title="编辑">✏️</span>';
+    h+='<span onclick="delUnit(\''+n+'\')" style="margin-left:2px;cursor:pointer;font-size:10px" title="删除">🗑️</span>';
+    h+='</span>';
   }
   document.getElementById('unit-chips').innerHTML=h;
+}
+
+function editUnit(n){
+  if(!customUnits[n])return;
+  var words=customUnits[n].map(function(w){return w.word+' '+w.translation}).join('\n');
+  var txt=prompt('✏️ 编辑「'+n+'」的单词列表\n修改后点确定（每行：英文 中文）',words);
+  if(txt===null)return;
+  var lines=txt.trim().split('\n'),newWords=[];
+  for(var i=0;i<lines.length;i++){
+    var parts=lines[i].trim().split(/\s+/);
+    if(parts.length>=2)newWords.push(addCustomWord(parts[0],parts.slice(1).join(' ')));
+  }
+  if(newWords.length){
+    customUnits[n]=newWords;
+    localStorage.setItem('v4cu',JSON.stringify(customUnits));
+    renderUnitChips();selectUnit(n);
+    st('✅「'+n+'」已更新（'+newWords.length+'个词）');
+  }
+}
+
+function delUnit(n){
+  if(!confirm('删除「'+n+'」？'))return;
+  delete customUnits[n];
+  localStorage.setItem('v4cu',JSON.stringify(customUnits));
+  activeUnit='all';renderUnitChips();
+  document.getElementById('unit-label').textContent='全部词汇 ('+words.length+'词)';
+  st('🗑️ 已删除「'+n+'」');
 }
 
 // Override startLearning to use active unit words
