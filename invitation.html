@@ -75,7 +75,7 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
 <body>
 <div class="particles" id="particles"></div>
 
-<button class="music-btn" id="music-btn" onclick="toggleMusic()" title="背景音乐">🔊</button>
+<button class="music-btn" id="music-btn" onclick="" style="display:none" title=""></button>
 
 <div class="page" style="position:relative;z-index:1">
   <div style="position:relative">
@@ -208,8 +208,7 @@ function stopMusic(){
   try{musicNodes.osc.stop();musicNodes.seq.gain.value=0}catch(e){}
   musicNodes=null;
 }
-// Start music on first interaction
-document.addEventListener('click',function(){if(!audioCtx&&!musicOn){initAudio();startMusic();musicOn=true;document.getElementById('music-btn').textContent='🔊'}},{once:true});
+// Music removed
 
 // ═══ 产品详情 ═══
 var SECTIONS=[{
