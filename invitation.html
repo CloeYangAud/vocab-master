@@ -116,7 +116,7 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
   </div>
 
   <a href="#" class="cta" onclick="openRSVP();return false">⚡ 立 即 参 战</a>
-  <div style="text-align:center;font-size:11px;color:#475569;margin-top:8px">点击报名 · 无需VPN · 即刻确认</div>
+  <div style="text-align:center;font-size:11px;color:#475569;margin-top:8px">点击报名 · 即刻确认</div>
 
   <!-- RSVP 弹窗 -->
   <div id="rsvp-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:999;justify-content:center;align-items:center">
@@ -166,19 +166,42 @@ function toggleMusic(){
 }
 function startMusic(){
   if(!audioCtx)return;stopMusic();
-  var n=audioCtx.currentTime,m=audioCtx.createGain();m.gain.value=.04;m.connect(audioCtx.destination);
-  // Pulsing bass drone
-  var o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=55;g.gain.setValueAtTime(.3,n);g.gain.linearRampToValueAtTime(.15,n+1);g.gain.linearRampToValueAtTime(.3,n+2);o.connect(g);g.connect(m);o.start(n);
-  // High tech arpeggio loop
-  var notes=[262,330,392,523,392,330,262,330,392,523,659,523];
-  var seq=audioCtx.createGain();seq.gain.value=.08;seq.connect(m);
-  notes.forEach(function(f,i){
-    var t=n+i*.3,o2=audioCtx.createOscillator(),g2=audioCtx.createGain();
-    o2.type='triangle';o2.frequency.value=f;
-    g2.gain.setValueAtTime(0,t);g2.gain.linearRampToValueAtTime(.5,t+.02);g2.gain.exponentialRampToValueAtTime(.01,t+.25);
-    o2.connect(g2);g2.connect(seq);o2.start(t);o2.stop(t+.3);
-  });
-  musicNodes={master:m,osc:o,seq:seq,notes:notes};
+  var n=audioCtx.currentTime,m=audioCtx.createGain();m.gain.value=.35;m.connect(audioCtx.destination);
+  // Deep bass pulse — 2 bars loop
+  function bassLoop(t){
+    var o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.setValueAtTime(55,t);o.frequency.setValueAtTime(55,t+3.5);o.frequency.setValueAtTime(41,t+3.5);o.frequency.setValueAtTime(41,t+7);o.frequency.setValueAtTime(55,t+7);
+    g.gain.setValueAtTime(.5,t);g.gain.linearRampToValueAtTime(.25,t+.5);g.gain.linearRampToValueAtTime(.5,t+1);g.gain.linearRampToValueAtTime(.25,t+1.5);g.gain.linearRampToValueAtTime(.5,t+2);
+    o.connect(g);g.connect(m);o.start(t);o.stop(t+8);setTimeout(function(){bassLoop(t+8)},7900);
+  }
+  bassLoop(n);
+  // Arpeggio — 2 bars, endless
+  var notes=[262,330,392,523,659,523,392,330,262,330,392,523,659,784,659,523,392,330,262,330,392,523,659,523,392,330,262,330,392,523,659,784,1047,784,659,523];
+  function arpLoop(t){
+    var seq=audioCtx.createGain();seq.gain.value=.2;seq.connect(m);
+    notes.forEach(function(f,i){
+      var o2=audioCtx.createOscillator(),g2=audioCtx.createGain();o2.type='triangle';o2.frequency.value=f;
+      g2.gain.setValueAtTime(0,t+i*.18);g2.gain.linearRampToValueAtTime(.6,t+i*.18+.02);g2.gain.exponentialRampToValueAtTime(.01,t+i*.18+.16);
+      o2.connect(g2);g2.connect(seq);o2.start(t+i*.18);o2.stop(t+i*.18+.2);
+    });
+    setTimeout(function(){arpLoop(t+notes.length*.18)},notes.length*170);
+  }
+  arpLoop(n);
+  // Sub drone
+  var o3=audioCtx.createOscillator(),g3=audioCtx.createGain();o3.type='triangle';o3.frequency.value=41;g3.gain.value=.3;o3.connect(g3);g3.connect(m);o3.start(n);
+  // Saw pad
+  var op=audioCtx.createOscillator(),gp=audioCtx.createGain();op.type='sawtooth';op.frequency.value=110;gp.gain.setValueAtTime(.1,n);gp.gain.linearRampToValueAtTime(.06,n+2);gp.gain.linearRampToValueAtTime(.1,n+4);op.connect(gp);gp.connect(m);op.start(n);
+  // Hi-hat
+  function hihatLoop(t){
+    var tick=audioCtx.createGain();tick.gain.value=.12;tick.connect(m);
+    for(var i=0;i<16;i++){
+      var oh=audioCtx.createOscillator(),gh=audioCtx.createGain();oh.type='square';oh.frequency.value=8000;
+      gh.gain.setValueAtTime(.03,t+i*.25);gh.gain.exponentialRampToValueAtTime(.001,t+i*.25+.04);
+      oh.connect(gh);gh.connect(tick);oh.start(t+i*.25);oh.stop(t+i*.25+.06);
+    }
+    setTimeout(function(){hihatLoop(t+4)},3900);
+  }
+  hihatLoop(n);
+  musicNodes={master:m};
 }
 function stopMusic(){
   if(!musicNodes)return;
