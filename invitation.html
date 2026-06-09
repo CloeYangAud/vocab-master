@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>优利康 · SMILE 双芯觉醒</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color:#e8eaed;min-height:100vh;overflow-x:hidden}
+.page{max-width:720px;margin:0 auto;padding:40px 20px 80px;position:relative}
+.hero{text-align:center;padding:60px 0 40px;position:relative}
+.hero .countdown{display:inline-block;padding:6px 20px;border:1px solid rgba(59,130,246,.3);border-radius:20px;font-size:11px;letter-spacing:3px;color:#60a5fa;margin-bottom:24px;animation:pulse 2s infinite}
+.hero h1{font-size:48px;font-weight:900;line-height:1.1;margin-bottom:6px;background:linear-gradient(135deg,#60a5fa 0%,#a78bfa 30%,#f472b6 60%,#fbbf24 100%);background-size:300% 300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradient 3s ease infinite;letter-spacing:-1px}
+@keyframes gradient{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hero .sub{font-size:18px;color:#94a3b8;margin-top:8px;font-weight:600;letter-spacing:2px}
+.hero .date-badge{display:inline-block;margin-top:24px;padding:12px 28px;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);border-radius:14px;font-size:15px;font-weight:700;color:#93c5fd}
+.hero .powered{font-size:11px;color:#475569;margin-top:14px;letter-spacing:1px}
+
+.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:36px 0}
+.kvc{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:24px 18px;text-align:center;cursor:pointer;transition:all .35s;position:relative;overflow:hidden}
+.kvc::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(59,130,246,.08),transparent 70%);opacity:0;transition:opacity .35s}
+.kvc:hover::before{opacity:1}
+.kvc:hover{border-color:rgba(59,130,246,.5);transform:translateY(-3px);box-shadow:0 8px 30px rgba(59,130,246,.1)}
+.kvc.active{border-color:rgba(59,130,246,.6);background:rgba(59,130,246,.06)}
+.kvc.active::before{opacity:1}
+.kvc .e{font-size:42px;margin-bottom:10px;filter:drop-shadow(0 0 12px rgba(167,139,250,.3))}
+.kvc h3{font-size:15px;font-weight:800;margin-bottom:4px;letter-spacing:-.3px}
+.kvc p{font-size:11px;color:#64748b;line-height:1.5}
+.kvc .tap{font-size:10px;color:#3b82f6;margin-top:10px;opacity:0;transition:opacity .3s}
+.kvc:hover .tap{opacity:1}
+
+.detail-panel{display:none;background:rgba(255,255,255,.02);border:1px solid rgba(59,130,246,.2);border-radius:18px;padding:24px;margin-bottom:12px;animation:fadeIn .35s}
+.detail-panel.show{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+.detail-panel img{width:100%;max-width:420px;border-radius:14px;margin:0 auto 16px;display:block}
+.detail-panel .pts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.detail-panel .pt{background:rgba(255,255,255,.03);border-radius:12px;padding:14px}
+.detail-panel .pt h5{font-size:13px;font-weight:800;margin-bottom:4px;color:#93c5fd}
+.detail-panel .pt p{font-size:11px;color:#94a3b8;line-height:1.5}
+.detail-panel .close{display:block;text-align:right;color:#6b7280;cursor:pointer;font-size:13px;margin-bottom:10px}.detail-panel .close:hover{color:#fff}
+
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.08),transparent);margin:36px 0}
+.sec-title{font-size:12px;letter-spacing:4px;color:#475569;margin-bottom:20px;text-align:center}
+
+.ag-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:flex-start;transition:all .2s}
+.ag-item:hover{background:rgba(255,255,255,.01);margin:0 -10px;padding-left:10px;padding-right:10px;border-radius:8px}
+.ag-item .t{font-size:13px;font-weight:800;color:#60a5fa;min-width:80px;padding-top:2px;font-variant-numeric:tabular-nums}
+.ag-item .c h4{font-size:15px;font-weight:700;margin-bottom:3px}
+.ag-item .c p{font-size:12px;color:#64748b;line-height:1.6}
+.ag-item .ic{font-size:22px;min-width:32px}
+
+.hl{background:linear-gradient(135deg,rgba(59,130,246,.08),rgba(139,92,246,.08));border:1px solid rgba(59,130,246,.15);border-radius:18px;padding:24px;margin:24px 0;text-align:center}
+.hl h3{font-size:17px;font-weight:800;margin-bottom:8px;color:#a78bfa}
+.hl p{font-size:13px;color:#94a3b8;line-height:1.7}
+
+.cta{display:block;text-align:center;padding:18px;background:linear-gradient(135deg,#2563eb,#7c3aed,#db2777);background-size:200% 200%;color:#fff;border-radius:16px;font-weight:800;font-size:17px;text-decoration:none;margin:32px 0 12px;letter-spacing:2px;animation:shimmer 3s ease infinite}
+@keyframes shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.footer{text-align:center;font-size:11px;color:#475569;margin-top:24px;line-height:1.7}
+
+.pulse{animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+.glow{position:absolute;border-radius:50%;filter:blur(100px);opacity:.12;pointer-events:none}
+.glow.b{background:#3b82f6;width:250px;height:250px;top:-60px;left:10%}
+.glow.p{background:#8b5cf6;width:200px;height:200px;bottom:-40px;right:15%}
+.glow.g{background:#10b981;width:180px;height:180px;top:40%;right:-30px;opacity:.06}
+
+.music-btn{position:fixed;bottom:24px;right:24px;width:48px;height:48px;border-radius:50%;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);color:#60a5fa;font-size:20px;cursor:pointer;z-index:100;display:flex;align-items:center;justify-content:center;transition:all .3s;backdrop-filter:blur(10px)}
+.music-btn:hover{background:rgba(59,130,246,.25)}
+.music-btn.off{opacity:.4}
+
+.particles{position:fixed;inset:0;pointer-events:none;z-index:0}
+.particle{position:absolute;border-radius:50%;animation:float 6s infinite}
+@keyframes float{0%,100%{transform:translateY(0) translateX(0);opacity:0}20%{opacity:.4}80%{opacity:.4}}
+</style>
+</head>
+<body>
+<div class="particles" id="particles"></div>
+
+<button class="music-btn" id="music-btn" onclick="toggleMusic()" title="背景音乐">🔊</button>
+
+<div class="page" style="position:relative;z-index:1">
+  <div style="position:relative">
+    <div class="glow b"></div><div class="glow p"></div><div class="glow g"></div>
+    <div class="hero">
+      <div class="countdown">⚡ SMILE 双芯觉醒</div>
+      <h1>声而不凡<br>听见革命</h1>
+      <div class="sub">ERA × DEEPSONIC · 双芯合璧</div>
+      <div class="date-badge">📅 2026.06.30 · 上海总部 1505</div>
+      <div class="powered">优利康助听器 · 新品培训师TTT</div>
+    </div>
+  </div>
+
+  <div class="kv" id="feature-cards">
+    <div class="kvc" onclick="toggleDetail(0)"><div class="e">🧠</div><h3>双芯觉醒</h3><p>ERA + DEEPSONIC<br>全球首创双芯架构</p><div class="tap">揭开真相 ›</div></div>
+    <div class="kvc" onclick="toggleDetail(1)"><div class="e">🌐</div><h3>全域解语</h3><p>Inteqra OS · 25年AI<br>3700+声景秒级适配</p><div class="tap">揭开真相 ›</div></div>
+    <div class="kvc" onclick="toggleDetail(2)"><div class="e">👂</div><h3>全息为你</h3><p>EarMatch Advantage<br>3D建模首次即贴合</p><div class="tap">揭开真相 ›</div></div>
+    <div class="kvc" onclick="toggleDetail(3)"><div class="e">🛡️</div><h3>坚不可摧</h3><p>超IP68 + 磁吸闪充<br>全天候 · 零维护</p><div class="tap">揭开真相 ›</div></div>
+  </div>
+
+  <div id="detail-panel"></div>
+
+  <div class="divider"></div>
+  <div class="sec-title">· 征 程 ·</div>
+
+  <div class="ag-item"><div class="ic">🔬</div><div class="t">09:00</div><div class="c"><h4>双芯的破坏性革命</h4><p>为什么一块芯片永远不够？DEEPSONIC如何实现人声与噪音的"上帝分离"？这不是产品培训——这是一场技术觉醒。</p></div></div>
+  <div class="ag-item"><div class="ic">🎮</div><div class="t">09:45</div><div class="c"><h4>声景战场 · 沉浸对决</h4><p>戴上设备，坠入菜市场/高架桥/火锅店的真实地狱。你能否仅凭听力锁定目标语音？10dB信噪比——感受差距。</p></div></div>
+  <div class="ag-item"><div class="ic">☕</div><div class="t">10:30</div><div class="c"><h4>自由猎杀时间</h4><p>真机在手。自己戴、自己调、自己对比。产品经理在你旁边——不是讲课，是接招。</p></div></div>
+  <div class="ag-item"><div class="ic">⚔️</div><div class="t">11:00</div><div class="c"><h4>验配竞技场 · 极速调机赛</h4><p>分组对抗。全流程验配竞速。计时、计分、实时排名。你的手指速度，决定你的奖品等级。</p></div></div>
+  <div class="ag-item"><div class="ic">🍽️</div><div class="t">12:00</div><div class="c"><h4>与造物者共进午餐</h4><p>不是盒饭。是和技术团队面对面。你吐槽，他们记笔记。你说的每一句话都可能进入下一代产品。</p></div></div>
+  <div class="ag-item"><div class="ic">🎙️</div><div class="t">13:30</div><div class="c"><h4>30秒说服术 · 话术大乱斗</h4><p>客户说"和竞品有什么区别？"——30秒，让他想试戴。角色扮演，实战对决，全场投票。</p></div></div>
+  <div class="ag-item"><div class="ic">🔪</div><div class="t">14:30</div><div class="c"><h4>竞品解剖室</h4><p>真机拆解。AB盲听。不是看PPT对比表——是你亲耳裁决谁更强。</p></div></div>
+  <div class="ag-item"><div class="ic">🏆</div><div class="t">15:30</div><div class="c"><h4>封神时刻 · 终极考核</h4><p>通过即获新品TTT认证。不是走过场。是真的考。通过率？看你的实力。</p></div></div>
+
+  <div class="hl">
+    <h3>🏆 全天竞技 · 积分封神榜</h3>
+    <p>极速调机王 | 话术战神 | 拆机快手 | 金耳朵奖<br>每轮战斗都有积分。全天前三名——神秘大礼揭晓。</p>
+  </div>
+
+  <a href="#" class="cta">⚡ 立 即 参 战</a>
+  <div class="footer">优利康助听器 · 2026.06.30 · 上海总部1505<br>请携带个人常用验配工具 | 穿舒适的鞋子——你可能需要站着赢</div>
+</div>
+
+<script>
+// ═══ 背景粒子 ═══
+(function(){
+  var c=document.getElementById('particles');
+  for(var i=0;i<20;i++){
+    var d=document.createElement('div');d.className='particle';
+    d.style.cssText='left:'+Math.random()*100+'%;top:'+Math.random()*100+'%;width:'+(2+Math.random()*4)+'px;height:'+d.style.width+';background:rgba(96,165,250,'+(.1+Math.random()*.2)+');animation-delay:'+Math.random()*6+'s;animation-duration:'+(5+Math.random()*7)+'s';
+    c.appendChild(d);
+  }
+})();
+
+// ═══ 科技感背景音乐（Web Audio合成） ═══
+var audioCtx=null,musicOn=false,musicNodes=null;
+function initAudio(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)()}
+function toggleMusic(){
+  initAudio();
+  if(musicOn){stopMusic();document.getElementById('music-btn').textContent='🔇';document.getElementById('music-btn').classList.add('off');musicOn=false;return}
+  startMusic();document.getElementById('music-btn').textContent='🔊';document.getElementById('music-btn').classList.remove('off');musicOn=true;
+}
+function startMusic(){
+  if(!audioCtx)return;stopMusic();
+  var n=audioCtx.currentTime,m=audioCtx.createGain();m.gain.value=.04;m.connect(audioCtx.destination);
+  // Pulsing bass drone
+  var o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='sine';o.frequency.value=55;g.gain.setValueAtTime(.3,n);g.gain.linearRampToValueAtTime(.15,n+1);g.gain.linearRampToValueAtTime(.3,n+2);o.connect(g);g.connect(m);o.start(n);
+  // High tech arpeggio loop
+  var notes=[262,330,392,523,392,330,262,330,392,523,659,523];
+  var seq=audioCtx.createGain();seq.gain.value=.08;seq.connect(m);
+  notes.forEach(function(f,i){
+    var t=n+i*.3,o2=audioCtx.createOscillator(),g2=audioCtx.createGain();
+    o2.type='triangle';o2.frequency.value=f;
+    g2.gain.setValueAtTime(0,t);g2.gain.linearRampToValueAtTime(.5,t+.02);g2.gain.exponentialRampToValueAtTime(.01,t+.25);
+    o2.connect(g2);g2.connect(seq);o2.start(t);o2.stop(t+.3);
+  });
+  musicNodes={master:m,osc:o,seq:seq,notes:notes};
+}
+function stopMusic(){
+  if(!musicNodes)return;
+  try{musicNodes.osc.stop();musicNodes.seq.gain.value=0}catch(e){}
+  musicNodes=null;
+}
+// Start music on first interaction
+document.addEventListener('click',function(){if(!audioCtx&&!musicOn){initAudio();startMusic();musicOn=true;document.getElementById('music-btn').textContent='🔊'}},{once:true});
+
+// ═══ 产品详情 ═══
+var SECTIONS=[{
+  title:'🧠 双芯觉醒 — ERA × DEEPSONIC',
+  img:'https://www.unitron.com/content/unitron/us/en/_jcr_content/root/container/imageteaser_copy_cop_776086001.coreimg.png/1776421749766/uh-pic-moxi-s-rx-pair-beauty-shot-04.png',
+  points:[['全球首创双芯','ERA+DEEPSONIC协同，实时分离语音与噪音，信噪比↑10dB'],['全方向语音分离','DNN深度神经网络，任意方向人声捕捉，不用转头'],['聆听零疲劳','嘈杂环境自动分离人声和噪音，对话轻松跟上']]
+},{
+  title:'🌐 全域解语 — Inteqra OS',
+  img:'https://www.unitron.com/content/unitron/us/en/_jcr_content/root/container/imageteaser_copy.coreimg.jpeg/1768379008593/uh-pic-pic-keyvisual-smile-frank-09.jpeg',
+  points:[['25年AI训练','Inteqra OS智能声景融合，8大场景×3700+组合'],['秒级场景适配','瞬晰解语360·自动言语聚焦360·轻声穿透·言语增强'],['全场景自然聆听','自动识别环境，无需手动切换，听到的都是最佳方案']]
+},{
+  title:'👂 全息为你 — EarMatch Advantage',
+  img:'https://www.unitron.com/content/unitron/us/en/_jcr_content/root/container/homepagehero_copy.coreimg.png/1775218609686/uh-pic-brand-insera-sr-smiling-woman.png',
+  points:['3D精准建模','基于耳模3D扫描，从耳印到通气孔全流程个性化调校','智能受话器匹配，小巧轻薄，首次佩戴即完美贴合','自然隐形佩戴，不为听障尴尬'].reduce(function(r,v,i){if(i%2===0)r.push([v]);else r[r.length-1].push(v);return r},[])
+},{
+  title:'🛡️ 坚不可摧 — IP68+闪充',
+  img:'https://www.unitron.com/content/unitron/us/en/_jcr_content/root/container/imageteaser_copy_cop_480371586.coreimg.png/1780055435818/uh-pic-charger-ite-open-2.png',
+  points:['超IP68防护','等离子外壳+派瑞林涂层，防尘防水防腐防耳垢，全天候可靠','磁吸闪充，随手一放自动吸附，告别电池更换','单次充电全天使用，充电盒额外补3次，3.5h快充满电'].reduce(function(r,v,i){if(i%2===0)r.push([v]);else r[r.length-1].push(v);return r},[])
+}];
+
+// Fix section 2 & 3 points format
+SECTIONS[2].points=[['3D精准建模','基于耳模3D扫描，从耳印到通气孔全流程个性化调校'],['首戴即贴合','智能受话器匹配，小巧轻薄，日常隐蔽'],['隐形佩戴','自然贴合耳道，不为听障尴尬']];
+SECTIONS[3].points=[['超IP68防护','等离子外壳+派瑞林涂层+四向麦克风，全天候可靠'],['磁吸闪充','随手一放自动吸附，老人也能轻松操作'],['超长续航','单次充电全天使用，充电盒额外补3次，3.5h快充满电']];
+
+var currentDetail=-1;
+function toggleDetail(idx){
+  var panel=document.getElementById('detail-panel'),cards=document.querySelectorAll('.kvc');
+  if(currentDetail===idx){panel.innerHTML='';panel.classList.remove('show');cards[idx].classList.remove('active');currentDetail=-1;return}
+  cards.forEach(function(c){c.classList.remove('active')});cards[idx].classList.add('active');currentDetail=idx;
+  var s=SECTIONS[idx];
+  panel.innerHTML='<div class="detail-panel show"><span class="close" onclick="closeDetail()">✕ 关闭</span><h3 style="font-size:20px;font-weight:800;margin-bottom:8px">'+s.title+'</h3>'+(s.img?'<img src="'+s.img+'" alt="">':'')+'<div class="pts">'+s.points.map(function(p){return'<div class="pt"><h5>'+p[0]+'</h5><p>'+p[1]+'</p></div>'}).join('')+'</div></div>';
+  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function closeDetail(){document.getElementById('detail-panel').innerHTML='';document.querySelectorAll('.kvc').forEach(function(c){c.classList.remove('active')});currentDetail=-1}
+</script>
+</body>
+</html>
