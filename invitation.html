@@ -105,7 +105,7 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
   <div class="ag-item"><div class="ic">🎮</div><div class="t">09:45</div><div class="c"><h4>声景战场 · 沉浸对决</h4><p>戴上设备，坠入菜市场/高架桥/火锅店的真实地狱。你能否仅凭听力锁定目标语音？10dB信噪比——感受差距。</p></div></div>
   <div class="ag-item"><div class="ic">☕</div><div class="t">10:30</div><div class="c"><h4>自由猎杀时间</h4><p>真机在手。自己戴、自己调、自己对比。产品经理在你旁边——不是讲课，是接招。</p></div></div>
   <div class="ag-item"><div class="ic">⚔️</div><div class="t">11:00</div><div class="c"><h4>验配竞技场 · 极速调机赛</h4><p>分组对抗。全流程验配竞速。计时、计分、实时排名。你的手指速度，决定你的奖品等级。</p></div></div>
-  <div class="ag-item"><div class="ic">🍽️</div><div class="t">12:00</div><div class="c"><h4>与造物者共进午餐</h4><p>不是盒饭。是和技术团队面对面。你吐槽，他们记笔记。你说的每一句话都可能进入下一代产品。</p></div></div>
+  <div class="ag-item"><div class="ic">🤝</div><div class="t">12:00</div><div class="c"><h4>午餐 · 闪电社交</h4><p>每15分钟换一次座位。认识新同事，分享验配心得。谁知道你会遇到哪个未来的合作伙伴？</p></div></div>
   <div class="ag-item"><div class="ic">🎙️</div><div class="t">13:30</div><div class="c"><h4>30秒说服术 · 话术大乱斗</h4><p>客户说"和竞品有什么区别？"——30秒，让他想试戴。角色扮演，实战对决，全场投票。</p></div></div>
   <div class="ag-item"><div class="ic">🔪</div><div class="t">14:30</div><div class="c"><h4>竞品解剖室</h4><p>真机拆解。AB盲听。不是看PPT对比表——是你亲耳裁决谁更强。</p></div></div>
   <div class="ag-item"><div class="ic">🏆</div><div class="t">15:30</div><div class="c"><h4>封神时刻 · 终极考核</h4><p>通过即获新品TTT认证。不是走过场。是真的考。通过率？看你的实力。</p></div></div>
@@ -115,8 +115,33 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
     <p>极速调机王 | 话术战神 | 拆机快手 | 金耳朵奖<br>每轮战斗都有积分。全天前三名——神秘大礼揭晓。</p>
   </div>
 
-  <a href="mailto:Haiyan.Xu@sonova.com?subject=TTT报名 - 声而不凡&body=姓名：%0D%0A部门/职位：%0D%0A手机：%0D%0A%0D%0A我将参加6月30日优利康新品TTT培训。%0D%0A%0D%0A——请填写以上信息后发送此邮件——" class="cta">⚡ 立 即 参 战</a>
-  <div style="text-align:center;font-size:11px;color:#475569;margin-top:8px">点击自动打开邮件，发送给 Haiyan.Xu@sonova.com 即完成报名</div>
+  <a href="#" class="cta" onclick="openRSVP();return false">⚡ 立 即 参 战</a>
+  <div style="text-align:center;font-size:11px;color:#475569;margin-top:8px">点击报名 · 无需VPN · 即刻确认</div>
+
+  <!-- RSVP 弹窗 -->
+  <div id="rsvp-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:999;justify-content:center;align-items:center">
+    <div style="background:#141820;border:1px solid rgba(59,130,246,.3);border-radius:20px;padding:30px 24px;max-width:400px;width:90%;position:relative">
+      <span onclick="closeRSVP()" style="position:absolute;top:12px;right:16px;color:#6b7280;cursor:pointer;font-size:20px">✕</span>
+      <h2 style="margin:0 0 4px;font-size:22px;font-weight:800;text-align:center">⚡ 确认参战</h2>
+      <p style="margin:0 0 20px;font-size:13px;color:#64748b;text-align:center">2026.06.30 · 上海总部 1505</p>
+      <input id="rsvp-name" placeholder="姓名 *" style="width:100%;padding:12px;margin-bottom:10px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:rgba(255,255,255,.04);color:#e8eaed;font-size:15px;font-family:inherit;outline:none;box-sizing:border-box">
+      <input id="rsvp-dept" placeholder="部门 / 职位" style="width:100%;padding:12px;margin-bottom:10px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:rgba(255,255,255,.04);color:#e8eaed;font-size:15px;font-family:inherit;outline:none;box-sizing:border-box">
+      <input id="rsvp-phone" placeholder="手机号码" style="width:100%;padding:12px;margin-bottom:10px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:rgba(255,255,255,.04);color:#e8eaed;font-size:15px;font-family:inherit;outline:none;box-sizing:border-box">
+      <select id="rsvp-diet" style="width:100%;padding:12px;margin-bottom:16px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:rgba(255,255,255,.04);color:#e8eaed;font-size:15px;font-family:inherit;outline:none;box-sizing:border-box">
+        <option value="" style="background:#141820">饮食偏好（选填）</option>
+        <option value="无特殊要求" style="background:#141820">无特殊要求</option>
+        <option value="素食" style="background:#141820">素食</option>
+        <option value="清真" style="background:#141820">清真</option>
+        <option value="过敏（请备注）" style="background:#141820">过敏（请在姓名后注明）</option>
+      </select>
+      <button onclick="submitRSVP()" style="width:100%;padding:14px;border:none;border-radius:12px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;font-weight:800;font-size:16px;cursor:pointer;font-family:inherit;letter-spacing:1px">📧 发送报名邮件</button>
+      <p style="margin:10px 0 0;font-size:11px;color:#475569;text-align:center">将打开邮件客户端，确认后发送至 Haiyan.Xu@sonova.com</p>
+      <div id="rsvp-done" style="display:none;text-align:center;padding:10px 0">
+        <p style="font-size:18px;font-weight:800;color:#3fb950">✅ 报名成功！</p>
+        <p style="font-size:13px;color:#94a3b8">邮件已发送，我们6月30日见！</p>
+      </div>
+    </div>
+  </div>
   <div class="footer">优利康助听器 · 2026.06.30 · 上海总部1505<br>请携带个人常用验配工具 | 穿舒适的鞋子——你可能需要站着赢</div>
 </div>
 
@@ -196,6 +221,21 @@ function toggleDetail(idx){
   panel.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 function closeDetail(){document.getElementById('detail-panel').innerHTML='';document.querySelectorAll('.kvc').forEach(function(c){c.classList.remove('active')});currentDetail=-1}
+
+// ═══ RSVP 报名 ═══
+function openRSVP(){document.getElementById('rsvp-overlay').style.display='flex';setTimeout(function(){document.getElementById('rsvp-name').focus()},200)}
+function closeRSVP(){document.getElementById('rsvp-overlay').style.display='none';document.getElementById('rsvp-done').style.display='none'}
+function submitRSVP(){
+  var n=document.getElementById('rsvp-name').value.trim();
+  if(!n){document.getElementById('rsvp-name').style.borderColor='#f85149';return}
+  document.getElementById('rsvp-name').style.borderColor='rgba(255,255,255,.1)';
+  var dept=document.getElementById('rsvp-dept').value.trim(),phone=document.getElementById('rsvp-phone').value.trim(),diet=document.getElementById('rsvp-diet').value;
+  var body='姓名：'+n+'%0D%0A部门/职位：'+dept+'%0D%0A手机：'+phone+'%0D%0A饮食：'+(diet||'无特殊要求')+'%0D%0A%0D%0A我将参加6月30日优利康新品TTT培训。';
+  window.location.href='mailto:Haiyan.Xu@sonova.com?subject=TTT报名 - '+n+'&body='+body;
+  document.getElementById('rsvp-done').style.display='block';
+  // Also save to localStorage for record
+  try{var r=JSON.parse(localStorage.getItem('ttt_rsvp')||'[]');r.push({name:n,dept:dept,phone:phone,diet:diet,time:new Date().toISOString()});localStorage.setItem('ttt_rsvp',JSON.stringify(r))}catch(e){}
+}
 </script>
 </body>
 </html>
