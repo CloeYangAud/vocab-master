@@ -71,10 +71,10 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
 </head>
 <body>
 <div class="particles" id="particles"></div>
-<audio id="bgm" loop preload="auto">
+<audio id="bgm" loop autoplay muted>
   <source src="bg-music.mp3" type="audio/mpeg">
 </audio>
-<div class="music-upload" id="music-btn" onclick="toggleMusic()" title="背景音乐">🔇</div>
+<div class="music-upload" id="music-btn" onclick="toggleMusic()" title="背景音乐">🔊</div>
 <input type="file" id="mf" accept="audio/*" style="display:none" onchange="loadMusic(event)">
 
 <div class="page" style="position:relative;z-index:1">
@@ -147,15 +147,14 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
 
 <script>
 // ═══ 背景音乐 ═══
-var musicPlaying=false;
+var musicPlaying=true;
+var bgm=document.getElementById('bgm');
+// Unmute after load — muted autoplay always works, then unmute
+bgm.oncanplaythrough=function(){setTimeout(function(){bgm.muted=false;bgm.volume=.25},200)};
 function toggleMusic(){
-  var a=document.getElementById('bgm'),b=document.getElementById('music-btn');
-  if(musicPlaying){a.pause();b.textContent='🔇';musicPlaying=false}
-  else{a.play().then(function(){b.textContent='🔊';musicPlaying=true}).catch(function(){})}
+  if(musicPlaying){bgm.muted=true;document.getElementById('music-btn').textContent='🔇';musicPlaying=false}
+  else{bgm.muted=false;document.getElementById('music-btn').textContent='🔊';musicPlaying=true}
 }
-function loadMusic(e){var f=e.target.files[0];if(!f)return;var a=document.getElementById('bgm');a.innerHTML='';var s=document.createElement('source');s.src=URL.createObjectURL(f);s.type=f.type;a.appendChild(s);a.load();a.play().then(function(){document.getElementById('music-btn').textContent='🔊';musicPlaying=true}).catch(function(){})}
-// Start music on first user click/tap anywhere on the page
-document.addEventListener('click',function(){if(!musicPlaying)toggleMusic()},{once:true});
 // ═══ 背景粒子 ═══
 (function(){
   var c=document.getElementById('particles');
