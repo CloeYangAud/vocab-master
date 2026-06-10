@@ -71,10 +71,10 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
 </head>
 <body>
 <div class="particles" id="particles"></div>
-<audio id="bgm" loop autoplay>
+<audio id="bgm" loop preload="auto">
   <source src="bg-music.mp3" type="audio/mpeg">
 </audio>
-<div class="music-upload" onclick="document.getElementById('mf').click()" title="点击上传背景音乐">🎵</div>
+<div class="music-upload" id="music-btn" onclick="toggleMusic()" title="背景音乐">🔇</div>
 <input type="file" id="mf" accept="audio/*" style="display:none" onchange="loadMusic(event)">
 
 <div class="page" style="position:relative;z-index:1">
@@ -147,7 +147,15 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
 
 <script>
 // ═══ 背景音乐 ═══
-function loadMusic(e){var f=e.target.files[0];if(!f)return;var a=document.getElementById('bgm');a.src=URL.createObjectURL(f);a.volume=.25;a.play().catch(function(){});document.querySelector('.music-upload').textContent='🔊'}
+var musicPlaying=false;
+function toggleMusic(){
+  var a=document.getElementById('bgm'),b=document.getElementById('music-btn');
+  if(musicPlaying){a.pause();b.textContent='🔇';musicPlaying=false}
+  else{a.play().then(function(){b.textContent='🔊';musicPlaying=true}).catch(function(){})}
+}
+function loadMusic(e){var f=e.target.files[0];if(!f)return;var a=document.getElementById('bgm');a.innerHTML='';var s=document.createElement('source');s.src=URL.createObjectURL(f);s.type=f.type;a.appendChild(s);a.load();a.play().then(function(){document.getElementById('music-btn').textContent='🔊';musicPlaying=true}).catch(function(){})}
+// Start music on first user click/tap anywhere on the page
+document.addEventListener('click',function(){if(!musicPlaying)toggleMusic()},{once:true});
 // ═══ 背景粒子 ═══
 (function(){
   var c=document.getElementById('particles');
