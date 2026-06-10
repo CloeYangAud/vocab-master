@@ -147,13 +147,19 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
 
 <script>
 // ═══ 背景音乐 ═══
-var musicPlaying=true;
-var bgm=document.getElementById('bgm');
-// Unmute after load — muted autoplay always works, then unmute
-bgm.oncanplaythrough=function(){setTimeout(function(){bgm.muted=false;bgm.volume=.25},200)};
+var bgm=document.getElementById('bgm'),musicPlaying=false;
+// Autoplay attempt
+window.addEventListener('load',function(){
+  bgm.volume=.25;bgm.muted=false;
+  bgm.play().then(function(){musicPlaying=true;document.getElementById('music-btn').textContent='🔊'}).catch(function(){
+    // Browsers blocked autoplay — show prompt
+    document.getElementById('music-btn').textContent='🔇';
+    document.getElementById('music-btn').style.animation='pulse 1s infinite';
+  });
+});
 function toggleMusic(){
-  if(musicPlaying){bgm.muted=true;document.getElementById('music-btn').textContent='🔇';musicPlaying=false}
-  else{bgm.muted=false;document.getElementById('music-btn').textContent='🔊';musicPlaying=true}
+  if(musicPlaying){bgm.pause();document.getElementById('music-btn').textContent='🔇';document.getElementById('music-btn').style.animation='';musicPlaying=false}
+  else{bgm.play().then(function(){document.getElementById('music-btn').textContent='🔊';document.getElementById('music-btn').style.animation='';musicPlaying=true}).catch(function(){})}
 }
 // ═══ 背景粒子 ═══
 (function(){
