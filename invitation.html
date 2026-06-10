@@ -71,7 +71,9 @@ body{font-family:-apple-system,'PingFang SC',sans-serif;background:#06080f;color
 </head>
 <body>
 <div class="particles" id="particles"></div>
-<audio id="bgm" loop style="display:none"></audio>
+<audio id="bgm" loop autoplay>
+  <source src="bg-music.mp3" type="audio/mpeg">
+</audio>
 <div class="music-upload" onclick="document.getElementById('mf').click()" title="点击上传背景音乐">🎵</div>
 <input type="file" id="mf" accept="audio/*" style="display:none" onchange="loadMusic(event)">
 
